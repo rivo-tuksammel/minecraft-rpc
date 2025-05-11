@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Start server",
+            "command": "java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=1000 -DIReallyKnowWhatIAmDoingISwear -jar C:\\Users\\Rivo\\Desktop\\mc-dev-server\\spigot-1.21.5.jar nogui",
+            "options": {
+                "cwd": "C:\\Users\\Rivo\\Desktop\\mc-dev-server"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
