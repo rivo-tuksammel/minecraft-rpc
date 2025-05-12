@@ -117,8 +117,11 @@ message EntityLocation {
 }
 
 message Player {
-    string name = 1;
-    EntityLocation location = 2;
+    string name = 1; // name of the player
+    EntityLocation location = 2; // location of the player
+    string uuid = 3; // UUID of the player
+    string address = 4; // IP address of the player
+    int32 ping = 5; // ping of the player
 }
 
 message Entity {

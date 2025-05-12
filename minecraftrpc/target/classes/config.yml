@@ -1,0 +1,11 @@
+
+# Bind to given host which will allow incoming connections from that given host and reject all others.
+# By default, "localhost" will only allow connections from the same machine the server is running on.
+# Otherwise, "0.0.0.0" would allow connections from everywhere.
+host: localhost
+
+# The port the plugin server should listen on, i.e., where commands can be sent to.
+port: 1789
+
+# If "true" print additional debug output (especially of gRPC and command interceptors)
+debug: false

@@ -1,4 +1,4 @@
 name: minecraftrpc
 version: "1.0-SNAPSHOT"
 author: Rivo Tüksammel
-main: com.yplugins.minecraftrpc.Main
+main: com.yplugins.minecraftrpc.MinecraftRPC
