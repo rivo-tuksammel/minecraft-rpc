@@ -19,13 +19,12 @@ public class MinecraftRPC extends JavaPlugin {
     private GameThreadExecutor _gameThreadExecutor = null;
 
     public GameThreadExecutor gameThreadExecutor() {
-        return _gameThreadExecutor;
+        return this._gameThreadExecutor;
     }
 
     // This code is called after the server starts and after the /reload command
     @Override
     public void onEnable() {
-        super.onEnable();
         this._gameThreadExecutor = new GameThreadExecutor(this);
 
         logger.log(Level.INFO, "{0}.onEnable()", this.getClass().getName());

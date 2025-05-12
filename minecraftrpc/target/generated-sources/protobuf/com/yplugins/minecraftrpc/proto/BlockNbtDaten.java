@@ -10,11 +10,11 @@ package com.yplugins.minecraftrpc.proto;
  * * Additional NBT information in the form of stringified JSON 
  * </pre>
  *
- * Protobuf type {@code minecraftRPC.BlockNbtDaten}
+ * Protobuf type {@code Minecraft.BlockNbtDaten}
  */
 public final class BlockNbtDaten extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.BlockNbtDaten)
+    // @@protoc_insertion_point(message_implements:Minecraft.BlockNbtDaten)
     BlockNbtDatenOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -35,13 +35,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockNbtDaten_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockNbtDaten_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockNbtDaten_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockNbtDaten_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.BlockNbtDaten.class, com.yplugins.minecraftrpc.proto.BlockNbtDaten.Builder.class);
   }
@@ -197,21 +197,21 @@ private static final long serialVersionUID = 0L;
    * * Additional NBT information in the form of stringified JSON 
    * </pre>
    *
-   * Protobuf type {@code minecraftRPC.BlockNbtDaten}
+   * Protobuf type {@code Minecraft.BlockNbtDaten}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.BlockNbtDaten)
+      // @@protoc_insertion_point(builder_implements:Minecraft.BlockNbtDaten)
       com.yplugins.minecraftrpc.proto.BlockNbtDatenOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockNbtDaten_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockNbtDaten_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockNbtDaten_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockNbtDaten_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.BlockNbtDaten.class, com.yplugins.minecraftrpc.proto.BlockNbtDaten.Builder.class);
     }
@@ -235,7 +235,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockNbtDaten_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockNbtDaten_descriptor;
     }
 
     @java.lang.Override
@@ -313,10 +313,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.BlockNbtDaten)
+    // @@protoc_insertion_point(builder_scope:Minecraft.BlockNbtDaten)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.BlockNbtDaten)
+  // @@protoc_insertion_point(class_scope:Minecraft.BlockNbtDaten)
   private static final com.yplugins.minecraftrpc.proto.BlockNbtDaten DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.BlockNbtDaten();

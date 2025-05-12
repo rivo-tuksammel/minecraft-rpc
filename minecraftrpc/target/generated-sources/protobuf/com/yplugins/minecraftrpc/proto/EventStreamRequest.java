@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.EventStreamRequest}
+ * Protobuf type {@code Minecraft.EventStreamRequest}
  */
 public final class EventStreamRequest extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.EventStreamRequest)
+    // @@protoc_insertion_point(message_implements:Minecraft.EventStreamRequest)
     EventStreamRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -32,13 +32,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EventStreamRequest_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EventStreamRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EventStreamRequest_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EventStreamRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.EventStreamRequest.class, com.yplugins.minecraftrpc.proto.EventStreamRequest.Builder.class);
   }
@@ -46,14 +46,14 @@ private static final long serialVersionUID = 0L;
   public static final int EVENTTYPE_FIELD_NUMBER = 1;
   private int eventType_ = 0;
   /**
-   * <code>.minecraftRPC.EventType eventType = 1;</code>
+   * <code>.Minecraft.EventType eventType = 1;</code>
    * @return The enum numeric value on the wire for eventType.
    */
   @java.lang.Override public int getEventTypeValue() {
     return eventType_;
   }
   /**
-   * <code>.minecraftRPC.EventType eventType = 1;</code>
+   * <code>.Minecraft.EventType eventType = 1;</code>
    * @return The eventType.
    */
   @java.lang.Override public com.yplugins.minecraftrpc.proto.EventType getEventType() {
@@ -218,21 +218,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.EventStreamRequest}
+   * Protobuf type {@code Minecraft.EventStreamRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.EventStreamRequest)
+      // @@protoc_insertion_point(builder_implements:Minecraft.EventStreamRequest)
       com.yplugins.minecraftrpc.proto.EventStreamRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EventStreamRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EventStreamRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EventStreamRequest_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EventStreamRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.EventStreamRequest.class, com.yplugins.minecraftrpc.proto.EventStreamRequest.Builder.class);
     }
@@ -258,7 +258,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EventStreamRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EventStreamRequest_descriptor;
     }
 
     @java.lang.Override
@@ -355,14 +355,14 @@ private static final long serialVersionUID = 0L;
 
     private int eventType_ = 0;
     /**
-     * <code>.minecraftRPC.EventType eventType = 1;</code>
+     * <code>.Minecraft.EventType eventType = 1;</code>
      * @return The enum numeric value on the wire for eventType.
      */
     @java.lang.Override public int getEventTypeValue() {
       return eventType_;
     }
     /**
-     * <code>.minecraftRPC.EventType eventType = 1;</code>
+     * <code>.Minecraft.EventType eventType = 1;</code>
      * @param value The enum numeric value on the wire for eventType to set.
      * @return This builder for chaining.
      */
@@ -373,7 +373,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EventType eventType = 1;</code>
+     * <code>.Minecraft.EventType eventType = 1;</code>
      * @return The eventType.
      */
     @java.lang.Override
@@ -382,7 +382,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.yplugins.minecraftrpc.proto.EventType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.minecraftRPC.EventType eventType = 1;</code>
+     * <code>.Minecraft.EventType eventType = 1;</code>
      * @param value The eventType to set.
      * @return This builder for chaining.
      */
@@ -396,7 +396,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EventType eventType = 1;</code>
+     * <code>.Minecraft.EventType eventType = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearEventType() {
@@ -406,10 +406,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.EventStreamRequest)
+    // @@protoc_insertion_point(builder_scope:Minecraft.EventStreamRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.EventStreamRequest)
+  // @@protoc_insertion_point(class_scope:Minecraft.EventStreamRequest)
   private static final com.yplugins.minecraftrpc.proto.EventStreamRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.EventStreamRequest();

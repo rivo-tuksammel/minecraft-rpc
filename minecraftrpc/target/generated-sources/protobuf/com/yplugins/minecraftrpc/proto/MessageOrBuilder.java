@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface MessageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Message)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Message)
     com.google.protobuf.MessageOrBuilder {
 
   /**

@@ -10,11 +10,11 @@ package com.yplugins.minecraftrpc.proto;
  * * All information about a block that can be shared (i.e. everything except for position (and world) 
  * </pre>
  *
- * Protobuf type {@code minecraftRPC.BlockInfo}
+ * Protobuf type {@code Minecraft.BlockInfo}
  */
 public final class BlockInfo extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.BlockInfo)
+    // @@protoc_insertion_point(message_implements:Minecraft.BlockInfo)
     BlockInfoOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -36,13 +36,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockInfo_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockInfo_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockInfo_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockInfo_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.BlockInfo.class, com.yplugins.minecraftrpc.proto.BlockInfo.Builder.class);
   }
@@ -90,7 +90,7 @@ private static final long serialVersionUID = 0L;
   public static final int NBT_FIELD_NUMBER = 2;
   private com.yplugins.minecraftrpc.proto.BlockNbtDaten nbt_;
   /**
-   * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+   * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
    * @return Whether the nbt field is set.
    */
   @java.lang.Override
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+   * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
    * @return The nbt.
    */
   @java.lang.Override
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
     return nbt_ == null ? com.yplugins.minecraftrpc.proto.BlockNbtDaten.getDefaultInstance() : nbt_;
   }
   /**
-   * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+   * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.BlockNbtDatenOrBuilder getNbtOrBuilder() {
@@ -290,21 +290,21 @@ private static final long serialVersionUID = 0L;
    * * All information about a block that can be shared (i.e. everything except for position (and world) 
    * </pre>
    *
-   * Protobuf type {@code minecraftRPC.BlockInfo}
+   * Protobuf type {@code Minecraft.BlockInfo}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.BlockInfo)
+      // @@protoc_insertion_point(builder_implements:Minecraft.BlockInfo)
       com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockInfo_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockInfo_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.BlockInfo.class, com.yplugins.minecraftrpc.proto.BlockInfo.Builder.class);
     }
@@ -341,7 +341,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockInfo_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockInfo_descriptor;
     }
 
     @java.lang.Override
@@ -532,14 +532,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.BlockNbtDaten, com.yplugins.minecraftrpc.proto.BlockNbtDaten.Builder, com.yplugins.minecraftrpc.proto.BlockNbtDatenOrBuilder> nbtBuilder_;
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      * @return Whether the nbt field is set.
      */
     public boolean hasNbt() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      * @return The nbt.
      */
     public com.yplugins.minecraftrpc.proto.BlockNbtDaten getNbt() {
@@ -550,7 +550,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     public Builder setNbt(com.yplugins.minecraftrpc.proto.BlockNbtDaten value) {
       if (nbtBuilder_ == null) {
@@ -566,7 +566,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     public Builder setNbt(
         com.yplugins.minecraftrpc.proto.BlockNbtDaten.Builder builderForValue) {
@@ -580,7 +580,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     public Builder mergeNbt(com.yplugins.minecraftrpc.proto.BlockNbtDaten value) {
       if (nbtBuilder_ == null) {
@@ -601,7 +601,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     public Builder clearNbt() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -614,7 +614,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.BlockNbtDaten.Builder getNbtBuilder() {
       bitField0_ |= 0x00000002;
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
       return getNbtFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.BlockNbtDatenOrBuilder getNbtOrBuilder() {
       if (nbtBuilder_ != null) {
@@ -633,7 +633,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+     * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.BlockNbtDaten, com.yplugins.minecraftrpc.proto.BlockNbtDaten.Builder, com.yplugins.minecraftrpc.proto.BlockNbtDatenOrBuilder> 
@@ -649,10 +649,10 @@ private static final long serialVersionUID = 0L;
       return nbtBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.BlockInfo)
+    // @@protoc_insertion_point(builder_scope:Minecraft.BlockInfo)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.BlockInfo)
+  // @@protoc_insertion_point(class_scope:Minecraft.BlockInfo)
   private static final com.yplugins.minecraftrpc.proto.BlockInfo DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.BlockInfo();

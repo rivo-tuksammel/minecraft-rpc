@@ -1,8 +1,10 @@
 syntax = "proto3";
-package minecraftRPC;
+package Minecraft;
 option java_package = "com.yplugins.minecraftrpc.proto";
 option java_multiple_files = true;
 option java_outer_classname = "MinecraftRPC";
+
+import "minecraft_world.proto";
 
 /**
     Service functions on Minecraft Server
@@ -10,7 +12,6 @@ option java_outer_classname = "MinecraftRPC";
 service Minecraft {
     rpc runCommand(CommandRequest) returns (Status);
     rpc postToChat(ChatPostRequest) returns (Status);
-    rpc accessWorlds(WorldRequest) returns (WorldResponse);
     rpc getHeight(HeightRequest) returns (HeightResponse);
     rpc getBlock(BlockRequest) returns (BlockResponse);
     rpc setBlock(Block) returns (Status);
@@ -19,7 +20,7 @@ service Minecraft {
     rpc getPlayers(PlayersRequest) returns (PlayersResponse);
     rpc getPlayer(PlayerRequest) returns (PlayerResponse);
     rpc setPlayer(Player) returns (Status);
-    rpc spawnEntity(Entity) returns (SpawnedEntityResponse);
+    rpc spawnEntity(SpawnEntityRequest) returns (SpawnedEntityResponse);
     rpc setEntity(Entity) returns (Status);
     rpc getEntities(EntityRequest) returns (EntityResponse);
     rpc getEventStream(EventStreamRequest) returns (stream Event);
@@ -84,42 +85,32 @@ message BlockNbtDaten {
 /** A Minecraft block */
 message Block {
     BlockInfo info = 1;
-    World world = 2;
+    MinecraftWorld.World world = 2;
     Vec3 pos = 3;
 }
 
 /** A number of blocks of the same type */
 message Blocks {
     BlockInfo info = 1;
-    World world = 2;
+    MinecraftWorld.World world = 2;
     repeated Vec3 pos = 3;
 }
 
-/** A Minecraft world */
-message World {
-    string name = 1; // name of world == folder name (eg. world, world_nether, world_the_end)
-    WorldInfo info = 2;
-}
-
-message WorldInfo {
-    string key = 1;  // Namespace key of world identifying it ingame (eg. minecraft:overworld, minecraft:the_nether, minecraft:the_end)
-    bool pvp = 2;
-}
 
 message EntityOrientation {
     float yaw = 1;    // Player left/right angle (along y axis) in [-180, 180) with 0 looking south
     float pitch = 2;  // Player up/down angle in [-90, 90] with -90 looking straight up
 }
 
-message EntityLocation {
-    World world = 1;
+message Location {
+    MinecraftWorld.World world = 1;
     Vec3f pos = 2;
     EntityOrientation orientation = 3;
 }
 
 message Player {
     string name = 1; // name of the player
-    EntityLocation location = 2; // location of the player
+    Location location = 2; // location of the player
     string uuid = 3; // UUID of the player
     string address = 4; // IP address of the player
     int32 ping = 5; // ping of the player
@@ -127,7 +118,19 @@ message Player {
 
 message Entity {
     string type = 1;
-    EntityLocation location = 2;
+    Location location = 2;
+}
+
+
+message LocationRequest {
+    MinecraftWorld.WorldRequest world = 1;
+    Vec3f pos = 2;
+    optional EntityOrientation orientation = 3; // optional, if not set, use default orientation
+}
+
+message SpawnEntityRequest {
+    string type = 1;
+    LocationRequest location = 2;
 }
 
 /**
@@ -193,17 +196,9 @@ message ChatPostRequest {
     string message = 1;
 }
 
-message WorldRequest {
-    repeated World worlds = 1; // if empty just get all worlds, else set worlds
-}
-
-message WorldResponse {
-    Status status = 1;
-    repeated World worlds = 2;
-}
 
 message HeightRequest {
-    World world = 1;
+    MinecraftWorld.World world = 1;
     int32 x = 2;
     int32 z = 3;
 }
@@ -215,7 +210,7 @@ message HeightResponse {
 
 message BlockRequest {
     Vec3 pos = 1;
-    World world = 2;
+    MinecraftWorld.World world = 2;
     bool withData = 3;
 }
 
@@ -254,7 +249,7 @@ message EntityRequest {
     }
 
     message WorldEntities {
-        World world = 1; // get from this world
+        MinecraftWorld.World world = 1; // get from this world
         string type = 2; // type of entities to get, all entities if empty
         bool includeNotSpawnable = 3; // also allow the getting of not spawnable entities
     }

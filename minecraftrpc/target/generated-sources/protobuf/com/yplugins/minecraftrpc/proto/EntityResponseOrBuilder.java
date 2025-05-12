@@ -6,44 +6,44 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface EntityResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.EntityResponse)
+    // @@protoc_insertion_point(interface_extends:Minecraft.EntityResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.Status getStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>repeated .minecraftRPC.Entity entities = 2;</code>
+   * <code>repeated .Minecraft.Entity entities = 2;</code>
    */
   java.util.List<com.yplugins.minecraftrpc.proto.Entity> 
       getEntitiesList();
   /**
-   * <code>repeated .minecraftRPC.Entity entities = 2;</code>
+   * <code>repeated .Minecraft.Entity entities = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.Entity getEntities(int index);
   /**
-   * <code>repeated .minecraftRPC.Entity entities = 2;</code>
+   * <code>repeated .Minecraft.Entity entities = 2;</code>
    */
   int getEntitiesCount();
   /**
-   * <code>repeated .minecraftRPC.Entity entities = 2;</code>
+   * <code>repeated .Minecraft.Entity entities = 2;</code>
    */
   java.util.List<? extends com.yplugins.minecraftrpc.proto.EntityOrBuilder> 
       getEntitiesOrBuilderList();
   /**
-   * <code>repeated .minecraftRPC.Entity entities = 2;</code>
+   * <code>repeated .Minecraft.Entity entities = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntitiesOrBuilder(
       int index);

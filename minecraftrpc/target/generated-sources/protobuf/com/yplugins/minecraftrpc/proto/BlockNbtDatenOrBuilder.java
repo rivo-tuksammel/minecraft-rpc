@@ -6,6 +6,6 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface BlockNbtDatenOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.BlockNbtDaten)
+    // @@protoc_insertion_point(interface_extends:Minecraft.BlockNbtDaten)
     com.google.protobuf.MessageOrBuilder {
 }

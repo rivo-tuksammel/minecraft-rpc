@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf enum {@code minecraftRPC.StatusCode}
+ * Protobuf enum {@code Minecraft.StatusCode}
  */
 public enum StatusCode
     implements com.google.protobuf.ProtocolMessageEnum {
@@ -200,6 +200,6 @@ public enum StatusCode
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:minecraftRPC.StatusCode)
+  // @@protoc_insertion_point(enum_scope:Minecraft.StatusCode)
 }
 

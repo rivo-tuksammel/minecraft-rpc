@@ -10,11 +10,11 @@ package com.yplugins.minecraftrpc.proto;
  * * 3D coordinates WITHOUT comma (= integers) 
  * </pre>
  *
- * Protobuf type {@code minecraftRPC.Vec3}
+ * Protobuf type {@code Minecraft.Vec3}
  */
 public final class Vec3 extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.Vec3)
+    // @@protoc_insertion_point(message_implements:Minecraft.Vec3)
     Vec3OrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -35,13 +35,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Vec3_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Vec3_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Vec3_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Vec3_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.Vec3.class, com.yplugins.minecraftrpc.proto.Vec3.Builder.class);
   }
@@ -263,21 +263,21 @@ private static final long serialVersionUID = 0L;
    * * 3D coordinates WITHOUT comma (= integers) 
    * </pre>
    *
-   * Protobuf type {@code minecraftRPC.Vec3}
+   * Protobuf type {@code Minecraft.Vec3}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.Vec3)
+      // @@protoc_insertion_point(builder_implements:Minecraft.Vec3)
       com.yplugins.minecraftrpc.proto.Vec3OrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Vec3_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Vec3_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Vec3_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Vec3_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Vec3.class, com.yplugins.minecraftrpc.proto.Vec3.Builder.class);
     }
@@ -305,7 +305,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Vec3_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Vec3_descriptor;
     }
 
     @java.lang.Override
@@ -518,10 +518,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.Vec3)
+    // @@protoc_insertion_point(builder_scope:Minecraft.Vec3)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.Vec3)
+  // @@protoc_insertion_point(class_scope:Minecraft.Vec3)
   private static final com.yplugins.minecraftrpc.proto.Vec3 DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Vec3();

@@ -6,36 +6,36 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface HeightResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.HeightResponse)
+    // @@protoc_insertion_point(interface_extends:Minecraft.HeightResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.Status getStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>.minecraftRPC.Block block = 2;</code>
+   * <code>.Minecraft.Block block = 2;</code>
    * @return Whether the block field is set.
    */
   boolean hasBlock();
   /**
-   * <code>.minecraftRPC.Block block = 2;</code>
+   * <code>.Minecraft.Block block = 2;</code>
    * @return The block.
    */
   com.yplugins.minecraftrpc.proto.Block getBlock();
   /**
-   * <code>.minecraftRPC.Block block = 2;</code>
+   * <code>.Minecraft.Block block = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.BlockOrBuilder getBlockOrBuilder();
 }

@@ -6,44 +6,44 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface PlayersResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.PlayersResponse)
+    // @@protoc_insertion_point(interface_extends:Minecraft.PlayersResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.Status getStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   java.util.List<com.yplugins.minecraftrpc.proto.Player> 
       getPlayersList();
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.Player getPlayers(int index);
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   int getPlayersCount();
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   java.util.List<? extends com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
       getPlayersOrBuilderList();
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.PlayerOrBuilder getPlayersOrBuilder(
       int index);

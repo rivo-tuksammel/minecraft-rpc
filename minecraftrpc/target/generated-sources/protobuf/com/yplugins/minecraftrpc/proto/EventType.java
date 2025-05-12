@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf enum {@code minecraftRPC.EventType}
+ * Protobuf enum {@code Minecraft.EventType}
  */
 public enum EventType
     implements com.google.protobuf.ProtocolMessageEnum {
@@ -164,6 +164,6 @@ public enum EventType
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:minecraftRPC.EventType)
+  // @@protoc_insertion_point(enum_scope:Minecraft.EventType)
 }
 

@@ -6,36 +6,36 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface EntityRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.EntityRequest)
+    // @@protoc_insertion_point(interface_extends:Minecraft.EntityRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+   * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
    * @return Whether the specific field is set.
    */
   boolean hasSpecific();
   /**
-   * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+   * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
    * @return The specific.
    */
   com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities getSpecific();
   /**
-   * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+   * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntitiesOrBuilder getSpecificOrBuilder();
 
   /**
-   * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+   * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
    * @return Whether the worldwide field is set.
    */
   boolean hasWorldwide();
   /**
-   * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+   * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
    * @return The worldwide.
    */
   com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities getWorldwide();
   /**
-   * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+   * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntitiesOrBuilder getWorldwideOrBuilder();
 

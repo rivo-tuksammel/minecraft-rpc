@@ -6,23 +6,23 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface HeightRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.HeightRequest)
+    // @@protoc_insertion_point(interface_extends:Minecraft.HeightRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.World world = 1;</code>
+   * <code>.MinecraftWorld.World world = 1;</code>
    * @return Whether the world field is set.
    */
   boolean hasWorld();
   /**
-   * <code>.minecraftRPC.World world = 1;</code>
+   * <code>.MinecraftWorld.World world = 1;</code>
    * @return The world.
    */
-  com.yplugins.minecraftrpc.proto.World getWorld();
+  com.yplugins.minecraftrpc.proto.world.World getWorld();
   /**
-   * <code>.minecraftRPC.World world = 1;</code>
+   * <code>.MinecraftWorld.World world = 1;</code>
    */
-  com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder();
+  com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder();
 
   /**
    * <code>int32 x = 2;</code>

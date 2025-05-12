@@ -6,16 +6,16 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface StatusOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Status)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Status)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.StatusCode code = 1;</code>
+   * <code>.Minecraft.StatusCode code = 1;</code>
    * @return The enum numeric value on the wire for code.
    */
   int getCodeValue();
   /**
-   * <code>.minecraftRPC.StatusCode code = 1;</code>
+   * <code>.Minecraft.StatusCode code = 1;</code>
    * @return The code.
    */
   com.yplugins.minecraftrpc.proto.StatusCode getCode();

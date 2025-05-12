@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.BlockResponse}
+ * Protobuf type {@code Minecraft.BlockResponse}
  */
 public final class BlockResponse extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.BlockResponse)
+    // @@protoc_insertion_point(message_implements:Minecraft.BlockResponse)
     BlockResponseOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,13 +31,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockResponse_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockResponse_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.BlockResponse.class, com.yplugins.minecraftrpc.proto.BlockResponse.Builder.class);
   }
@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
   public static final int STATUS_FIELD_NUMBER = 1;
   private com.yplugins.minecraftrpc.proto.Status status_;
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   @java.lang.Override
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   @java.lang.Override
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
     return status_ == null ? com.yplugins.minecraftrpc.proto.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder() {
@@ -72,7 +72,7 @@ private static final long serialVersionUID = 0L;
   public static final int INFO_FIELD_NUMBER = 2;
   private com.yplugins.minecraftrpc.proto.BlockInfo info_;
   /**
-   * <code>.minecraftRPC.BlockInfo info = 2;</code>
+   * <code>.Minecraft.BlockInfo info = 2;</code>
    * @return Whether the info field is set.
    */
   @java.lang.Override
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000002) != 0);
   }
   /**
-   * <code>.minecraftRPC.BlockInfo info = 2;</code>
+   * <code>.Minecraft.BlockInfo info = 2;</code>
    * @return The info.
    */
   @java.lang.Override
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
     return info_ == null ? com.yplugins.minecraftrpc.proto.BlockInfo.getDefaultInstance() : info_;
   }
   /**
-   * <code>.minecraftRPC.BlockInfo info = 2;</code>
+   * <code>.Minecraft.BlockInfo info = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder getInfoOrBuilder() {
@@ -274,21 +274,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.BlockResponse}
+   * Protobuf type {@code Minecraft.BlockResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.BlockResponse)
+      // @@protoc_insertion_point(builder_implements:Minecraft.BlockResponse)
       com.yplugins.minecraftrpc.proto.BlockResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockResponse_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.BlockResponse.class, com.yplugins.minecraftrpc.proto.BlockResponse.Builder.class);
     }
@@ -330,7 +330,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_BlockResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_BlockResponse_descriptor;
     }
 
     @java.lang.Override
@@ -452,14 +452,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      * @return Whether the status field is set.
      */
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      * @return The status.
      */
     public com.yplugins.minecraftrpc.proto.Status getStatus() {
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder setStatus(com.yplugins.minecraftrpc.proto.Status value) {
       if (statusBuilder_ == null) {
@@ -486,7 +486,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder setStatus(
         com.yplugins.minecraftrpc.proto.Status.Builder builderForValue) {
@@ -500,7 +500,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder mergeStatus(com.yplugins.minecraftrpc.proto.Status value) {
       if (statusBuilder_ == null) {
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder clearStatus() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.Status.Builder getStatusBuilder() {
       bitField0_ |= 0x00000001;
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> 
@@ -573,14 +573,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.BlockInfo, com.yplugins.minecraftrpc.proto.BlockInfo.Builder, com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder> infoBuilder_;
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      * @return Whether the info field is set.
      */
     public boolean hasInfo() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      * @return The info.
      */
     public com.yplugins.minecraftrpc.proto.BlockInfo getInfo() {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     public Builder setInfo(com.yplugins.minecraftrpc.proto.BlockInfo value) {
       if (infoBuilder_ == null) {
@@ -607,7 +607,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     public Builder setInfo(
         com.yplugins.minecraftrpc.proto.BlockInfo.Builder builderForValue) {
@@ -621,7 +621,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     public Builder mergeInfo(com.yplugins.minecraftrpc.proto.BlockInfo value) {
       if (infoBuilder_ == null) {
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     public Builder clearInfo() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.BlockInfo.Builder getInfoBuilder() {
       bitField0_ |= 0x00000002;
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
       return getInfoFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder getInfoOrBuilder() {
       if (infoBuilder_ != null) {
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 2;</code>
+     * <code>.Minecraft.BlockInfo info = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.BlockInfo, com.yplugins.minecraftrpc.proto.BlockInfo.Builder, com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder> 
@@ -690,10 +690,10 @@ private static final long serialVersionUID = 0L;
       return infoBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.BlockResponse)
+    // @@protoc_insertion_point(builder_scope:Minecraft.BlockResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.BlockResponse)
+  // @@protoc_insertion_point(class_scope:Minecraft.BlockResponse)
   private static final com.yplugins.minecraftrpc.proto.BlockResponse DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.BlockResponse();

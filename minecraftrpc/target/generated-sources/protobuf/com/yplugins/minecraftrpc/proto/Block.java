@@ -10,11 +10,11 @@ package com.yplugins.minecraftrpc.proto;
  * * A Minecraft block 
  * </pre>
  *
- * Protobuf type {@code minecraftRPC.Block}
+ * Protobuf type {@code Minecraft.Block}
  */
 public final class Block extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.Block)
+    // @@protoc_insertion_point(message_implements:Minecraft.Block)
     BlockOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -35,13 +35,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Block_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Block_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Block_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Block_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.Block.class, com.yplugins.minecraftrpc.proto.Block.Builder.class);
   }
@@ -50,7 +50,7 @@ private static final long serialVersionUID = 0L;
   public static final int INFO_FIELD_NUMBER = 1;
   private com.yplugins.minecraftrpc.proto.BlockInfo info_;
   /**
-   * <code>.minecraftRPC.BlockInfo info = 1;</code>
+   * <code>.Minecraft.BlockInfo info = 1;</code>
    * @return Whether the info field is set.
    */
   @java.lang.Override
@@ -58,7 +58,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.BlockInfo info = 1;</code>
+   * <code>.Minecraft.BlockInfo info = 1;</code>
    * @return The info.
    */
   @java.lang.Override
@@ -66,7 +66,7 @@ private static final long serialVersionUID = 0L;
     return info_ == null ? com.yplugins.minecraftrpc.proto.BlockInfo.getDefaultInstance() : info_;
   }
   /**
-   * <code>.minecraftRPC.BlockInfo info = 1;</code>
+   * <code>.Minecraft.BlockInfo info = 1;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder getInfoOrBuilder() {
@@ -74,9 +74,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int WORLD_FIELD_NUMBER = 2;
-  private com.yplugins.minecraftrpc.proto.World world_;
+  private com.yplugins.minecraftrpc.proto.world.World world_;
   /**
-   * <code>.minecraftRPC.World world = 2;</code>
+   * <code>.MinecraftWorld.World world = 2;</code>
    * @return Whether the world field is set.
    */
   @java.lang.Override
@@ -84,25 +84,25 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000002) != 0);
   }
   /**
-   * <code>.minecraftRPC.World world = 2;</code>
+   * <code>.MinecraftWorld.World world = 2;</code>
    * @return The world.
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.World getWorld() {
-    return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+  public com.yplugins.minecraftrpc.proto.world.World getWorld() {
+    return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
   }
   /**
-   * <code>.minecraftRPC.World world = 2;</code>
+   * <code>.MinecraftWorld.World world = 2;</code>
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder() {
-    return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+  public com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder() {
+    return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
   }
 
   public static final int POS_FIELD_NUMBER = 3;
   private com.yplugins.minecraftrpc.proto.Vec3 pos_;
   /**
-   * <code>.minecraftRPC.Vec3 pos = 3;</code>
+   * <code>.Minecraft.Vec3 pos = 3;</code>
    * @return Whether the pos field is set.
    */
   @java.lang.Override
@@ -110,7 +110,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000004) != 0);
   }
   /**
-   * <code>.minecraftRPC.Vec3 pos = 3;</code>
+   * <code>.Minecraft.Vec3 pos = 3;</code>
    * @return The pos.
    */
   @java.lang.Override
@@ -118,7 +118,7 @@ private static final long serialVersionUID = 0L;
     return pos_ == null ? com.yplugins.minecraftrpc.proto.Vec3.getDefaultInstance() : pos_;
   }
   /**
-   * <code>.minecraftRPC.Vec3 pos = 3;</code>
+   * <code>.Minecraft.Vec3 pos = 3;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder() {
@@ -324,21 +324,21 @@ private static final long serialVersionUID = 0L;
    * * A Minecraft block 
    * </pre>
    *
-   * Protobuf type {@code minecraftRPC.Block}
+   * Protobuf type {@code Minecraft.Block}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.Block)
+      // @@protoc_insertion_point(builder_implements:Minecraft.Block)
       com.yplugins.minecraftrpc.proto.BlockOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Block_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Block_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Block_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Block_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Block.class, com.yplugins.minecraftrpc.proto.Block.Builder.class);
     }
@@ -386,7 +386,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Block_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Block_descriptor;
     }
 
     @java.lang.Override
@@ -524,14 +524,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.BlockInfo, com.yplugins.minecraftrpc.proto.BlockInfo.Builder, com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder> infoBuilder_;
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      * @return Whether the info field is set.
      */
     public boolean hasInfo() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      * @return The info.
      */
     public com.yplugins.minecraftrpc.proto.BlockInfo getInfo() {
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     public Builder setInfo(com.yplugins.minecraftrpc.proto.BlockInfo value) {
       if (infoBuilder_ == null) {
@@ -558,7 +558,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     public Builder setInfo(
         com.yplugins.minecraftrpc.proto.BlockInfo.Builder builderForValue) {
@@ -572,7 +572,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     public Builder mergeInfo(com.yplugins.minecraftrpc.proto.BlockInfo value) {
       if (infoBuilder_ == null) {
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     public Builder clearInfo() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -606,7 +606,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.BlockInfo.Builder getInfoBuilder() {
       bitField0_ |= 0x00000001;
@@ -614,7 +614,7 @@ private static final long serialVersionUID = 0L;
       return getInfoFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder getInfoOrBuilder() {
       if (infoBuilder_ != null) {
@@ -625,7 +625,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.BlockInfo info = 1;</code>
+     * <code>.Minecraft.BlockInfo info = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.BlockInfo, com.yplugins.minecraftrpc.proto.BlockInfo.Builder, com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder> 
@@ -641,31 +641,31 @@ private static final long serialVersionUID = 0L;
       return infoBuilder_;
     }
 
-    private com.yplugins.minecraftrpc.proto.World world_;
+    private com.yplugins.minecraftrpc.proto.world.World world_;
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder> worldBuilder_;
+        com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder> worldBuilder_;
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      * @return Whether the world field is set.
      */
     public boolean hasWorld() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      * @return The world.
      */
-    public com.yplugins.minecraftrpc.proto.World getWorld() {
+    public com.yplugins.minecraftrpc.proto.world.World getWorld() {
       if (worldBuilder_ == null) {
-        return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+        return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
       } else {
         return worldBuilder_.getMessage();
       }
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
-    public Builder setWorld(com.yplugins.minecraftrpc.proto.World value) {
+    public Builder setWorld(com.yplugins.minecraftrpc.proto.world.World value) {
       if (worldBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -679,10 +679,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
     public Builder setWorld(
-        com.yplugins.minecraftrpc.proto.World.Builder builderForValue) {
+        com.yplugins.minecraftrpc.proto.world.World.Builder builderForValue) {
       if (worldBuilder_ == null) {
         world_ = builderForValue.build();
       } else {
@@ -693,13 +693,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
-    public Builder mergeWorld(com.yplugins.minecraftrpc.proto.World value) {
+    public Builder mergeWorld(com.yplugins.minecraftrpc.proto.world.World value) {
       if (worldBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           world_ != null &&
-          world_ != com.yplugins.minecraftrpc.proto.World.getDefaultInstance()) {
+          world_ != com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance()) {
           getWorldBuilder().mergeFrom(value);
         } else {
           world_ = value;
@@ -714,7 +714,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
     public Builder clearWorld() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -727,33 +727,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
-    public com.yplugins.minecraftrpc.proto.World.Builder getWorldBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.World.Builder getWorldBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getWorldFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
-    public com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder() {
       if (worldBuilder_ != null) {
         return worldBuilder_.getMessageOrBuilder();
       } else {
         return world_ == null ?
-            com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+            com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
       }
     }
     /**
-     * <code>.minecraftRPC.World world = 2;</code>
+     * <code>.MinecraftWorld.World world = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder> 
+        com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder> 
         getWorldFieldBuilder() {
       if (worldBuilder_ == null) {
         worldBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-            com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder>(
+            com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder>(
                 getWorld(),
                 getParentForChildren(),
                 isClean());
@@ -766,14 +766,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Vec3, com.yplugins.minecraftrpc.proto.Vec3.Builder, com.yplugins.minecraftrpc.proto.Vec3OrBuilder> posBuilder_;
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      * @return Whether the pos field is set.
      */
     public boolean hasPos() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      * @return The pos.
      */
     public com.yplugins.minecraftrpc.proto.Vec3 getPos() {
@@ -784,7 +784,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     public Builder setPos(com.yplugins.minecraftrpc.proto.Vec3 value) {
       if (posBuilder_ == null) {
@@ -800,7 +800,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     public Builder setPos(
         com.yplugins.minecraftrpc.proto.Vec3.Builder builderForValue) {
@@ -814,7 +814,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     public Builder mergePos(com.yplugins.minecraftrpc.proto.Vec3 value) {
       if (posBuilder_ == null) {
@@ -835,7 +835,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     public Builder clearPos() {
       bitField0_ = (bitField0_ & ~0x00000004);
@@ -848,7 +848,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     public com.yplugins.minecraftrpc.proto.Vec3.Builder getPosBuilder() {
       bitField0_ |= 0x00000004;
@@ -856,7 +856,7 @@ private static final long serialVersionUID = 0L;
       return getPosFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     public com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder() {
       if (posBuilder_ != null) {
@@ -867,7 +867,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Vec3, com.yplugins.minecraftrpc.proto.Vec3.Builder, com.yplugins.minecraftrpc.proto.Vec3OrBuilder> 
@@ -883,10 +883,10 @@ private static final long serialVersionUID = 0L;
       return posBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.Block)
+    // @@protoc_insertion_point(builder_scope:Minecraft.Block)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.Block)
+  // @@protoc_insertion_point(class_scope:Minecraft.Block)
   private static final com.yplugins.minecraftrpc.proto.Block DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Block();

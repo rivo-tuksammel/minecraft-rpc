@@ -7,9 +7,11 @@ import org.bukkit.entity.EntityType;
 
 import com.yplugins.minecraftrpc.MinecraftRPC;
 import com.yplugins.minecraftrpc.proto.Entity;
+import com.yplugins.minecraftrpc.proto.SpawnEntityRequest;
 import com.yplugins.minecraftrpc.proto.SpawnedEntityResponse;
 import com.yplugins.minecraftrpc.proto.Status;
 import com.yplugins.minecraftrpc.proto.StatusCode;
+import com.yplugins.minecraftrpc.rpc.mappers.LocationMapper;
 
 public class RPCEntitySpawnHandler {
 
@@ -19,7 +21,7 @@ public class RPCEntitySpawnHandler {
         this.plugin = plugin;
     }
 
-    public SpawnedEntityResponse handleSpawnEntityRequest(Entity request) {
+    public SpawnedEntityResponse handleSpawnEntityRequest(SpawnEntityRequest request) {
 
         SpawnedEntityResponse.Builder responseBuilder = SpawnedEntityResponse.newBuilder();
 
@@ -34,7 +36,7 @@ public class RPCEntitySpawnHandler {
             return responseBuilder.build();
         } 
 
-        World world = request.getLocation().getWorld() != null ? Bukkit.getWorld(request.getLocation().getWorld().getName()) : Bukkit.getWorlds().stream().findFirst().orElse(null);
+        World world = request.getLocation().getWorld() != null ? Bukkit.getWorld(request.getLocation().getWorld().getNamespace()) : Bukkit.getWorlds().stream().findFirst().orElse(null);
         if (world == null) {
             responseBuilder.setStatus(Status.newBuilder().setCode(StatusCode.INVALID_ARGUMENT).setExtra("Entity.world").build());
             return responseBuilder.build();
@@ -60,12 +62,13 @@ public class RPCEntitySpawnHandler {
             world.spawnEntity(spawnLocation, entityType);
         });
 
-
         return responseBuilder
                 .setStatus(Status.newBuilder().setCode(StatusCode.OK).build())
                 .setEntity(Entity.newBuilder()
                         .setType(request.getType())
-                        .setLocation(request.getLocation()))
+                        .setLocation(
+                            LocationMapper.mapLocationToRPC(spawnLocation)
+                        ))
                 .build();
 
     }

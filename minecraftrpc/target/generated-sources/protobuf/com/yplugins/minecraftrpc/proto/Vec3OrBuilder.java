@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface Vec3OrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Vec3)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Vec3)
     com.google.protobuf.MessageOrBuilder {
 
   /**

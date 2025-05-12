@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface PlayerOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Player)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Player)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -34,7 +34,7 @@ public interface PlayerOrBuilder extends
    * location of the player
    * </pre>
    *
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    * @return Whether the location field is set.
    */
   boolean hasLocation();
@@ -43,18 +43,18 @@ public interface PlayerOrBuilder extends
    * location of the player
    * </pre>
    *
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    * @return The location.
    */
-  com.yplugins.minecraftrpc.proto.EntityLocation getLocation();
+  com.yplugins.minecraftrpc.proto.Location getLocation();
   /**
    * <pre>
    * location of the player
    * </pre>
    *
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    */
-  com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder getLocationOrBuilder();
+  com.yplugins.minecraftrpc.proto.LocationOrBuilder getLocationOrBuilder();
 
   /**
    * <pre>

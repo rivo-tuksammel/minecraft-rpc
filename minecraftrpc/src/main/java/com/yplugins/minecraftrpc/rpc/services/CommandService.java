@@ -1,23 +1,15 @@
 package com.yplugins.minecraftrpc.rpc.services;
 
-import java.util.UUID;
-
-import javax.annotation.Nullable;
-
 import org.bukkit.Bukkit;
-import org.bukkit.World;
-import org.bukkit.entity.EntityType;
 
 import com.yplugins.minecraftrpc.proto.Player;
 import com.yplugins.minecraftrpc.proto.PlayerRequest;
 import com.yplugins.minecraftrpc.proto.PlayerResponse;
 import com.yplugins.minecraftrpc.proto.PlayersRequest;
 import com.yplugins.minecraftrpc.proto.PlayersResponse;
+import com.yplugins.minecraftrpc.proto.SpawnEntityRequest;
 import com.yplugins.minecraftrpc.proto.SpawnedEntityResponse;
-import com.yplugins.minecraftrpc.proto.Status;
-import com.yplugins.minecraftrpc.proto.StatusCode;
 import com.yplugins.minecraftrpc.MinecraftRPC;
-import com.yplugins.minecraftrpc.proto.Entity;
 import com.yplugins.minecraftrpc.proto.MinecraftGrpc.MinecraftImplBase;
 import com.yplugins.minecraftrpc.rpc.handlers.entity.RPCEntitySpawnHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.entity.RPCPlayerHandler;
@@ -35,7 +27,7 @@ public class CommandService extends MinecraftImplBase {
     }
     
     @Override
-    public void spawnEntity(Entity request, StreamObserver<SpawnedEntityResponse> responseObserver) {
+    public void spawnEntity(SpawnEntityRequest request, StreamObserver<SpawnedEntityResponse> responseObserver) {
         SpawnedEntityResponse response = entitySpawnHandler.handleSpawnEntityRequest(request);
         responseObserver.onNext(response);
         responseObserver.onCompleted();
@@ -62,8 +54,8 @@ public class CommandService extends MinecraftImplBase {
 
     @Override
     public void getPlayer(PlayerRequest request, StreamObserver<PlayerResponse> responseObserver) {
-        
+        PlayerResponse playerResponse = playerHandler.handleGetPlayerRequest(request);
+        responseObserver.onNext(playerResponse);
+        responseObserver.onCompleted();
     }
-
-    
 }

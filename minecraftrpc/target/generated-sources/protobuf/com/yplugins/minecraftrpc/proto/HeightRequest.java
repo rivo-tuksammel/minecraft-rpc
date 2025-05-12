@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.HeightRequest}
+ * Protobuf type {@code Minecraft.HeightRequest}
  */
 public final class HeightRequest extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.HeightRequest)
+    // @@protoc_insertion_point(message_implements:Minecraft.HeightRequest)
     HeightRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,22 +31,22 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_HeightRequest_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_HeightRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_HeightRequest_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_HeightRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.HeightRequest.class, com.yplugins.minecraftrpc.proto.HeightRequest.Builder.class);
   }
 
   private int bitField0_;
   public static final int WORLD_FIELD_NUMBER = 1;
-  private com.yplugins.minecraftrpc.proto.World world_;
+  private com.yplugins.minecraftrpc.proto.world.World world_;
   /**
-   * <code>.minecraftRPC.World world = 1;</code>
+   * <code>.MinecraftWorld.World world = 1;</code>
    * @return Whether the world field is set.
    */
   @java.lang.Override
@@ -54,19 +54,19 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.World world = 1;</code>
+   * <code>.MinecraftWorld.World world = 1;</code>
    * @return The world.
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.World getWorld() {
-    return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+  public com.yplugins.minecraftrpc.proto.world.World getWorld() {
+    return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
   }
   /**
-   * <code>.minecraftRPC.World world = 1;</code>
+   * <code>.MinecraftWorld.World world = 1;</code>
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder() {
-    return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+  public com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder() {
+    return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
   }
 
   public static final int X_FIELD_NUMBER = 2;
@@ -276,21 +276,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.HeightRequest}
+   * Protobuf type {@code Minecraft.HeightRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.HeightRequest)
+      // @@protoc_insertion_point(builder_implements:Minecraft.HeightRequest)
       com.yplugins.minecraftrpc.proto.HeightRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_HeightRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_HeightRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_HeightRequest_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_HeightRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.HeightRequest.class, com.yplugins.minecraftrpc.proto.HeightRequest.Builder.class);
     }
@@ -328,7 +328,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_HeightRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_HeightRequest_descriptor;
     }
 
     @java.lang.Override
@@ -452,31 +452,31 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.yplugins.minecraftrpc.proto.World world_;
+    private com.yplugins.minecraftrpc.proto.world.World world_;
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder> worldBuilder_;
+        com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder> worldBuilder_;
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      * @return Whether the world field is set.
      */
     public boolean hasWorld() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      * @return The world.
      */
-    public com.yplugins.minecraftrpc.proto.World getWorld() {
+    public com.yplugins.minecraftrpc.proto.world.World getWorld() {
       if (worldBuilder_ == null) {
-        return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+        return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
       } else {
         return worldBuilder_.getMessage();
       }
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
-    public Builder setWorld(com.yplugins.minecraftrpc.proto.World value) {
+    public Builder setWorld(com.yplugins.minecraftrpc.proto.world.World value) {
       if (worldBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -490,10 +490,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
     public Builder setWorld(
-        com.yplugins.minecraftrpc.proto.World.Builder builderForValue) {
+        com.yplugins.minecraftrpc.proto.world.World.Builder builderForValue) {
       if (worldBuilder_ == null) {
         world_ = builderForValue.build();
       } else {
@@ -504,13 +504,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
-    public Builder mergeWorld(com.yplugins.minecraftrpc.proto.World value) {
+    public Builder mergeWorld(com.yplugins.minecraftrpc.proto.world.World value) {
       if (worldBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           world_ != null &&
-          world_ != com.yplugins.minecraftrpc.proto.World.getDefaultInstance()) {
+          world_ != com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance()) {
           getWorldBuilder().mergeFrom(value);
         } else {
           world_ = value;
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
     public Builder clearWorld() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -538,33 +538,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.World.Builder getWorldBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.World.Builder getWorldBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getWorldFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder() {
       if (worldBuilder_ != null) {
         return worldBuilder_.getMessageOrBuilder();
       } else {
         return world_ == null ?
-            com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+            com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
       }
     }
     /**
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder> 
+        com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder> 
         getWorldFieldBuilder() {
       if (worldBuilder_ == null) {
         worldBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-            com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder>(
+            com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder>(
                 getWorld(),
                 getParentForChildren(),
                 isClean());
@@ -637,10 +637,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.HeightRequest)
+    // @@protoc_insertion_point(builder_scope:Minecraft.HeightRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.HeightRequest)
+  // @@protoc_insertion_point(class_scope:Minecraft.HeightRequest)
   private static final com.yplugins.minecraftrpc.proto.HeightRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.HeightRequest();

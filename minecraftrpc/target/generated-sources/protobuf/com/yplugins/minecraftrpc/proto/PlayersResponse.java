@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.PlayersResponse}
+ * Protobuf type {@code Minecraft.PlayersResponse}
  */
 public final class PlayersResponse extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.PlayersResponse)
+    // @@protoc_insertion_point(message_implements:Minecraft.PlayersResponse)
     PlayersResponseOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -32,13 +32,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_PlayersResponse_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_PlayersResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_PlayersResponse_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_PlayersResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.PlayersResponse.class, com.yplugins.minecraftrpc.proto.PlayersResponse.Builder.class);
   }
@@ -47,7 +47,7 @@ private static final long serialVersionUID = 0L;
   public static final int STATUS_FIELD_NUMBER = 1;
   private com.yplugins.minecraftrpc.proto.Status status_;
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   @java.lang.Override
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   @java.lang.Override
@@ -63,7 +63,7 @@ private static final long serialVersionUID = 0L;
     return status_ == null ? com.yplugins.minecraftrpc.proto.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder() {
@@ -74,14 +74,14 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings("serial")
   private java.util.List<com.yplugins.minecraftrpc.proto.Player> players_;
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   @java.lang.Override
   public java.util.List<com.yplugins.minecraftrpc.proto.Player> getPlayersList() {
     return players_;
   }
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   @java.lang.Override
   public java.util.List<? extends com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
@@ -89,21 +89,21 @@ private static final long serialVersionUID = 0L;
     return players_;
   }
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   @java.lang.Override
   public int getPlayersCount() {
     return players_.size();
   }
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.Player getPlayers(int index) {
     return players_.get(index);
   }
   /**
-   * <code>repeated .minecraftRPC.Player players = 2;</code>
+   * <code>repeated .Minecraft.Player players = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getPlayersOrBuilder(
@@ -287,21 +287,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.PlayersResponse}
+   * Protobuf type {@code Minecraft.PlayersResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.PlayersResponse)
+      // @@protoc_insertion_point(builder_implements:Minecraft.PlayersResponse)
       com.yplugins.minecraftrpc.proto.PlayersResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_PlayersResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_PlayersResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_PlayersResponse_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_PlayersResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.PlayersResponse.class, com.yplugins.minecraftrpc.proto.PlayersResponse.Builder.class);
     }
@@ -345,7 +345,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_PlayersResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_PlayersResponse_descriptor;
     }
 
     @java.lang.Override
@@ -503,14 +503,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      * @return Whether the status field is set.
      */
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      * @return The status.
      */
     public com.yplugins.minecraftrpc.proto.Status getStatus() {
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder setStatus(com.yplugins.minecraftrpc.proto.Status value) {
       if (statusBuilder_ == null) {
@@ -537,7 +537,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder setStatus(
         com.yplugins.minecraftrpc.proto.Status.Builder builderForValue) {
@@ -551,7 +551,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder mergeStatus(com.yplugins.minecraftrpc.proto.Status value) {
       if (statusBuilder_ == null) {
@@ -572,7 +572,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder clearStatus() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -585,7 +585,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.Status.Builder getStatusBuilder() {
       bitField0_ |= 0x00000001;
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> 
@@ -633,7 +633,7 @@ private static final long serialVersionUID = 0L;
         com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> playersBuilder_;
 
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public java.util.List<com.yplugins.minecraftrpc.proto.Player> getPlayersList() {
       if (playersBuilder_ == null) {
@@ -643,7 +643,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public int getPlayersCount() {
       if (playersBuilder_ == null) {
@@ -653,7 +653,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.Player getPlayers(int index) {
       if (playersBuilder_ == null) {
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder setPlayers(
         int index, com.yplugins.minecraftrpc.proto.Player value) {
@@ -680,7 +680,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder setPlayers(
         int index, com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -694,7 +694,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder addPlayers(com.yplugins.minecraftrpc.proto.Player value) {
       if (playersBuilder_ == null) {
@@ -710,7 +710,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder addPlayers(
         int index, com.yplugins.minecraftrpc.proto.Player value) {
@@ -727,7 +727,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder addPlayers(
         com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -741,7 +741,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder addPlayers(
         int index, com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -755,7 +755,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder addAllPlayers(
         java.lang.Iterable<? extends com.yplugins.minecraftrpc.proto.Player> values) {
@@ -770,7 +770,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder clearPlayers() {
       if (playersBuilder_ == null) {
@@ -783,7 +783,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public Builder removePlayers(int index) {
       if (playersBuilder_ == null) {
@@ -796,14 +796,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.Player.Builder getPlayersBuilder(
         int index) {
       return getPlayersFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getPlayersOrBuilder(
         int index) {
@@ -813,7 +813,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public java.util.List<? extends com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
          getPlayersOrBuilderList() {
@@ -824,14 +824,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.Player.Builder addPlayersBuilder() {
       return getPlayersFieldBuilder().addBuilder(
           com.yplugins.minecraftrpc.proto.Player.getDefaultInstance());
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.Player.Builder addPlayersBuilder(
         int index) {
@@ -839,7 +839,7 @@ private static final long serialVersionUID = 0L;
           index, com.yplugins.minecraftrpc.proto.Player.getDefaultInstance());
     }
     /**
-     * <code>repeated .minecraftRPC.Player players = 2;</code>
+     * <code>repeated .Minecraft.Player players = 2;</code>
      */
     public java.util.List<com.yplugins.minecraftrpc.proto.Player.Builder> 
          getPlayersBuilderList() {
@@ -860,10 +860,10 @@ private static final long serialVersionUID = 0L;
       return playersBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.PlayersResponse)
+    // @@protoc_insertion_point(builder_scope:Minecraft.PlayersResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.PlayersResponse)
+  // @@protoc_insertion_point(class_scope:Minecraft.PlayersResponse)
   private static final com.yplugins.minecraftrpc.proto.PlayersResponse DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.PlayersResponse();

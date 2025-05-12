@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.Event}
+ * Protobuf type {@code Minecraft.Event}
  */
 public final class Event extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.Event)
+    // @@protoc_insertion_point(message_implements:Minecraft.Event)
     EventOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -32,33 +32,33 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.Event.class, com.yplugins.minecraftrpc.proto.Event.Builder.class);
   }
 
   public interface PlayerAndMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:minecraftRPC.Event.PlayerAndMessage)
+      // @@protoc_insertion_point(interface_extends:Minecraft.Event.PlayerAndMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return Whether the trigger field is set.
      */
     boolean hasTrigger();
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return The trigger.
      */
     com.yplugins.minecraftrpc.proto.Player getTrigger();
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      */
     com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder();
 
@@ -75,11 +75,11 @@ private static final long serialVersionUID = 0L;
         getMessageBytes();
   }
   /**
-   * Protobuf type {@code minecraftRPC.Event.PlayerAndMessage}
+   * Protobuf type {@code Minecraft.Event.PlayerAndMessage}
    */
   public static final class PlayerAndMessage extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:minecraftRPC.Event.PlayerAndMessage)
+      // @@protoc_insertion_point(message_implements:Minecraft.Event.PlayerAndMessage)
       PlayerAndMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -101,13 +101,13 @@ private static final long serialVersionUID = 0L;
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_PlayerAndMessage_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_PlayerAndMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_PlayerAndMessage_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_PlayerAndMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.class, com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.Builder.class);
     }
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
     public static final int TRIGGER_FIELD_NUMBER = 1;
     private com.yplugins.minecraftrpc.proto.Player trigger_;
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return Whether the trigger field is set.
      */
     @java.lang.Override
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return The trigger.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ private static final long serialVersionUID = 0L;
       return trigger_ == null ? com.yplugins.minecraftrpc.proto.Player.getDefaultInstance() : trigger_;
     }
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder() {
@@ -351,21 +351,21 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code minecraftRPC.Event.PlayerAndMessage}
+     * Protobuf type {@code Minecraft.Event.PlayerAndMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:minecraftRPC.Event.PlayerAndMessage)
+        // @@protoc_insertion_point(builder_implements:Minecraft.Event.PlayerAndMessage)
         com.yplugins.minecraftrpc.proto.Event.PlayerAndMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_PlayerAndMessage_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_PlayerAndMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_PlayerAndMessage_fieldAccessorTable
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_PlayerAndMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.class, com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.Builder.class);
       }
@@ -402,7 +402,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_PlayerAndMessage_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_PlayerAndMessage_descriptor;
       }
 
       @java.lang.Override
@@ -521,14 +521,14 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> triggerBuilder_;
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        * @return Whether the trigger field is set.
        */
       public boolean hasTrigger() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        * @return The trigger.
        */
       public com.yplugins.minecraftrpc.proto.Player getTrigger() {
@@ -539,7 +539,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder setTrigger(com.yplugins.minecraftrpc.proto.Player value) {
         if (triggerBuilder_ == null) {
@@ -555,7 +555,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder setTrigger(
           com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -569,7 +569,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder mergeTrigger(com.yplugins.minecraftrpc.proto.Player value) {
         if (triggerBuilder_ == null) {
@@ -590,7 +590,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder clearTrigger() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -603,7 +603,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Player.Builder getTriggerBuilder() {
         bitField0_ |= 0x00000001;
@@ -611,7 +611,7 @@ private static final long serialVersionUID = 0L;
         return getTriggerFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder() {
         if (triggerBuilder_ != null) {
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
@@ -710,10 +710,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:minecraftRPC.Event.PlayerAndMessage)
+      // @@protoc_insertion_point(builder_scope:Minecraft.Event.PlayerAndMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:minecraftRPC.Event.PlayerAndMessage)
+    // @@protoc_insertion_point(class_scope:Minecraft.Event.PlayerAndMessage)
     private static final com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage();
@@ -762,21 +762,21 @@ private static final long serialVersionUID = 0L;
   }
 
   public interface BlockHitOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:minecraftRPC.Event.BlockHit)
+      // @@protoc_insertion_point(interface_extends:Minecraft.Event.BlockHit)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return Whether the trigger field is set.
      */
     boolean hasTrigger();
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return The trigger.
      */
     com.yplugins.minecraftrpc.proto.Player getTrigger();
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      */
     com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder();
 
@@ -799,17 +799,17 @@ private static final long serialVersionUID = 0L;
         getItemTypeBytes();
 
     /**
-     * <code>.minecraftRPC.Vec3 pos = 4;</code>
+     * <code>.Minecraft.Vec3 pos = 4;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.minecraftRPC.Vec3 pos = 4;</code>
+     * <code>.Minecraft.Vec3 pos = 4;</code>
      * @return The pos.
      */
     com.yplugins.minecraftrpc.proto.Vec3 getPos();
     /**
-     * <code>.minecraftRPC.Vec3 pos = 4;</code>
+     * <code>.Minecraft.Vec3 pos = 4;</code>
      */
     com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder();
 
@@ -826,11 +826,11 @@ private static final long serialVersionUID = 0L;
         getFaceBytes();
   }
   /**
-   * Protobuf type {@code minecraftRPC.Event.BlockHit}
+   * Protobuf type {@code Minecraft.Event.BlockHit}
    */
   public static final class BlockHit extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:minecraftRPC.Event.BlockHit)
+      // @@protoc_insertion_point(message_implements:Minecraft.Event.BlockHit)
       BlockHitOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -853,13 +853,13 @@ private static final long serialVersionUID = 0L;
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_BlockHit_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_BlockHit_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_BlockHit_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_BlockHit_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Event.BlockHit.class, com.yplugins.minecraftrpc.proto.Event.BlockHit.Builder.class);
     }
@@ -868,7 +868,7 @@ private static final long serialVersionUID = 0L;
     public static final int TRIGGER_FIELD_NUMBER = 1;
     private com.yplugins.minecraftrpc.proto.Player trigger_;
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return Whether the trigger field is set.
      */
     @java.lang.Override
@@ -876,7 +876,7 @@ private static final long serialVersionUID = 0L;
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return The trigger.
      */
     @java.lang.Override
@@ -884,7 +884,7 @@ private static final long serialVersionUID = 0L;
       return trigger_ == null ? com.yplugins.minecraftrpc.proto.Player.getDefaultInstance() : trigger_;
     }
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder() {
@@ -944,7 +944,7 @@ private static final long serialVersionUID = 0L;
     public static final int POS_FIELD_NUMBER = 4;
     private com.yplugins.minecraftrpc.proto.Vec3 pos_;
     /**
-     * <code>.minecraftRPC.Vec3 pos = 4;</code>
+     * <code>.Minecraft.Vec3 pos = 4;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -952,7 +952,7 @@ private static final long serialVersionUID = 0L;
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 4;</code>
+     * <code>.Minecraft.Vec3 pos = 4;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -960,7 +960,7 @@ private static final long serialVersionUID = 0L;
       return pos_ == null ? com.yplugins.minecraftrpc.proto.Vec3.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 4;</code>
+     * <code>.Minecraft.Vec3 pos = 4;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder() {
@@ -1217,21 +1217,21 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code minecraftRPC.Event.BlockHit}
+     * Protobuf type {@code Minecraft.Event.BlockHit}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:minecraftRPC.Event.BlockHit)
+        // @@protoc_insertion_point(builder_implements:Minecraft.Event.BlockHit)
         com.yplugins.minecraftrpc.proto.Event.BlockHitOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_BlockHit_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_BlockHit_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_BlockHit_fieldAccessorTable
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_BlockHit_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.yplugins.minecraftrpc.proto.Event.BlockHit.class, com.yplugins.minecraftrpc.proto.Event.BlockHit.Builder.class);
       }
@@ -1276,7 +1276,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_BlockHit_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_BlockHit_descriptor;
       }
 
       @java.lang.Override
@@ -1435,14 +1435,14 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> triggerBuilder_;
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        * @return Whether the trigger field is set.
        */
       public boolean hasTrigger() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        * @return The trigger.
        */
       public com.yplugins.minecraftrpc.proto.Player getTrigger() {
@@ -1453,7 +1453,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder setTrigger(com.yplugins.minecraftrpc.proto.Player value) {
         if (triggerBuilder_ == null) {
@@ -1469,7 +1469,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder setTrigger(
           com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -1483,7 +1483,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder mergeTrigger(com.yplugins.minecraftrpc.proto.Player value) {
         if (triggerBuilder_ == null) {
@@ -1504,7 +1504,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder clearTrigger() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -1517,7 +1517,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Player.Builder getTriggerBuilder() {
         bitField0_ |= 0x00000001;
@@ -1525,7 +1525,7 @@ private static final long serialVersionUID = 0L;
         return getTriggerFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder() {
         if (triggerBuilder_ != null) {
@@ -1536,7 +1536,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
@@ -1660,14 +1660,14 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Vec3, com.yplugins.minecraftrpc.proto.Vec3.Builder, com.yplugins.minecraftrpc.proto.Vec3OrBuilder> posBuilder_;
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        * @return The pos.
        */
       public com.yplugins.minecraftrpc.proto.Vec3 getPos() {
@@ -1678,7 +1678,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       public Builder setPos(com.yplugins.minecraftrpc.proto.Vec3 value) {
         if (posBuilder_ == null) {
@@ -1694,7 +1694,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       public Builder setPos(
           com.yplugins.minecraftrpc.proto.Vec3.Builder builderForValue) {
@@ -1708,7 +1708,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       public Builder mergePos(com.yplugins.minecraftrpc.proto.Vec3 value) {
         if (posBuilder_ == null) {
@@ -1729,7 +1729,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       public Builder clearPos() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -1742,7 +1742,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       public com.yplugins.minecraftrpc.proto.Vec3.Builder getPosBuilder() {
         bitField0_ |= 0x00000008;
@@ -1750,7 +1750,7 @@ private static final long serialVersionUID = 0L;
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       public com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -1761,7 +1761,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 4;</code>
+       * <code>.Minecraft.Vec3 pos = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Vec3, com.yplugins.minecraftrpc.proto.Vec3.Builder, com.yplugins.minecraftrpc.proto.Vec3OrBuilder> 
@@ -1849,10 +1849,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:minecraftRPC.Event.BlockHit)
+      // @@protoc_insertion_point(builder_scope:Minecraft.Event.BlockHit)
     }
 
-    // @@protoc_insertion_point(class_scope:minecraftRPC.Event.BlockHit)
+    // @@protoc_insertion_point(class_scope:Minecraft.Event.BlockHit)
     private static final com.yplugins.minecraftrpc.proto.Event.BlockHit DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Event.BlockHit();
@@ -1901,21 +1901,21 @@ private static final long serialVersionUID = 0L;
   }
 
   public interface ProjectileHitOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:minecraftRPC.Event.ProjectileHit)
+      // @@protoc_insertion_point(interface_extends:Minecraft.Event.ProjectileHit)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return Whether the trigger field is set.
      */
     boolean hasTrigger();
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return The trigger.
      */
     com.yplugins.minecraftrpc.proto.Player getTrigger();
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      */
     com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder();
 
@@ -1932,17 +1932,17 @@ private static final long serialVersionUID = 0L;
         getProjectileBytes();
 
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      * @return The pos.
      */
     com.yplugins.minecraftrpc.proto.Vec3 getPos();
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder();
 
@@ -1959,32 +1959,32 @@ private static final long serialVersionUID = 0L;
         getFaceBytes();
 
     /**
-     * <code>.minecraftRPC.Player player = 5;</code>
+     * <code>.Minecraft.Player player = 5;</code>
      * @return Whether the player field is set.
      */
     boolean hasPlayer();
     /**
-     * <code>.minecraftRPC.Player player = 5;</code>
+     * <code>.Minecraft.Player player = 5;</code>
      * @return The player.
      */
     com.yplugins.minecraftrpc.proto.Player getPlayer();
     /**
-     * <code>.minecraftRPC.Player player = 5;</code>
+     * <code>.Minecraft.Player player = 5;</code>
      */
     com.yplugins.minecraftrpc.proto.PlayerOrBuilder getPlayerOrBuilder();
 
     /**
-     * <code>.minecraftRPC.Entity entity = 6;</code>
+     * <code>.Minecraft.Entity entity = 6;</code>
      * @return Whether the entity field is set.
      */
     boolean hasEntity();
     /**
-     * <code>.minecraftRPC.Entity entity = 6;</code>
+     * <code>.Minecraft.Entity entity = 6;</code>
      * @return The entity.
      */
     com.yplugins.minecraftrpc.proto.Entity getEntity();
     /**
-     * <code>.minecraftRPC.Entity entity = 6;</code>
+     * <code>.Minecraft.Entity entity = 6;</code>
      */
     com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntityOrBuilder();
 
@@ -2008,11 +2008,11 @@ private static final long serialVersionUID = 0L;
     com.yplugins.minecraftrpc.proto.Event.ProjectileHit.TargetCase getTargetCase();
   }
   /**
-   * Protobuf type {@code minecraftRPC.Event.ProjectileHit}
+   * Protobuf type {@code Minecraft.Event.ProjectileHit}
    */
   public static final class ProjectileHit extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:minecraftRPC.Event.ProjectileHit)
+      // @@protoc_insertion_point(message_implements:Minecraft.Event.ProjectileHit)
       ProjectileHitOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -2035,13 +2035,13 @@ private static final long serialVersionUID = 0L;
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_ProjectileHit_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_ProjectileHit_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_ProjectileHit_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_ProjectileHit_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Event.ProjectileHit.class, com.yplugins.minecraftrpc.proto.Event.ProjectileHit.Builder.class);
     }
@@ -2094,7 +2094,7 @@ private static final long serialVersionUID = 0L;
     public static final int TRIGGER_FIELD_NUMBER = 1;
     private com.yplugins.minecraftrpc.proto.Player trigger_;
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return Whether the trigger field is set.
      */
     @java.lang.Override
@@ -2102,7 +2102,7 @@ private static final long serialVersionUID = 0L;
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      * @return The trigger.
      */
     @java.lang.Override
@@ -2110,7 +2110,7 @@ private static final long serialVersionUID = 0L;
       return trigger_ == null ? com.yplugins.minecraftrpc.proto.Player.getDefaultInstance() : trigger_;
     }
     /**
-     * <code>.minecraftRPC.Player trigger = 1;</code>
+     * <code>.Minecraft.Player trigger = 1;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder() {
@@ -2159,7 +2159,7 @@ private static final long serialVersionUID = 0L;
     public static final int POS_FIELD_NUMBER = 3;
     private com.yplugins.minecraftrpc.proto.Vec3 pos_;
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -2167,7 +2167,7 @@ private static final long serialVersionUID = 0L;
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -2175,7 +2175,7 @@ private static final long serialVersionUID = 0L;
       return pos_ == null ? com.yplugins.minecraftrpc.proto.Vec3.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.minecraftRPC.Vec3 pos = 3;</code>
+     * <code>.Minecraft.Vec3 pos = 3;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder() {
@@ -2223,7 +2223,7 @@ private static final long serialVersionUID = 0L;
 
     public static final int PLAYER_FIELD_NUMBER = 5;
     /**
-     * <code>.minecraftRPC.Player player = 5;</code>
+     * <code>.Minecraft.Player player = 5;</code>
      * @return Whether the player field is set.
      */
     @java.lang.Override
@@ -2231,7 +2231,7 @@ private static final long serialVersionUID = 0L;
       return targetCase_ == 5;
     }
     /**
-     * <code>.minecraftRPC.Player player = 5;</code>
+     * <code>.Minecraft.Player player = 5;</code>
      * @return The player.
      */
     @java.lang.Override
@@ -2242,7 +2242,7 @@ private static final long serialVersionUID = 0L;
       return com.yplugins.minecraftrpc.proto.Player.getDefaultInstance();
     }
     /**
-     * <code>.minecraftRPC.Player player = 5;</code>
+     * <code>.Minecraft.Player player = 5;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getPlayerOrBuilder() {
@@ -2254,7 +2254,7 @@ private static final long serialVersionUID = 0L;
 
     public static final int ENTITY_FIELD_NUMBER = 6;
     /**
-     * <code>.minecraftRPC.Entity entity = 6;</code>
+     * <code>.Minecraft.Entity entity = 6;</code>
      * @return Whether the entity field is set.
      */
     @java.lang.Override
@@ -2262,7 +2262,7 @@ private static final long serialVersionUID = 0L;
       return targetCase_ == 6;
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 6;</code>
+     * <code>.Minecraft.Entity entity = 6;</code>
      * @return The entity.
      */
     @java.lang.Override
@@ -2273,7 +2273,7 @@ private static final long serialVersionUID = 0L;
       return com.yplugins.minecraftrpc.proto.Entity.getDefaultInstance();
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 6;</code>
+     * <code>.Minecraft.Entity entity = 6;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntityOrBuilder() {
@@ -2587,21 +2587,21 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code minecraftRPC.Event.ProjectileHit}
+     * Protobuf type {@code Minecraft.Event.ProjectileHit}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:minecraftRPC.Event.ProjectileHit)
+        // @@protoc_insertion_point(builder_implements:Minecraft.Event.ProjectileHit)
         com.yplugins.minecraftrpc.proto.Event.ProjectileHitOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_ProjectileHit_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_ProjectileHit_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_ProjectileHit_fieldAccessorTable
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_ProjectileHit_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.yplugins.minecraftrpc.proto.Event.ProjectileHit.class, com.yplugins.minecraftrpc.proto.Event.ProjectileHit.Builder.class);
       }
@@ -2653,7 +2653,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_ProjectileHit_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_ProjectileHit_descriptor;
       }
 
       @java.lang.Override
@@ -2869,14 +2869,14 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> triggerBuilder_;
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        * @return Whether the trigger field is set.
        */
       public boolean hasTrigger() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        * @return The trigger.
        */
       public com.yplugins.minecraftrpc.proto.Player getTrigger() {
@@ -2887,7 +2887,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder setTrigger(com.yplugins.minecraftrpc.proto.Player value) {
         if (triggerBuilder_ == null) {
@@ -2903,7 +2903,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder setTrigger(
           com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -2917,7 +2917,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder mergeTrigger(com.yplugins.minecraftrpc.proto.Player value) {
         if (triggerBuilder_ == null) {
@@ -2938,7 +2938,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public Builder clearTrigger() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2951,7 +2951,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Player.Builder getTriggerBuilder() {
         bitField0_ |= 0x00000001;
@@ -2959,7 +2959,7 @@ private static final long serialVersionUID = 0L;
         return getTriggerFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getTriggerOrBuilder() {
         if (triggerBuilder_ != null) {
@@ -2970,7 +2970,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player trigger = 1;</code>
+       * <code>.Minecraft.Player trigger = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
@@ -3062,14 +3062,14 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Vec3, com.yplugins.minecraftrpc.proto.Vec3.Builder, com.yplugins.minecraftrpc.proto.Vec3OrBuilder> posBuilder_;
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        * @return The pos.
        */
       public com.yplugins.minecraftrpc.proto.Vec3 getPos() {
@@ -3080,7 +3080,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       public Builder setPos(com.yplugins.minecraftrpc.proto.Vec3 value) {
         if (posBuilder_ == null) {
@@ -3096,7 +3096,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       public Builder setPos(
           com.yplugins.minecraftrpc.proto.Vec3.Builder builderForValue) {
@@ -3110,7 +3110,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       public Builder mergePos(com.yplugins.minecraftrpc.proto.Vec3 value) {
         if (posBuilder_ == null) {
@@ -3131,7 +3131,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       public Builder clearPos() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -3144,7 +3144,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       public com.yplugins.minecraftrpc.proto.Vec3.Builder getPosBuilder() {
         bitField0_ |= 0x00000004;
@@ -3152,7 +3152,7 @@ private static final long serialVersionUID = 0L;
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       public com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -3163,7 +3163,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Vec3 pos = 3;</code>
+       * <code>.Minecraft.Vec3 pos = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Vec3, com.yplugins.minecraftrpc.proto.Vec3.Builder, com.yplugins.minecraftrpc.proto.Vec3OrBuilder> 
@@ -3254,7 +3254,7 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> playerBuilder_;
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        * @return Whether the player field is set.
        */
       @java.lang.Override
@@ -3262,7 +3262,7 @@ private static final long serialVersionUID = 0L;
         return targetCase_ == 5;
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        * @return The player.
        */
       @java.lang.Override
@@ -3280,7 +3280,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       public Builder setPlayer(com.yplugins.minecraftrpc.proto.Player value) {
         if (playerBuilder_ == null) {
@@ -3296,7 +3296,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       public Builder setPlayer(
           com.yplugins.minecraftrpc.proto.Player.Builder builderForValue) {
@@ -3310,7 +3310,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       public Builder mergePlayer(com.yplugins.minecraftrpc.proto.Player value) {
         if (playerBuilder_ == null) {
@@ -3333,7 +3333,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       public Builder clearPlayer() {
         if (playerBuilder_ == null) {
@@ -3352,13 +3352,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       public com.yplugins.minecraftrpc.proto.Player.Builder getPlayerBuilder() {
         return getPlayerFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       @java.lang.Override
       public com.yplugins.minecraftrpc.proto.PlayerOrBuilder getPlayerOrBuilder() {
@@ -3372,7 +3372,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Player player = 5;</code>
+       * <code>.Minecraft.Player player = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Player, com.yplugins.minecraftrpc.proto.Player.Builder, com.yplugins.minecraftrpc.proto.PlayerOrBuilder> 
@@ -3396,7 +3396,7 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Entity, com.yplugins.minecraftrpc.proto.Entity.Builder, com.yplugins.minecraftrpc.proto.EntityOrBuilder> entityBuilder_;
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        * @return Whether the entity field is set.
        */
       @java.lang.Override
@@ -3404,7 +3404,7 @@ private static final long serialVersionUID = 0L;
         return targetCase_ == 6;
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        * @return The entity.
        */
       @java.lang.Override
@@ -3422,7 +3422,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       public Builder setEntity(com.yplugins.minecraftrpc.proto.Entity value) {
         if (entityBuilder_ == null) {
@@ -3438,7 +3438,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       public Builder setEntity(
           com.yplugins.minecraftrpc.proto.Entity.Builder builderForValue) {
@@ -3452,7 +3452,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       public Builder mergeEntity(com.yplugins.minecraftrpc.proto.Entity value) {
         if (entityBuilder_ == null) {
@@ -3475,7 +3475,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       public Builder clearEntity() {
         if (entityBuilder_ == null) {
@@ -3494,13 +3494,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       public com.yplugins.minecraftrpc.proto.Entity.Builder getEntityBuilder() {
         return getEntityFieldBuilder().getBuilder();
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       @java.lang.Override
       public com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntityOrBuilder() {
@@ -3514,7 +3514,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.minecraftRPC.Entity entity = 6;</code>
+       * <code>.Minecraft.Entity entity = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.yplugins.minecraftrpc.proto.Entity, com.yplugins.minecraftrpc.proto.Entity.Builder, com.yplugins.minecraftrpc.proto.EntityOrBuilder> 
@@ -3628,10 +3628,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:minecraftRPC.Event.ProjectileHit)
+      // @@protoc_insertion_point(builder_scope:Minecraft.Event.ProjectileHit)
     }
 
-    // @@protoc_insertion_point(class_scope:minecraftRPC.Event.ProjectileHit)
+    // @@protoc_insertion_point(class_scope:Minecraft.Event.ProjectileHit)
     private static final com.yplugins.minecraftrpc.proto.Event.ProjectileHit DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Event.ProjectileHit();
@@ -3728,14 +3728,14 @@ private static final long serialVersionUID = 0L;
   public static final int TYPE_FIELD_NUMBER = 1;
   private int type_ = 0;
   /**
-   * <code>.minecraftRPC.EventType type = 1;</code>
+   * <code>.Minecraft.EventType type = 1;</code>
    * @return The enum numeric value on the wire for type.
    */
   @java.lang.Override public int getTypeValue() {
     return type_;
   }
   /**
-   * <code>.minecraftRPC.EventType type = 1;</code>
+   * <code>.Minecraft.EventType type = 1;</code>
    * @return The type.
    */
   @java.lang.Override public com.yplugins.minecraftrpc.proto.EventType getType() {
@@ -3745,7 +3745,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int ERROR_FIELD_NUMBER = 2;
   /**
-   * <code>.minecraftRPC.Status error = 2;</code>
+   * <code>.Minecraft.Status error = 2;</code>
    * @return Whether the error field is set.
    */
   @java.lang.Override
@@ -3753,7 +3753,7 @@ private static final long serialVersionUID = 0L;
     return eventCase_ == 2;
   }
   /**
-   * <code>.minecraftRPC.Status error = 2;</code>
+   * <code>.Minecraft.Status error = 2;</code>
    * @return The error.
    */
   @java.lang.Override
@@ -3764,7 +3764,7 @@ private static final long serialVersionUID = 0L;
     return com.yplugins.minecraftrpc.proto.Status.getDefaultInstance();
   }
   /**
-   * <code>.minecraftRPC.Status error = 2;</code>
+   * <code>.Minecraft.Status error = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.StatusOrBuilder getErrorOrBuilder() {
@@ -3776,7 +3776,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int PLAYERMSG_FIELD_NUMBER = 3;
   /**
-   * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+   * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
    * @return Whether the playerMsg field is set.
    */
   @java.lang.Override
@@ -3784,7 +3784,7 @@ private static final long serialVersionUID = 0L;
     return eventCase_ == 3;
   }
   /**
-   * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+   * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
    * @return The playerMsg.
    */
   @java.lang.Override
@@ -3795,7 +3795,7 @@ private static final long serialVersionUID = 0L;
     return com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.getDefaultInstance();
   }
   /**
-   * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+   * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.Event.PlayerAndMessageOrBuilder getPlayerMsgOrBuilder() {
@@ -3807,7 +3807,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int BLOCKHIT_FIELD_NUMBER = 4;
   /**
-   * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+   * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
    * @return Whether the blockHit field is set.
    */
   @java.lang.Override
@@ -3815,7 +3815,7 @@ private static final long serialVersionUID = 0L;
     return eventCase_ == 4;
   }
   /**
-   * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+   * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
    * @return The blockHit.
    */
   @java.lang.Override
@@ -3826,7 +3826,7 @@ private static final long serialVersionUID = 0L;
     return com.yplugins.minecraftrpc.proto.Event.BlockHit.getDefaultInstance();
   }
   /**
-   * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+   * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.Event.BlockHitOrBuilder getBlockHitOrBuilder() {
@@ -3838,7 +3838,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int PROJECTILEHIT_FIELD_NUMBER = 5;
   /**
-   * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+   * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
    * @return Whether the projectileHit field is set.
    */
   @java.lang.Override
@@ -3846,7 +3846,7 @@ private static final long serialVersionUID = 0L;
     return eventCase_ == 5;
   }
   /**
-   * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+   * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
    * @return The projectileHit.
    */
   @java.lang.Override
@@ -3857,7 +3857,7 @@ private static final long serialVersionUID = 0L;
     return com.yplugins.minecraftrpc.proto.Event.ProjectileHit.getDefaultInstance();
   }
   /**
-   * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+   * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.Event.ProjectileHitOrBuilder getProjectileHitOrBuilder() {
@@ -4093,21 +4093,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.Event}
+   * Protobuf type {@code Minecraft.Event}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.Event)
+      // @@protoc_insertion_point(builder_implements:Minecraft.Event)
       com.yplugins.minecraftrpc.proto.EventOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Event.class, com.yplugins.minecraftrpc.proto.Event.Builder.class);
     }
@@ -4147,7 +4147,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Event_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Event_descriptor;
     }
 
     @java.lang.Override
@@ -4330,14 +4330,14 @@ private static final long serialVersionUID = 0L;
 
     private int type_ = 0;
     /**
-     * <code>.minecraftRPC.EventType type = 1;</code>
+     * <code>.Minecraft.EventType type = 1;</code>
      * @return The enum numeric value on the wire for type.
      */
     @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>.minecraftRPC.EventType type = 1;</code>
+     * <code>.Minecraft.EventType type = 1;</code>
      * @param value The enum numeric value on the wire for type to set.
      * @return This builder for chaining.
      */
@@ -4348,7 +4348,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EventType type = 1;</code>
+     * <code>.Minecraft.EventType type = 1;</code>
      * @return The type.
      */
     @java.lang.Override
@@ -4357,7 +4357,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.yplugins.minecraftrpc.proto.EventType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.minecraftRPC.EventType type = 1;</code>
+     * <code>.Minecraft.EventType type = 1;</code>
      * @param value The type to set.
      * @return This builder for chaining.
      */
@@ -4371,7 +4371,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EventType type = 1;</code>
+     * <code>.Minecraft.EventType type = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearType() {
@@ -4384,7 +4384,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> errorBuilder_;
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      * @return Whether the error field is set.
      */
     @java.lang.Override
@@ -4392,7 +4392,7 @@ private static final long serialVersionUID = 0L;
       return eventCase_ == 2;
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      * @return The error.
      */
     @java.lang.Override
@@ -4410,7 +4410,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     public Builder setError(com.yplugins.minecraftrpc.proto.Status value) {
       if (errorBuilder_ == null) {
@@ -4426,7 +4426,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     public Builder setError(
         com.yplugins.minecraftrpc.proto.Status.Builder builderForValue) {
@@ -4440,7 +4440,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     public Builder mergeError(com.yplugins.minecraftrpc.proto.Status value) {
       if (errorBuilder_ == null) {
@@ -4463,7 +4463,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     public Builder clearError() {
       if (errorBuilder_ == null) {
@@ -4482,13 +4482,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.Status.Builder getErrorBuilder() {
       return getErrorFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.StatusOrBuilder getErrorOrBuilder() {
@@ -4502,7 +4502,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status error = 2;</code>
+     * <code>.Minecraft.Status error = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> 
@@ -4526,7 +4526,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage, com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.Builder, com.yplugins.minecraftrpc.proto.Event.PlayerAndMessageOrBuilder> playerMsgBuilder_;
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      * @return Whether the playerMsg field is set.
      */
     @java.lang.Override
@@ -4534,7 +4534,7 @@ private static final long serialVersionUID = 0L;
       return eventCase_ == 3;
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      * @return The playerMsg.
      */
     @java.lang.Override
@@ -4552,7 +4552,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     public Builder setPlayerMsg(com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage value) {
       if (playerMsgBuilder_ == null) {
@@ -4568,7 +4568,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     public Builder setPlayerMsg(
         com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.Builder builderForValue) {
@@ -4582,7 +4582,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     public Builder mergePlayerMsg(com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage value) {
       if (playerMsgBuilder_ == null) {
@@ -4605,7 +4605,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     public Builder clearPlayerMsg() {
       if (playerMsgBuilder_ == null) {
@@ -4624,13 +4624,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     public com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.Builder getPlayerMsgBuilder() {
       return getPlayerMsgFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.Event.PlayerAndMessageOrBuilder getPlayerMsgOrBuilder() {
@@ -4644,7 +4644,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Event.PlayerAndMessage playerMsg = 3;</code>
+     * <code>.Minecraft.Event.PlayerAndMessage playerMsg = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage, com.yplugins.minecraftrpc.proto.Event.PlayerAndMessage.Builder, com.yplugins.minecraftrpc.proto.Event.PlayerAndMessageOrBuilder> 
@@ -4668,7 +4668,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Event.BlockHit, com.yplugins.minecraftrpc.proto.Event.BlockHit.Builder, com.yplugins.minecraftrpc.proto.Event.BlockHitOrBuilder> blockHitBuilder_;
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      * @return Whether the blockHit field is set.
      */
     @java.lang.Override
@@ -4676,7 +4676,7 @@ private static final long serialVersionUID = 0L;
       return eventCase_ == 4;
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      * @return The blockHit.
      */
     @java.lang.Override
@@ -4694,7 +4694,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     public Builder setBlockHit(com.yplugins.minecraftrpc.proto.Event.BlockHit value) {
       if (blockHitBuilder_ == null) {
@@ -4710,7 +4710,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     public Builder setBlockHit(
         com.yplugins.minecraftrpc.proto.Event.BlockHit.Builder builderForValue) {
@@ -4724,7 +4724,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     public Builder mergeBlockHit(com.yplugins.minecraftrpc.proto.Event.BlockHit value) {
       if (blockHitBuilder_ == null) {
@@ -4747,7 +4747,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     public Builder clearBlockHit() {
       if (blockHitBuilder_ == null) {
@@ -4766,13 +4766,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     public com.yplugins.minecraftrpc.proto.Event.BlockHit.Builder getBlockHitBuilder() {
       return getBlockHitFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.Event.BlockHitOrBuilder getBlockHitOrBuilder() {
@@ -4786,7 +4786,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Event.BlockHit blockHit = 4;</code>
+     * <code>.Minecraft.Event.BlockHit blockHit = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Event.BlockHit, com.yplugins.minecraftrpc.proto.Event.BlockHit.Builder, com.yplugins.minecraftrpc.proto.Event.BlockHitOrBuilder> 
@@ -4810,7 +4810,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Event.ProjectileHit, com.yplugins.minecraftrpc.proto.Event.ProjectileHit.Builder, com.yplugins.minecraftrpc.proto.Event.ProjectileHitOrBuilder> projectileHitBuilder_;
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      * @return Whether the projectileHit field is set.
      */
     @java.lang.Override
@@ -4818,7 +4818,7 @@ private static final long serialVersionUID = 0L;
       return eventCase_ == 5;
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      * @return The projectileHit.
      */
     @java.lang.Override
@@ -4836,7 +4836,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     public Builder setProjectileHit(com.yplugins.minecraftrpc.proto.Event.ProjectileHit value) {
       if (projectileHitBuilder_ == null) {
@@ -4852,7 +4852,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     public Builder setProjectileHit(
         com.yplugins.minecraftrpc.proto.Event.ProjectileHit.Builder builderForValue) {
@@ -4866,7 +4866,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     public Builder mergeProjectileHit(com.yplugins.minecraftrpc.proto.Event.ProjectileHit value) {
       if (projectileHitBuilder_ == null) {
@@ -4889,7 +4889,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     public Builder clearProjectileHit() {
       if (projectileHitBuilder_ == null) {
@@ -4908,13 +4908,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     public com.yplugins.minecraftrpc.proto.Event.ProjectileHit.Builder getProjectileHitBuilder() {
       return getProjectileHitFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.Event.ProjectileHitOrBuilder getProjectileHitOrBuilder() {
@@ -4928,7 +4928,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Event.ProjectileHit projectileHit = 5;</code>
+     * <code>.Minecraft.Event.ProjectileHit projectileHit = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Event.ProjectileHit, com.yplugins.minecraftrpc.proto.Event.ProjectileHit.Builder, com.yplugins.minecraftrpc.proto.Event.ProjectileHitOrBuilder> 
@@ -4949,10 +4949,10 @@ private static final long serialVersionUID = 0L;
       return projectileHitBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.Event)
+    // @@protoc_insertion_point(builder_scope:Minecraft.Event)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.Event)
+  // @@protoc_insertion_point(class_scope:Minecraft.Event)
   private static final com.yplugins.minecraftrpc.proto.Event DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Event();

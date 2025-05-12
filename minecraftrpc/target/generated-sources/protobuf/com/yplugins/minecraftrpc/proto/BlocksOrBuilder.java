@@ -6,59 +6,59 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface BlocksOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Blocks)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Blocks)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.BlockInfo info = 1;</code>
+   * <code>.Minecraft.BlockInfo info = 1;</code>
    * @return Whether the info field is set.
    */
   boolean hasInfo();
   /**
-   * <code>.minecraftRPC.BlockInfo info = 1;</code>
+   * <code>.Minecraft.BlockInfo info = 1;</code>
    * @return The info.
    */
   com.yplugins.minecraftrpc.proto.BlockInfo getInfo();
   /**
-   * <code>.minecraftRPC.BlockInfo info = 1;</code>
+   * <code>.Minecraft.BlockInfo info = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder getInfoOrBuilder();
 
   /**
-   * <code>.minecraftRPC.World world = 2;</code>
+   * <code>.MinecraftWorld.World world = 2;</code>
    * @return Whether the world field is set.
    */
   boolean hasWorld();
   /**
-   * <code>.minecraftRPC.World world = 2;</code>
+   * <code>.MinecraftWorld.World world = 2;</code>
    * @return The world.
    */
-  com.yplugins.minecraftrpc.proto.World getWorld();
+  com.yplugins.minecraftrpc.proto.world.World getWorld();
   /**
-   * <code>.minecraftRPC.World world = 2;</code>
+   * <code>.MinecraftWorld.World world = 2;</code>
    */
-  com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder();
+  com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder();
 
   /**
-   * <code>repeated .minecraftRPC.Vec3 pos = 3;</code>
+   * <code>repeated .Minecraft.Vec3 pos = 3;</code>
    */
   java.util.List<com.yplugins.minecraftrpc.proto.Vec3> 
       getPosList();
   /**
-   * <code>repeated .minecraftRPC.Vec3 pos = 3;</code>
+   * <code>repeated .Minecraft.Vec3 pos = 3;</code>
    */
   com.yplugins.minecraftrpc.proto.Vec3 getPos(int index);
   /**
-   * <code>repeated .minecraftRPC.Vec3 pos = 3;</code>
+   * <code>repeated .Minecraft.Vec3 pos = 3;</code>
    */
   int getPosCount();
   /**
-   * <code>repeated .minecraftRPC.Vec3 pos = 3;</code>
+   * <code>repeated .Minecraft.Vec3 pos = 3;</code>
    */
   java.util.List<? extends com.yplugins.minecraftrpc.proto.Vec3OrBuilder> 
       getPosOrBuilderList();
   /**
-   * <code>repeated .minecraftRPC.Vec3 pos = 3;</code>
+   * <code>repeated .Minecraft.Vec3 pos = 3;</code>
    */
   com.yplugins.minecraftrpc.proto.Vec3OrBuilder getPosOrBuilder(
       int index);

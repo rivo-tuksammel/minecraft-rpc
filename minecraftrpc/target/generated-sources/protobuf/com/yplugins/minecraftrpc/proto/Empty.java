@@ -10,11 +10,11 @@ package com.yplugins.minecraftrpc.proto;
  * * Empty on purpose, if no parameters should be sent 
  * </pre>
  *
- * Protobuf type {@code minecraftRPC.Empty}
+ * Protobuf type {@code Minecraft.Empty}
  */
 public final class Empty extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.Empty)
+    // @@protoc_insertion_point(message_implements:Minecraft.Empty)
     EmptyOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -35,13 +35,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Empty_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Empty_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Empty_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Empty_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.Empty.class, com.yplugins.minecraftrpc.proto.Empty.Builder.class);
   }
@@ -197,21 +197,21 @@ private static final long serialVersionUID = 0L;
    * * Empty on purpose, if no parameters should be sent 
    * </pre>
    *
-   * Protobuf type {@code minecraftRPC.Empty}
+   * Protobuf type {@code Minecraft.Empty}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.Empty)
+      // @@protoc_insertion_point(builder_implements:Minecraft.Empty)
       com.yplugins.minecraftrpc.proto.EmptyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Empty_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Empty_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Empty_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Empty_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Empty.class, com.yplugins.minecraftrpc.proto.Empty.Builder.class);
     }
@@ -235,7 +235,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Empty_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Empty_descriptor;
     }
 
     @java.lang.Override
@@ -313,10 +313,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.Empty)
+    // @@protoc_insertion_point(builder_scope:Minecraft.Empty)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.Empty)
+  // @@protoc_insertion_point(class_scope:Minecraft.Empty)
   private static final com.yplugins.minecraftrpc.proto.Empty DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Empty();

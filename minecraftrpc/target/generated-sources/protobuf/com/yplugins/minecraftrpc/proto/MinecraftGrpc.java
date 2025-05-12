@@ -16,7 +16,7 @@ public final class MinecraftGrpc {
 
   private MinecraftGrpc() {}
 
-  public static final java.lang.String SERVICE_NAME = "minecraftRPC.Minecraft";
+  public static final java.lang.String SERVICE_NAME = "Minecraft.Minecraft";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.CommandRequest,
@@ -79,37 +79,6 @@ public final class MinecraftGrpc {
       }
     }
     return getPostToChatMethod;
-  }
-
-  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.WorldRequest,
-      com.yplugins.minecraftrpc.proto.WorldResponse> getAccessWorldsMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "accessWorlds",
-      requestType = com.yplugins.minecraftrpc.proto.WorldRequest.class,
-      responseType = com.yplugins.minecraftrpc.proto.WorldResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.WorldRequest,
-      com.yplugins.minecraftrpc.proto.WorldResponse> getAccessWorldsMethod() {
-    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.WorldRequest, com.yplugins.minecraftrpc.proto.WorldResponse> getAccessWorldsMethod;
-    if ((getAccessWorldsMethod = MinecraftGrpc.getAccessWorldsMethod) == null) {
-      synchronized (MinecraftGrpc.class) {
-        if ((getAccessWorldsMethod = MinecraftGrpc.getAccessWorldsMethod) == null) {
-          MinecraftGrpc.getAccessWorldsMethod = getAccessWorldsMethod =
-              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.WorldRequest, com.yplugins.minecraftrpc.proto.WorldResponse>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "accessWorlds"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.yplugins.minecraftrpc.proto.WorldRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.yplugins.minecraftrpc.proto.WorldResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new MinecraftMethodDescriptorSupplier("accessWorlds"))
-              .build();
-        }
-      }
-    }
-    return getAccessWorldsMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.HeightRequest,
@@ -360,27 +329,27 @@ public final class MinecraftGrpc {
     return getSetPlayerMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.Entity,
+  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.SpawnEntityRequest,
       com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> getSpawnEntityMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "spawnEntity",
-      requestType = com.yplugins.minecraftrpc.proto.Entity.class,
+      requestType = com.yplugins.minecraftrpc.proto.SpawnEntityRequest.class,
       responseType = com.yplugins.minecraftrpc.proto.SpawnedEntityResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.Entity,
+  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.SpawnEntityRequest,
       com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> getSpawnEntityMethod() {
-    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.Entity, com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> getSpawnEntityMethod;
+    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.SpawnEntityRequest, com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> getSpawnEntityMethod;
     if ((getSpawnEntityMethod = MinecraftGrpc.getSpawnEntityMethod) == null) {
       synchronized (MinecraftGrpc.class) {
         if ((getSpawnEntityMethod = MinecraftGrpc.getSpawnEntityMethod) == null) {
           MinecraftGrpc.getSpawnEntityMethod = getSpawnEntityMethod =
-              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.Entity, com.yplugins.minecraftrpc.proto.SpawnedEntityResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.SpawnEntityRequest, com.yplugins.minecraftrpc.proto.SpawnedEntityResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "spawnEntity"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.yplugins.minecraftrpc.proto.Entity.getDefaultInstance()))
+                  com.yplugins.minecraftrpc.proto.SpawnEntityRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.yplugins.minecraftrpc.proto.SpawnedEntityResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MinecraftMethodDescriptorSupplier("spawnEntity"))
@@ -567,13 +536,6 @@ public final class MinecraftGrpc {
 
     /**
      */
-    default void accessWorlds(com.yplugins.minecraftrpc.proto.WorldRequest request,
-        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.WorldResponse> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAccessWorldsMethod(), responseObserver);
-    }
-
-    /**
-     */
     default void getHeight(com.yplugins.minecraftrpc.proto.HeightRequest request,
         io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.HeightResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetHeightMethod(), responseObserver);
@@ -633,7 +595,7 @@ public final class MinecraftGrpc {
 
     /**
      */
-    default void spawnEntity(com.yplugins.minecraftrpc.proto.Entity request,
+    default void spawnEntity(com.yplugins.minecraftrpc.proto.SpawnEntityRequest request,
         io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSpawnEntityMethod(), responseObserver);
     }
@@ -713,14 +675,6 @@ public final class MinecraftGrpc {
 
     /**
      */
-    public void accessWorlds(com.yplugins.minecraftrpc.proto.WorldRequest request,
-        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.WorldResponse> responseObserver) {
-      io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getAccessWorldsMethod(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
     public void getHeight(com.yplugins.minecraftrpc.proto.HeightRequest request,
         io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.HeightResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
@@ -788,7 +742,7 @@ public final class MinecraftGrpc {
 
     /**
      */
-    public void spawnEntity(com.yplugins.minecraftrpc.proto.Entity request,
+    public void spawnEntity(com.yplugins.minecraftrpc.proto.SpawnEntityRequest request,
         io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSpawnEntityMethod(), getCallOptions()), request, responseObserver);
@@ -855,13 +809,6 @@ public final class MinecraftGrpc {
 
     /**
      */
-    public com.yplugins.minecraftrpc.proto.WorldResponse accessWorlds(com.yplugins.minecraftrpc.proto.WorldRequest request) {
-      return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getAccessWorldsMethod(), getCallOptions(), request);
-    }
-
-    /**
-     */
     public com.yplugins.minecraftrpc.proto.HeightResponse getHeight(com.yplugins.minecraftrpc.proto.HeightRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetHeightMethod(), getCallOptions(), request);
@@ -921,7 +868,7 @@ public final class MinecraftGrpc {
 
     /**
      */
-    public com.yplugins.minecraftrpc.proto.SpawnedEntityResponse spawnEntity(com.yplugins.minecraftrpc.proto.Entity request) {
+    public com.yplugins.minecraftrpc.proto.SpawnedEntityResponse spawnEntity(com.yplugins.minecraftrpc.proto.SpawnEntityRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSpawnEntityMethod(), getCallOptions(), request);
     }
@@ -986,13 +933,6 @@ public final class MinecraftGrpc {
 
     /**
      */
-    public com.yplugins.minecraftrpc.proto.WorldResponse accessWorlds(com.yplugins.minecraftrpc.proto.WorldRequest request) {
-      return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getAccessWorldsMethod(), getCallOptions(), request);
-    }
-
-    /**
-     */
     public com.yplugins.minecraftrpc.proto.HeightResponse getHeight(com.yplugins.minecraftrpc.proto.HeightRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetHeightMethod(), getCallOptions(), request);
@@ -1052,7 +992,7 @@ public final class MinecraftGrpc {
 
     /**
      */
-    public com.yplugins.minecraftrpc.proto.SpawnedEntityResponse spawnEntity(com.yplugins.minecraftrpc.proto.Entity request) {
+    public com.yplugins.minecraftrpc.proto.SpawnedEntityResponse spawnEntity(com.yplugins.minecraftrpc.proto.SpawnEntityRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSpawnEntityMethod(), getCallOptions(), request);
     }
@@ -1114,14 +1054,6 @@ public final class MinecraftGrpc {
         com.yplugins.minecraftrpc.proto.ChatPostRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getPostToChatMethod(), getCallOptions()), request);
-    }
-
-    /**
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.WorldResponse> accessWorlds(
-        com.yplugins.minecraftrpc.proto.WorldRequest request) {
-      return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getAccessWorldsMethod(), getCallOptions()), request);
     }
 
     /**
@@ -1194,7 +1126,7 @@ public final class MinecraftGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.SpawnedEntityResponse> spawnEntity(
-        com.yplugins.minecraftrpc.proto.Entity request) {
+        com.yplugins.minecraftrpc.proto.SpawnEntityRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSpawnEntityMethod(), getCallOptions()), request);
     }
@@ -1218,19 +1150,18 @@ public final class MinecraftGrpc {
 
   private static final int METHODID_RUN_COMMAND = 0;
   private static final int METHODID_POST_TO_CHAT = 1;
-  private static final int METHODID_ACCESS_WORLDS = 2;
-  private static final int METHODID_GET_HEIGHT = 3;
-  private static final int METHODID_GET_BLOCK = 4;
-  private static final int METHODID_SET_BLOCK = 5;
-  private static final int METHODID_SET_BLOCKS = 6;
-  private static final int METHODID_SET_BLOCK_CUBE = 7;
-  private static final int METHODID_GET_PLAYERS = 8;
-  private static final int METHODID_GET_PLAYER = 9;
-  private static final int METHODID_SET_PLAYER = 10;
-  private static final int METHODID_SPAWN_ENTITY = 11;
-  private static final int METHODID_SET_ENTITY = 12;
-  private static final int METHODID_GET_ENTITIES = 13;
-  private static final int METHODID_GET_EVENT_STREAM = 14;
+  private static final int METHODID_GET_HEIGHT = 2;
+  private static final int METHODID_GET_BLOCK = 3;
+  private static final int METHODID_SET_BLOCK = 4;
+  private static final int METHODID_SET_BLOCKS = 5;
+  private static final int METHODID_SET_BLOCK_CUBE = 6;
+  private static final int METHODID_GET_PLAYERS = 7;
+  private static final int METHODID_GET_PLAYER = 8;
+  private static final int METHODID_SET_PLAYER = 9;
+  private static final int METHODID_SPAWN_ENTITY = 10;
+  private static final int METHODID_SET_ENTITY = 11;
+  private static final int METHODID_GET_ENTITIES = 12;
+  private static final int METHODID_GET_EVENT_STREAM = 13;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -1256,10 +1187,6 @@ public final class MinecraftGrpc {
         case METHODID_POST_TO_CHAT:
           serviceImpl.postToChat((com.yplugins.minecraftrpc.proto.ChatPostRequest) request,
               (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.Status>) responseObserver);
-          break;
-        case METHODID_ACCESS_WORLDS:
-          serviceImpl.accessWorlds((com.yplugins.minecraftrpc.proto.WorldRequest) request,
-              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.WorldResponse>) responseObserver);
           break;
         case METHODID_GET_HEIGHT:
           serviceImpl.getHeight((com.yplugins.minecraftrpc.proto.HeightRequest) request,
@@ -1294,7 +1221,7 @@ public final class MinecraftGrpc {
               (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.Status>) responseObserver);
           break;
         case METHODID_SPAWN_ENTITY:
-          serviceImpl.spawnEntity((com.yplugins.minecraftrpc.proto.Entity) request,
+          serviceImpl.spawnEntity((com.yplugins.minecraftrpc.proto.SpawnEntityRequest) request,
               (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.SpawnedEntityResponse>) responseObserver);
           break;
         case METHODID_SET_ENTITY:
@@ -1341,13 +1268,6 @@ public final class MinecraftGrpc {
               com.yplugins.minecraftrpc.proto.ChatPostRequest,
               com.yplugins.minecraftrpc.proto.Status>(
                 service, METHODID_POST_TO_CHAT)))
-        .addMethod(
-          getAccessWorldsMethod(),
-          io.grpc.stub.ServerCalls.asyncUnaryCall(
-            new MethodHandlers<
-              com.yplugins.minecraftrpc.proto.WorldRequest,
-              com.yplugins.minecraftrpc.proto.WorldResponse>(
-                service, METHODID_ACCESS_WORLDS)))
         .addMethod(
           getGetHeightMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
@@ -1408,7 +1328,7 @@ public final class MinecraftGrpc {
           getSpawnEntityMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              com.yplugins.minecraftrpc.proto.Entity,
+              com.yplugins.minecraftrpc.proto.SpawnEntityRequest,
               com.yplugins.minecraftrpc.proto.SpawnedEntityResponse>(
                 service, METHODID_SPAWN_ENTITY)))
         .addMethod(
@@ -1482,7 +1402,6 @@ public final class MinecraftGrpc {
               .setSchemaDescriptor(new MinecraftFileDescriptorSupplier())
               .addMethod(getRunCommandMethod())
               .addMethod(getPostToChatMethod())
-              .addMethod(getAccessWorldsMethod())
               .addMethod(getGetHeightMethod())
               .addMethod(getGetBlockMethod())
               .addMethod(getSetBlockMethod())

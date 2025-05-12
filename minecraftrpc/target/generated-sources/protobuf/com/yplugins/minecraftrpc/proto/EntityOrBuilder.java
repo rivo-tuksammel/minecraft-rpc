@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface EntityOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Entity)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Entity)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -22,17 +22,17 @@ public interface EntityOrBuilder extends
       getTypeBytes();
 
   /**
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    * @return Whether the location field is set.
    */
   boolean hasLocation();
   /**
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    * @return The location.
    */
-  com.yplugins.minecraftrpc.proto.EntityLocation getLocation();
+  com.yplugins.minecraftrpc.proto.Location getLocation();
   /**
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    */
-  com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder getLocationOrBuilder();
+  com.yplugins.minecraftrpc.proto.LocationOrBuilder getLocationOrBuilder();
 }

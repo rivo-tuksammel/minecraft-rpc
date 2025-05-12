@@ -6,36 +6,36 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface BlockResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.BlockResponse)
+    // @@protoc_insertion_point(interface_extends:Minecraft.BlockResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.Status getStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>.minecraftRPC.BlockInfo info = 2;</code>
+   * <code>.Minecraft.BlockInfo info = 2;</code>
    * @return Whether the info field is set.
    */
   boolean hasInfo();
   /**
-   * <code>.minecraftRPC.BlockInfo info = 2;</code>
+   * <code>.Minecraft.BlockInfo info = 2;</code>
    * @return The info.
    */
   com.yplugins.minecraftrpc.proto.BlockInfo getInfo();
   /**
-   * <code>.minecraftRPC.BlockInfo info = 2;</code>
+   * <code>.Minecraft.BlockInfo info = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.BlockInfoOrBuilder getInfoOrBuilder();
 }

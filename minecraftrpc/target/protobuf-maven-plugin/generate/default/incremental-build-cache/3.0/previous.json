@@ -77,6 +77,9 @@
       "file:///c:/Users/Rivo/Desktop/minecraftRPC/minecraftrpc/target/protobuf-maven-plugin/generate/default/archives/proto-google-common-protos-2.51.0-bhyHjBc5Dck1NQMnHPOUQIXZo9o/google/type/datetime.proto": "DYgqmXCYM7FB_2HmWJUZUGPcSgv9j6e-AVXLoJJRLw0qk3btID88tJIl0WfD-qR_Gw167L5ehP6AqB8zZ8ILIw",
       "file:///c:/Users/Rivo/Desktop/minecraftRPC/minecraftrpc/target/protobuf-maven-plugin/generate/default/archives/proto-google-common-protos-2.51.0-bhyHjBc5Dck1NQMnHPOUQIXZo9o/google/api/source_info.proto": "EwXhTrRxQ-bk-kZSNwima16hUGR1JVnjSYrTA6-FDirRLkIAUq8nlzuZ2aSzo6hG0DZzNNZYGlXuDE2f5182uQ"
     },
-    "proto_sources": {"file:///c:/Users/Rivo/Desktop/minecraftRPC/minecraftrpc/src/main/protobuf/minecraft.proto": "4f5L5L39aWpDSTBbmO5NZVhCXu6zT1lbCKzptWQ8X0N0vTkiP8_TAz9VYtiDjoKvTHzw28a0LuatCfJMRBJlHg"},
+    "proto_sources": {
+      "file:///c:/Users/Rivo/Desktop/minecraftRPC/minecraftrpc/src/main/protobuf/minecraft_world.proto": "KY0P0HZQ4Nnk2x6OGXTA2uDbZ7Dmu26ghYWDs0Oj0dl56n28MyJBEJ2k9_aSby1uegwLm_3oBRARLyf37wbj_Q",
+      "file:///c:/Users/Rivo/Desktop/minecraftRPC/minecraftrpc/src/main/protobuf/minecraft.proto": "kFPwafEERH8ckcbuiARiWp3dlOIknlFSRYobzD0_zpCj4nfBApy69JFyZaotnAW4q1lv0nGwvpO7rLmGcMGFLQ"
+    },
     "descriptor_files": {}
   }

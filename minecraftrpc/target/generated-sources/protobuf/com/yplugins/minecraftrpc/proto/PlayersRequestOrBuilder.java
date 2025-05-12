@@ -6,6 +6,6 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface PlayersRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.PlayersRequest)
+    // @@protoc_insertion_point(interface_extends:Minecraft.PlayersRequest)
     com.google.protobuf.MessageOrBuilder {
 }

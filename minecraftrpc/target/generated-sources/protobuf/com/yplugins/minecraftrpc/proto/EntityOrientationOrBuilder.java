@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface EntityOrientationOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.EntityOrientation)
+    // @@protoc_insertion_point(interface_extends:Minecraft.EntityOrientation)
     com.google.protobuf.MessageOrBuilder {
 
   /**

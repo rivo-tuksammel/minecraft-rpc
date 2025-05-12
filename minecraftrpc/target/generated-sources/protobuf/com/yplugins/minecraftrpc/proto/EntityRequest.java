@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.EntityRequest}
+ * Protobuf type {@code Minecraft.EntityRequest}
  */
 public final class EntityRequest extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.EntityRequest)
+    // @@protoc_insertion_point(message_implements:Minecraft.EntityRequest)
     EntityRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,19 +31,19 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.EntityRequest.class, com.yplugins.minecraftrpc.proto.EntityRequest.Builder.class);
   }
 
   public interface SpecificEntitiesOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:minecraftRPC.EntityRequest.SpecificEntities)
+      // @@protoc_insertion_point(interface_extends:Minecraft.EntityRequest.SpecificEntities)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -51,7 +51,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     java.util.List<com.yplugins.minecraftrpc.proto.Entity> 
         getEntitiesList();
@@ -60,7 +60,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     com.yplugins.minecraftrpc.proto.Entity getEntities(int index);
     /**
@@ -68,7 +68,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     int getEntitiesCount();
     /**
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     java.util.List<? extends com.yplugins.minecraftrpc.proto.EntityOrBuilder> 
         getEntitiesOrBuilderList();
@@ -85,17 +85,17 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntitiesOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code minecraftRPC.EntityRequest.SpecificEntities}
+   * Protobuf type {@code Minecraft.EntityRequest.SpecificEntities}
    */
   public static final class SpecificEntities extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:minecraftRPC.EntityRequest.SpecificEntities)
+      // @@protoc_insertion_point(message_implements:Minecraft.EntityRequest.SpecificEntities)
       SpecificEntitiesOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -117,13 +117,13 @@ private static final long serialVersionUID = 0L;
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_SpecificEntities_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_SpecificEntities_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_SpecificEntities_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_SpecificEntities_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.class, com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.Builder.class);
     }
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     @java.lang.Override
     public java.util.List<com.yplugins.minecraftrpc.proto.Entity> getEntitiesList() {
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends com.yplugins.minecraftrpc.proto.EntityOrBuilder> 
@@ -159,7 +159,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     @java.lang.Override
     public int getEntitiesCount() {
@@ -170,7 +170,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.Entity getEntities(int index) {
@@ -181,7 +181,7 @@ private static final long serialVersionUID = 0L;
      * must be non-empty
      * </pre>
      *
-     * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+     * <code>repeated .Minecraft.Entity entities = 1;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntitiesOrBuilder(
@@ -349,21 +349,21 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code minecraftRPC.EntityRequest.SpecificEntities}
+     * Protobuf type {@code Minecraft.EntityRequest.SpecificEntities}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:minecraftRPC.EntityRequest.SpecificEntities)
+        // @@protoc_insertion_point(builder_implements:Minecraft.EntityRequest.SpecificEntities)
         com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntitiesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_SpecificEntities_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_SpecificEntities_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_SpecificEntities_fieldAccessorTable
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_SpecificEntities_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.class, com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.Builder.class);
       }
@@ -395,7 +395,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_SpecificEntities_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_SpecificEntities_descriptor;
       }
 
       @java.lang.Override
@@ -548,7 +548,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public java.util.List<com.yplugins.minecraftrpc.proto.Entity> getEntitiesList() {
         if (entitiesBuilder_ == null) {
@@ -562,7 +562,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public int getEntitiesCount() {
         if (entitiesBuilder_ == null) {
@@ -576,7 +576,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Entity getEntities(int index) {
         if (entitiesBuilder_ == null) {
@@ -590,7 +590,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder setEntities(
           int index, com.yplugins.minecraftrpc.proto.Entity value) {
@@ -611,7 +611,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder setEntities(
           int index, com.yplugins.minecraftrpc.proto.Entity.Builder builderForValue) {
@@ -629,7 +629,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder addEntities(com.yplugins.minecraftrpc.proto.Entity value) {
         if (entitiesBuilder_ == null) {
@@ -649,7 +649,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder addEntities(
           int index, com.yplugins.minecraftrpc.proto.Entity value) {
@@ -670,7 +670,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder addEntities(
           com.yplugins.minecraftrpc.proto.Entity.Builder builderForValue) {
@@ -688,7 +688,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder addEntities(
           int index, com.yplugins.minecraftrpc.proto.Entity.Builder builderForValue) {
@@ -706,7 +706,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder addAllEntities(
           java.lang.Iterable<? extends com.yplugins.minecraftrpc.proto.Entity> values) {
@@ -725,7 +725,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder clearEntities() {
         if (entitiesBuilder_ == null) {
@@ -742,7 +742,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public Builder removeEntities(int index) {
         if (entitiesBuilder_ == null) {
@@ -759,7 +759,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Entity.Builder getEntitiesBuilder(
           int index) {
@@ -770,7 +770,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntitiesOrBuilder(
           int index) {
@@ -784,7 +784,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public java.util.List<? extends com.yplugins.minecraftrpc.proto.EntityOrBuilder> 
            getEntitiesOrBuilderList() {
@@ -799,7 +799,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Entity.Builder addEntitiesBuilder() {
         return getEntitiesFieldBuilder().addBuilder(
@@ -810,7 +810,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public com.yplugins.minecraftrpc.proto.Entity.Builder addEntitiesBuilder(
           int index) {
@@ -822,7 +822,7 @@ private static final long serialVersionUID = 0L;
        * must be non-empty
        * </pre>
        *
-       * <code>repeated .minecraftRPC.Entity entities = 1;</code>
+       * <code>repeated .Minecraft.Entity entities = 1;</code>
        */
       public java.util.List<com.yplugins.minecraftrpc.proto.Entity.Builder> 
            getEntitiesBuilderList() {
@@ -843,10 +843,10 @@ private static final long serialVersionUID = 0L;
         return entitiesBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:minecraftRPC.EntityRequest.SpecificEntities)
+      // @@protoc_insertion_point(builder_scope:Minecraft.EntityRequest.SpecificEntities)
     }
 
-    // @@protoc_insertion_point(class_scope:minecraftRPC.EntityRequest.SpecificEntities)
+    // @@protoc_insertion_point(class_scope:Minecraft.EntityRequest.SpecificEntities)
     private static final com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities();
@@ -895,7 +895,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public interface WorldEntitiesOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:minecraftRPC.EntityRequest.WorldEntities)
+      // @@protoc_insertion_point(interface_extends:Minecraft.EntityRequest.WorldEntities)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -903,7 +903,7 @@ private static final long serialVersionUID = 0L;
      * get from this world
      * </pre>
      *
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      * @return Whether the world field is set.
      */
     boolean hasWorld();
@@ -912,18 +912,18 @@ private static final long serialVersionUID = 0L;
      * get from this world
      * </pre>
      *
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      * @return The world.
      */
-    com.yplugins.minecraftrpc.proto.World getWorld();
+    com.yplugins.minecraftrpc.proto.world.World getWorld();
     /**
      * <pre>
      * get from this world
      * </pre>
      *
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
-    com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder();
+    com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder();
 
     /**
      * <pre>
@@ -956,11 +956,11 @@ private static final long serialVersionUID = 0L;
     boolean getIncludeNotSpawnable();
   }
   /**
-   * Protobuf type {@code minecraftRPC.EntityRequest.WorldEntities}
+   * Protobuf type {@code Minecraft.EntityRequest.WorldEntities}
    */
   public static final class WorldEntities extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:minecraftRPC.EntityRequest.WorldEntities)
+      // @@protoc_insertion_point(message_implements:Minecraft.EntityRequest.WorldEntities)
       WorldEntitiesOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -982,26 +982,26 @@ private static final long serialVersionUID = 0L;
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_WorldEntities_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_WorldEntities_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_WorldEntities_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_WorldEntities_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.class, com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.Builder.class);
     }
 
     private int bitField0_;
     public static final int WORLD_FIELD_NUMBER = 1;
-    private com.yplugins.minecraftrpc.proto.World world_;
+    private com.yplugins.minecraftrpc.proto.world.World world_;
     /**
      * <pre>
      * get from this world
      * </pre>
      *
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      * @return Whether the world field is set.
      */
     @java.lang.Override
@@ -1013,23 +1013,23 @@ private static final long serialVersionUID = 0L;
      * get from this world
      * </pre>
      *
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      * @return The world.
      */
     @java.lang.Override
-    public com.yplugins.minecraftrpc.proto.World getWorld() {
-      return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+    public com.yplugins.minecraftrpc.proto.world.World getWorld() {
+      return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
     }
     /**
      * <pre>
      * get from this world
      * </pre>
      *
-     * <code>.minecraftRPC.World world = 1;</code>
+     * <code>.MinecraftWorld.World world = 1;</code>
      */
     @java.lang.Override
-    public com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder() {
-      return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+    public com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder() {
+      return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
     }
 
     public static final int TYPE_FIELD_NUMBER = 2;
@@ -1279,21 +1279,21 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code minecraftRPC.EntityRequest.WorldEntities}
+     * Protobuf type {@code Minecraft.EntityRequest.WorldEntities}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:minecraftRPC.EntityRequest.WorldEntities)
+        // @@protoc_insertion_point(builder_implements:Minecraft.EntityRequest.WorldEntities)
         com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntitiesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_WorldEntities_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_WorldEntities_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_WorldEntities_fieldAccessorTable
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_WorldEntities_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.class, com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.Builder.class);
       }
@@ -1331,7 +1331,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_WorldEntities_descriptor;
+        return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_WorldEntities_descriptor;
       }
 
       @java.lang.Override
@@ -1457,15 +1457,15 @@ private static final long serialVersionUID = 0L;
       }
       private int bitField0_;
 
-      private com.yplugins.minecraftrpc.proto.World world_;
+      private com.yplugins.minecraftrpc.proto.world.World world_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder> worldBuilder_;
+          com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder> worldBuilder_;
       /**
        * <pre>
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        * @return Whether the world field is set.
        */
       public boolean hasWorld() {
@@ -1476,12 +1476,12 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        * @return The world.
        */
-      public com.yplugins.minecraftrpc.proto.World getWorld() {
+      public com.yplugins.minecraftrpc.proto.world.World getWorld() {
         if (worldBuilder_ == null) {
-          return world_ == null ? com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+          return world_ == null ? com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
         } else {
           return worldBuilder_.getMessage();
         }
@@ -1491,9 +1491,9 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
-      public Builder setWorld(com.yplugins.minecraftrpc.proto.World value) {
+      public Builder setWorld(com.yplugins.minecraftrpc.proto.world.World value) {
         if (worldBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1511,10 +1511,10 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
       public Builder setWorld(
-          com.yplugins.minecraftrpc.proto.World.Builder builderForValue) {
+          com.yplugins.minecraftrpc.proto.world.World.Builder builderForValue) {
         if (worldBuilder_ == null) {
           world_ = builderForValue.build();
         } else {
@@ -1529,13 +1529,13 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
-      public Builder mergeWorld(com.yplugins.minecraftrpc.proto.World value) {
+      public Builder mergeWorld(com.yplugins.minecraftrpc.proto.world.World value) {
         if (worldBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             world_ != null &&
-            world_ != com.yplugins.minecraftrpc.proto.World.getDefaultInstance()) {
+            world_ != com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance()) {
             getWorldBuilder().mergeFrom(value);
           } else {
             world_ = value;
@@ -1554,7 +1554,7 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
       public Builder clearWorld() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -1571,9 +1571,9 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
-      public com.yplugins.minecraftrpc.proto.World.Builder getWorldBuilder() {
+      public com.yplugins.minecraftrpc.proto.world.World.Builder getWorldBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getWorldFieldBuilder().getBuilder();
@@ -1583,14 +1583,14 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
-      public com.yplugins.minecraftrpc.proto.WorldOrBuilder getWorldOrBuilder() {
+      public com.yplugins.minecraftrpc.proto.world.WorldOrBuilder getWorldOrBuilder() {
         if (worldBuilder_ != null) {
           return worldBuilder_.getMessageOrBuilder();
         } else {
           return world_ == null ?
-              com.yplugins.minecraftrpc.proto.World.getDefaultInstance() : world_;
+              com.yplugins.minecraftrpc.proto.world.World.getDefaultInstance() : world_;
         }
       }
       /**
@@ -1598,14 +1598,14 @@ private static final long serialVersionUID = 0L;
        * get from this world
        * </pre>
        *
-       * <code>.minecraftRPC.World world = 1;</code>
+       * <code>.MinecraftWorld.World world = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder> 
+          com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder> 
           getWorldFieldBuilder() {
         if (worldBuilder_ == null) {
           worldBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.yplugins.minecraftrpc.proto.World, com.yplugins.minecraftrpc.proto.World.Builder, com.yplugins.minecraftrpc.proto.WorldOrBuilder>(
+              com.yplugins.minecraftrpc.proto.world.World, com.yplugins.minecraftrpc.proto.world.World.Builder, com.yplugins.minecraftrpc.proto.world.WorldOrBuilder>(
                   getWorld(),
                   getParentForChildren(),
                   isClean());
@@ -1750,10 +1750,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:minecraftRPC.EntityRequest.WorldEntities)
+      // @@protoc_insertion_point(builder_scope:Minecraft.EntityRequest.WorldEntities)
     }
 
-    // @@protoc_insertion_point(class_scope:minecraftRPC.EntityRequest.WorldEntities)
+    // @@protoc_insertion_point(class_scope:Minecraft.EntityRequest.WorldEntities)
     private static final com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities();
@@ -1845,7 +1845,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int SPECIFIC_FIELD_NUMBER = 1;
   /**
-   * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+   * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
    * @return Whether the specific field is set.
    */
   @java.lang.Override
@@ -1853,7 +1853,7 @@ private static final long serialVersionUID = 0L;
     return entityRequestTypeCase_ == 1;
   }
   /**
-   * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+   * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
    * @return The specific.
    */
   @java.lang.Override
@@ -1864,7 +1864,7 @@ private static final long serialVersionUID = 0L;
     return com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.getDefaultInstance();
   }
   /**
-   * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+   * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntitiesOrBuilder getSpecificOrBuilder() {
@@ -1876,7 +1876,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int WORLDWIDE_FIELD_NUMBER = 2;
   /**
-   * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+   * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
    * @return Whether the worldwide field is set.
    */
   @java.lang.Override
@@ -1884,7 +1884,7 @@ private static final long serialVersionUID = 0L;
     return entityRequestTypeCase_ == 2;
   }
   /**
-   * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+   * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
    * @return The worldwide.
    */
   @java.lang.Override
@@ -1895,7 +1895,7 @@ private static final long serialVersionUID = 0L;
     return com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.getDefaultInstance();
   }
   /**
-   * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+   * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntitiesOrBuilder getWorldwideOrBuilder() {
@@ -2114,21 +2114,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.EntityRequest}
+   * Protobuf type {@code Minecraft.EntityRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.EntityRequest)
+      // @@protoc_insertion_point(builder_implements:Minecraft.EntityRequest)
       com.yplugins.minecraftrpc.proto.EntityRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.EntityRequest.class, com.yplugins.minecraftrpc.proto.EntityRequest.Builder.class);
     }
@@ -2162,7 +2162,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityRequest_descriptor;
     }
 
     @java.lang.Override
@@ -2316,7 +2316,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities, com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.Builder, com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntitiesOrBuilder> specificBuilder_;
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      * @return Whether the specific field is set.
      */
     @java.lang.Override
@@ -2324,7 +2324,7 @@ private static final long serialVersionUID = 0L;
       return entityRequestTypeCase_ == 1;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      * @return The specific.
      */
     @java.lang.Override
@@ -2342,7 +2342,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     public Builder setSpecific(com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities value) {
       if (specificBuilder_ == null) {
@@ -2358,7 +2358,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     public Builder setSpecific(
         com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.Builder builderForValue) {
@@ -2372,7 +2372,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     public Builder mergeSpecific(com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities value) {
       if (specificBuilder_ == null) {
@@ -2395,7 +2395,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     public Builder clearSpecific() {
       if (specificBuilder_ == null) {
@@ -2414,13 +2414,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.Builder getSpecificBuilder() {
       return getSpecificFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntitiesOrBuilder getSpecificOrBuilder() {
@@ -2434,7 +2434,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.SpecificEntities specific = 1;</code>
+     * <code>.Minecraft.EntityRequest.SpecificEntities specific = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities, com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntities.Builder, com.yplugins.minecraftrpc.proto.EntityRequest.SpecificEntitiesOrBuilder> 
@@ -2458,7 +2458,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities, com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.Builder, com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntitiesOrBuilder> worldwideBuilder_;
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      * @return Whether the worldwide field is set.
      */
     @java.lang.Override
@@ -2466,7 +2466,7 @@ private static final long serialVersionUID = 0L;
       return entityRequestTypeCase_ == 2;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      * @return The worldwide.
      */
     @java.lang.Override
@@ -2484,7 +2484,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     public Builder setWorldwide(com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities value) {
       if (worldwideBuilder_ == null) {
@@ -2500,7 +2500,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     public Builder setWorldwide(
         com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.Builder builderForValue) {
@@ -2514,7 +2514,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     public Builder mergeWorldwide(com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities value) {
       if (worldwideBuilder_ == null) {
@@ -2537,7 +2537,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     public Builder clearWorldwide() {
       if (worldwideBuilder_ == null) {
@@ -2556,13 +2556,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.Builder getWorldwideBuilder() {
       return getWorldwideFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     @java.lang.Override
     public com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntitiesOrBuilder getWorldwideOrBuilder() {
@@ -2576,7 +2576,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.EntityRequest.WorldEntities worldwide = 2;</code>
+     * <code>.Minecraft.EntityRequest.WorldEntities worldwide = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities, com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntities.Builder, com.yplugins.minecraftrpc.proto.EntityRequest.WorldEntitiesOrBuilder> 
@@ -2629,10 +2629,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.EntityRequest)
+    // @@protoc_insertion_point(builder_scope:Minecraft.EntityRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.EntityRequest)
+  // @@protoc_insertion_point(class_scope:Minecraft.EntityRequest)
   private static final com.yplugins.minecraftrpc.proto.EntityRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.EntityRequest();

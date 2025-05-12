@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.EntityOrientation}
+ * Protobuf type {@code Minecraft.EntityOrientation}
  */
 public final class EntityOrientation extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.EntityOrientation)
+    // @@protoc_insertion_point(message_implements:Minecraft.EntityOrientation)
     EntityOrientationOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,13 +31,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityOrientation_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityOrientation_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityOrientation_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityOrientation_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.EntityOrientation.class, com.yplugins.minecraftrpc.proto.EntityOrientation.Builder.class);
   }
@@ -245,21 +245,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.EntityOrientation}
+   * Protobuf type {@code Minecraft.EntityOrientation}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.EntityOrientation)
+      // @@protoc_insertion_point(builder_implements:Minecraft.EntityOrientation)
       com.yplugins.minecraftrpc.proto.EntityOrientationOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityOrientation_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityOrientation_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityOrientation_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityOrientation_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.EntityOrientation.class, com.yplugins.minecraftrpc.proto.EntityOrientation.Builder.class);
     }
@@ -286,7 +286,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_EntityOrientation_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_EntityOrientation_descriptor;
     }
 
     @java.lang.Override
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.EntityOrientation)
+    // @@protoc_insertion_point(builder_scope:Minecraft.EntityOrientation)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.EntityOrientation)
+  // @@protoc_insertion_point(class_scope:Minecraft.EntityOrientation)
   private static final com.yplugins.minecraftrpc.proto.EntityOrientation DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.EntityOrientation();

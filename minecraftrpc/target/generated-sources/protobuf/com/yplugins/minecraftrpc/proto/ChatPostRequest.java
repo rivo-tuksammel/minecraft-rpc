@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.ChatPostRequest}
+ * Protobuf type {@code Minecraft.ChatPostRequest}
  */
 public final class ChatPostRequest extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.ChatPostRequest)
+    // @@protoc_insertion_point(message_implements:Minecraft.ChatPostRequest)
     ChatPostRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -32,13 +32,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_ChatPostRequest_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_ChatPostRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_ChatPostRequest_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_ChatPostRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.ChatPostRequest.class, com.yplugins.minecraftrpc.proto.ChatPostRequest.Builder.class);
   }
@@ -239,21 +239,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.ChatPostRequest}
+   * Protobuf type {@code Minecraft.ChatPostRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.ChatPostRequest)
+      // @@protoc_insertion_point(builder_implements:Minecraft.ChatPostRequest)
       com.yplugins.minecraftrpc.proto.ChatPostRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_ChatPostRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_ChatPostRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_ChatPostRequest_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_ChatPostRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.ChatPostRequest.class, com.yplugins.minecraftrpc.proto.ChatPostRequest.Builder.class);
     }
@@ -279,7 +279,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_ChatPostRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_ChatPostRequest_descriptor;
     }
 
     @java.lang.Override
@@ -448,10 +448,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.ChatPostRequest)
+    // @@protoc_insertion_point(builder_scope:Minecraft.ChatPostRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.ChatPostRequest)
+  // @@protoc_insertion_point(class_scope:Minecraft.ChatPostRequest)
   private static final com.yplugins.minecraftrpc.proto.ChatPostRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.ChatPostRequest();

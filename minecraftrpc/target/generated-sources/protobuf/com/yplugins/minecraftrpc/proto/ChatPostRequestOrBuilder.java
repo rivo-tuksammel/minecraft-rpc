@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface ChatPostRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.ChatPostRequest)
+    // @@protoc_insertion_point(interface_extends:Minecraft.ChatPostRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**

@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.SpawnedEntityResponse}
+ * Protobuf type {@code Minecraft.SpawnedEntityResponse}
  */
 public final class SpawnedEntityResponse extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.SpawnedEntityResponse)
+    // @@protoc_insertion_point(message_implements:Minecraft.SpawnedEntityResponse)
     SpawnedEntityResponseOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,13 +31,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_SpawnedEntityResponse_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_SpawnedEntityResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_SpawnedEntityResponse_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_SpawnedEntityResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.SpawnedEntityResponse.class, com.yplugins.minecraftrpc.proto.SpawnedEntityResponse.Builder.class);
   }
@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
   public static final int STATUS_FIELD_NUMBER = 1;
   private com.yplugins.minecraftrpc.proto.Status status_;
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   @java.lang.Override
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   @java.lang.Override
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
     return status_ == null ? com.yplugins.minecraftrpc.proto.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder() {
@@ -72,7 +72,7 @@ private static final long serialVersionUID = 0L;
   public static final int ENTITY_FIELD_NUMBER = 2;
   private com.yplugins.minecraftrpc.proto.Entity entity_;
   /**
-   * <code>.minecraftRPC.Entity entity = 2;</code>
+   * <code>.Minecraft.Entity entity = 2;</code>
    * @return Whether the entity field is set.
    */
   @java.lang.Override
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000002) != 0);
   }
   /**
-   * <code>.minecraftRPC.Entity entity = 2;</code>
+   * <code>.Minecraft.Entity entity = 2;</code>
    * @return The entity.
    */
   @java.lang.Override
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
     return entity_ == null ? com.yplugins.minecraftrpc.proto.Entity.getDefaultInstance() : entity_;
   }
   /**
-   * <code>.minecraftRPC.Entity entity = 2;</code>
+   * <code>.Minecraft.Entity entity = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntityOrBuilder() {
@@ -274,21 +274,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.SpawnedEntityResponse}
+   * Protobuf type {@code Minecraft.SpawnedEntityResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.SpawnedEntityResponse)
+      // @@protoc_insertion_point(builder_implements:Minecraft.SpawnedEntityResponse)
       com.yplugins.minecraftrpc.proto.SpawnedEntityResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_SpawnedEntityResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_SpawnedEntityResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_SpawnedEntityResponse_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_SpawnedEntityResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.SpawnedEntityResponse.class, com.yplugins.minecraftrpc.proto.SpawnedEntityResponse.Builder.class);
     }
@@ -330,7 +330,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_SpawnedEntityResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_SpawnedEntityResponse_descriptor;
     }
 
     @java.lang.Override
@@ -452,14 +452,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      * @return Whether the status field is set.
      */
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      * @return The status.
      */
     public com.yplugins.minecraftrpc.proto.Status getStatus() {
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder setStatus(com.yplugins.minecraftrpc.proto.Status value) {
       if (statusBuilder_ == null) {
@@ -486,7 +486,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder setStatus(
         com.yplugins.minecraftrpc.proto.Status.Builder builderForValue) {
@@ -500,7 +500,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder mergeStatus(com.yplugins.minecraftrpc.proto.Status value) {
       if (statusBuilder_ == null) {
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public Builder clearStatus() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.Status.Builder getStatusBuilder() {
       bitField0_ |= 0x00000001;
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Status status = 1;</code>
+     * <code>.Minecraft.Status status = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Status, com.yplugins.minecraftrpc.proto.Status.Builder, com.yplugins.minecraftrpc.proto.StatusOrBuilder> 
@@ -573,14 +573,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Entity, com.yplugins.minecraftrpc.proto.Entity.Builder, com.yplugins.minecraftrpc.proto.EntityOrBuilder> entityBuilder_;
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      * @return Whether the entity field is set.
      */
     public boolean hasEntity() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      * @return The entity.
      */
     public com.yplugins.minecraftrpc.proto.Entity getEntity() {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     public Builder setEntity(com.yplugins.minecraftrpc.proto.Entity value) {
       if (entityBuilder_ == null) {
@@ -607,7 +607,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     public Builder setEntity(
         com.yplugins.minecraftrpc.proto.Entity.Builder builderForValue) {
@@ -621,7 +621,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     public Builder mergeEntity(com.yplugins.minecraftrpc.proto.Entity value) {
       if (entityBuilder_ == null) {
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     public Builder clearEntity() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.Entity.Builder getEntityBuilder() {
       bitField0_ |= 0x00000002;
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
       return getEntityFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntityOrBuilder() {
       if (entityBuilder_ != null) {
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.minecraftRPC.Entity entity = 2;</code>
+     * <code>.Minecraft.Entity entity = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.Entity, com.yplugins.minecraftrpc.proto.Entity.Builder, com.yplugins.minecraftrpc.proto.EntityOrBuilder> 
@@ -690,10 +690,10 @@ private static final long serialVersionUID = 0L;
       return entityBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.SpawnedEntityResponse)
+    // @@protoc_insertion_point(builder_scope:Minecraft.SpawnedEntityResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.SpawnedEntityResponse)
+  // @@protoc_insertion_point(class_scope:Minecraft.SpawnedEntityResponse)
   private static final com.yplugins.minecraftrpc.proto.SpawnedEntityResponse DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.SpawnedEntityResponse();

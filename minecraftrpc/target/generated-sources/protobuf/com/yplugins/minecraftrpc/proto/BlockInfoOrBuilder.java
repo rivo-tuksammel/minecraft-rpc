@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface BlockInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.BlockInfo)
+    // @@protoc_insertion_point(interface_extends:Minecraft.BlockInfo)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -22,17 +22,17 @@ public interface BlockInfoOrBuilder extends
       getBlockTypeBytes();
 
   /**
-   * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+   * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
    * @return Whether the nbt field is set.
    */
   boolean hasNbt();
   /**
-   * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+   * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
    * @return The nbt.
    */
   com.yplugins.minecraftrpc.proto.BlockNbtDaten getNbt();
   /**
-   * <code>.minecraftRPC.BlockNbtDaten nbt = 2;</code>
+   * <code>.Minecraft.BlockNbtDaten nbt = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.BlockNbtDatenOrBuilder getNbtOrBuilder();
 }

@@ -6,6 +6,6 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface EmptyOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.Empty)
+    // @@protoc_insertion_point(interface_extends:Minecraft.Empty)
     com.google.protobuf.MessageOrBuilder {
 }

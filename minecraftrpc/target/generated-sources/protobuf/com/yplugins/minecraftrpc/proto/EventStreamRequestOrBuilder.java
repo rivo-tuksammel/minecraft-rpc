@@ -6,16 +6,16 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface EventStreamRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.EventStreamRequest)
+    // @@protoc_insertion_point(interface_extends:Minecraft.EventStreamRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.EventType eventType = 1;</code>
+   * <code>.Minecraft.EventType eventType = 1;</code>
    * @return The enum numeric value on the wire for eventType.
    */
   int getEventTypeValue();
   /**
-   * <code>.minecraftRPC.EventType eventType = 1;</code>
+   * <code>.Minecraft.EventType eventType = 1;</code>
    * @return The eventType.
    */
   com.yplugins.minecraftrpc.proto.EventType getEventType();

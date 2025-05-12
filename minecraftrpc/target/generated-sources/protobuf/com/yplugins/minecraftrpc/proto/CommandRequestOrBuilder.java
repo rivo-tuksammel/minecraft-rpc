@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface CommandRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.CommandRequest)
+    // @@protoc_insertion_point(interface_extends:Minecraft.CommandRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**

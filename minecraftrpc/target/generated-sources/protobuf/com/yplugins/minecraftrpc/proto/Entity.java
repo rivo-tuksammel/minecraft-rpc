@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto;
 
 /**
- * Protobuf type {@code minecraftRPC.Entity}
+ * Protobuf type {@code Minecraft.Entity}
  */
 public final class Entity extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:minecraftRPC.Entity)
+    // @@protoc_insertion_point(message_implements:Minecraft.Entity)
     EntityOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -32,13 +32,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Entity_descriptor;
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Entity_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Entity_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Entity_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.Entity.class, com.yplugins.minecraftrpc.proto.Entity.Builder.class);
   }
@@ -84,9 +84,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LOCATION_FIELD_NUMBER = 2;
-  private com.yplugins.minecraftrpc.proto.EntityLocation location_;
+  private com.yplugins.minecraftrpc.proto.Location location_;
   /**
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    * @return Whether the location field is set.
    */
   @java.lang.Override
@@ -94,19 +94,19 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    * @return The location.
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.EntityLocation getLocation() {
-    return location_ == null ? com.yplugins.minecraftrpc.proto.EntityLocation.getDefaultInstance() : location_;
+  public com.yplugins.minecraftrpc.proto.Location getLocation() {
+    return location_ == null ? com.yplugins.minecraftrpc.proto.Location.getDefaultInstance() : location_;
   }
   /**
-   * <code>.minecraftRPC.EntityLocation location = 2;</code>
+   * <code>.Minecraft.Location location = 2;</code>
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder getLocationOrBuilder() {
-    return location_ == null ? com.yplugins.minecraftrpc.proto.EntityLocation.getDefaultInstance() : location_;
+  public com.yplugins.minecraftrpc.proto.LocationOrBuilder getLocationOrBuilder() {
+    return location_ == null ? com.yplugins.minecraftrpc.proto.Location.getDefaultInstance() : location_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -282,21 +282,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code minecraftRPC.Entity}
+   * Protobuf type {@code Minecraft.Entity}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:minecraftRPC.Entity)
+      // @@protoc_insertion_point(builder_implements:Minecraft.Entity)
       com.yplugins.minecraftrpc.proto.EntityOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Entity_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Entity_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Entity_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Entity_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.Entity.class, com.yplugins.minecraftrpc.proto.Entity.Builder.class);
     }
@@ -333,7 +333,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_minecraftRPC_Entity_descriptor;
+      return com.yplugins.minecraftrpc.proto.MinecraftRPC.internal_static_Minecraft_Entity_descriptor;
     }
 
     @java.lang.Override
@@ -520,31 +520,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.yplugins.minecraftrpc.proto.EntityLocation location_;
+    private com.yplugins.minecraftrpc.proto.Location location_;
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.EntityLocation, com.yplugins.minecraftrpc.proto.EntityLocation.Builder, com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder> locationBuilder_;
+        com.yplugins.minecraftrpc.proto.Location, com.yplugins.minecraftrpc.proto.Location.Builder, com.yplugins.minecraftrpc.proto.LocationOrBuilder> locationBuilder_;
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      * @return Whether the location field is set.
      */
     public boolean hasLocation() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      * @return The location.
      */
-    public com.yplugins.minecraftrpc.proto.EntityLocation getLocation() {
+    public com.yplugins.minecraftrpc.proto.Location getLocation() {
       if (locationBuilder_ == null) {
-        return location_ == null ? com.yplugins.minecraftrpc.proto.EntityLocation.getDefaultInstance() : location_;
+        return location_ == null ? com.yplugins.minecraftrpc.proto.Location.getDefaultInstance() : location_;
       } else {
         return locationBuilder_.getMessage();
       }
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
-    public Builder setLocation(com.yplugins.minecraftrpc.proto.EntityLocation value) {
+    public Builder setLocation(com.yplugins.minecraftrpc.proto.Location value) {
       if (locationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -558,10 +558,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
     public Builder setLocation(
-        com.yplugins.minecraftrpc.proto.EntityLocation.Builder builderForValue) {
+        com.yplugins.minecraftrpc.proto.Location.Builder builderForValue) {
       if (locationBuilder_ == null) {
         location_ = builderForValue.build();
       } else {
@@ -572,13 +572,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
-    public Builder mergeLocation(com.yplugins.minecraftrpc.proto.EntityLocation value) {
+    public Builder mergeLocation(com.yplugins.minecraftrpc.proto.Location value) {
       if (locationBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           location_ != null &&
-          location_ != com.yplugins.minecraftrpc.proto.EntityLocation.getDefaultInstance()) {
+          location_ != com.yplugins.minecraftrpc.proto.Location.getDefaultInstance()) {
           getLocationBuilder().mergeFrom(value);
         } else {
           location_ = value;
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
     public Builder clearLocation() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -606,33 +606,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
-    public com.yplugins.minecraftrpc.proto.EntityLocation.Builder getLocationBuilder() {
+    public com.yplugins.minecraftrpc.proto.Location.Builder getLocationBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getLocationFieldBuilder().getBuilder();
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
-    public com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder getLocationOrBuilder() {
+    public com.yplugins.minecraftrpc.proto.LocationOrBuilder getLocationOrBuilder() {
       if (locationBuilder_ != null) {
         return locationBuilder_.getMessageOrBuilder();
       } else {
         return location_ == null ?
-            com.yplugins.minecraftrpc.proto.EntityLocation.getDefaultInstance() : location_;
+            com.yplugins.minecraftrpc.proto.Location.getDefaultInstance() : location_;
       }
     }
     /**
-     * <code>.minecraftRPC.EntityLocation location = 2;</code>
+     * <code>.Minecraft.Location location = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.EntityLocation, com.yplugins.minecraftrpc.proto.EntityLocation.Builder, com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder> 
+        com.yplugins.minecraftrpc.proto.Location, com.yplugins.minecraftrpc.proto.Location.Builder, com.yplugins.minecraftrpc.proto.LocationOrBuilder> 
         getLocationFieldBuilder() {
       if (locationBuilder_ == null) {
         locationBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-            com.yplugins.minecraftrpc.proto.EntityLocation, com.yplugins.minecraftrpc.proto.EntityLocation.Builder, com.yplugins.minecraftrpc.proto.EntityLocationOrBuilder>(
+            com.yplugins.minecraftrpc.proto.Location, com.yplugins.minecraftrpc.proto.Location.Builder, com.yplugins.minecraftrpc.proto.LocationOrBuilder>(
                 getLocation(),
                 getParentForChildren(),
                 isClean());
@@ -641,10 +641,10 @@ private static final long serialVersionUID = 0L;
       return locationBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:minecraftRPC.Entity)
+    // @@protoc_insertion_point(builder_scope:Minecraft.Entity)
   }
 
-  // @@protoc_insertion_point(class_scope:minecraftRPC.Entity)
+  // @@protoc_insertion_point(class_scope:Minecraft.Entity)
   private static final com.yplugins.minecraftrpc.proto.Entity DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.Entity();

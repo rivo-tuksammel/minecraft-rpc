@@ -6,36 +6,36 @@
 package com.yplugins.minecraftrpc.proto;
 
 public interface SpawnedEntityResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:minecraftRPC.SpawnedEntityResponse)
+    // @@protoc_insertion_point(interface_extends:Minecraft.SpawnedEntityResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.Status getStatus();
   /**
-   * <code>.minecraftRPC.Status status = 1;</code>
+   * <code>.Minecraft.Status status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.StatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>.minecraftRPC.Entity entity = 2;</code>
+   * <code>.Minecraft.Entity entity = 2;</code>
    * @return Whether the entity field is set.
    */
   boolean hasEntity();
   /**
-   * <code>.minecraftRPC.Entity entity = 2;</code>
+   * <code>.Minecraft.Entity entity = 2;</code>
    * @return The entity.
    */
   com.yplugins.minecraftrpc.proto.Entity getEntity();
   /**
-   * <code>.minecraftRPC.Entity entity = 2;</code>
+   * <code>.Minecraft.Entity entity = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.EntityOrBuilder getEntityOrBuilder();
 }
