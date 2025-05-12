@@ -9,15 +9,25 @@ import io.grpc.Server;
 import io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.yplugins.minecraftrpc.rpc.services.CommandService;
+import com.yplugins.minecraftrpc.utils.GameThreadExecutor;
+
 public class MinecraftRPC extends JavaPlugin {
 
     private static final Logger logger = Bukkit.getLogger();
     private Server grpcServer = null;
+    private GameThreadExecutor _gameThreadExecutor = null;
+
+    public GameThreadExecutor gameThreadExecutor() {
+        return _gameThreadExecutor;
+    }
 
     // This code is called after the server starts and after the /reload command
     @Override
     public void onEnable() {
         super.onEnable();
+        this._gameThreadExecutor = new GameThreadExecutor(this);
+
         logger.log(Level.INFO, "{0}.onEnable()", this.getClass().getName());
         saveDefaultConfig(); // Save the default config.yml if it doesn't exist.
 
@@ -56,6 +66,7 @@ public class MinecraftRPC extends JavaPlugin {
     @Override
     public void onDisable() {
         logger.log(Level.INFO, "{0}.onDisable()", this.getClass().getName());
+        this._gameThreadExecutor = null;
         if (this.grpcServer != null) {
             try {
                 this.grpcServer.shutdown();

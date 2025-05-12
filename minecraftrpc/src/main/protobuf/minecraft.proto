@@ -16,7 +16,8 @@ service Minecraft {
     rpc setBlock(Block) returns (Status);
     rpc setBlocks(Blocks) returns (Status);
     rpc setBlockCube(Blocks) returns (Status); // expect exactly two blocks: opposite corners of cube
-    rpc getPlayers(PlayerRequest) returns (PlayerResponse);
+    rpc getPlayers(PlayersRequest) returns (PlayersResponse);
+    rpc getPlayer(PlayerRequest) returns (PlayerResponse);
     rpc setPlayer(Player) returns (Status);
     rpc spawnEntity(Entity) returns (SpawnedEntityResponse);
     rpc setEntity(Entity) returns (Status);
@@ -125,9 +126,8 @@ message Player {
 }
 
 message Entity {
-    string id = 1;
-    string type = 2;
-    EntityLocation location = 3;
+    string type = 1;
+    EntityLocation location = 2;
 }
 
 /**
@@ -224,14 +224,22 @@ message BlockResponse {
     BlockInfo info = 2;
 }
 
+message PlayersRequest {
+}
+
+message PlayersResponse {
+    Status status = 1;
+    repeated Player players = 2;
+}
+
 message PlayerRequest {
-    repeated string names = 1; // if empty requests all online players
-    bool withLocations = 2;
+    optional string name = 1; // name of the player
+    optional string uuid = 2; // UUID of the player
 }
 
 message PlayerResponse {
     Status status = 1;
-    repeated Player players = 2;
+    Player player = 2;
 }
 
 message SpawnedEntityResponse {
