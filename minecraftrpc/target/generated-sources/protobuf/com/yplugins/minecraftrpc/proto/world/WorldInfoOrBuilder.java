@@ -30,8 +30,51 @@ public interface WorldInfoOrBuilder extends
       getKeyBytes();
 
   /**
-   * <code>bool pvp = 2;</code>
-   * @return The pvp.
+   * <code>bool isPVP = 2;</code>
+   * @return The isPVP.
    */
-  boolean getPvp();
+  boolean getIsPVP();
+
+  /**
+   * <code>bool isHardcore = 3;</code>
+   * @return The isHardcore.
+   */
+  boolean getIsHardcore();
+
+  /**
+   * <code>bool isThundering = 4;</code>
+   * @return The isThundering.
+   */
+  boolean getIsThundering();
+
+  /**
+   * <code>bool isClearWeather = 5;</code>
+   * @return The isClearWeather.
+   */
+  boolean getIsClearWeather();
+
+  /**
+   * <code>bool isUltraWarm = 6;</code>
+   * @return The isUltraWarm.
+   */
+  boolean getIsUltraWarm();
+
+  /**
+   * <pre>
+   * difficulty of the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+   * @return The enum numeric value on the wire for difficulty.
+   */
+  int getDifficultyValue();
+  /**
+   * <pre>
+   * difficulty of the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+   * @return The difficulty.
+   */
+  com.yplugins.minecraftrpc.proto.world.Difficulty getDifficulty();
 }

@@ -26,10 +26,25 @@ public final class MinecraftRPC {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftWorld_WorldCommandStatus_descriptor;
+    internal_static_MinecraftWorld_CommandStatus_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftWorld_WorldCommandStatus_fieldAccessorTable;
+      internal_static_MinecraftWorld_CommandStatus_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftWorld_Dimension_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftWorld_Dimension_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftWorld_Location_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftWorld_Location_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftWorld_Orientation_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftWorld_Orientation_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MinecraftWorld_World_descriptor;
   static final 
@@ -64,67 +79,98 @@ public final class MinecraftRPC {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025minecraft_world.proto\022\016MinecraftWorld\"" +
-      "Y\n\022WorldCommandStatus\0224\n\004code\030\001 \001(\0162&.Mi" +
-      "necraftWorld.WorldCommandStatusCode\022\r\n\005e" +
-      "xtra\030\002 \001(\t\">\n\005World\022\014\n\004name\030\001 \001(\t\022\'\n\004inf" +
-      "o\030\002 \001(\0132\031.MinecraftWorld.WorldInfo\"%\n\tWo" +
-      "rldInfo\022\013\n\003key\030\001 \001(\t\022\013\n\003pvp\030\002 \001(\010\"!\n\014Wor" +
-      "ldRequest\022\021\n\tnamespace\030\001 \001(\t\"@\n\020WorldLis" +
-      "tRequest\022,\n\006filter\030\001 \003(\0132\034.MinecraftWorl" +
-      "d.WorldRequest\"n\n\021WorldListResponse\0222\n\006s" +
-      "tatus\030\001 \001(\0132\".MinecraftWorld.WorldComman" +
-      "dStatus\022%\n\006worlds\030\002 \003(\0132\025.MinecraftWorld" +
-      ".World*\211\001\n\026WorldCommandStatusCode\022\006\n\002OK\020" +
-      "\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSING_ARGUMENT" +
-      "\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NOT_IMPLEMEN" +
-      "TED\020\004\022\023\n\017WORLD_NOT_FOUND\020\0052e\n\016MinecraftW" +
-      "orld\022S\n\014getWorldList\022 .MinecraftWorld.Wo" +
-      "rldListRequest\032!.MinecraftWorld.WorldLis" +
-      "tResponseB7\n%com.yplugins.minecraftrpc.p" +
-      "roto.worldB\014MinecraftRPCP\001b\006proto3"
+      "\n\025minecraft_world.proto\022\016MinecraftWorld\032" +
+      "\025minecraft_types.proto\"O\n\rCommandStatus\022" +
+      "/\n\004code\030\001 \001(\0162!.MinecraftWorld.CommandSt" +
+      "atusCode\022\r\n\005extra\030\002 \001(\t\"\031\n\tDimension\022\014\n\004" +
+      "name\030\001 \001(\t\"\216\001\n\010Location\022,\n\tdimension\030\001 \001" +
+      "(\0132\031.MinecraftWorld.Dimension\022\"\n\003pos\030\002 \001" +
+      "(\0132\025.MinecraftTypes.Vec3f\0220\n\013orientation" +
+      "\030\003 \001(\0132\033.MinecraftWorld.Orientation\")\n\013O" +
+      "rientation\022\013\n\003yaw\030\001 \001(\002\022\r\n\005pitch\030\002 \001(\002\"L" +
+      "\n\005World\022\014\n\004name\030\001 \001(\t\022\014\n\004seed\030\002 \001(\003\022\'\n\004i" +
+      "nfo\030\003 \001(\0132\031.MinecraftWorld.WorldInfo\"\256\001\n" +
+      "\tWorldInfo\022\013\n\003key\030\001 \001(\t\022\r\n\005isPVP\030\002 \001(\010\022\022" +
+      "\n\nisHardcore\030\003 \001(\010\022\024\n\014isThundering\030\004 \001(\010" +
+      "\022\026\n\016isClearWeather\030\005 \001(\010\022\023\n\013isUltraWarm\030" +
+      "\006 \001(\010\022.\n\ndifficulty\030\007 \001(\0162\032.MinecraftWor" +
+      "ld.Difficulty\"!\n\014WorldRequest\022\021\n\tnamespa" +
+      "ce\030\001 \001(\t\"@\n\020WorldListRequest\022,\n\006filter\030\001" +
+      " \003(\0132\034.MinecraftWorld.WorldRequest\"i\n\021Wo" +
+      "rldListResponse\022-\n\006status\030\001 \001(\0132\035.Minecr" +
+      "aftWorld.CommandStatus\022%\n\006worlds\030\002 \003(\0132\025" +
+      ".MinecraftWorld.World*\204\001\n\021CommandStatusC" +
+      "ode\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSIN" +
+      "G_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NO" +
+      "T_IMPLEMENTED\020\004\022\023\n\017WORLD_NOT_FOUND\020\005*:\n\n" +
+      "Difficulty\022\014\n\010PEACEFUL\020\000\022\010\n\004EASY\020\001\022\n\n\006NO" +
+      "RMAL\020\002\022\010\n\004HARD\020\0032e\n\016MinecraftWorld\022S\n\014ge" +
+      "tWorldList\022 .MinecraftWorld.WorldListReq" +
+      "uest\032!.MinecraftWorld.WorldListResponseB" +
+      "7\n%com.yplugins.minecraftrpc.proto.world" +
+      "B\014MinecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.yplugins.minecraftrpc.proto.types.MinecraftRPC.getDescriptor(),
         });
-    internal_static_MinecraftWorld_WorldCommandStatus_descriptor =
+    internal_static_MinecraftWorld_CommandStatus_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MinecraftWorld_WorldCommandStatus_fieldAccessorTable = new
+    internal_static_MinecraftWorld_CommandStatus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftWorld_WorldCommandStatus_descriptor,
+        internal_static_MinecraftWorld_CommandStatus_descriptor,
         new java.lang.String[] { "Code", "Extra", });
-    internal_static_MinecraftWorld_World_descriptor =
+    internal_static_MinecraftWorld_Dimension_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_MinecraftWorld_Dimension_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftWorld_Dimension_descriptor,
+        new java.lang.String[] { "Name", });
+    internal_static_MinecraftWorld_Location_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_MinecraftWorld_Location_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftWorld_Location_descriptor,
+        new java.lang.String[] { "Dimension", "Pos", "Orientation", });
+    internal_static_MinecraftWorld_Orientation_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_MinecraftWorld_Orientation_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftWorld_Orientation_descriptor,
+        new java.lang.String[] { "Yaw", "Pitch", });
+    internal_static_MinecraftWorld_World_descriptor =
+      getDescriptor().getMessageTypes().get(4);
     internal_static_MinecraftWorld_World_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_World_descriptor,
-        new java.lang.String[] { "Name", "Info", });
+        new java.lang.String[] { "Name", "Seed", "Info", });
     internal_static_MinecraftWorld_WorldInfo_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_MinecraftWorld_WorldInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_WorldInfo_descriptor,
-        new java.lang.String[] { "Key", "Pvp", });
+        new java.lang.String[] { "Key", "IsPVP", "IsHardcore", "IsThundering", "IsClearWeather", "IsUltraWarm", "Difficulty", });
     internal_static_MinecraftWorld_WorldRequest_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_MinecraftWorld_WorldRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_WorldRequest_descriptor,
         new java.lang.String[] { "Namespace", });
     internal_static_MinecraftWorld_WorldListRequest_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_MinecraftWorld_WorldListRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_WorldListRequest_descriptor,
         new java.lang.String[] { "Filter", });
     internal_static_MinecraftWorld_WorldListResponse_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_MinecraftWorld_WorldListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_WorldListResponse_descriptor,
         new java.lang.String[] { "Status", "Worlds", });
     descriptor.resolveAllFeaturesImmutable();
+    com.yplugins.minecraftrpc.proto.types.MinecraftRPC.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

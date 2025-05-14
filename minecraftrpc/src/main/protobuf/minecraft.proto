@@ -12,18 +12,6 @@ import "minecraft_world.proto";
 service Minecraft {
     rpc runCommand(CommandRequest) returns (Status);
     rpc postToChat(ChatPostRequest) returns (Status);
-    rpc getHeight(HeightRequest) returns (HeightResponse);
-    rpc getBlock(BlockRequest) returns (BlockResponse);
-    rpc setBlock(Block) returns (Status);
-    rpc setBlocks(Blocks) returns (Status);
-    rpc setBlockCube(Blocks) returns (Status); // expect exactly two blocks: opposite corners of cube
-    rpc getPlayers(PlayersRequest) returns (PlayersResponse);
-    rpc getPlayer(PlayerRequest) returns (PlayerResponse);
-    rpc setPlayer(Player) returns (Status);
-    rpc spawnEntity(SpawnEntityRequest) returns (SpawnedEntityResponse);
-    rpc setEntity(Entity) returns (Status);
-    rpc getEntities(EntityRequest) returns (EntityResponse);
-    rpc getEventStream(EventStreamRequest) returns (stream Event);
 }
 
 /** Empty on purpose, if no parameters should be sent */
@@ -45,12 +33,6 @@ enum StatusCode {
     MISSING_ARGUMENT = 2;
     INVALID_ARGUMENT = 3;
     NOT_IMPLEMENTED = 4;
-    WORLD_NOT_FOUND = 5;
-    PLAYER_NOT_FOUND = 6;
-    BLOCK_TYPE_NOT_FOUND = 7;
-    ENTITY_TYPE_NOT_FOUND = 8;
-    ENTITY_NOT_SPAWNABLE = 9;
-    ENTITY_NOT_FOUND = 10;
 }
 
 /** Simple text message */
@@ -58,210 +40,10 @@ message Message {
     string text = 1;
 }
 
-/** 3D coordinates WITHOUT comma (= integers) */
-message Vec3 {
-    int32 x = 1;
-    int32 y = 2;
-    int32 z = 3;
-}
-
-/** 3D coordinates WITH comma */
-message Vec3f {
-    float x = 1;
-    float y = 2;
-    float z = 3;
-}
-
-/** All information about a block that can be shared (i.e. everything except for position (and world) */
-message BlockInfo {
-    string blockType = 1;
-    BlockNbtDaten nbt = 2;
-}
-
-/** Additional NBT information in the form of stringified JSON */
-message BlockNbtDaten {
-}
-
-/** A Minecraft block */
-message Block {
-    BlockInfo info = 1;
-    MinecraftWorld.World world = 2;
-    Vec3 pos = 3;
-}
-
-/** A number of blocks of the same type */
-message Blocks {
-    BlockInfo info = 1;
-    MinecraftWorld.World world = 2;
-    repeated Vec3 pos = 3;
-}
-
-
-message EntityOrientation {
-    float yaw = 1;    // Player left/right angle (along y axis) in [-180, 180) with 0 looking south
-    float pitch = 2;  // Player up/down angle in [-90, 90] with -90 looking straight up
-}
-
-message Location {
-    MinecraftWorld.World world = 1;
-    Vec3f pos = 2;
-    EntityOrientation orientation = 3;
-}
-
-message Player {
-    string name = 1; // name of the player
-    Location location = 2; // location of the player
-    string uuid = 3; // UUID of the player
-    string address = 4; // IP address of the player
-    int32 ping = 5; // ping of the player
-}
-
-message Entity {
-    string type = 1;
-    Location location = 2;
-}
-
-
-message LocationRequest {
-    MinecraftWorld.WorldRequest world = 1;
-    Vec3f pos = 2;
-    optional EntityOrientation orientation = 3; // optional, if not set, use default orientation
-}
-
-message SpawnEntityRequest {
-    string type = 1;
-    LocationRequest location = 2;
-}
-
-/**
-    Server event functions - events use streams!
-*/
-
-enum EventType {
-    EVENT_NONE = 0;
-    EVENT_PLAYER_JOIN = 1;
-    EVENT_PLAYER_LEAVE = 2;
-    EVENT_PLAYER_DEATH = 3;
-    EVENT_CHAT_MESSAGE = 4;
-    EVENT_BLOCK_HIT = 5;
-    EVENT_PROJECTILE_HIT = 6;
-}
-
-message EventStreamRequest {
-    EventType eventType = 1;
-}
-
-message Event {
-    EventType type = 1;
-
-    message PlayerAndMessage {
-        Player trigger = 1;
-        string message = 2;
-    }
-    message BlockHit {
-        Player trigger = 1;
-        bool right_hand = 2;
-        string item_type = 3;
-        Vec3 pos = 4;
-        string face = 5;
-    }
-    message ProjectileHit {
-        Player trigger = 1;
-        string projectile = 2;
-        Vec3 pos = 3;
-        string face = 4;
-        oneof target {
-            Player player = 5;
-            Entity entity = 6;
-            string block = 7;
-        }
-    }
-    oneof event {
-        Status error = 2;
-        PlayerAndMessage playerMsg = 3;
-        BlockHit blockHit = 4;
-        ProjectileHit projectileHit = 5;
-    }
-}
-
-/**
-    Here are the requests and responses for the specific functions
-*/
-
 message CommandRequest {
     string command = 1;
 }
 
 message ChatPostRequest {
     string message = 1;
-}
-
-
-message HeightRequest {
-    MinecraftWorld.World world = 1;
-    int32 x = 2;
-    int32 z = 3;
-}
-
-message HeightResponse {
-    Status status = 1;
-    Block block = 2;
-}
-
-message BlockRequest {
-    Vec3 pos = 1;
-    MinecraftWorld.World world = 2;
-    bool withData = 3;
-}
-
-message BlockResponse {
-    Status status = 1;
-    BlockInfo info = 2;
-}
-
-message PlayersRequest {
-}
-
-message PlayersResponse {
-    Status status = 1;
-    repeated Player players = 2;
-}
-
-message PlayerRequest {
-    optional string name = 1; // name of the player
-    optional string uuid = 2; // UUID of the player
-}
-
-message PlayerResponse {
-    Status status = 1;
-    Player player = 2;
-}
-
-message SpawnedEntityResponse {
-    Status status = 1;
-    Entity entity = 2;
-}
-
-message EntityRequest {
-
-    message SpecificEntities {
-        repeated Entity entities = 1; // must be non-empty
-    }
-
-    message WorldEntities {
-        MinecraftWorld.World world = 1; // get from this world
-        string type = 2; // type of entities to get, all entities if empty
-        bool includeNotSpawnable = 3; // also allow the getting of not spawnable entities
-    }
-
-    oneof EntityRequestType {
-        SpecificEntities specific = 1;
-        WorldEntities worldwide = 2;
-    }
-    bool withLocations = 3;
-}
-
-message EntityResponse {
-    Status status = 1;
-    repeated Entity entities = 2;
 }

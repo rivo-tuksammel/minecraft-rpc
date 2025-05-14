@@ -1,5 +1,6 @@
 package com.yplugins.minecraftrpc;
 
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.net.InetSocketAddress;
@@ -9,7 +10,9 @@ import io.grpc.Server;
 import io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.yplugins.minecraftrpc.rpc.services.CommandService;
+import com.yplugins.minecraftrpc.rpc.services.EntityService;
+import com.yplugins.minecraftrpc.rpc.services.PlayerService;
+import com.yplugins.minecraftrpc.rpc.services.WorldService;
 import com.yplugins.minecraftrpc.utils.GameThreadExecutor;
 
 public class MinecraftRPC extends JavaPlugin {
@@ -48,7 +51,9 @@ public class MinecraftRPC extends JavaPlugin {
 
         var grpcServerBuilder = NettyServerBuilder
             .forAddress(grpcAddress)
-            .addService(new CommandService(this));
+            .addService(new EntityService(this))
+            .addService(new PlayerService(this))
+            .addService(new WorldService(this));
 
         this.grpcServer = grpcServerBuilder.build();
 
@@ -68,11 +73,17 @@ public class MinecraftRPC extends JavaPlugin {
         this._gameThreadExecutor = null;
         if (this.grpcServer != null) {
             try {
-                this.grpcServer.shutdown();
+
+                this.grpcServer.shutdown(); // Initiate an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted.
                 this.grpcServer.awaitTermination();
+                if(!this.grpcServer.awaitTermination(10, TimeUnit.SECONDS)) {
+                    this.grpcServer.shutdownNow();
+                }
+
                 logger.log(Level.INFO, "gRPC server stopped");
             } catch (InterruptedException e) {
                 logger.log(Level.SEVERE, "Failed to stop gRPC server: {0}", e.getMessage());
+                this.grpcServer.shutdownNow();
             }
         }
     }

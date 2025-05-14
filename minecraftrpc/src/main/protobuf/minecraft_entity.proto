@@ -1,0 +1,70 @@
+syntax = "proto3";
+package MinecraftEntity;
+option java_package = "com.yplugins.minecraftrpc.proto.entity";
+option java_multiple_files = true;
+option java_outer_classname = "MinecraftRPC";
+
+import "minecraft_world.proto";
+import "minecraft_types.proto";
+
+service MinecraftEntity {
+    rpc spawnEntity(SpawnEntityRequest) returns (SpawnEntityResponse);
+}
+
+/** Status if a command was successful or what errors occured */
+message CommandStatus {
+    CommandStatusCode code = 1;
+    string extra = 2;
+    // the reason the command failed or additional information about success or failure
+    // depending on the function used may be the name of the wrong parameter, number of players affected ...
+    // allows for insertion into error messages of any language
+}
+
+enum CommandStatusCode {
+    OK = 0;
+    UNKNOWN_ERROR = 1;
+    MISSING_ARGUMENT = 2;
+    INVALID_ARGUMENT = 3;
+    NOT_IMPLEMENTED = 4;
+    ENTITY_TYPE_NOT_FOUND = 8;
+    ENTITY_NOT_SPAWNABLE = 9;
+    ENTITY_NOT_FOUND = 10;
+}
+
+message Entity {
+    string type = 1;
+    MinecraftWorld.Location location = 2;
+}
+
+message EntityRequest {
+
+    message SpecificEntities {
+        repeated Entity filter = 1; // must be non-empty
+    }
+
+    message WorldEntities {
+        MinecraftWorld.World world = 1; // get from this world
+        string type = 2; // type of entities to get, all entities if empty
+        bool includeNotSpawnable = 3; // also allow the getting of not spawnable entities
+    }
+
+    oneof EntityRequestType {
+        SpecificEntities specific = 1;
+        WorldEntities worldwide = 2;
+    }
+}
+
+message SpawnEntityRequest {
+    string type = 1; // type of entity to spawn, string because mods can add new entities
+    message SpawnEntityLocation {
+        MinecraftWorld.Dimension dimension = 1;
+        MinecraftTypes.Vec3f pos = 2;
+        optional MinecraftWorld.Orientation orientation = 3;
+    }
+    SpawnEntityLocation location = 2;
+}
+
+message SpawnEntityResponse {
+    CommandStatus status = 1;
+    Entity entity = 2;
+}

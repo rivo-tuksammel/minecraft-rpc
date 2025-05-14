@@ -41,91 +41,6 @@ public final class MinecraftRPC {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_Minecraft_Message_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Vec3_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Vec3_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Vec3f_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Vec3f_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_BlockInfo_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_BlockInfo_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_BlockNbtDaten_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_BlockNbtDaten_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Block_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Block_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Blocks_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Blocks_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_EntityOrientation_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_EntityOrientation_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Location_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Location_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Player_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Player_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Entity_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Entity_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_LocationRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_LocationRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_SpawnEntityRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_SpawnEntityRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_EventStreamRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_EventStreamRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Event_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Event_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Event_PlayerAndMessage_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Event_PlayerAndMessage_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Event_BlockHit_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Event_BlockHit_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_Event_ProjectileHit_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_Event_ProjectileHit_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Minecraft_CommandRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -135,71 +50,6 @@ public final class MinecraftRPC {
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_Minecraft_ChatPostRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_HeightRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_HeightRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_HeightResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_HeightResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_BlockRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_BlockRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_BlockResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_BlockResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_PlayersRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_PlayersRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_PlayersResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_PlayersResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_PlayerRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_PlayerRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_PlayerResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_PlayerResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_SpawnedEntityResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_SpawnedEntityResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_EntityRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_EntityRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_EntityRequest_SpecificEntities_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_EntityRequest_SpecificEntities_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_EntityRequest_WorldEntities_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_EntityRequest_WorldEntities_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Minecraft_EntityResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Minecraft_EntityResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -212,115 +62,16 @@ public final class MinecraftRPC {
       "\n\017minecraft.proto\022\tMinecraft\032\025minecraft_" +
       "world.proto\"\007\n\005Empty\"<\n\006Status\022#\n\004code\030\001" +
       " \001(\0162\025.Minecraft.StatusCode\022\r\n\005extra\030\002 \001" +
-      "(\t\"\027\n\007Message\022\014\n\004text\030\001 \001(\t\"\'\n\004Vec3\022\t\n\001x" +
-      "\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\022\t\n\001z\030\003 \001(\005\"(\n\005Vec3f\022\t\n" +
-      "\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"E\n\tBlockI" +
-      "nfo\022\021\n\tblockType\030\001 \001(\t\022%\n\003nbt\030\002 \001(\0132\030.Mi" +
-      "necraft.BlockNbtDaten\"\017\n\rBlockNbtDaten\"o" +
-      "\n\005Block\022\"\n\004info\030\001 \001(\0132\024.Minecraft.BlockI" +
-      "nfo\022$\n\005world\030\002 \001(\0132\025.MinecraftWorld.Worl" +
-      "d\022\034\n\003pos\030\003 \001(\0132\017.Minecraft.Vec3\"p\n\006Block" +
-      "s\022\"\n\004info\030\001 \001(\0132\024.Minecraft.BlockInfo\022$\n" +
-      "\005world\030\002 \001(\0132\025.MinecraftWorld.World\022\034\n\003p" +
-      "os\030\003 \003(\0132\017.Minecraft.Vec3\"/\n\021EntityOrien" +
-      "tation\022\013\n\003yaw\030\001 \001(\002\022\r\n\005pitch\030\002 \001(\002\"\202\001\n\010L" +
-      "ocation\022$\n\005world\030\001 \001(\0132\025.MinecraftWorld." +
-      "World\022\035\n\003pos\030\002 \001(\0132\020.Minecraft.Vec3f\0221\n\013" +
-      "orientation\030\003 \001(\0132\034.Minecraft.EntityOrie" +
-      "ntation\"j\n\006Player\022\014\n\004name\030\001 \001(\t\022%\n\010locat" +
-      "ion\030\002 \001(\0132\023.Minecraft.Location\022\014\n\004uuid\030\003" +
-      " \001(\t\022\017\n\007address\030\004 \001(\t\022\014\n\004ping\030\005 \001(\005\"=\n\006E" +
-      "ntity\022\014\n\004type\030\001 \001(\t\022%\n\010location\030\002 \001(\0132\023." +
-      "Minecraft.Location\"\245\001\n\017LocationRequest\022+" +
-      "\n\005world\030\001 \001(\0132\034.MinecraftWorld.WorldRequ" +
-      "est\022\035\n\003pos\030\002 \001(\0132\020.Minecraft.Vec3f\0226\n\013or" +
-      "ientation\030\003 \001(\0132\034.Minecraft.EntityOrient" +
-      "ationH\000\210\001\001B\016\n\014_orientation\"P\n\022SpawnEntit" +
-      "yRequest\022\014\n\004type\030\001 \001(\t\022,\n\010location\030\002 \001(\013" +
-      "2\032.Minecraft.LocationRequest\"=\n\022EventStr" +
-      "eamRequest\022\'\n\teventType\030\001 \001(\0162\024.Minecraf" +
-      "t.EventType\"\240\005\n\005Event\022\"\n\004type\030\001 \001(\0162\024.Mi" +
-      "necraft.EventType\022\"\n\005error\030\002 \001(\0132\021.Minec" +
-      "raft.StatusH\000\0226\n\tplayerMsg\030\003 \001(\0132!.Minec" +
-      "raft.Event.PlayerAndMessageH\000\022-\n\010blockHi" +
-      "t\030\004 \001(\0132\031.Minecraft.Event.BlockHitH\000\0227\n\r" +
-      "projectileHit\030\005 \001(\0132\036.Minecraft.Event.Pr" +
-      "ojectileHitH\000\032G\n\020PlayerAndMessage\022\"\n\007tri" +
-      "gger\030\001 \001(\0132\021.Minecraft.Player\022\017\n\007message" +
-      "\030\002 \001(\t\032\201\001\n\010BlockHit\022\"\n\007trigger\030\001 \001(\0132\021.M" +
-      "inecraft.Player\022\022\n\nright_hand\030\002 \001(\010\022\021\n\ti" +
-      "tem_type\030\003 \001(\t\022\034\n\003pos\030\004 \001(\0132\017.Minecraft." +
-      "Vec3\022\014\n\004face\030\005 \001(\t\032\330\001\n\rProjectileHit\022\"\n\007" +
-      "trigger\030\001 \001(\0132\021.Minecraft.Player\022\022\n\nproj" +
-      "ectile\030\002 \001(\t\022\034\n\003pos\030\003 \001(\0132\017.Minecraft.Ve" +
-      "c3\022\014\n\004face\030\004 \001(\t\022#\n\006player\030\005 \001(\0132\021.Minec" +
-      "raft.PlayerH\000\022#\n\006entity\030\006 \001(\0132\021.Minecraf" +
-      "t.EntityH\000\022\017\n\005block\030\007 \001(\tH\000B\010\n\006targetB\007\n" +
-      "\005event\"!\n\016CommandRequest\022\017\n\007command\030\001 \001(" +
-      "\t\"\"\n\017ChatPostRequest\022\017\n\007message\030\001 \001(\t\"K\n" +
-      "\rHeightRequest\022$\n\005world\030\001 \001(\0132\025.Minecraf" +
-      "tWorld.World\022\t\n\001x\030\002 \001(\005\022\t\n\001z\030\003 \001(\005\"T\n\016He" +
-      "ightResponse\022!\n\006status\030\001 \001(\0132\021.Minecraft" +
-      ".Status\022\037\n\005block\030\002 \001(\0132\020.Minecraft.Block" +
-      "\"d\n\014BlockRequest\022\034\n\003pos\030\001 \001(\0132\017.Minecraf" +
-      "t.Vec3\022$\n\005world\030\002 \001(\0132\025.MinecraftWorld.W" +
-      "orld\022\020\n\010withData\030\003 \001(\010\"V\n\rBlockResponse\022" +
-      "!\n\006status\030\001 \001(\0132\021.Minecraft.Status\022\"\n\004in" +
-      "fo\030\002 \001(\0132\024.Minecraft.BlockInfo\"\020\n\016Player" +
-      "sRequest\"X\n\017PlayersResponse\022!\n\006status\030\001 " +
-      "\001(\0132\021.Minecraft.Status\022\"\n\007players\030\002 \003(\0132" +
-      "\021.Minecraft.Player\"G\n\rPlayerRequest\022\021\n\004n" +
-      "ame\030\001 \001(\tH\000\210\001\001\022\021\n\004uuid\030\002 \001(\tH\001\210\001\001B\007\n\005_na" +
-      "meB\007\n\005_uuid\"V\n\016PlayerResponse\022!\n\006status\030" +
-      "\001 \001(\0132\021.Minecraft.Status\022!\n\006player\030\002 \001(\013" +
-      "2\021.Minecraft.Player\"]\n\025SpawnedEntityResp" +
-      "onse\022!\n\006status\030\001 \001(\0132\021.Minecraft.Status\022" +
-      "!\n\006entity\030\002 \001(\0132\021.Minecraft.Entity\"\322\002\n\rE" +
-      "ntityRequest\022=\n\010specific\030\001 \001(\0132).Minecra" +
-      "ft.EntityRequest.SpecificEntitiesH\000\022;\n\tw" +
-      "orldwide\030\002 \001(\0132&.Minecraft.EntityRequest" +
-      ".WorldEntitiesH\000\022\025\n\rwithLocations\030\003 \001(\010\032" +
-      "7\n\020SpecificEntities\022#\n\010entities\030\001 \003(\0132\021." +
-      "Minecraft.Entity\032`\n\rWorldEntities\022$\n\005wor" +
-      "ld\030\001 \001(\0132\025.MinecraftWorld.World\022\014\n\004type\030" +
-      "\002 \001(\t\022\033\n\023includeNotSpawnable\030\003 \001(\010B\023\n\021En" +
-      "tityRequestType\"X\n\016EntityResponse\022!\n\006sta" +
-      "tus\030\001 \001(\0132\021.Minecraft.Status\022#\n\010entities" +
-      "\030\002 \003(\0132\021.Minecraft.Entity*\370\001\n\nStatusCode" +
-      "\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSING_A" +
-      "RGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NOT_I" +
-      "MPLEMENTED\020\004\022\023\n\017WORLD_NOT_FOUND\020\005\022\024\n\020PLA" +
-      "YER_NOT_FOUND\020\006\022\030\n\024BLOCK_TYPE_NOT_FOUND\020" +
-      "\007\022\031\n\025ENTITY_TYPE_NOT_FOUND\020\010\022\030\n\024ENTITY_N" +
-      "OT_SPAWNABLE\020\t\022\024\n\020ENTITY_NOT_FOUND\020\n*\251\001\n" +
-      "\tEventType\022\016\n\nEVENT_NONE\020\000\022\025\n\021EVENT_PLAY" +
-      "ER_JOIN\020\001\022\026\n\022EVENT_PLAYER_LEAVE\020\002\022\026\n\022EVE" +
-      "NT_PLAYER_DEATH\020\003\022\026\n\022EVENT_CHAT_MESSAGE\020" +
-      "\004\022\023\n\017EVENT_BLOCK_HIT\020\005\022\030\n\024EVENT_PROJECTI" +
-      "LE_HIT\020\0062\345\006\n\tMinecraft\022:\n\nrunCommand\022\031.M" +
-      "inecraft.CommandRequest\032\021.Minecraft.Stat" +
-      "us\022;\n\npostToChat\022\032.Minecraft.ChatPostReq" +
-      "uest\032\021.Minecraft.Status\022@\n\tgetHeight\022\030.M" +
-      "inecraft.HeightRequest\032\031.Minecraft.Heigh" +
-      "tResponse\022=\n\010getBlock\022\027.Minecraft.BlockR" +
-      "equest\032\030.Minecraft.BlockResponse\022/\n\010setB" +
-      "lock\022\020.Minecraft.Block\032\021.Minecraft.Statu" +
-      "s\0221\n\tsetBlocks\022\021.Minecraft.Blocks\032\021.Mine" +
-      "craft.Status\0224\n\014setBlockCube\022\021.Minecraft" +
-      ".Blocks\032\021.Minecraft.Status\022C\n\ngetPlayers" +
-      "\022\031.Minecraft.PlayersRequest\032\032.Minecraft." +
-      "PlayersResponse\022@\n\tgetPlayer\022\030.Minecraft" +
-      ".PlayerRequest\032\031.Minecraft.PlayerRespons" +
-      "e\0221\n\tsetPlayer\022\021.Minecraft.Player\032\021.Mine" +
-      "craft.Status\022N\n\013spawnEntity\022\035.Minecraft." +
-      "SpawnEntityRequest\032 .Minecraft.SpawnedEn" +
-      "tityResponse\0221\n\tsetEntity\022\021.Minecraft.En" +
-      "tity\032\021.Minecraft.Status\022B\n\013getEntities\022\030" +
-      ".Minecraft.EntityRequest\032\031.Minecraft.Ent" +
-      "ityResponse\022C\n\016getEventStream\022\035.Minecraf" +
-      "t.EventStreamRequest\032\020.Minecraft.Event0\001" +
-      "B1\n\037com.yplugins.minecraftrpc.protoB\014Min" +
-      "ecraftRPCP\001b\006proto3"
+      "(\t\"\027\n\007Message\022\014\n\004text\030\001 \001(\t\"!\n\016CommandRe" +
+      "quest\022\017\n\007command\030\001 \001(\t\"\"\n\017ChatPostReques" +
+      "t\022\017\n\007message\030\001 \001(\t*h\n\nStatusCode\022\006\n\002OK\020\000" +
+      "\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSING_ARGUMENT\020" +
+      "\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NOT_IMPLEMENT" +
+      "ED\020\0042\204\001\n\tMinecraft\022:\n\nrunCommand\022\031.Minec" +
+      "raft.CommandRequest\032\021.Minecraft.Status\022;" +
+      "\n\npostToChat\022\032.Minecraft.ChatPostRequest" +
+      "\032\021.Minecraft.StatusB1\n\037com.yplugins.mine" +
+      "craftrpc.protoB\014MinecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -345,198 +96,18 @@ public final class MinecraftRPC {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Minecraft_Message_descriptor,
         new java.lang.String[] { "Text", });
-    internal_static_Minecraft_Vec3_descriptor =
-      getDescriptor().getMessageTypes().get(3);
-    internal_static_Minecraft_Vec3_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Vec3_descriptor,
-        new java.lang.String[] { "X", "Y", "Z", });
-    internal_static_Minecraft_Vec3f_descriptor =
-      getDescriptor().getMessageTypes().get(4);
-    internal_static_Minecraft_Vec3f_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Vec3f_descriptor,
-        new java.lang.String[] { "X", "Y", "Z", });
-    internal_static_Minecraft_BlockInfo_descriptor =
-      getDescriptor().getMessageTypes().get(5);
-    internal_static_Minecraft_BlockInfo_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_BlockInfo_descriptor,
-        new java.lang.String[] { "BlockType", "Nbt", });
-    internal_static_Minecraft_BlockNbtDaten_descriptor =
-      getDescriptor().getMessageTypes().get(6);
-    internal_static_Minecraft_BlockNbtDaten_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_BlockNbtDaten_descriptor,
-        new java.lang.String[] { });
-    internal_static_Minecraft_Block_descriptor =
-      getDescriptor().getMessageTypes().get(7);
-    internal_static_Minecraft_Block_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Block_descriptor,
-        new java.lang.String[] { "Info", "World", "Pos", });
-    internal_static_Minecraft_Blocks_descriptor =
-      getDescriptor().getMessageTypes().get(8);
-    internal_static_Minecraft_Blocks_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Blocks_descriptor,
-        new java.lang.String[] { "Info", "World", "Pos", });
-    internal_static_Minecraft_EntityOrientation_descriptor =
-      getDescriptor().getMessageTypes().get(9);
-    internal_static_Minecraft_EntityOrientation_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_EntityOrientation_descriptor,
-        new java.lang.String[] { "Yaw", "Pitch", });
-    internal_static_Minecraft_Location_descriptor =
-      getDescriptor().getMessageTypes().get(10);
-    internal_static_Minecraft_Location_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Location_descriptor,
-        new java.lang.String[] { "World", "Pos", "Orientation", });
-    internal_static_Minecraft_Player_descriptor =
-      getDescriptor().getMessageTypes().get(11);
-    internal_static_Minecraft_Player_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Player_descriptor,
-        new java.lang.String[] { "Name", "Location", "Uuid", "Address", "Ping", });
-    internal_static_Minecraft_Entity_descriptor =
-      getDescriptor().getMessageTypes().get(12);
-    internal_static_Minecraft_Entity_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Entity_descriptor,
-        new java.lang.String[] { "Type", "Location", });
-    internal_static_Minecraft_LocationRequest_descriptor =
-      getDescriptor().getMessageTypes().get(13);
-    internal_static_Minecraft_LocationRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_LocationRequest_descriptor,
-        new java.lang.String[] { "World", "Pos", "Orientation", });
-    internal_static_Minecraft_SpawnEntityRequest_descriptor =
-      getDescriptor().getMessageTypes().get(14);
-    internal_static_Minecraft_SpawnEntityRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_SpawnEntityRequest_descriptor,
-        new java.lang.String[] { "Type", "Location", });
-    internal_static_Minecraft_EventStreamRequest_descriptor =
-      getDescriptor().getMessageTypes().get(15);
-    internal_static_Minecraft_EventStreamRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_EventStreamRequest_descriptor,
-        new java.lang.String[] { "EventType", });
-    internal_static_Minecraft_Event_descriptor =
-      getDescriptor().getMessageTypes().get(16);
-    internal_static_Minecraft_Event_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Event_descriptor,
-        new java.lang.String[] { "Type", "Error", "PlayerMsg", "BlockHit", "ProjectileHit", "Event", });
-    internal_static_Minecraft_Event_PlayerAndMessage_descriptor =
-      internal_static_Minecraft_Event_descriptor.getNestedTypes().get(0);
-    internal_static_Minecraft_Event_PlayerAndMessage_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Event_PlayerAndMessage_descriptor,
-        new java.lang.String[] { "Trigger", "Message", });
-    internal_static_Minecraft_Event_BlockHit_descriptor =
-      internal_static_Minecraft_Event_descriptor.getNestedTypes().get(1);
-    internal_static_Minecraft_Event_BlockHit_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Event_BlockHit_descriptor,
-        new java.lang.String[] { "Trigger", "RightHand", "ItemType", "Pos", "Face", });
-    internal_static_Minecraft_Event_ProjectileHit_descriptor =
-      internal_static_Minecraft_Event_descriptor.getNestedTypes().get(2);
-    internal_static_Minecraft_Event_ProjectileHit_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_Event_ProjectileHit_descriptor,
-        new java.lang.String[] { "Trigger", "Projectile", "Pos", "Face", "Player", "Entity", "Block", "Target", });
     internal_static_Minecraft_CommandRequest_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_Minecraft_CommandRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Minecraft_CommandRequest_descriptor,
         new java.lang.String[] { "Command", });
     internal_static_Minecraft_ChatPostRequest_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_Minecraft_ChatPostRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Minecraft_ChatPostRequest_descriptor,
         new java.lang.String[] { "Message", });
-    internal_static_Minecraft_HeightRequest_descriptor =
-      getDescriptor().getMessageTypes().get(19);
-    internal_static_Minecraft_HeightRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_HeightRequest_descriptor,
-        new java.lang.String[] { "World", "X", "Z", });
-    internal_static_Minecraft_HeightResponse_descriptor =
-      getDescriptor().getMessageTypes().get(20);
-    internal_static_Minecraft_HeightResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_HeightResponse_descriptor,
-        new java.lang.String[] { "Status", "Block", });
-    internal_static_Minecraft_BlockRequest_descriptor =
-      getDescriptor().getMessageTypes().get(21);
-    internal_static_Minecraft_BlockRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_BlockRequest_descriptor,
-        new java.lang.String[] { "Pos", "World", "WithData", });
-    internal_static_Minecraft_BlockResponse_descriptor =
-      getDescriptor().getMessageTypes().get(22);
-    internal_static_Minecraft_BlockResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_BlockResponse_descriptor,
-        new java.lang.String[] { "Status", "Info", });
-    internal_static_Minecraft_PlayersRequest_descriptor =
-      getDescriptor().getMessageTypes().get(23);
-    internal_static_Minecraft_PlayersRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_PlayersRequest_descriptor,
-        new java.lang.String[] { });
-    internal_static_Minecraft_PlayersResponse_descriptor =
-      getDescriptor().getMessageTypes().get(24);
-    internal_static_Minecraft_PlayersResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_PlayersResponse_descriptor,
-        new java.lang.String[] { "Status", "Players", });
-    internal_static_Minecraft_PlayerRequest_descriptor =
-      getDescriptor().getMessageTypes().get(25);
-    internal_static_Minecraft_PlayerRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_PlayerRequest_descriptor,
-        new java.lang.String[] { "Name", "Uuid", });
-    internal_static_Minecraft_PlayerResponse_descriptor =
-      getDescriptor().getMessageTypes().get(26);
-    internal_static_Minecraft_PlayerResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_PlayerResponse_descriptor,
-        new java.lang.String[] { "Status", "Player", });
-    internal_static_Minecraft_SpawnedEntityResponse_descriptor =
-      getDescriptor().getMessageTypes().get(27);
-    internal_static_Minecraft_SpawnedEntityResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_SpawnedEntityResponse_descriptor,
-        new java.lang.String[] { "Status", "Entity", });
-    internal_static_Minecraft_EntityRequest_descriptor =
-      getDescriptor().getMessageTypes().get(28);
-    internal_static_Minecraft_EntityRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_EntityRequest_descriptor,
-        new java.lang.String[] { "Specific", "Worldwide", "WithLocations", "EntityRequestType", });
-    internal_static_Minecraft_EntityRequest_SpecificEntities_descriptor =
-      internal_static_Minecraft_EntityRequest_descriptor.getNestedTypes().get(0);
-    internal_static_Minecraft_EntityRequest_SpecificEntities_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_EntityRequest_SpecificEntities_descriptor,
-        new java.lang.String[] { "Entities", });
-    internal_static_Minecraft_EntityRequest_WorldEntities_descriptor =
-      internal_static_Minecraft_EntityRequest_descriptor.getNestedTypes().get(1);
-    internal_static_Minecraft_EntityRequest_WorldEntities_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_EntityRequest_WorldEntities_descriptor,
-        new java.lang.String[] { "World", "Type", "IncludeNotSpawnable", });
-    internal_static_Minecraft_EntityResponse_descriptor =
-      getDescriptor().getMessageTypes().get(29);
-    internal_static_Minecraft_EntityResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Minecraft_EntityResponse_descriptor,
-        new java.lang.String[] { "Status", "Entities", });
     descriptor.resolveAllFeaturesImmutable();
     com.yplugins.minecraftrpc.proto.world.MinecraftRPC.getDescriptor();
   }

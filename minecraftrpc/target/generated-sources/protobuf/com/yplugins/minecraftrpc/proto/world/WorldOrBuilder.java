@@ -30,17 +30,39 @@ public interface WorldOrBuilder extends
       getNameBytes();
 
   /**
-   * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+   * <pre>
+   * seed of the world
+   * </pre>
+   *
+   * <code>int64 seed = 2;</code>
+   * @return The seed.
+   */
+  long getSeed();
+
+  /**
+   * <pre>
+   * information about the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WorldInfo info = 3;</code>
    * @return Whether the info field is set.
    */
   boolean hasInfo();
   /**
-   * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+   * <pre>
+   * information about the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WorldInfo info = 3;</code>
    * @return The info.
    */
   com.yplugins.minecraftrpc.proto.world.WorldInfo getInfo();
   /**
-   * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+   * <pre>
+   * information about the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WorldInfo info = 3;</code>
    */
   com.yplugins.minecraftrpc.proto.world.WorldInfoOrBuilder getInfoOrBuilder();
 }

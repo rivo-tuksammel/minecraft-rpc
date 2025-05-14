@@ -1,0 +1,33 @@
+package com.yplugins.minecraftrpc.rpc.services;
+
+import com.yplugins.minecraftrpc.MinecraftRPC;
+import com.yplugins.minecraftrpc.proto.player.OnlinePlayerRequest;
+import com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse;
+import com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest;
+import com.yplugins.minecraftrpc.proto.player.OnlinePlayersResponse;
+import com.yplugins.minecraftrpc.rpc.handlers.player.OnlinePlayerHandler;
+
+import io.grpc.stub.StreamObserver;
+
+public class PlayerService extends com.yplugins.minecraftrpc.proto.player.MinecraftPlayerGrpc.MinecraftPlayerImplBase {
+
+    private final OnlinePlayerHandler playerHandler;
+
+    public PlayerService(MinecraftRPC plugin) {
+        this.playerHandler = new OnlinePlayerHandler(plugin);
+    }
+
+    @Override
+    public void getOnlinePlayer(OnlinePlayerRequest request, StreamObserver<OnlinePlayerResponse> responseObserver) {
+        OnlinePlayerResponse response = playerHandler.handleGetOnlinePlayerRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void getOnlinePlayers(OnlinePlayersRequest request, StreamObserver<OnlinePlayersResponse> responseObserver) {
+        OnlinePlayersResponse response = playerHandler.handleGetOnlinePlayersRequest (request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+}

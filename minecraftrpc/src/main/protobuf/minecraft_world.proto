@@ -4,17 +4,18 @@ option java_package = "com.yplugins.minecraftrpc.proto.world";
 option java_multiple_files = true;
 option java_outer_classname = "MinecraftRPC";
 
+import "minecraft_types.proto";
 
 service MinecraftWorld {
     rpc getWorldList(WorldListRequest) returns (WorldListResponse);
 }
 
-message WorldCommandStatus {
-    WorldCommandStatusCode code = 1;
+message CommandStatus {
+    CommandStatusCode code = 1;
     string extra = 2;
 }
 
-enum WorldCommandStatusCode {
+enum CommandStatusCode {
     OK = 0;
     UNKNOWN_ERROR = 1;
     MISSING_ARGUMENT = 2;
@@ -23,18 +24,51 @@ enum WorldCommandStatusCode {
     WORLD_NOT_FOUND = 5;
 }
 
+message Dimension {
+    string name = 1;
+}
+
+// Represents a location within a Minecraft world, including the dimension,
+// position, and orientation of an entity.
+//
+// Fields:
+//   dimension    - The dimension in which the location exists (e.g., Overworld, Nether, End, etc.).
+//   pos          - The 3D position vector (x, y, z) within the dimension.
+//   orientation  - The orientation (rotation) of the entity/block at this location.
+message Location {
+    Dimension dimension = 1;
+    MinecraftTypes.Vec3f pos = 2;
+    Orientation orientation = 3;
+}
+
+message Orientation {
+    float yaw = 1;    // Left/right angle (along y axis) in [-180, 180) with 0 looking south.
+    float pitch = 2;  // Up/down angle in [-90, 90] with -90 looking straight up.
+}
+
+enum Difficulty {
+    PEACEFUL = 0;
+    EASY = 1;
+    NORMAL = 2;
+    HARD = 3;
+}
 
 /** A Minecraft world */
 message World {
     string name = 1; // name of world == folder name (eg. world, world_nether, world_the_end)
-    WorldInfo info = 2;
+    int64 seed = 2; // seed of the world
+    WorldInfo info = 3; // information about the world
 }
 
 message WorldInfo {
     string key = 1;  // Namespace key of world identifying it ingame (eg. minecraft:overworld, minecraft:the_nether, minecraft:the_end)
-    bool pvp = 2;
+    bool isPVP = 2;
+    bool isHardcore = 3;
+    bool isThundering = 4;
+    bool isClearWeather = 5;
+    bool isUltraWarm = 6;
+    Difficulty difficulty = 7; // difficulty of the world
 }
-
 
 message WorldRequest {
     string namespace = 1; // namespace of the world (eg. minecraft:overworld)
@@ -45,6 +79,6 @@ message WorldListRequest {
 }
 
 message WorldListResponse {
-    WorldCommandStatus status = 1;
+    CommandStatus status = 1;
     repeated World worlds = 2;
 }

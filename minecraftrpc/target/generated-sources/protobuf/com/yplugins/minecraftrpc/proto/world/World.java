@@ -95,10 +95,29 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int INFO_FIELD_NUMBER = 2;
+  public static final int SEED_FIELD_NUMBER = 2;
+  private long seed_ = 0L;
+  /**
+   * <pre>
+   * seed of the world
+   * </pre>
+   *
+   * <code>int64 seed = 2;</code>
+   * @return The seed.
+   */
+  @java.lang.Override
+  public long getSeed() {
+    return seed_;
+  }
+
+  public static final int INFO_FIELD_NUMBER = 3;
   private com.yplugins.minecraftrpc.proto.world.WorldInfo info_;
   /**
-   * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+   * <pre>
+   * information about the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WorldInfo info = 3;</code>
    * @return Whether the info field is set.
    */
   @java.lang.Override
@@ -106,7 +125,11 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+   * <pre>
+   * information about the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WorldInfo info = 3;</code>
    * @return The info.
    */
   @java.lang.Override
@@ -114,7 +137,11 @@ private static final long serialVersionUID = 0L;
     return info_ == null ? com.yplugins.minecraftrpc.proto.world.WorldInfo.getDefaultInstance() : info_;
   }
   /**
-   * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+   * <pre>
+   * information about the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WorldInfo info = 3;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.world.WorldInfoOrBuilder getInfoOrBuilder() {
@@ -138,8 +165,11 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessage.writeString(output, 1, name_);
     }
+    if (seed_ != 0L) {
+      output.writeInt64(2, seed_);
+    }
     if (((bitField0_ & 0x00000001) != 0)) {
-      output.writeMessage(2, getInfo());
+      output.writeMessage(3, getInfo());
     }
     getUnknownFields().writeTo(output);
   }
@@ -153,9 +183,13 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessage.computeStringSize(1, name_);
     }
+    if (seed_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(2, seed_);
+    }
     if (((bitField0_ & 0x00000001) != 0)) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getInfo());
+        .computeMessageSize(3, getInfo());
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -174,6 +208,8 @@ private static final long serialVersionUID = 0L;
 
     if (!getName()
         .equals(other.getName())) return false;
+    if (getSeed()
+        != other.getSeed()) return false;
     if (hasInfo() != other.hasInfo()) return false;
     if (hasInfo()) {
       if (!getInfo()
@@ -192,6 +228,9 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + SEED_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getSeed());
     if (hasInfo()) {
       hash = (37 * hash) + INFO_FIELD_NUMBER;
       hash = (53 * hash) + getInfo().hashCode();
@@ -338,6 +377,7 @@ private static final long serialVersionUID = 0L;
       super.clear();
       bitField0_ = 0;
       name_ = "";
+      seed_ = 0L;
       info_ = null;
       if (infoBuilder_ != null) {
         infoBuilder_.dispose();
@@ -379,8 +419,11 @@ private static final long serialVersionUID = 0L;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.name_ = name_;
       }
-      int to_bitField0_ = 0;
       if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.seed_ = seed_;
+      }
+      int to_bitField0_ = 0;
+      if (((from_bitField0_ & 0x00000004) != 0)) {
         result.info_ = infoBuilder_ == null
             ? info_
             : infoBuilder_.build();
@@ -405,6 +448,9 @@ private static final long serialVersionUID = 0L;
         name_ = other.name_;
         bitField0_ |= 0x00000001;
         onChanged();
+      }
+      if (other.getSeed() != 0L) {
+        setSeed(other.getSeed());
       }
       if (other.hasInfo()) {
         mergeInfo(other.getInfo());
@@ -440,13 +486,18 @@ private static final long serialVersionUID = 0L;
               bitField0_ |= 0x00000001;
               break;
             } // case 10
-            case 18: {
+            case 16: {
+              seed_ = input.readInt64();
+              bitField0_ |= 0x00000002;
+              break;
+            } // case 16
+            case 26: {
               input.readMessage(
                   getInfoFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000002;
+              bitField0_ |= 0x00000004;
               break;
-            } // case 18
+            } // case 26
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -556,18 +607,70 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private long seed_ ;
+    /**
+     * <pre>
+     * seed of the world
+     * </pre>
+     *
+     * <code>int64 seed = 2;</code>
+     * @return The seed.
+     */
+    @java.lang.Override
+    public long getSeed() {
+      return seed_;
+    }
+    /**
+     * <pre>
+     * seed of the world
+     * </pre>
+     *
+     * <code>int64 seed = 2;</code>
+     * @param value The seed to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSeed(long value) {
+
+      seed_ = value;
+      bitField0_ |= 0x00000002;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * seed of the world
+     * </pre>
+     *
+     * <code>int64 seed = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSeed() {
+      bitField0_ = (bitField0_ & ~0x00000002);
+      seed_ = 0L;
+      onChanged();
+      return this;
+    }
+
     private com.yplugins.minecraftrpc.proto.world.WorldInfo info_;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.world.WorldInfo, com.yplugins.minecraftrpc.proto.world.WorldInfo.Builder, com.yplugins.minecraftrpc.proto.world.WorldInfoOrBuilder> infoBuilder_;
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      * @return Whether the info field is set.
      */
     public boolean hasInfo() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return ((bitField0_ & 0x00000004) != 0);
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      * @return The info.
      */
     public com.yplugins.minecraftrpc.proto.world.WorldInfo getInfo() {
@@ -578,7 +681,11 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     public Builder setInfo(com.yplugins.minecraftrpc.proto.world.WorldInfo value) {
       if (infoBuilder_ == null) {
@@ -589,12 +696,16 @@ private static final long serialVersionUID = 0L;
       } else {
         infoBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     public Builder setInfo(
         com.yplugins.minecraftrpc.proto.world.WorldInfo.Builder builderForValue) {
@@ -603,16 +714,20 @@ private static final long serialVersionUID = 0L;
       } else {
         infoBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     public Builder mergeInfo(com.yplugins.minecraftrpc.proto.world.WorldInfo value) {
       if (infoBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0) &&
+        if (((bitField0_ & 0x00000004) != 0) &&
           info_ != null &&
           info_ != com.yplugins.minecraftrpc.proto.world.WorldInfo.getDefaultInstance()) {
           getInfoBuilder().mergeFrom(value);
@@ -623,16 +738,20 @@ private static final long serialVersionUID = 0L;
         infoBuilder_.mergeFrom(value);
       }
       if (info_ != null) {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         onChanged();
       }
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     public Builder clearInfo() {
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000004);
       info_ = null;
       if (infoBuilder_ != null) {
         infoBuilder_.dispose();
@@ -642,15 +761,23 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     public com.yplugins.minecraftrpc.proto.world.WorldInfo.Builder getInfoBuilder() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       onChanged();
       return getInfoFieldBuilder().getBuilder();
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     public com.yplugins.minecraftrpc.proto.world.WorldInfoOrBuilder getInfoOrBuilder() {
       if (infoBuilder_ != null) {
@@ -661,7 +788,11 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftWorld.WorldInfo info = 2;</code>
+     * <pre>
+     * information about the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WorldInfo info = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.world.WorldInfo, com.yplugins.minecraftrpc.proto.world.WorldInfo.Builder, com.yplugins.minecraftrpc.proto.world.WorldInfoOrBuilder> 

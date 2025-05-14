@@ -30,30 +30,6 @@ public enum StatusCode
    * <code>NOT_IMPLEMENTED = 4;</code>
    */
   NOT_IMPLEMENTED(4),
-  /**
-   * <code>WORLD_NOT_FOUND = 5;</code>
-   */
-  WORLD_NOT_FOUND(5),
-  /**
-   * <code>PLAYER_NOT_FOUND = 6;</code>
-   */
-  PLAYER_NOT_FOUND(6),
-  /**
-   * <code>BLOCK_TYPE_NOT_FOUND = 7;</code>
-   */
-  BLOCK_TYPE_NOT_FOUND(7),
-  /**
-   * <code>ENTITY_TYPE_NOT_FOUND = 8;</code>
-   */
-  ENTITY_TYPE_NOT_FOUND(8),
-  /**
-   * <code>ENTITY_NOT_SPAWNABLE = 9;</code>
-   */
-  ENTITY_NOT_SPAWNABLE(9),
-  /**
-   * <code>ENTITY_NOT_FOUND = 10;</code>
-   */
-  ENTITY_NOT_FOUND(10),
   UNRECOGNIZED(-1),
   ;
 
@@ -86,30 +62,6 @@ public enum StatusCode
    * <code>NOT_IMPLEMENTED = 4;</code>
    */
   public static final int NOT_IMPLEMENTED_VALUE = 4;
-  /**
-   * <code>WORLD_NOT_FOUND = 5;</code>
-   */
-  public static final int WORLD_NOT_FOUND_VALUE = 5;
-  /**
-   * <code>PLAYER_NOT_FOUND = 6;</code>
-   */
-  public static final int PLAYER_NOT_FOUND_VALUE = 6;
-  /**
-   * <code>BLOCK_TYPE_NOT_FOUND = 7;</code>
-   */
-  public static final int BLOCK_TYPE_NOT_FOUND_VALUE = 7;
-  /**
-   * <code>ENTITY_TYPE_NOT_FOUND = 8;</code>
-   */
-  public static final int ENTITY_TYPE_NOT_FOUND_VALUE = 8;
-  /**
-   * <code>ENTITY_NOT_SPAWNABLE = 9;</code>
-   */
-  public static final int ENTITY_NOT_SPAWNABLE_VALUE = 9;
-  /**
-   * <code>ENTITY_NOT_FOUND = 10;</code>
-   */
-  public static final int ENTITY_NOT_FOUND_VALUE = 10;
 
 
   public final int getNumber() {
@@ -141,12 +93,6 @@ public enum StatusCode
       case 2: return MISSING_ARGUMENT;
       case 3: return INVALID_ARGUMENT;
       case 4: return NOT_IMPLEMENTED;
-      case 5: return WORLD_NOT_FOUND;
-      case 6: return PLAYER_NOT_FOUND;
-      case 7: return BLOCK_TYPE_NOT_FOUND;
-      case 8: return ENTITY_TYPE_NOT_FOUND;
-      case 9: return ENTITY_NOT_SPAWNABLE;
-      case 10: return ENTITY_NOT_FOUND;
       default: return null;
     }
   }

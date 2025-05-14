@@ -45,9 +45,9 @@ private static final long serialVersionUID = 0L;
 
   private int bitField0_;
   public static final int STATUS_FIELD_NUMBER = 1;
-  private com.yplugins.minecraftrpc.proto.world.WorldCommandStatus status_;
+  private com.yplugins.minecraftrpc.proto.world.CommandStatus status_;
   /**
-   * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+   * <code>.MinecraftWorld.CommandStatus status = 1;</code>
    * @return Whether the status field is set.
    */
   @java.lang.Override
@@ -55,19 +55,19 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+   * <code>.MinecraftWorld.CommandStatus status = 1;</code>
    * @return The status.
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.world.WorldCommandStatus getStatus() {
-    return status_ == null ? com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.getDefaultInstance() : status_;
+  public com.yplugins.minecraftrpc.proto.world.CommandStatus getStatus() {
+    return status_ == null ? com.yplugins.minecraftrpc.proto.world.CommandStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+   * <code>.MinecraftWorld.CommandStatus status = 1;</code>
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.world.WorldCommandStatusOrBuilder getStatusOrBuilder() {
-    return status_ == null ? com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.getDefaultInstance() : status_;
+  public com.yplugins.minecraftrpc.proto.world.CommandStatusOrBuilder getStatusOrBuilder() {
+    return status_ == null ? com.yplugins.minecraftrpc.proto.world.CommandStatus.getDefaultInstance() : status_;
   }
 
   public static final int WORLDS_FIELD_NUMBER = 2;
@@ -499,31 +499,31 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.yplugins.minecraftrpc.proto.world.WorldCommandStatus status_;
+    private com.yplugins.minecraftrpc.proto.world.CommandStatus status_;
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.world.WorldCommandStatus, com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.Builder, com.yplugins.minecraftrpc.proto.world.WorldCommandStatusOrBuilder> statusBuilder_;
+        com.yplugins.minecraftrpc.proto.world.CommandStatus, com.yplugins.minecraftrpc.proto.world.CommandStatus.Builder, com.yplugins.minecraftrpc.proto.world.CommandStatusOrBuilder> statusBuilder_;
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      * @return Whether the status field is set.
      */
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      * @return The status.
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldCommandStatus getStatus() {
+    public com.yplugins.minecraftrpc.proto.world.CommandStatus getStatus() {
       if (statusBuilder_ == null) {
-        return status_ == null ? com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.getDefaultInstance() : status_;
+        return status_ == null ? com.yplugins.minecraftrpc.proto.world.CommandStatus.getDefaultInstance() : status_;
       } else {
         return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
-    public Builder setStatus(com.yplugins.minecraftrpc.proto.world.WorldCommandStatus value) {
+    public Builder setStatus(com.yplugins.minecraftrpc.proto.world.CommandStatus value) {
       if (statusBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -537,10 +537,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
     public Builder setStatus(
-        com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.Builder builderForValue) {
+        com.yplugins.minecraftrpc.proto.world.CommandStatus.Builder builderForValue) {
       if (statusBuilder_ == null) {
         status_ = builderForValue.build();
       } else {
@@ -551,13 +551,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
-    public Builder mergeStatus(com.yplugins.minecraftrpc.proto.world.WorldCommandStatus value) {
+    public Builder mergeStatus(com.yplugins.minecraftrpc.proto.world.CommandStatus value) {
       if (statusBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           status_ != null &&
-          status_ != com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.getDefaultInstance()) {
+          status_ != com.yplugins.minecraftrpc.proto.world.CommandStatus.getDefaultInstance()) {
           getStatusBuilder().mergeFrom(value);
         } else {
           status_ = value;
@@ -572,7 +572,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
     public Builder clearStatus() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -585,33 +585,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.Builder getStatusBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.CommandStatus.Builder getStatusBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldCommandStatusOrBuilder getStatusOrBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.CommandStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
         return statusBuilder_.getMessageOrBuilder();
       } else {
         return status_ == null ?
-            com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.getDefaultInstance() : status_;
+            com.yplugins.minecraftrpc.proto.world.CommandStatus.getDefaultInstance() : status_;
       }
     }
     /**
-     * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+     * <code>.MinecraftWorld.CommandStatus status = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
-        com.yplugins.minecraftrpc.proto.world.WorldCommandStatus, com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.Builder, com.yplugins.minecraftrpc.proto.world.WorldCommandStatusOrBuilder> 
+        com.yplugins.minecraftrpc.proto.world.CommandStatus, com.yplugins.minecraftrpc.proto.world.CommandStatus.Builder, com.yplugins.minecraftrpc.proto.world.CommandStatusOrBuilder> 
         getStatusFieldBuilder() {
       if (statusBuilder_ == null) {
         statusBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-            com.yplugins.minecraftrpc.proto.world.WorldCommandStatus, com.yplugins.minecraftrpc.proto.world.WorldCommandStatus.Builder, com.yplugins.minecraftrpc.proto.world.WorldCommandStatusOrBuilder>(
+            com.yplugins.minecraftrpc.proto.world.CommandStatus, com.yplugins.minecraftrpc.proto.world.CommandStatus.Builder, com.yplugins.minecraftrpc.proto.world.CommandStatusOrBuilder>(
                 getStatus(),
                 getParentForChildren(),
                 isClean());

@@ -1,0 +1,20 @@
+syntax = "proto3";
+package MinecraftTypes;
+option java_package = "com.yplugins.minecraftrpc.proto.types";
+option java_multiple_files = true;
+option java_outer_classname = "MinecraftRPC";
+
+
+/** 3D coordinates WITHOUT comma (= integers) */
+message Vec3 {
+    int32 x = 1;
+    int32 y = 2;
+    int32 z = 3;
+}
+
+/** 3D coordinates WITH comma */
+message Vec3f {
+    float x = 1;
+    float y = 2;
+    float z = 3;
+}

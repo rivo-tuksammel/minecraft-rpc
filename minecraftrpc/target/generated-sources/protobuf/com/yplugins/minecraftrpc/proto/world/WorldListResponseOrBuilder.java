@@ -10,19 +10,19 @@ public interface WorldListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+   * <code>.MinecraftWorld.CommandStatus status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+   * <code>.MinecraftWorld.CommandStatus status = 1;</code>
    * @return The status.
    */
-  com.yplugins.minecraftrpc.proto.world.WorldCommandStatus getStatus();
+  com.yplugins.minecraftrpc.proto.world.CommandStatus getStatus();
   /**
-   * <code>.MinecraftWorld.WorldCommandStatus status = 1;</code>
+   * <code>.MinecraftWorld.CommandStatus status = 1;</code>
    */
-  com.yplugins.minecraftrpc.proto.world.WorldCommandStatusOrBuilder getStatusOrBuilder();
+  com.yplugins.minecraftrpc.proto.world.CommandStatusOrBuilder getStatusOrBuilder();
 
   /**
    * <code>repeated .MinecraftWorld.World worlds = 2;</code>

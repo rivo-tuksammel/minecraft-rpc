@@ -28,6 +28,7 @@ private static final long serialVersionUID = 0L;
   }
   private WorldInfo() {
     key_ = "";
+    difficulty_ = 0;
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
@@ -90,15 +91,85 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int PVP_FIELD_NUMBER = 2;
-  private boolean pvp_ = false;
+  public static final int ISPVP_FIELD_NUMBER = 2;
+  private boolean isPVP_ = false;
   /**
-   * <code>bool pvp = 2;</code>
-   * @return The pvp.
+   * <code>bool isPVP = 2;</code>
+   * @return The isPVP.
    */
   @java.lang.Override
-  public boolean getPvp() {
-    return pvp_;
+  public boolean getIsPVP() {
+    return isPVP_;
+  }
+
+  public static final int ISHARDCORE_FIELD_NUMBER = 3;
+  private boolean isHardcore_ = false;
+  /**
+   * <code>bool isHardcore = 3;</code>
+   * @return The isHardcore.
+   */
+  @java.lang.Override
+  public boolean getIsHardcore() {
+    return isHardcore_;
+  }
+
+  public static final int ISTHUNDERING_FIELD_NUMBER = 4;
+  private boolean isThundering_ = false;
+  /**
+   * <code>bool isThundering = 4;</code>
+   * @return The isThundering.
+   */
+  @java.lang.Override
+  public boolean getIsThundering() {
+    return isThundering_;
+  }
+
+  public static final int ISCLEARWEATHER_FIELD_NUMBER = 5;
+  private boolean isClearWeather_ = false;
+  /**
+   * <code>bool isClearWeather = 5;</code>
+   * @return The isClearWeather.
+   */
+  @java.lang.Override
+  public boolean getIsClearWeather() {
+    return isClearWeather_;
+  }
+
+  public static final int ISULTRAWARM_FIELD_NUMBER = 6;
+  private boolean isUltraWarm_ = false;
+  /**
+   * <code>bool isUltraWarm = 6;</code>
+   * @return The isUltraWarm.
+   */
+  @java.lang.Override
+  public boolean getIsUltraWarm() {
+    return isUltraWarm_;
+  }
+
+  public static final int DIFFICULTY_FIELD_NUMBER = 7;
+  private int difficulty_ = 0;
+  /**
+   * <pre>
+   * difficulty of the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+   * @return The enum numeric value on the wire for difficulty.
+   */
+  @java.lang.Override public int getDifficultyValue() {
+    return difficulty_;
+  }
+  /**
+   * <pre>
+   * difficulty of the world
+   * </pre>
+   *
+   * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+   * @return The difficulty.
+   */
+  @java.lang.Override public com.yplugins.minecraftrpc.proto.world.Difficulty getDifficulty() {
+    com.yplugins.minecraftrpc.proto.world.Difficulty result = com.yplugins.minecraftrpc.proto.world.Difficulty.forNumber(difficulty_);
+    return result == null ? com.yplugins.minecraftrpc.proto.world.Difficulty.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -118,8 +189,23 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessage.isStringEmpty(key_)) {
       com.google.protobuf.GeneratedMessage.writeString(output, 1, key_);
     }
-    if (pvp_ != false) {
-      output.writeBool(2, pvp_);
+    if (isPVP_ != false) {
+      output.writeBool(2, isPVP_);
+    }
+    if (isHardcore_ != false) {
+      output.writeBool(3, isHardcore_);
+    }
+    if (isThundering_ != false) {
+      output.writeBool(4, isThundering_);
+    }
+    if (isClearWeather_ != false) {
+      output.writeBool(5, isClearWeather_);
+    }
+    if (isUltraWarm_ != false) {
+      output.writeBool(6, isUltraWarm_);
+    }
+    if (difficulty_ != com.yplugins.minecraftrpc.proto.world.Difficulty.PEACEFUL.getNumber()) {
+      output.writeEnum(7, difficulty_);
     }
     getUnknownFields().writeTo(output);
   }
@@ -133,9 +219,29 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessage.isStringEmpty(key_)) {
       size += com.google.protobuf.GeneratedMessage.computeStringSize(1, key_);
     }
-    if (pvp_ != false) {
+    if (isPVP_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(2, pvp_);
+        .computeBoolSize(2, isPVP_);
+    }
+    if (isHardcore_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(3, isHardcore_);
+    }
+    if (isThundering_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(4, isThundering_);
+    }
+    if (isClearWeather_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(5, isClearWeather_);
+    }
+    if (isUltraWarm_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(6, isUltraWarm_);
+    }
+    if (difficulty_ != com.yplugins.minecraftrpc.proto.world.Difficulty.PEACEFUL.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(7, difficulty_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -154,8 +260,17 @@ private static final long serialVersionUID = 0L;
 
     if (!getKey()
         .equals(other.getKey())) return false;
-    if (getPvp()
-        != other.getPvp()) return false;
+    if (getIsPVP()
+        != other.getIsPVP()) return false;
+    if (getIsHardcore()
+        != other.getIsHardcore()) return false;
+    if (getIsThundering()
+        != other.getIsThundering()) return false;
+    if (getIsClearWeather()
+        != other.getIsClearWeather()) return false;
+    if (getIsUltraWarm()
+        != other.getIsUltraWarm()) return false;
+    if (difficulty_ != other.difficulty_) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -169,9 +284,23 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + KEY_FIELD_NUMBER;
     hash = (53 * hash) + getKey().hashCode();
-    hash = (37 * hash) + PVP_FIELD_NUMBER;
+    hash = (37 * hash) + ISPVP_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getPvp());
+        getIsPVP());
+    hash = (37 * hash) + ISHARDCORE_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsHardcore());
+    hash = (37 * hash) + ISTHUNDERING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsThundering());
+    hash = (37 * hash) + ISCLEARWEATHER_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsClearWeather());
+    hash = (37 * hash) + ISULTRAWARM_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsUltraWarm());
+    hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+    hash = (53 * hash) + difficulty_;
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -304,7 +433,12 @@ private static final long serialVersionUID = 0L;
       super.clear();
       bitField0_ = 0;
       key_ = "";
-      pvp_ = false;
+      isPVP_ = false;
+      isHardcore_ = false;
+      isThundering_ = false;
+      isClearWeather_ = false;
+      isUltraWarm_ = false;
+      difficulty_ = 0;
       return this;
     }
 
@@ -342,7 +476,22 @@ private static final long serialVersionUID = 0L;
         result.key_ = key_;
       }
       if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.pvp_ = pvp_;
+        result.isPVP_ = isPVP_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.isHardcore_ = isHardcore_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.isThundering_ = isThundering_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.isClearWeather_ = isClearWeather_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.isUltraWarm_ = isUltraWarm_;
+      }
+      if (((from_bitField0_ & 0x00000040) != 0)) {
+        result.difficulty_ = difficulty_;
       }
     }
 
@@ -363,8 +512,23 @@ private static final long serialVersionUID = 0L;
         bitField0_ |= 0x00000001;
         onChanged();
       }
-      if (other.getPvp() != false) {
-        setPvp(other.getPvp());
+      if (other.getIsPVP() != false) {
+        setIsPVP(other.getIsPVP());
+      }
+      if (other.getIsHardcore() != false) {
+        setIsHardcore(other.getIsHardcore());
+      }
+      if (other.getIsThundering() != false) {
+        setIsThundering(other.getIsThundering());
+      }
+      if (other.getIsClearWeather() != false) {
+        setIsClearWeather(other.getIsClearWeather());
+      }
+      if (other.getIsUltraWarm() != false) {
+        setIsUltraWarm(other.getIsUltraWarm());
+      }
+      if (other.difficulty_ != 0) {
+        setDifficultyValue(other.getDifficultyValue());
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -398,10 +562,35 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 16: {
-              pvp_ = input.readBool();
+              isPVP_ = input.readBool();
               bitField0_ |= 0x00000002;
               break;
             } // case 16
+            case 24: {
+              isHardcore_ = input.readBool();
+              bitField0_ |= 0x00000004;
+              break;
+            } // case 24
+            case 32: {
+              isThundering_ = input.readBool();
+              bitField0_ |= 0x00000008;
+              break;
+            } // case 32
+            case 40: {
+              isClearWeather_ = input.readBool();
+              bitField0_ |= 0x00000010;
+              break;
+            } // case 40
+            case 48: {
+              isUltraWarm_ = input.readBool();
+              bitField0_ |= 0x00000020;
+              break;
+            } // case 48
+            case 56: {
+              difficulty_ = input.readEnum();
+              bitField0_ |= 0x00000040;
+              break;
+            } // case 56
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -511,34 +700,235 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private boolean pvp_ ;
+    private boolean isPVP_ ;
     /**
-     * <code>bool pvp = 2;</code>
-     * @return The pvp.
+     * <code>bool isPVP = 2;</code>
+     * @return The isPVP.
      */
     @java.lang.Override
-    public boolean getPvp() {
-      return pvp_;
+    public boolean getIsPVP() {
+      return isPVP_;
     }
     /**
-     * <code>bool pvp = 2;</code>
-     * @param value The pvp to set.
+     * <code>bool isPVP = 2;</code>
+     * @param value The isPVP to set.
      * @return This builder for chaining.
      */
-    public Builder setPvp(boolean value) {
+    public Builder setIsPVP(boolean value) {
 
-      pvp_ = value;
+      isPVP_ = value;
       bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
     /**
-     * <code>bool pvp = 2;</code>
+     * <code>bool isPVP = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPvp() {
+    public Builder clearIsPVP() {
       bitField0_ = (bitField0_ & ~0x00000002);
-      pvp_ = false;
+      isPVP_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isHardcore_ ;
+    /**
+     * <code>bool isHardcore = 3;</code>
+     * @return The isHardcore.
+     */
+    @java.lang.Override
+    public boolean getIsHardcore() {
+      return isHardcore_;
+    }
+    /**
+     * <code>bool isHardcore = 3;</code>
+     * @param value The isHardcore to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsHardcore(boolean value) {
+
+      isHardcore_ = value;
+      bitField0_ |= 0x00000004;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isHardcore = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsHardcore() {
+      bitField0_ = (bitField0_ & ~0x00000004);
+      isHardcore_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isThundering_ ;
+    /**
+     * <code>bool isThundering = 4;</code>
+     * @return The isThundering.
+     */
+    @java.lang.Override
+    public boolean getIsThundering() {
+      return isThundering_;
+    }
+    /**
+     * <code>bool isThundering = 4;</code>
+     * @param value The isThundering to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsThundering(boolean value) {
+
+      isThundering_ = value;
+      bitField0_ |= 0x00000008;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isThundering = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsThundering() {
+      bitField0_ = (bitField0_ & ~0x00000008);
+      isThundering_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isClearWeather_ ;
+    /**
+     * <code>bool isClearWeather = 5;</code>
+     * @return The isClearWeather.
+     */
+    @java.lang.Override
+    public boolean getIsClearWeather() {
+      return isClearWeather_;
+    }
+    /**
+     * <code>bool isClearWeather = 5;</code>
+     * @param value The isClearWeather to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsClearWeather(boolean value) {
+
+      isClearWeather_ = value;
+      bitField0_ |= 0x00000010;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isClearWeather = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsClearWeather() {
+      bitField0_ = (bitField0_ & ~0x00000010);
+      isClearWeather_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isUltraWarm_ ;
+    /**
+     * <code>bool isUltraWarm = 6;</code>
+     * @return The isUltraWarm.
+     */
+    @java.lang.Override
+    public boolean getIsUltraWarm() {
+      return isUltraWarm_;
+    }
+    /**
+     * <code>bool isUltraWarm = 6;</code>
+     * @param value The isUltraWarm to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsUltraWarm(boolean value) {
+
+      isUltraWarm_ = value;
+      bitField0_ |= 0x00000020;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isUltraWarm = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsUltraWarm() {
+      bitField0_ = (bitField0_ & ~0x00000020);
+      isUltraWarm_ = false;
+      onChanged();
+      return this;
+    }
+
+    private int difficulty_ = 0;
+    /**
+     * <pre>
+     * difficulty of the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+     * @return The enum numeric value on the wire for difficulty.
+     */
+    @java.lang.Override public int getDifficultyValue() {
+      return difficulty_;
+    }
+    /**
+     * <pre>
+     * difficulty of the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+     * @param value The enum numeric value on the wire for difficulty to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDifficultyValue(int value) {
+      difficulty_ = value;
+      bitField0_ |= 0x00000040;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * difficulty of the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public com.yplugins.minecraftrpc.proto.world.Difficulty getDifficulty() {
+      com.yplugins.minecraftrpc.proto.world.Difficulty result = com.yplugins.minecraftrpc.proto.world.Difficulty.forNumber(difficulty_);
+      return result == null ? com.yplugins.minecraftrpc.proto.world.Difficulty.UNRECOGNIZED : result;
+    }
+    /**
+     * <pre>
+     * difficulty of the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+     * @param value The difficulty to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDifficulty(com.yplugins.minecraftrpc.proto.world.Difficulty value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      bitField0_ |= 0x00000040;
+      difficulty_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * difficulty of the world
+     * </pre>
+     *
+     * <code>.MinecraftWorld.Difficulty difficulty = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDifficulty() {
+      bitField0_ = (bitField0_ & ~0x00000040);
+      difficulty_ = 0;
       onChanged();
       return this;
     }
