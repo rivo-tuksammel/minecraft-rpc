@@ -28,6 +28,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.yplugins.minecraftrpc.rpc.interceptors.AuthInterceptor;
 import com.yplugins.minecraftrpc.rpc.services.ChatService;
 import com.yplugins.minecraftrpc.rpc.services.EntityService;
 import com.yplugins.minecraftrpc.rpc.services.PlayerService;
@@ -62,6 +63,7 @@ public class MinecraftRPC extends JavaPlugin {
 
         var port = getConfig().getInt("port");
         var host = getConfig().getString("host");
+        var token = getConfig().getString("token");
 
         if (port <= 0 || port > 65535) {
             logger.log(Level.SEVERE, "Invalid port number: {0}", port);
@@ -111,7 +113,8 @@ public class MinecraftRPC extends JavaPlugin {
                         .addService(new WorldService(this)) // Register the WorldService.
                         .addService(new ChatService(this)) // Register the ChatService.
                         // .addService(ProtoReflectionServiceV1.newInstance())
-                        .addService(ProtoReflectionService.newInstance()) // Enable reflection for the gRPC server. For some reason it's deprecated, but POSTMAN doesn't work with the V1 version.
+                        .addService(ProtoReflectionService.newInstance())
+                        .intercept(new AuthInterceptor(token)) // Enable reflection for the gRPC server. For some reason it's deprecated, but POSTMAN doesn't work with the V1 version.
                         ; 
 
                 this.grpcServer = grpcServerBuilder.build();

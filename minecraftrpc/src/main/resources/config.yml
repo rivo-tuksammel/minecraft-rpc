@@ -7,5 +7,7 @@ host: localhost
 # The port the plugin server should listen on, i.e., where commands can be sent to.
 port: 1789
 
+token: secret
+
 # If "true" print additional debug output (especially of gRPC and command interceptors)
 debug: false
