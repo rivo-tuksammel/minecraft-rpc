@@ -21,38 +21,60 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.20.5-R0.1-SNAPSHOT</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>4.30.2</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util -->
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java-util</artifactId>
             <version>4.30.2</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty-shaded</artifactId>
             <version>1.72.0</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
             <version>1.72.0</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-services</artifactId>
             <version>1.72.0</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-stub</artifactId>
             <version>1.72.0</version>
+            <scope>provided</scope> <!-- Tells Maven not to include it in the shaded JAR -->
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.70</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpkix-jdk15on</artifactId>
+            <version>1.70</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
+            <version>2.0.71.Final</version>
         </dependency>
         <dependency> <!-- necessary for Java 9+ -->
             <groupId>org.apache.tomcat</groupId>
@@ -110,7 +132,7 @@
                     </execution>
                 </executions>
             </plugin>
-             <!-- <plugin>
+             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.5.0</version>
@@ -128,10 +150,21 @@
                         </transformer>
                         <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                         </transformers>
+                        <filters>
+                            <filter>
+                                <artifact>*:*</artifact>
+                                <excludes>
+                                <!-- Always exclude signature files -->
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                                </excludes>
+                            </filter>
+                        </filters>
                     </configuration>
                     </execution>
                 </executions>
-            </plugin> -->
+            </plugin>
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <configuration>
