@@ -34,6 +34,7 @@ enum CommandStatusCode {
 message Entity {
     string type = 1;
     MinecraftWorld.Location location = 2;
+    string uuid = 3; // UUID of the entity
 }
 
 message EntityRequest {

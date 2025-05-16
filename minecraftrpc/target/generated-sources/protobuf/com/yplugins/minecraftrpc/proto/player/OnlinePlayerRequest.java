@@ -48,8 +48,8 @@ private static final long serialVersionUID = 0L;
   public enum IdentifierCase
       implements com.google.protobuf.Internal.EnumLite,
           com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-    NAME(1),
-    UUID(2),
+    PLAYERNAME(1),
+    PLAYERUNIQUEID(2),
     IDENTIFIER_NOT_SET(0);
     private final int value;
     private IdentifierCase(int value) {
@@ -67,8 +67,8 @@ private static final long serialVersionUID = 0L;
 
     public static IdentifierCase forNumber(int value) {
       switch (value) {
-        case 1: return NAME;
-        case 2: return UUID;
+        case 1: return PLAYERNAME;
+        case 2: return PLAYERUNIQUEID;
         case 0: return IDENTIFIER_NOT_SET;
         default: return null;
       }
@@ -84,16 +84,16 @@ private static final long serialVersionUID = 0L;
         identifierCase_);
   }
 
-  public static final int NAME_FIELD_NUMBER = 1;
+  public static final int PLAYERNAME_FIELD_NUMBER = 1;
   /**
    * <pre>
    * name of the player
    * </pre>
    *
-   * <code>string name = 1;</code>
-   * @return Whether the name field is set.
+   * <code>string playerName = 1;</code>
+   * @return Whether the playerName field is set.
    */
-  public boolean hasName() {
+  public boolean hasPlayerName() {
     return identifierCase_ == 1;
   }
   /**
@@ -101,10 +101,10 @@ private static final long serialVersionUID = 0L;
    * name of the player
    * </pre>
    *
-   * <code>string name = 1;</code>
-   * @return The name.
+   * <code>string playerName = 1;</code>
+   * @return The playerName.
    */
-  public java.lang.String getName() {
+  public java.lang.String getPlayerName() {
     java.lang.Object ref = "";
     if (identifierCase_ == 1) {
       ref = identifier_;
@@ -126,11 +126,11 @@ private static final long serialVersionUID = 0L;
    * name of the player
    * </pre>
    *
-   * <code>string name = 1;</code>
-   * @return The bytes for name.
+   * <code>string playerName = 1;</code>
+   * @return The bytes for playerName.
    */
   public com.google.protobuf.ByteString
-      getNameBytes() {
+      getPlayerNameBytes() {
     java.lang.Object ref = "";
     if (identifierCase_ == 1) {
       ref = identifier_;
@@ -148,16 +148,16 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int UUID_FIELD_NUMBER = 2;
+  public static final int PLAYERUNIQUEID_FIELD_NUMBER = 2;
   /**
    * <pre>
    * UUID of the player
    * </pre>
    *
-   * <code>string uuid = 2;</code>
-   * @return Whether the uuid field is set.
+   * <code>string playerUniqueId = 2;</code>
+   * @return Whether the playerUniqueId field is set.
    */
-  public boolean hasUuid() {
+  public boolean hasPlayerUniqueId() {
     return identifierCase_ == 2;
   }
   /**
@@ -165,10 +165,10 @@ private static final long serialVersionUID = 0L;
    * UUID of the player
    * </pre>
    *
-   * <code>string uuid = 2;</code>
-   * @return The uuid.
+   * <code>string playerUniqueId = 2;</code>
+   * @return The playerUniqueId.
    */
-  public java.lang.String getUuid() {
+  public java.lang.String getPlayerUniqueId() {
     java.lang.Object ref = "";
     if (identifierCase_ == 2) {
       ref = identifier_;
@@ -190,11 +190,11 @@ private static final long serialVersionUID = 0L;
    * UUID of the player
    * </pre>
    *
-   * <code>string uuid = 2;</code>
-   * @return The bytes for uuid.
+   * <code>string playerUniqueId = 2;</code>
+   * @return The bytes for playerUniqueId.
    */
   public com.google.protobuf.ByteString
-      getUuidBytes() {
+      getPlayerUniqueIdBytes() {
     java.lang.Object ref = "";
     if (identifierCase_ == 2) {
       ref = identifier_;
@@ -265,12 +265,12 @@ private static final long serialVersionUID = 0L;
     if (!getIdentifierCase().equals(other.getIdentifierCase())) return false;
     switch (identifierCase_) {
       case 1:
-        if (!getName()
-            .equals(other.getName())) return false;
+        if (!getPlayerName()
+            .equals(other.getPlayerName())) return false;
         break;
       case 2:
-        if (!getUuid()
-            .equals(other.getUuid())) return false;
+        if (!getPlayerUniqueId()
+            .equals(other.getPlayerUniqueId())) return false;
         break;
       case 0:
       default:
@@ -288,12 +288,12 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     switch (identifierCase_) {
       case 1:
-        hash = (37 * hash) + NAME_FIELD_NUMBER;
-        hash = (53 * hash) + getName().hashCode();
+        hash = (37 * hash) + PLAYERNAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerName().hashCode();
         break;
       case 2:
-        hash = (37 * hash) + UUID_FIELD_NUMBER;
-        hash = (53 * hash) + getUuid().hashCode();
+        hash = (37 * hash) + PLAYERUNIQUEID_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerUniqueId().hashCode();
         break;
       case 0:
       default:
@@ -485,13 +485,13 @@ private static final long serialVersionUID = 0L;
     public Builder mergeFrom(com.yplugins.minecraftrpc.proto.player.OnlinePlayerRequest other) {
       if (other == com.yplugins.minecraftrpc.proto.player.OnlinePlayerRequest.getDefaultInstance()) return this;
       switch (other.getIdentifierCase()) {
-        case NAME: {
+        case PLAYERNAME: {
           identifierCase_ = 1;
           identifier_ = other.identifier_;
           onChanged();
           break;
         }
-        case UUID: {
+        case PLAYERUNIQUEID: {
           identifierCase_ = 2;
           identifier_ = other.identifier_;
           onChanged();
@@ -576,11 +576,11 @@ private static final long serialVersionUID = 0L;
      * name of the player
      * </pre>
      *
-     * <code>string name = 1;</code>
-     * @return Whether the name field is set.
+     * <code>string playerName = 1;</code>
+     * @return Whether the playerName field is set.
      */
     @java.lang.Override
-    public boolean hasName() {
+    public boolean hasPlayerName() {
       return identifierCase_ == 1;
     }
     /**
@@ -588,11 +588,11 @@ private static final long serialVersionUID = 0L;
      * name of the player
      * </pre>
      *
-     * <code>string name = 1;</code>
-     * @return The name.
+     * <code>string playerName = 1;</code>
+     * @return The playerName.
      */
     @java.lang.Override
-    public java.lang.String getName() {
+    public java.lang.String getPlayerName() {
       java.lang.Object ref = "";
       if (identifierCase_ == 1) {
         ref = identifier_;
@@ -614,12 +614,12 @@ private static final long serialVersionUID = 0L;
      * name of the player
      * </pre>
      *
-     * <code>string name = 1;</code>
-     * @return The bytes for name.
+     * <code>string playerName = 1;</code>
+     * @return The bytes for playerName.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getNameBytes() {
+        getPlayerNameBytes() {
       java.lang.Object ref = "";
       if (identifierCase_ == 1) {
         ref = identifier_;
@@ -641,11 +641,11 @@ private static final long serialVersionUID = 0L;
      * name of the player
      * </pre>
      *
-     * <code>string name = 1;</code>
-     * @param value The name to set.
+     * <code>string playerName = 1;</code>
+     * @param value The playerName to set.
      * @return This builder for chaining.
      */
-    public Builder setName(
+    public Builder setPlayerName(
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       identifierCase_ = 1;
@@ -658,10 +658,10 @@ private static final long serialVersionUID = 0L;
      * name of the player
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>string playerName = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearName() {
+    public Builder clearPlayerName() {
       if (identifierCase_ == 1) {
         identifierCase_ = 0;
         identifier_ = null;
@@ -674,11 +674,11 @@ private static final long serialVersionUID = 0L;
      * name of the player
      * </pre>
      *
-     * <code>string name = 1;</code>
-     * @param value The bytes for name to set.
+     * <code>string playerName = 1;</code>
+     * @param value The bytes for playerName to set.
      * @return This builder for chaining.
      */
-    public Builder setNameBytes(
+    public Builder setPlayerNameBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);
@@ -693,11 +693,11 @@ private static final long serialVersionUID = 0L;
      * UUID of the player
      * </pre>
      *
-     * <code>string uuid = 2;</code>
-     * @return Whether the uuid field is set.
+     * <code>string playerUniqueId = 2;</code>
+     * @return Whether the playerUniqueId field is set.
      */
     @java.lang.Override
-    public boolean hasUuid() {
+    public boolean hasPlayerUniqueId() {
       return identifierCase_ == 2;
     }
     /**
@@ -705,11 +705,11 @@ private static final long serialVersionUID = 0L;
      * UUID of the player
      * </pre>
      *
-     * <code>string uuid = 2;</code>
-     * @return The uuid.
+     * <code>string playerUniqueId = 2;</code>
+     * @return The playerUniqueId.
      */
     @java.lang.Override
-    public java.lang.String getUuid() {
+    public java.lang.String getPlayerUniqueId() {
       java.lang.Object ref = "";
       if (identifierCase_ == 2) {
         ref = identifier_;
@@ -731,12 +731,12 @@ private static final long serialVersionUID = 0L;
      * UUID of the player
      * </pre>
      *
-     * <code>string uuid = 2;</code>
-     * @return The bytes for uuid.
+     * <code>string playerUniqueId = 2;</code>
+     * @return The bytes for playerUniqueId.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getUuidBytes() {
+        getPlayerUniqueIdBytes() {
       java.lang.Object ref = "";
       if (identifierCase_ == 2) {
         ref = identifier_;
@@ -758,11 +758,11 @@ private static final long serialVersionUID = 0L;
      * UUID of the player
      * </pre>
      *
-     * <code>string uuid = 2;</code>
-     * @param value The uuid to set.
+     * <code>string playerUniqueId = 2;</code>
+     * @param value The playerUniqueId to set.
      * @return This builder for chaining.
      */
-    public Builder setUuid(
+    public Builder setPlayerUniqueId(
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       identifierCase_ = 2;
@@ -775,10 +775,10 @@ private static final long serialVersionUID = 0L;
      * UUID of the player
      * </pre>
      *
-     * <code>string uuid = 2;</code>
+     * <code>string playerUniqueId = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearUuid() {
+    public Builder clearPlayerUniqueId() {
       if (identifierCase_ == 2) {
         identifierCase_ = 0;
         identifier_ = null;
@@ -791,11 +791,11 @@ private static final long serialVersionUID = 0L;
      * UUID of the player
      * </pre>
      *
-     * <code>string uuid = 2;</code>
-     * @param value The bytes for uuid to set.
+     * <code>string playerUniqueId = 2;</code>
+     * @param value The bytes for playerUniqueId to set.
      * @return This builder for chaining.
      */
-    public Builder setUuidBytes(
+    public Builder setPlayerUniqueIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);

@@ -10,6 +10,18 @@ import "minecraft_world.proto";
 service MinecraftPlayer {
     rpc getOnlinePlayers(OnlinePlayersRequest) returns (OnlinePlayersResponse);
     rpc getOnlinePlayer(OnlinePlayerRequest) returns (OnlinePlayerResponse);
+    rpc kickPlayer(PlayerKickRequest) returns (PlayerKickResponse);
+    rpc setPlayerHealth(PlayerSetHealthRequest) returns (PlayerSetHealthResponse);
+    rpc setPlayerExperience(PlayerSetExperienceRequest) returns (PlayerSetExperienceResponse);
+    rpc setPlayerLevel(PlayerSetLevelRequest) returns (PlayerSetLevelResponse);
+    rpc setPlayerMaxHealth(PlayerSetMaxHealthRequest) returns (PlayerSetMaxHealthResponse);
+    rpc setPlayerFoodSaturation(PlayerSetFoodSaturationRequest) returns (PlayerSetFoodSaturationResponse);
+    rpc setPlayerTotalExperience(PlayerSetTotalExperienceRequest) returns (PlayerSetTotalExperienceResponse);
+    rpc setPlayerGamemode(PlayerSetGamemodeRequest) returns (PlayerSetGamemodeResponse);
+    rpc setPlayerAllowFlight(PlayerSetAllowFlightRequest) returns (PlayerSetAllowFlightResponse);
+    rpc sendPlayerMessage(PlayerSendMessageRequest) returns (PlayerSendMessageResponse);
+    rpc teleportPlayerToLocation(PlayerTeleportToLocationRequest) returns (PlayerTeleportToLocationResponse);
+    rpc teleportPlayerToEntity(PlayerTeleportToEntityRequest) returns (PlayerTeleportToEntityResponse);
 }
 
 message CommandStatus {
@@ -26,12 +38,40 @@ enum CommandStatusCode {
     PLAYER_NOT_FOUND = 5;
 }
 
+enum Gamemode {
+    SURVIVAL = 0;
+    CREATIVE = 1;
+    ADVENTURE = 2;
+    SPECTATOR = 3;
+}
+
+enum TeleportCause {
+    CHORUS_FRUIT = 0;
+    COMMAND = 1;
+    DISMOUNT = 2;
+    END_GATEWAY = 3;
+    END_PORTAL = 4;
+    ENDER_PEARL = 5;
+    EXIT_BED = 6;
+    NETHER_PORTAL = 7;
+    PLUGIN = 8;
+    SPECTATE = 9;
+    UNKNOWN = 10;
+}
+
 message OnlinePlayer {
     string name = 1; // name of the player
     MinecraftWorld.Location location = 2; // entity of the player
     string uuid = 3; // UUID of the player
     string address = 4; // IP address of the player
     int32 ping = 5; // ping of the player
+    float health = 6; // health of the player
+    float maxHealth = 7; // max health of the player
+    float foodSaturation = 8; // food saturation of the player
+    float experience = 9; // experience of the player
+    int32 level = 10; // level of the player
+    Gamemode gamemode = 11; // gamemode of the player
+    bool allowFlight = 12; // allow flight of the player
 }
 
 message OnlinePlayersRequest {
@@ -44,12 +84,170 @@ message OnlinePlayersResponse {
 
 message OnlinePlayerRequest {
     oneof identifier {
-        string name = 1; // name of the player
-        string uuid = 2; // UUID of the player
+        string playerName = 1; // name of the player
+        string playerUniqueId = 2; // UUID of the player
     }
 }
 
 message OnlinePlayerResponse {
     CommandStatus status = 1;
-    OnlinePlayer player = 2;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerKickRequest {
+    oneof identifier {
+        string playerUniqueId = 1;
+        OnlinePlayer player = 2; 
+    }
+    string reason = 3; // reason for the kick
+}
+
+message PlayerKickResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSetHealthRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    int32 health = 1; // health of the player
+}
+
+message PlayerSetHealthResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSetMaxHealthRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    int32 maxHealth = 1; // max health of the player
+}
+
+message PlayerSetMaxHealthResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSetFoodSaturationRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    int32 foodSaturation = 1; // food saturation of the player
+}
+
+message PlayerSetFoodSaturationResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+// Add Experience to the current level.
+message PlayerSetExperienceRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    int32 experience = 1; // experience of the player
+}
+
+message PlayerSetExperienceResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSetLevelRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    int32 level = 1; // level of the player
+}
+
+message PlayerSetLevelResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+// Add experience and recalculate the level.
+message PlayerSetTotalExperienceRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    float totalExperience = 1; // total experience of the player
+}
+
+message PlayerSetTotalExperienceResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSetGamemodeRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    Gamemode gamemode = 1; // gamemode of the player
+}
+
+message PlayerSetGamemodeResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSetAllowFlightRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    bool allowFlight = 1; // allow flight of the player
+}
+
+message PlayerSetAllowFlightResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerSendMessageRequest {
+    oneof identifier {
+        OnlinePlayer player = 2; // entity of the player
+        string playerUniqueId = 3; // id of the player
+    }
+    string message = 1; // message of the player
+}
+
+message PlayerSendMessageResponse {
+    CommandStatus status = 1;
+}
+
+message PlayerTeleportToLocationRequest {
+    oneof identifier {
+        OnlinePlayer player = 1; // entity of the player
+        string playerUniqueId = 2; // id of the player
+    }
+    MinecraftWorld.Location location = 4; // location of the player
+    optional TeleportCause cause = 3; // cause of the teleport. Optional, default is UNKNOWN
+}
+
+message PlayerTeleportToLocationResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
+}
+
+message PlayerTeleportToEntityRequest {
+    string uuid = 1; // id of the player
+    oneof target {
+        MinecraftEntity.Entity entity = 2; // entity of the player
+        string playerUniqueId = 3; // entity id
+    }
+}
+
+message PlayerTeleportToEntityResponse {
+    CommandStatus status = 1;
+    optional OnlinePlayer player = 2;
 }

@@ -30,6 +30,7 @@ private static final long serialVersionUID = 0L;
     name_ = "";
     uuid_ = "";
     address_ = "";
+    gamemode_ = 0;
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
@@ -240,6 +241,122 @@ private static final long serialVersionUID = 0L;
     return ping_;
   }
 
+  public static final int HEALTH_FIELD_NUMBER = 6;
+  private float health_ = 0F;
+  /**
+   * <pre>
+   * health of the player
+   * </pre>
+   *
+   * <code>float health = 6;</code>
+   * @return The health.
+   */
+  @java.lang.Override
+  public float getHealth() {
+    return health_;
+  }
+
+  public static final int MAXHEALTH_FIELD_NUMBER = 7;
+  private float maxHealth_ = 0F;
+  /**
+   * <pre>
+   * max health of the player
+   * </pre>
+   *
+   * <code>float maxHealth = 7;</code>
+   * @return The maxHealth.
+   */
+  @java.lang.Override
+  public float getMaxHealth() {
+    return maxHealth_;
+  }
+
+  public static final int FOODSATURATION_FIELD_NUMBER = 8;
+  private float foodSaturation_ = 0F;
+  /**
+   * <pre>
+   * food saturation of the player
+   * </pre>
+   *
+   * <code>float foodSaturation = 8;</code>
+   * @return The foodSaturation.
+   */
+  @java.lang.Override
+  public float getFoodSaturation() {
+    return foodSaturation_;
+  }
+
+  public static final int EXPERIENCE_FIELD_NUMBER = 9;
+  private float experience_ = 0F;
+  /**
+   * <pre>
+   * experience of the player
+   * </pre>
+   *
+   * <code>float experience = 9;</code>
+   * @return The experience.
+   */
+  @java.lang.Override
+  public float getExperience() {
+    return experience_;
+  }
+
+  public static final int LEVEL_FIELD_NUMBER = 10;
+  private int level_ = 0;
+  /**
+   * <pre>
+   * level of the player
+   * </pre>
+   *
+   * <code>int32 level = 10;</code>
+   * @return The level.
+   */
+  @java.lang.Override
+  public int getLevel() {
+    return level_;
+  }
+
+  public static final int GAMEMODE_FIELD_NUMBER = 11;
+  private int gamemode_ = 0;
+  /**
+   * <pre>
+   * gamemode of the player
+   * </pre>
+   *
+   * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+   * @return The enum numeric value on the wire for gamemode.
+   */
+  @java.lang.Override public int getGamemodeValue() {
+    return gamemode_;
+  }
+  /**
+   * <pre>
+   * gamemode of the player
+   * </pre>
+   *
+   * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+   * @return The gamemode.
+   */
+  @java.lang.Override public com.yplugins.minecraftrpc.proto.player.Gamemode getGamemode() {
+    com.yplugins.minecraftrpc.proto.player.Gamemode result = com.yplugins.minecraftrpc.proto.player.Gamemode.forNumber(gamemode_);
+    return result == null ? com.yplugins.minecraftrpc.proto.player.Gamemode.UNRECOGNIZED : result;
+  }
+
+  public static final int ALLOWFLIGHT_FIELD_NUMBER = 12;
+  private boolean allowFlight_ = false;
+  /**
+   * <pre>
+   * allow flight of the player
+   * </pre>
+   *
+   * <code>bool allowFlight = 12;</code>
+   * @return The allowFlight.
+   */
+  @java.lang.Override
+  public boolean getAllowFlight() {
+    return allowFlight_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -269,6 +386,27 @@ private static final long serialVersionUID = 0L;
     if (ping_ != 0) {
       output.writeInt32(5, ping_);
     }
+    if (java.lang.Float.floatToRawIntBits(health_) != 0) {
+      output.writeFloat(6, health_);
+    }
+    if (java.lang.Float.floatToRawIntBits(maxHealth_) != 0) {
+      output.writeFloat(7, maxHealth_);
+    }
+    if (java.lang.Float.floatToRawIntBits(foodSaturation_) != 0) {
+      output.writeFloat(8, foodSaturation_);
+    }
+    if (java.lang.Float.floatToRawIntBits(experience_) != 0) {
+      output.writeFloat(9, experience_);
+    }
+    if (level_ != 0) {
+      output.writeInt32(10, level_);
+    }
+    if (gamemode_ != com.yplugins.minecraftrpc.proto.player.Gamemode.SURVIVAL.getNumber()) {
+      output.writeEnum(11, gamemode_);
+    }
+    if (allowFlight_ != false) {
+      output.writeBool(12, allowFlight_);
+    }
     getUnknownFields().writeTo(output);
   }
 
@@ -294,6 +432,34 @@ private static final long serialVersionUID = 0L;
     if (ping_ != 0) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(5, ping_);
+    }
+    if (java.lang.Float.floatToRawIntBits(health_) != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(6, health_);
+    }
+    if (java.lang.Float.floatToRawIntBits(maxHealth_) != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(7, maxHealth_);
+    }
+    if (java.lang.Float.floatToRawIntBits(foodSaturation_) != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(8, foodSaturation_);
+    }
+    if (java.lang.Float.floatToRawIntBits(experience_) != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(9, experience_);
+    }
+    if (level_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(10, level_);
+    }
+    if (gamemode_ != com.yplugins.minecraftrpc.proto.player.Gamemode.SURVIVAL.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(11, gamemode_);
+    }
+    if (allowFlight_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(12, allowFlight_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -323,6 +489,23 @@ private static final long serialVersionUID = 0L;
         .equals(other.getAddress())) return false;
     if (getPing()
         != other.getPing()) return false;
+    if (java.lang.Float.floatToIntBits(getHealth())
+        != java.lang.Float.floatToIntBits(
+            other.getHealth())) return false;
+    if (java.lang.Float.floatToIntBits(getMaxHealth())
+        != java.lang.Float.floatToIntBits(
+            other.getMaxHealth())) return false;
+    if (java.lang.Float.floatToIntBits(getFoodSaturation())
+        != java.lang.Float.floatToIntBits(
+            other.getFoodSaturation())) return false;
+    if (java.lang.Float.floatToIntBits(getExperience())
+        != java.lang.Float.floatToIntBits(
+            other.getExperience())) return false;
+    if (getLevel()
+        != other.getLevel()) return false;
+    if (gamemode_ != other.gamemode_) return false;
+    if (getAllowFlight()
+        != other.getAllowFlight()) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -346,6 +529,25 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getAddress().hashCode();
     hash = (37 * hash) + PING_FIELD_NUMBER;
     hash = (53 * hash) + getPing();
+    hash = (37 * hash) + HEALTH_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getHealth());
+    hash = (37 * hash) + MAXHEALTH_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getMaxHealth());
+    hash = (37 * hash) + FOODSATURATION_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getFoodSaturation());
+    hash = (37 * hash) + EXPERIENCE_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getExperience());
+    hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+    hash = (53 * hash) + getLevel();
+    hash = (37 * hash) + GAMEMODE_FIELD_NUMBER;
+    hash = (53 * hash) + gamemode_;
+    hash = (37 * hash) + ALLOWFLIGHT_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getAllowFlight());
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -492,6 +694,13 @@ private static final long serialVersionUID = 0L;
       uuid_ = "";
       address_ = "";
       ping_ = 0;
+      health_ = 0F;
+      maxHealth_ = 0F;
+      foodSaturation_ = 0F;
+      experience_ = 0F;
+      level_ = 0;
+      gamemode_ = 0;
+      allowFlight_ = false;
       return this;
     }
 
@@ -544,6 +753,27 @@ private static final long serialVersionUID = 0L;
       if (((from_bitField0_ & 0x00000010) != 0)) {
         result.ping_ = ping_;
       }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.health_ = health_;
+      }
+      if (((from_bitField0_ & 0x00000040) != 0)) {
+        result.maxHealth_ = maxHealth_;
+      }
+      if (((from_bitField0_ & 0x00000080) != 0)) {
+        result.foodSaturation_ = foodSaturation_;
+      }
+      if (((from_bitField0_ & 0x00000100) != 0)) {
+        result.experience_ = experience_;
+      }
+      if (((from_bitField0_ & 0x00000200) != 0)) {
+        result.level_ = level_;
+      }
+      if (((from_bitField0_ & 0x00000400) != 0)) {
+        result.gamemode_ = gamemode_;
+      }
+      if (((from_bitField0_ & 0x00000800) != 0)) {
+        result.allowFlight_ = allowFlight_;
+      }
       result.bitField0_ |= to_bitField0_;
     }
 
@@ -579,6 +809,27 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getPing() != 0) {
         setPing(other.getPing());
+      }
+      if (other.getHealth() != 0F) {
+        setHealth(other.getHealth());
+      }
+      if (other.getMaxHealth() != 0F) {
+        setMaxHealth(other.getMaxHealth());
+      }
+      if (other.getFoodSaturation() != 0F) {
+        setFoodSaturation(other.getFoodSaturation());
+      }
+      if (other.getExperience() != 0F) {
+        setExperience(other.getExperience());
+      }
+      if (other.getLevel() != 0) {
+        setLevel(other.getLevel());
+      }
+      if (other.gamemode_ != 0) {
+        setGamemodeValue(other.getGamemodeValue());
+      }
+      if (other.getAllowFlight() != false) {
+        setAllowFlight(other.getAllowFlight());
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -633,6 +884,41 @@ private static final long serialVersionUID = 0L;
               bitField0_ |= 0x00000010;
               break;
             } // case 40
+            case 53: {
+              health_ = input.readFloat();
+              bitField0_ |= 0x00000020;
+              break;
+            } // case 53
+            case 61: {
+              maxHealth_ = input.readFloat();
+              bitField0_ |= 0x00000040;
+              break;
+            } // case 61
+            case 69: {
+              foodSaturation_ = input.readFloat();
+              bitField0_ |= 0x00000080;
+              break;
+            } // case 69
+            case 77: {
+              experience_ = input.readFloat();
+              bitField0_ |= 0x00000100;
+              break;
+            } // case 77
+            case 80: {
+              level_ = input.readInt32();
+              bitField0_ |= 0x00000200;
+              break;
+            } // case 80
+            case 88: {
+              gamemode_ = input.readEnum();
+              bitField0_ |= 0x00000400;
+              break;
+            } // case 88
+            case 96: {
+              allowFlight_ = input.readBool();
+              bitField0_ |= 0x00000800;
+              break;
+            } // case 96
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -1123,6 +1409,343 @@ private static final long serialVersionUID = 0L;
     public Builder clearPing() {
       bitField0_ = (bitField0_ & ~0x00000010);
       ping_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private float health_ ;
+    /**
+     * <pre>
+     * health of the player
+     * </pre>
+     *
+     * <code>float health = 6;</code>
+     * @return The health.
+     */
+    @java.lang.Override
+    public float getHealth() {
+      return health_;
+    }
+    /**
+     * <pre>
+     * health of the player
+     * </pre>
+     *
+     * <code>float health = 6;</code>
+     * @param value The health to set.
+     * @return This builder for chaining.
+     */
+    public Builder setHealth(float value) {
+
+      health_ = value;
+      bitField0_ |= 0x00000020;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * health of the player
+     * </pre>
+     *
+     * <code>float health = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearHealth() {
+      bitField0_ = (bitField0_ & ~0x00000020);
+      health_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private float maxHealth_ ;
+    /**
+     * <pre>
+     * max health of the player
+     * </pre>
+     *
+     * <code>float maxHealth = 7;</code>
+     * @return The maxHealth.
+     */
+    @java.lang.Override
+    public float getMaxHealth() {
+      return maxHealth_;
+    }
+    /**
+     * <pre>
+     * max health of the player
+     * </pre>
+     *
+     * <code>float maxHealth = 7;</code>
+     * @param value The maxHealth to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMaxHealth(float value) {
+
+      maxHealth_ = value;
+      bitField0_ |= 0x00000040;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * max health of the player
+     * </pre>
+     *
+     * <code>float maxHealth = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMaxHealth() {
+      bitField0_ = (bitField0_ & ~0x00000040);
+      maxHealth_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private float foodSaturation_ ;
+    /**
+     * <pre>
+     * food saturation of the player
+     * </pre>
+     *
+     * <code>float foodSaturation = 8;</code>
+     * @return The foodSaturation.
+     */
+    @java.lang.Override
+    public float getFoodSaturation() {
+      return foodSaturation_;
+    }
+    /**
+     * <pre>
+     * food saturation of the player
+     * </pre>
+     *
+     * <code>float foodSaturation = 8;</code>
+     * @param value The foodSaturation to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFoodSaturation(float value) {
+
+      foodSaturation_ = value;
+      bitField0_ |= 0x00000080;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * food saturation of the player
+     * </pre>
+     *
+     * <code>float foodSaturation = 8;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearFoodSaturation() {
+      bitField0_ = (bitField0_ & ~0x00000080);
+      foodSaturation_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private float experience_ ;
+    /**
+     * <pre>
+     * experience of the player
+     * </pre>
+     *
+     * <code>float experience = 9;</code>
+     * @return The experience.
+     */
+    @java.lang.Override
+    public float getExperience() {
+      return experience_;
+    }
+    /**
+     * <pre>
+     * experience of the player
+     * </pre>
+     *
+     * <code>float experience = 9;</code>
+     * @param value The experience to set.
+     * @return This builder for chaining.
+     */
+    public Builder setExperience(float value) {
+
+      experience_ = value;
+      bitField0_ |= 0x00000100;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * experience of the player
+     * </pre>
+     *
+     * <code>float experience = 9;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearExperience() {
+      bitField0_ = (bitField0_ & ~0x00000100);
+      experience_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private int level_ ;
+    /**
+     * <pre>
+     * level of the player
+     * </pre>
+     *
+     * <code>int32 level = 10;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
+    /**
+     * <pre>
+     * level of the player
+     * </pre>
+     *
+     * <code>int32 level = 10;</code>
+     * @param value The level to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLevel(int value) {
+
+      level_ = value;
+      bitField0_ |= 0x00000200;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * level of the player
+     * </pre>
+     *
+     * <code>int32 level = 10;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLevel() {
+      bitField0_ = (bitField0_ & ~0x00000200);
+      level_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int gamemode_ = 0;
+    /**
+     * <pre>
+     * gamemode of the player
+     * </pre>
+     *
+     * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+     * @return The enum numeric value on the wire for gamemode.
+     */
+    @java.lang.Override public int getGamemodeValue() {
+      return gamemode_;
+    }
+    /**
+     * <pre>
+     * gamemode of the player
+     * </pre>
+     *
+     * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+     * @param value The enum numeric value on the wire for gamemode to set.
+     * @return This builder for chaining.
+     */
+    public Builder setGamemodeValue(int value) {
+      gamemode_ = value;
+      bitField0_ |= 0x00000400;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * gamemode of the player
+     * </pre>
+     *
+     * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+     * @return The gamemode.
+     */
+    @java.lang.Override
+    public com.yplugins.minecraftrpc.proto.player.Gamemode getGamemode() {
+      com.yplugins.minecraftrpc.proto.player.Gamemode result = com.yplugins.minecraftrpc.proto.player.Gamemode.forNumber(gamemode_);
+      return result == null ? com.yplugins.minecraftrpc.proto.player.Gamemode.UNRECOGNIZED : result;
+    }
+    /**
+     * <pre>
+     * gamemode of the player
+     * </pre>
+     *
+     * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+     * @param value The gamemode to set.
+     * @return This builder for chaining.
+     */
+    public Builder setGamemode(com.yplugins.minecraftrpc.proto.player.Gamemode value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      bitField0_ |= 0x00000400;
+      gamemode_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * gamemode of the player
+     * </pre>
+     *
+     * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearGamemode() {
+      bitField0_ = (bitField0_ & ~0x00000400);
+      gamemode_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private boolean allowFlight_ ;
+    /**
+     * <pre>
+     * allow flight of the player
+     * </pre>
+     *
+     * <code>bool allowFlight = 12;</code>
+     * @return The allowFlight.
+     */
+    @java.lang.Override
+    public boolean getAllowFlight() {
+      return allowFlight_;
+    }
+    /**
+     * <pre>
+     * allow flight of the player
+     * </pre>
+     *
+     * <code>bool allowFlight = 12;</code>
+     * @param value The allowFlight to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAllowFlight(boolean value) {
+
+      allowFlight_ = value;
+      bitField0_ |= 0x00000800;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * allow flight of the player
+     * </pre>
+     *
+     * <code>bool allowFlight = 12;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAllowFlight() {
+      bitField0_ = (bitField0_ & ~0x00000800);
+      allowFlight_ = false;
       onChanged();
       return this;
     }

@@ -4,12 +4,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.net.ssl.SSLException;
-
 import java.net.InetSocketAddress;
 import java.security.KeyPair;
 import java.security.Security;
-import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
 import org.bukkit.Bukkit;
@@ -22,10 +19,7 @@ import io.grpc.netty.shaded.io.netty.handler.ssl.SslContext;
 import io.grpc.netty.shaded.io.netty.handler.ssl.SslContextBuilder;
 import io.grpc.netty.shaded.io.netty.handler.ssl.SslProvider;
 import io.grpc.protobuf.services.ProtoReflectionService;
-import io.grpc.protobuf.services.ProtoReflectionServiceV1;
-
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.yplugins.minecraftrpc.rpc.interceptors.AuthInterceptor;

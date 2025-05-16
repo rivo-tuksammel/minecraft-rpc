@@ -5,6 +5,9 @@ import com.yplugins.minecraftrpc.proto.player.OnlinePlayerRequest;
 import com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse;
 import com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest;
 import com.yplugins.minecraftrpc.proto.player.OnlinePlayersResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerKickRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerKickResponse;
+import com.yplugins.minecraftrpc.rpc.handlers.player.KickPlayerHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.OnlinePlayerHandler;
 
 import io.grpc.stub.StreamObserver;
@@ -29,5 +32,10 @@ public class PlayerService extends com.yplugins.minecraftrpc.proto.player.Minecr
         OnlinePlayersResponse response = playerHandler.handleGetOnlinePlayersRequest (request);
         responseObserver.onNext(response);
         responseObserver.onCompleted();
+    }
+
+    @Override
+    public void kickPlayer(PlayerKickRequest request, StreamObserver<PlayerKickResponse> responseObserver) {
+        super.kickPlayer(request, responseObserver);
     }
 }

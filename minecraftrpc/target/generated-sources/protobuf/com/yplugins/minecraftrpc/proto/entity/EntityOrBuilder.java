@@ -35,4 +35,24 @@ public interface EntityOrBuilder extends
    * <code>.MinecraftWorld.Location location = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.world.LocationOrBuilder getLocationOrBuilder();
+
+  /**
+   * <pre>
+   * UUID of the entity
+   * </pre>
+   *
+   * <code>string uuid = 3;</code>
+   * @return The uuid.
+   */
+  java.lang.String getUuid();
+  /**
+   * <pre>
+   * UUID of the entity
+   * </pre>
+   *
+   * <code>string uuid = 3;</code>
+   * @return The bytes for uuid.
+   */
+  com.google.protobuf.ByteString
+      getUuidBytes();
 }

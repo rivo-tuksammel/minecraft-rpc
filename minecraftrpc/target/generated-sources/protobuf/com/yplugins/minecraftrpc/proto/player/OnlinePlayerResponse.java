@@ -72,7 +72,7 @@ private static final long serialVersionUID = 0L;
   public static final int PLAYER_FIELD_NUMBER = 2;
   private com.yplugins.minecraftrpc.proto.player.OnlinePlayer player_;
   /**
-   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+   * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return Whether the player field is set.
    */
   @java.lang.Override
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000002) != 0);
   }
   /**
-   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+   * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return The player.
    */
   @java.lang.Override
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
     return player_ == null ? com.yplugins.minecraftrpc.proto.player.OnlinePlayer.getDefaultInstance() : player_;
   }
   /**
-   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+   * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayerOrBuilder() {
@@ -573,14 +573,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.player.OnlinePlayer, com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder, com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder> playerBuilder_;
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      * @return Whether the player field is set.
      */
     public boolean hasPlayer() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      * @return The player.
      */
     public com.yplugins.minecraftrpc.proto.player.OnlinePlayer getPlayer() {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder setPlayer(com.yplugins.minecraftrpc.proto.player.OnlinePlayer value) {
       if (playerBuilder_ == null) {
@@ -607,7 +607,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder setPlayer(
         com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder builderForValue) {
@@ -621,7 +621,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder mergePlayer(com.yplugins.minecraftrpc.proto.player.OnlinePlayer value) {
       if (playerBuilder_ == null) {
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder clearPlayer() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder getPlayerBuilder() {
       bitField0_ |= 0x00000002;
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
       return getPlayerFieldBuilder().getBuilder();
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayerOrBuilder() {
       if (playerBuilder_ != null) {
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+     * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.player.OnlinePlayer, com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder, com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder> 

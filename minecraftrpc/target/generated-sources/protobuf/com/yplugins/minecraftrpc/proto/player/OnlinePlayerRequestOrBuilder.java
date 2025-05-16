@@ -14,58 +14,58 @@ public interface OnlinePlayerRequestOrBuilder extends
    * name of the player
    * </pre>
    *
-   * <code>string name = 1;</code>
-   * @return Whether the name field is set.
+   * <code>string playerName = 1;</code>
+   * @return Whether the playerName field is set.
    */
-  boolean hasName();
+  boolean hasPlayerName();
   /**
    * <pre>
    * name of the player
    * </pre>
    *
-   * <code>string name = 1;</code>
-   * @return The name.
+   * <code>string playerName = 1;</code>
+   * @return The playerName.
    */
-  java.lang.String getName();
+  java.lang.String getPlayerName();
   /**
    * <pre>
    * name of the player
    * </pre>
    *
-   * <code>string name = 1;</code>
-   * @return The bytes for name.
+   * <code>string playerName = 1;</code>
+   * @return The bytes for playerName.
    */
   com.google.protobuf.ByteString
-      getNameBytes();
+      getPlayerNameBytes();
 
   /**
    * <pre>
    * UUID of the player
    * </pre>
    *
-   * <code>string uuid = 2;</code>
-   * @return Whether the uuid field is set.
+   * <code>string playerUniqueId = 2;</code>
+   * @return Whether the playerUniqueId field is set.
    */
-  boolean hasUuid();
+  boolean hasPlayerUniqueId();
   /**
    * <pre>
    * UUID of the player
    * </pre>
    *
-   * <code>string uuid = 2;</code>
-   * @return The uuid.
+   * <code>string playerUniqueId = 2;</code>
+   * @return The playerUniqueId.
    */
-  java.lang.String getUuid();
+  java.lang.String getPlayerUniqueId();
   /**
    * <pre>
    * UUID of the player
    * </pre>
    *
-   * <code>string uuid = 2;</code>
-   * @return The bytes for uuid.
+   * <code>string playerUniqueId = 2;</code>
+   * @return The bytes for playerUniqueId.
    */
   com.google.protobuf.ByteString
-      getUuidBytes();
+      getPlayerUniqueIdBytes();
 
   com.yplugins.minecraftrpc.proto.player.OnlinePlayerRequest.IdentifierCase getIdentifierCase();
 }

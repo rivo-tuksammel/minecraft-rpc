@@ -25,17 +25,17 @@ public interface OnlinePlayerResponseOrBuilder extends
   com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+   * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return Whether the player field is set.
    */
   boolean hasPlayer();
   /**
-   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+   * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return The player.
    */
   com.yplugins.minecraftrpc.proto.player.OnlinePlayer getPlayer();
   /**
-   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
+   * <code>optional .MinecraftPlayer.OnlinePlayer player = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayerOrBuilder();
 }

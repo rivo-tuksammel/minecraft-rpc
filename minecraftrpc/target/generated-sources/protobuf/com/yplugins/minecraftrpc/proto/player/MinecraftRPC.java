@@ -55,6 +55,126 @@ public final class MinecraftRPC {
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MinecraftPlayer_OnlinePlayerResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerKickRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerKickRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerKickResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerKickResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetHealthRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetHealthRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetHealthResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetHealthResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetMaxHealthRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetMaxHealthRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetMaxHealthResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetMaxHealthResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetFoodSaturationRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetFoodSaturationRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetFoodSaturationResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetFoodSaturationResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetExperienceRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetExperienceRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetExperienceResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetExperienceResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetLevelRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetLevelRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetLevelResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetLevelResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetTotalExperienceRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetTotalExperienceRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetTotalExperienceResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetTotalExperienceResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetGamemodeRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetGamemodeRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetGamemodeResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetGamemodeResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetAllowFlightRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetAllowFlightRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSetAllowFlightResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSetAllowFlightResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSendMessageRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSendMessageRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerSendMessageResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerSendMessageResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerTeleportToLocationRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerTeleportToLocationRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerTeleportToLocationResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerTeleportToLocationResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerTeleportToEntityRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerTeleportToEntityRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftPlayer_PlayerTeleportToEntityResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftPlayer_PlayerTeleportToEntityResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -68,28 +188,152 @@ public final class MinecraftRPC {
       "r\032\026minecraft_entity.proto\032\025minecraft_wor" +
       "ld.proto\"P\n\rCommandStatus\0220\n\004code\030\001 \001(\0162" +
       "\".MinecraftPlayer.CommandStatusCode\022\r\n\005e" +
-      "xtra\030\002 \001(\t\"u\n\014OnlinePlayer\022\014\n\004name\030\001 \001(\t" +
-      "\022*\n\010location\030\002 \001(\0132\030.MinecraftWorld.Loca" +
-      "tion\022\014\n\004uuid\030\003 \001(\t\022\017\n\007address\030\004 \001(\t\022\014\n\004p" +
-      "ing\030\005 \001(\005\"\026\n\024OnlinePlayersRequest\"w\n\025Onl" +
-      "inePlayersResponse\022.\n\006status\030\001 \001(\0132\036.Min" +
-      "ecraftPlayer.CommandStatus\022.\n\007players\030\002 " +
-      "\003(\0132\035.MinecraftPlayer.OnlinePlayer\"C\n\023On" +
-      "linePlayerRequest\022\016\n\004name\030\001 \001(\tH\000\022\016\n\004uui" +
-      "d\030\002 \001(\tH\000B\014\n\nidentifier\"u\n\024OnlinePlayerR" +
-      "esponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlaye" +
-      "r.CommandStatus\022-\n\006player\030\002 \001(\0132\035.Minecr" +
-      "aftPlayer.OnlinePlayer*\205\001\n\021CommandStatus" +
-      "Code\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSI" +
-      "NG_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017N" +
-      "OT_IMPLEMENTED\020\004\022\024\n\020PLAYER_NOT_FOUND\020\0052\324" +
-      "\001\n\017MinecraftPlayer\022a\n\020getOnlinePlayers\022%" +
-      ".MinecraftPlayer.OnlinePlayersRequest\032&." +
-      "MinecraftPlayer.OnlinePlayersResponse\022^\n" +
-      "\017getOnlinePlayer\022$.MinecraftPlayer.Onlin" +
-      "ePlayerRequest\032%.MinecraftPlayer.OnlineP" +
-      "layerResponseB8\n&com.yplugins.minecraftr" +
-      "pc.proto.playerB\014MinecraftRPCP\001b\006proto3"
+      "xtra\030\002 \001(\t\"\225\002\n\014OnlinePlayer\022\014\n\004name\030\001 \001(" +
+      "\t\022*\n\010location\030\002 \001(\0132\030.MinecraftWorld.Loc" +
+      "ation\022\014\n\004uuid\030\003 \001(\t\022\017\n\007address\030\004 \001(\t\022\014\n\004" +
+      "ping\030\005 \001(\005\022\016\n\006health\030\006 \001(\002\022\021\n\tmaxHealth\030" +
+      "\007 \001(\002\022\026\n\016foodSaturation\030\010 \001(\002\022\022\n\nexperie" +
+      "nce\030\t \001(\002\022\r\n\005level\030\n \001(\005\022+\n\010gamemode\030\013 \001" +
+      "(\0162\031.MinecraftPlayer.Gamemode\022\023\n\013allowFl" +
+      "ight\030\014 \001(\010\"\026\n\024OnlinePlayersRequest\"w\n\025On" +
+      "linePlayersResponse\022.\n\006status\030\001 \001(\0132\036.Mi" +
+      "necraftPlayer.CommandStatus\022.\n\007players\030\002" +
+      " \003(\0132\035.MinecraftPlayer.OnlinePlayer\"S\n\023O" +
+      "nlinePlayerRequest\022\024\n\nplayerName\030\001 \001(\tH\000" +
+      "\022\030\n\016playerUniqueId\030\002 \001(\tH\000B\014\n\nidentifier" +
+      "\"\205\001\n\024OnlinePlayerResponse\022.\n\006status\030\001 \001(" +
+      "\0132\036.MinecraftPlayer.CommandStatus\0222\n\006pla" +
+      "yer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayer" +
+      "H\000\210\001\001B\t\n\007_player\"|\n\021PlayerKickRequest\022\030\n" +
+      "\016playerUniqueId\030\001 \001(\tH\000\022/\n\006player\030\002 \001(\0132" +
+      "\035.MinecraftPlayer.OnlinePlayerH\000\022\016\n\006reas" +
+      "on\030\003 \001(\tB\014\n\nidentifier\"\203\001\n\022PlayerKickRes" +
+      "ponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer." +
+      "CommandStatus\0222\n\006player\030\002 \001(\0132\035.Minecraf" +
+      "tPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\201\001\n" +
+      "\026PlayerSetHealthRequest\022/\n\006player\030\002 \001(\0132" +
+      "\035.MinecraftPlayer.OnlinePlayerH\000\022\030\n\016play" +
+      "erUniqueId\030\003 \001(\tH\000\022\016\n\006health\030\001 \001(\005B\014\n\nid" +
+      "entifier\"\210\001\n\027PlayerSetHealthResponse\022.\n\006" +
+      "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
+      "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
+      "nlinePlayerH\000\210\001\001B\t\n\007_player\"\207\001\n\031PlayerSe" +
+      "tMaxHealthRequest\022/\n\006player\030\002 \001(\0132\035.Mine" +
+      "craftPlayer.OnlinePlayerH\000\022\030\n\016playerUniq" +
+      "ueId\030\003 \001(\tH\000\022\021\n\tmaxHealth\030\001 \001(\005B\014\n\nident" +
+      "ifier\"\213\001\n\032PlayerSetMaxHealthResponse\022.\n\006" +
+      "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
+      "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
+      "nlinePlayerH\000\210\001\001B\t\n\007_player\"\221\001\n\036PlayerSe" +
+      "tFoodSaturationRequest\022/\n\006player\030\002 \001(\0132\035" +
+      ".MinecraftPlayer.OnlinePlayerH\000\022\030\n\016playe" +
+      "rUniqueId\030\003 \001(\tH\000\022\026\n\016foodSaturation\030\001 \001(" +
+      "\005B\014\n\nidentifier\"\220\001\n\037PlayerSetFoodSaturat" +
+      "ionResponse\022.\n\006status\030\001 \001(\0132\036.MinecraftP" +
+      "layer.CommandStatus\0222\n\006player\030\002 \001(\0132\035.Mi" +
+      "necraftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_play" +
+      "er\"\211\001\n\032PlayerSetExperienceRequest\022/\n\006pla" +
+      "yer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayer" +
+      "H\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\022\n\nexperien" +
+      "ce\030\001 \001(\005B\014\n\nidentifier\"\214\001\n\033PlayerSetExpe" +
+      "rienceResponse\022.\n\006status\030\001 \001(\0132\036.Minecra" +
+      "ftPlayer.CommandStatus\0222\n\006player\030\002 \001(\0132\035" +
+      ".MinecraftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_p" +
+      "layer\"\177\n\025PlayerSetLevelRequest\022/\n\006player" +
+      "\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000\022" +
+      "\030\n\016playerUniqueId\030\003 \001(\tH\000\022\r\n\005level\030\001 \001(\005" +
+      "B\014\n\nidentifier\"\207\001\n\026PlayerSetLevelRespons" +
+      "e\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.Comm" +
+      "andStatus\0222\n\006player\030\002 \001(\0132\035.MinecraftPla" +
+      "yer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\223\001\n\037Pla" +
+      "yerSetTotalExperienceRequest\022/\n\006player\030\002" +
+      " \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000\022\030\n" +
+      "\016playerUniqueId\030\003 \001(\tH\000\022\027\n\017totalExperien" +
+      "ce\030\001 \001(\002B\014\n\nidentifier\"\221\001\n PlayerSetTota" +
+      "lExperienceResponse\022.\n\006status\030\001 \001(\0132\036.Mi" +
+      "necraftPlayer.CommandStatus\0222\n\006player\030\002 " +
+      "\001(\0132\035.MinecraftPlayer.OnlinePlayerH\000\210\001\001B" +
+      "\t\n\007_player\"\240\001\n\030PlayerSetGamemodeRequest\022" +
+      "/\n\006player\030\002 \001(\0132\035.MinecraftPlayer.Online" +
+      "PlayerH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022+\n\010ga" +
+      "memode\030\001 \001(\0162\031.MinecraftPlayer.GamemodeB" +
+      "\014\n\nidentifier\"\212\001\n\031PlayerSetGamemodeRespo" +
+      "nse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.Co" +
+      "mmandStatus\0222\n\006player\030\002 \001(\0132\035.MinecraftP" +
+      "layer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\213\001\n\033P" +
+      "layerSetAllowFlightRequest\022/\n\006player\030\002 \001" +
+      "(\0132\035.MinecraftPlayer.OnlinePlayerH\000\022\030\n\016p" +
+      "layerUniqueId\030\003 \001(\tH\000\022\023\n\013allowFlight\030\001 \001" +
+      "(\010B\014\n\nidentifier\"\215\001\n\034PlayerSetAllowFligh" +
+      "tResponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPla" +
+      "yer.CommandStatus\0222\n\006player\030\002 \001(\0132\035.Mine" +
+      "craftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_player" +
+      "\"\204\001\n\030PlayerSendMessageRequest\022/\n\006player\030" +
+      "\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000\022\030" +
+      "\n\016playerUniqueId\030\003 \001(\tH\000\022\017\n\007message\030\001 \001(" +
+      "\tB\014\n\nidentifier\"K\n\031PlayerSendMessageResp" +
+      "onse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.C" +
+      "ommandStatus\"\344\001\n\037PlayerTeleportToLocatio" +
+      "nRequest\022/\n\006player\030\001 \001(\0132\035.MinecraftPlay" +
+      "er.OnlinePlayerH\000\022\030\n\016playerUniqueId\030\002 \001(" +
+      "\tH\000\022*\n\010location\030\004 \001(\0132\030.MinecraftWorld.L" +
+      "ocation\0222\n\005cause\030\003 \001(\0162\036.MinecraftPlayer" +
+      ".TeleportCauseH\001\210\001\001B\014\n\nidentifierB\010\n\006_ca" +
+      "use\"\221\001\n PlayerTeleportToLocationResponse" +
+      "\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.Comma" +
+      "ndStatus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlay" +
+      "er.OnlinePlayerH\000\210\001\001B\t\n\007_player\"|\n\035Playe" +
+      "rTeleportToEntityRequest\022\014\n\004uuid\030\001 \001(\t\022)" +
+      "\n\006entity\030\002 \001(\0132\027.MinecraftEntity.EntityH" +
+      "\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000B\010\n\006target\"\217\001" +
+      "\n\036PlayerTeleportToEntityResponse\022.\n\006stat" +
+      "us\030\001 \001(\0132\036.MinecraftPlayer.CommandStatus" +
+      "\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.Onlin" +
+      "ePlayerH\000\210\001\001B\t\n\007_player*\205\001\n\021CommandStatu" +
+      "sCode\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISS" +
+      "ING_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017" +
+      "NOT_IMPLEMENTED\020\004\022\024\n\020PLAYER_NOT_FOUND\020\005*" +
+      "D\n\010Gamemode\022\014\n\010SURVIVAL\020\000\022\014\n\010CREATIVE\020\001\022" +
+      "\r\n\tADVENTURE\020\002\022\r\n\tSPECTATOR\020\003*\266\001\n\rTelepo" +
+      "rtCause\022\020\n\014CHORUS_FRUIT\020\000\022\013\n\007COMMAND\020\001\022\014" +
+      "\n\010DISMOUNT\020\002\022\017\n\013END_GATEWAY\020\003\022\016\n\nEND_POR" +
+      "TAL\020\004\022\017\n\013ENDER_PEARL\020\005\022\014\n\010EXIT_BED\020\006\022\021\n\r" +
+      "NETHER_PORTAL\020\007\022\n\n\006PLUGIN\020\010\022\014\n\010SPECTATE\020" +
+      "\t\022\013\n\007UNKNOWN\020\n2\241\n\n\017MinecraftPlayer\022a\n\020ge" +
+      "tOnlinePlayers\022%.MinecraftPlayer.OnlineP" +
+      "layersRequest\032&.MinecraftPlayer.OnlinePl" +
+      "ayersResponse\022^\n\017getOnlinePlayer\022$.Minec" +
+      "raftPlayer.OnlinePlayerRequest\032%.Minecra" +
+      "ftPlayer.OnlinePlayerResponse\022U\n\nkickPla" +
+      "yer\022\".MinecraftPlayer.PlayerKickRequest\032" +
+      "#.MinecraftPlayer.PlayerKickResponse\022d\n\017" +
+      "setPlayerHealth\022\'.MinecraftPlayer.Player" +
+      "SetHealthRequest\032(.MinecraftPlayer.Playe" +
+      "rSetHealthResponse\022p\n\023setPlayerExperienc" +
+      "e\022+.MinecraftPlayer.PlayerSetExperienceR" +
+      "equest\032,.MinecraftPlayer.PlayerSetExperi" +
+      "enceResponse\022a\n\016setPlayerLevel\022&.Minecra" +
+      "ftPlayer.PlayerSetLevelRequest\032\'.Minecra" +
+      "ftPlayer.PlayerSetLevelResponse\022m\n\022setPl" +
+      "ayerMaxHealth\022*.MinecraftPlayer.PlayerSe" +
+      "tMaxHealthRequest\032+.MinecraftPlayer.Play" +
+      "erSetMaxHealthResponse\022|\n\027setPlayerFoodS" +
+      "aturation\022/.MinecraftPlayer.PlayerSetFoo" +
+      "dSaturationRequest\0320.MinecraftPlayer.Pla" +
+      "yerSetFoodSaturationResponse\022\177\n\030setPlaye" +
+      "rTotalExperience\0220.MinecraftPlayer.Playe" +
+      "rSetTotalExperienceRequest\0321.MinecraftPl" +
+      "ayer.PlayerSetTotalExperienceResponse\022j\n" +
+      "\021setPlayerGamemode\022).MinecraftPlayer.Pla" +
+      "yerSetGamemodeRequest\032*.MinecraftPlayer." +
+      "PlayerSetGamemodeResponse\022s\n\024setPlayerAl" +
+      "lowFlight\022,.MinecraftPlayer.PlayerSetAll" +
+      "owFlightRequest\032-.MinecraftPlayer.Player" +
+      "SetAllowFlightResponse\022j\n\021sendPlayerMess" +
+      "age\022).MinecraftPlayer.PlayerSendMessageR" +
+      "equest\032*.MinecraftPlayer.PlayerSendMessa" +
+      "geResponseB8\n&com.yplugins.minecraftrpc." +
+      "proto.playerB\014MinecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -108,7 +352,7 @@ public final class MinecraftRPC {
     internal_static_MinecraftPlayer_OnlinePlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftPlayer_OnlinePlayer_descriptor,
-        new java.lang.String[] { "Name", "Location", "Uuid", "Address", "Ping", });
+        new java.lang.String[] { "Name", "Location", "Uuid", "Address", "Ping", "Health", "MaxHealth", "FoodSaturation", "Experience", "Level", "Gamemode", "AllowFlight", });
     internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_MinecraftPlayer_OnlinePlayersRequest_fieldAccessorTable = new
@@ -126,12 +370,156 @@ public final class MinecraftRPC {
     internal_static_MinecraftPlayer_OnlinePlayerRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftPlayer_OnlinePlayerRequest_descriptor,
-        new java.lang.String[] { "Name", "Uuid", "Identifier", });
+        new java.lang.String[] { "PlayerName", "PlayerUniqueId", "Identifier", });
     internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_MinecraftPlayer_OnlinePlayerResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerKickRequest_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_MinecraftPlayer_PlayerKickRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerKickRequest_descriptor,
+        new java.lang.String[] { "PlayerUniqueId", "Player", "Reason", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerKickResponse_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_MinecraftPlayer_PlayerKickResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerKickResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetHealthRequest_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_MinecraftPlayer_PlayerSetHealthRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetHealthRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "Health", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetHealthResponse_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_MinecraftPlayer_PlayerSetHealthResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetHealthResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetMaxHealthRequest_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_MinecraftPlayer_PlayerSetMaxHealthRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetMaxHealthRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "MaxHealth", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetMaxHealthResponse_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_MinecraftPlayer_PlayerSetMaxHealthResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetMaxHealthResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetFoodSaturationRequest_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_MinecraftPlayer_PlayerSetFoodSaturationRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetFoodSaturationRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "FoodSaturation", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetFoodSaturationResponse_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_MinecraftPlayer_PlayerSetFoodSaturationResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetFoodSaturationResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetExperienceRequest_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_MinecraftPlayer_PlayerSetExperienceRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetExperienceRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "Experience", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetExperienceResponse_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_MinecraftPlayer_PlayerSetExperienceResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetExperienceResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetLevelRequest_descriptor =
+      getDescriptor().getMessageTypes().get(16);
+    internal_static_MinecraftPlayer_PlayerSetLevelRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetLevelRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "Level", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetLevelResponse_descriptor =
+      getDescriptor().getMessageTypes().get(17);
+    internal_static_MinecraftPlayer_PlayerSetLevelResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetLevelResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetTotalExperienceRequest_descriptor =
+      getDescriptor().getMessageTypes().get(18);
+    internal_static_MinecraftPlayer_PlayerSetTotalExperienceRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetTotalExperienceRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "TotalExperience", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetTotalExperienceResponse_descriptor =
+      getDescriptor().getMessageTypes().get(19);
+    internal_static_MinecraftPlayer_PlayerSetTotalExperienceResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetTotalExperienceResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetGamemodeRequest_descriptor =
+      getDescriptor().getMessageTypes().get(20);
+    internal_static_MinecraftPlayer_PlayerSetGamemodeRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetGamemodeRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "Gamemode", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetGamemodeResponse_descriptor =
+      getDescriptor().getMessageTypes().get(21);
+    internal_static_MinecraftPlayer_PlayerSetGamemodeResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetGamemodeResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSetAllowFlightRequest_descriptor =
+      getDescriptor().getMessageTypes().get(22);
+    internal_static_MinecraftPlayer_PlayerSetAllowFlightRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetAllowFlightRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "AllowFlight", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSetAllowFlightResponse_descriptor =
+      getDescriptor().getMessageTypes().get(23);
+    internal_static_MinecraftPlayer_PlayerSetAllowFlightResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSetAllowFlightResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerSendMessageRequest_descriptor =
+      getDescriptor().getMessageTypes().get(24);
+    internal_static_MinecraftPlayer_PlayerSendMessageRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSendMessageRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "Message", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerSendMessageResponse_descriptor =
+      getDescriptor().getMessageTypes().get(25);
+    internal_static_MinecraftPlayer_PlayerSendMessageResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerSendMessageResponse_descriptor,
+        new java.lang.String[] { "Status", });
+    internal_static_MinecraftPlayer_PlayerTeleportToLocationRequest_descriptor =
+      getDescriptor().getMessageTypes().get(26);
+    internal_static_MinecraftPlayer_PlayerTeleportToLocationRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerTeleportToLocationRequest_descriptor,
+        new java.lang.String[] { "Player", "PlayerUniqueId", "Location", "Cause", "Identifier", });
+    internal_static_MinecraftPlayer_PlayerTeleportToLocationResponse_descriptor =
+      getDescriptor().getMessageTypes().get(27);
+    internal_static_MinecraftPlayer_PlayerTeleportToLocationResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerTeleportToLocationResponse_descriptor,
+        new java.lang.String[] { "Status", "Player", });
+    internal_static_MinecraftPlayer_PlayerTeleportToEntityRequest_descriptor =
+      getDescriptor().getMessageTypes().get(28);
+    internal_static_MinecraftPlayer_PlayerTeleportToEntityRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerTeleportToEntityRequest_descriptor,
+        new java.lang.String[] { "Uuid", "Entity", "PlayerUniqueId", "Target", });
+    internal_static_MinecraftPlayer_PlayerTeleportToEntityResponse_descriptor =
+      getDescriptor().getMessageTypes().get(29);
+    internal_static_MinecraftPlayer_PlayerTeleportToEntityResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftPlayer_PlayerTeleportToEntityResponse_descriptor,
         new java.lang.String[] { "Status", "Player", });
     descriptor.resolveAllFeaturesImmutable();
     com.yplugins.minecraftrpc.proto.entity.MinecraftRPC.getDescriptor();

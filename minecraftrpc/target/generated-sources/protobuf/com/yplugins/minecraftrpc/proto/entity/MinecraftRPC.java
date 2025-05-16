@@ -78,36 +78,36 @@ public final class MinecraftRPC {
       "y\032\025minecraft_world.proto\032\025minecraft_type" +
       "s.proto\"P\n\rCommandStatus\0220\n\004code\030\001 \001(\0162\"" +
       ".MinecraftEntity.CommandStatusCode\022\r\n\005ex" +
-      "tra\030\002 \001(\t\"B\n\006Entity\022\014\n\004type\030\001 \001(\t\022*\n\010loc" +
-      "ation\030\002 \001(\0132\030.MinecraftWorld.Location\"\313\002" +
-      "\n\rEntityRequest\022C\n\010specific\030\001 \001(\0132/.Mine" +
-      "craftEntity.EntityRequest.SpecificEntiti" +
-      "esH\000\022A\n\tworldwide\030\002 \001(\0132,.MinecraftEntit" +
-      "y.EntityRequest.WorldEntitiesH\000\032;\n\020Speci" +
-      "ficEntities\022\'\n\006filter\030\001 \003(\0132\027.MinecraftE" +
-      "ntity.Entity\032`\n\rWorldEntities\022$\n\005world\030\001" +
-      " \001(\0132\025.MinecraftWorld.World\022\014\n\004type\030\002 \001(" +
-      "\t\022\033\n\023includeNotSpawnable\030\003 \001(\010B\023\n\021Entity" +
-      "RequestType\"\236\002\n\022SpawnEntityRequest\022\014\n\004ty" +
-      "pe\030\001 \001(\t\022I\n\010location\030\002 \001(\01327.MinecraftEn" +
-      "tity.SpawnEntityRequest.SpawnEntityLocat" +
-      "ion\032\256\001\n\023SpawnEntityLocation\022,\n\tdimension" +
-      "\030\001 \001(\0132\031.MinecraftWorld.Dimension\022\"\n\003pos" +
-      "\030\002 \001(\0132\025.MinecraftTypes.Vec3f\0225\n\013orienta" +
-      "tion\030\003 \001(\0132\033.MinecraftWorld.OrientationH" +
-      "\000\210\001\001B\016\n\014_orientation\"n\n\023SpawnEntityRespo" +
-      "nse\022.\n\006status\030\001 \001(\0132\036.MinecraftEntity.Co" +
-      "mmandStatus\022\'\n\006entity\030\002 \001(\0132\027.MinecraftE" +
-      "ntity.Entity*\272\001\n\021CommandStatusCode\022\006\n\002OK" +
-      "\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSING_ARGUMEN" +
-      "T\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NOT_IMPLEME" +
-      "NTED\020\004\022\031\n\025ENTITY_TYPE_NOT_FOUND\020\010\022\030\n\024ENT" +
-      "ITY_NOT_SPAWNABLE\020\t\022\024\n\020ENTITY_NOT_FOUND\020" +
-      "\n2k\n\017MinecraftEntity\022X\n\013spawnEntity\022#.Mi" +
-      "necraftEntity.SpawnEntityRequest\032$.Minec" +
-      "raftEntity.SpawnEntityResponseB8\n&com.yp" +
-      "lugins.minecraftrpc.proto.entityB\014Minecr" +
-      "aftRPCP\001b\006proto3"
+      "tra\030\002 \001(\t\"P\n\006Entity\022\014\n\004type\030\001 \001(\t\022*\n\010loc" +
+      "ation\030\002 \001(\0132\030.MinecraftWorld.Location\022\014\n" +
+      "\004uuid\030\003 \001(\t\"\313\002\n\rEntityRequest\022C\n\010specifi" +
+      "c\030\001 \001(\0132/.MinecraftEntity.EntityRequest." +
+      "SpecificEntitiesH\000\022A\n\tworldwide\030\002 \001(\0132,." +
+      "MinecraftEntity.EntityRequest.WorldEntit" +
+      "iesH\000\032;\n\020SpecificEntities\022\'\n\006filter\030\001 \003(" +
+      "\0132\027.MinecraftEntity.Entity\032`\n\rWorldEntit" +
+      "ies\022$\n\005world\030\001 \001(\0132\025.MinecraftWorld.Worl" +
+      "d\022\014\n\004type\030\002 \001(\t\022\033\n\023includeNotSpawnable\030\003" +
+      " \001(\010B\023\n\021EntityRequestType\"\236\002\n\022SpawnEntit" +
+      "yRequest\022\014\n\004type\030\001 \001(\t\022I\n\010location\030\002 \001(\013" +
+      "27.MinecraftEntity.SpawnEntityRequest.Sp" +
+      "awnEntityLocation\032\256\001\n\023SpawnEntityLocatio" +
+      "n\022,\n\tdimension\030\001 \001(\0132\031.MinecraftWorld.Di" +
+      "mension\022\"\n\003pos\030\002 \001(\0132\025.MinecraftTypes.Ve" +
+      "c3f\0225\n\013orientation\030\003 \001(\0132\033.MinecraftWorl" +
+      "d.OrientationH\000\210\001\001B\016\n\014_orientation\"n\n\023Sp" +
+      "awnEntityResponse\022.\n\006status\030\001 \001(\0132\036.Mine" +
+      "craftEntity.CommandStatus\022\'\n\006entity\030\002 \001(" +
+      "\0132\027.MinecraftEntity.Entity*\272\001\n\021CommandSt" +
+      "atusCode\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020M" +
+      "ISSING_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022" +
+      "\023\n\017NOT_IMPLEMENTED\020\004\022\031\n\025ENTITY_TYPE_NOT_" +
+      "FOUND\020\010\022\030\n\024ENTITY_NOT_SPAWNABLE\020\t\022\024\n\020ENT" +
+      "ITY_NOT_FOUND\020\n2k\n\017MinecraftEntity\022X\n\013sp" +
+      "awnEntity\022#.MinecraftEntity.SpawnEntityR" +
+      "equest\032$.MinecraftEntity.SpawnEntityResp" +
+      "onseB8\n&com.yplugins.minecraftrpc.proto." +
+      "entityB\014MinecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -126,7 +126,7 @@ public final class MinecraftRPC {
     internal_static_MinecraftEntity_Entity_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftEntity_Entity_descriptor,
-        new java.lang.String[] { "Type", "Location", });
+        new java.lang.String[] { "Type", "Location", "Uuid", });
     internal_static_MinecraftEntity_EntityRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_MinecraftEntity_EntityRequest_fieldAccessorTable = new

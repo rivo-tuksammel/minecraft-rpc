@@ -105,4 +105,83 @@ public interface OnlinePlayerOrBuilder extends
    * @return The ping.
    */
   int getPing();
+
+  /**
+   * <pre>
+   * health of the player
+   * </pre>
+   *
+   * <code>float health = 6;</code>
+   * @return The health.
+   */
+  float getHealth();
+
+  /**
+   * <pre>
+   * max health of the player
+   * </pre>
+   *
+   * <code>float maxHealth = 7;</code>
+   * @return The maxHealth.
+   */
+  float getMaxHealth();
+
+  /**
+   * <pre>
+   * food saturation of the player
+   * </pre>
+   *
+   * <code>float foodSaturation = 8;</code>
+   * @return The foodSaturation.
+   */
+  float getFoodSaturation();
+
+  /**
+   * <pre>
+   * experience of the player
+   * </pre>
+   *
+   * <code>float experience = 9;</code>
+   * @return The experience.
+   */
+  float getExperience();
+
+  /**
+   * <pre>
+   * level of the player
+   * </pre>
+   *
+   * <code>int32 level = 10;</code>
+   * @return The level.
+   */
+  int getLevel();
+
+  /**
+   * <pre>
+   * gamemode of the player
+   * </pre>
+   *
+   * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+   * @return The enum numeric value on the wire for gamemode.
+   */
+  int getGamemodeValue();
+  /**
+   * <pre>
+   * gamemode of the player
+   * </pre>
+   *
+   * <code>.MinecraftPlayer.Gamemode gamemode = 11;</code>
+   * @return The gamemode.
+   */
+  com.yplugins.minecraftrpc.proto.player.Gamemode getGamemode();
+
+  /**
+   * <pre>
+   * allow flight of the player
+   * </pre>
+   *
+   * <code>bool allowFlight = 12;</code>
+   * @return The allowFlight.
+   */
+  boolean getAllowFlight();
 }

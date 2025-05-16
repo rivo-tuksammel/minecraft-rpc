@@ -28,6 +28,7 @@ private static final long serialVersionUID = 0L;
   }
   private Entity() {
     type_ = "";
+    uuid_ = "";
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
@@ -109,6 +110,53 @@ private static final long serialVersionUID = 0L;
     return location_ == null ? com.yplugins.minecraftrpc.proto.world.Location.getDefaultInstance() : location_;
   }
 
+  public static final int UUID_FIELD_NUMBER = 3;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object uuid_ = "";
+  /**
+   * <pre>
+   * UUID of the entity
+   * </pre>
+   *
+   * <code>string uuid = 3;</code>
+   * @return The uuid.
+   */
+  @java.lang.Override
+  public java.lang.String getUuid() {
+    java.lang.Object ref = uuid_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      uuid_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * UUID of the entity
+   * </pre>
+   *
+   * <code>string uuid = 3;</code>
+   * @return The bytes for uuid.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getUuidBytes() {
+    java.lang.Object ref = uuid_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      uuid_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -129,6 +177,9 @@ private static final long serialVersionUID = 0L;
     if (((bitField0_ & 0x00000001) != 0)) {
       output.writeMessage(2, getLocation());
     }
+    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uuid_)) {
+      com.google.protobuf.GeneratedMessage.writeString(output, 3, uuid_);
+    }
     getUnknownFields().writeTo(output);
   }
 
@@ -144,6 +195,9 @@ private static final long serialVersionUID = 0L;
     if (((bitField0_ & 0x00000001) != 0)) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getLocation());
+    }
+    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uuid_)) {
+      size += com.google.protobuf.GeneratedMessage.computeStringSize(3, uuid_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -167,6 +221,8 @@ private static final long serialVersionUID = 0L;
       if (!getLocation()
           .equals(other.getLocation())) return false;
     }
+    if (!getUuid()
+        .equals(other.getUuid())) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -184,6 +240,8 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + LOCATION_FIELD_NUMBER;
       hash = (53 * hash) + getLocation().hashCode();
     }
+    hash = (37 * hash) + UUID_FIELD_NUMBER;
+    hash = (53 * hash) + getUuid().hashCode();
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -327,6 +385,7 @@ private static final long serialVersionUID = 0L;
         locationBuilder_.dispose();
         locationBuilder_ = null;
       }
+      uuid_ = "";
       return this;
     }
 
@@ -370,6 +429,9 @@ private static final long serialVersionUID = 0L;
             : locationBuilder_.build();
         to_bitField0_ |= 0x00000001;
       }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.uuid_ = uuid_;
+      }
       result.bitField0_ |= to_bitField0_;
     }
 
@@ -392,6 +454,11 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasLocation()) {
         mergeLocation(other.getLocation());
+      }
+      if (!other.getUuid().isEmpty()) {
+        uuid_ = other.uuid_;
+        bitField0_ |= 0x00000004;
+        onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -431,6 +498,11 @@ private static final long serialVersionUID = 0L;
               bitField0_ |= 0x00000002;
               break;
             } // case 18
+            case 26: {
+              uuid_ = input.readStringRequireUtf8();
+              bitField0_ |= 0x00000004;
+              break;
+            } // case 26
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -639,6 +711,98 @@ private static final long serialVersionUID = 0L;
         location_ = null;
       }
       return locationBuilder_;
+    }
+
+    private java.lang.Object uuid_ = "";
+    /**
+     * <pre>
+     * UUID of the entity
+     * </pre>
+     *
+     * <code>string uuid = 3;</code>
+     * @return The uuid.
+     */
+    public java.lang.String getUuid() {
+      java.lang.Object ref = uuid_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        uuid_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * UUID of the entity
+     * </pre>
+     *
+     * <code>string uuid = 3;</code>
+     * @return The bytes for uuid.
+     */
+    public com.google.protobuf.ByteString
+        getUuidBytes() {
+      java.lang.Object ref = uuid_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        uuid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * UUID of the entity
+     * </pre>
+     *
+     * <code>string uuid = 3;</code>
+     * @param value The uuid to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUuid(
+        java.lang.String value) {
+      if (value == null) { throw new NullPointerException(); }
+      uuid_ = value;
+      bitField0_ |= 0x00000004;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * UUID of the entity
+     * </pre>
+     *
+     * <code>string uuid = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearUuid() {
+      uuid_ = getDefaultInstance().getUuid();
+      bitField0_ = (bitField0_ & ~0x00000004);
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * UUID of the entity
+     * </pre>
+     *
+     * <code>string uuid = 3;</code>
+     * @param value The bytes for uuid to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUuidBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
+      uuid_ = value;
+      bitField0_ |= 0x00000004;
+      onChanged();
+      return this;
     }
 
     // @@protoc_insertion_point(builder_scope:MinecraftEntity.Entity)
