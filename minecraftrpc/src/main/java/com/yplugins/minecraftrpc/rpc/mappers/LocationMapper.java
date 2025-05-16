@@ -32,7 +32,7 @@ public class LocationMapper {
 
         locationBuilder.setDimension(
             Dimension.newBuilder()
-                .setName(location.getWorld().getKey().toString())
+                .setName(location.getWorld().getName())
         );
 
         locationBuilder.setOrientation(

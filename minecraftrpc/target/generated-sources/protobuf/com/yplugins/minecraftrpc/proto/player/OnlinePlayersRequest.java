@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 /**
- * Protobuf type {@code MinecraftTypes.OnlinePlayersRequest}
+ * Protobuf type {@code MinecraftPlayer.OnlinePlayersRequest}
  */
 public final class OnlinePlayersRequest extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:MinecraftTypes.OnlinePlayersRequest)
+    // @@protoc_insertion_point(message_implements:MinecraftPlayer.OnlinePlayersRequest)
     OnlinePlayersRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,13 +31,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayersRequest_descriptor;
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayersRequest_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayersRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest.class, com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest.Builder.class);
   }
@@ -189,21 +189,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code MinecraftTypes.OnlinePlayersRequest}
+   * Protobuf type {@code MinecraftPlayer.OnlinePlayersRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:MinecraftTypes.OnlinePlayersRequest)
+      // @@protoc_insertion_point(builder_implements:MinecraftPlayer.OnlinePlayersRequest)
       com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayersRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayersRequest_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayersRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest.class, com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest.Builder.class);
     }
@@ -227,7 +227,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayersRequest_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor;
     }
 
     @java.lang.Override
@@ -305,10 +305,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:MinecraftTypes.OnlinePlayersRequest)
+    // @@protoc_insertion_point(builder_scope:MinecraftPlayer.OnlinePlayersRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:MinecraftTypes.OnlinePlayersRequest)
+  // @@protoc_insertion_point(class_scope:MinecraftPlayer.OnlinePlayersRequest)
   private static final com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest();

@@ -6,36 +6,36 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 public interface OnlinePlayerResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:MinecraftTypes.OnlinePlayerResponse)
+    // @@protoc_insertion_point(interface_extends:MinecraftPlayer.OnlinePlayerResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.player.CommandStatus getStatus();
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return Whether the player field is set.
    */
   boolean hasPlayer();
   /**
-   * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return The player.
    */
   com.yplugins.minecraftrpc.proto.player.OnlinePlayer getPlayer();
   /**
-   * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayerOrBuilder();
 }

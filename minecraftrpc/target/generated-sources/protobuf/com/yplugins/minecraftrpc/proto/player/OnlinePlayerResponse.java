@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 /**
- * Protobuf type {@code MinecraftTypes.OnlinePlayerResponse}
+ * Protobuf type {@code MinecraftPlayer.OnlinePlayerResponse}
  */
 public final class OnlinePlayerResponse extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:MinecraftTypes.OnlinePlayerResponse)
+    // @@protoc_insertion_point(message_implements:MinecraftPlayer.OnlinePlayerResponse)
     OnlinePlayerResponseOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -31,13 +31,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayerResponse_descriptor;
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayerResponse_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayerResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse.class, com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse.Builder.class);
   }
@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
   public static final int STATUS_FIELD_NUMBER = 1;
   private com.yplugins.minecraftrpc.proto.player.CommandStatus status_;
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    * @return Whether the status field is set.
    */
   @java.lang.Override
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000001) != 0);
   }
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    * @return The status.
    */
   @java.lang.Override
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
     return status_ == null ? com.yplugins.minecraftrpc.proto.player.CommandStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder getStatusOrBuilder() {
@@ -72,7 +72,7 @@ private static final long serialVersionUID = 0L;
   public static final int PLAYER_FIELD_NUMBER = 2;
   private com.yplugins.minecraftrpc.proto.player.OnlinePlayer player_;
   /**
-   * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return Whether the player field is set.
    */
   @java.lang.Override
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
     return ((bitField0_ & 0x00000002) != 0);
   }
   /**
-   * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
    * @return The player.
    */
   @java.lang.Override
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
     return player_ == null ? com.yplugins.minecraftrpc.proto.player.OnlinePlayer.getDefaultInstance() : player_;
   }
   /**
-   * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+   * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
    */
   @java.lang.Override
   public com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayerOrBuilder() {
@@ -274,21 +274,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code MinecraftTypes.OnlinePlayerResponse}
+   * Protobuf type {@code MinecraftPlayer.OnlinePlayerResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:MinecraftTypes.OnlinePlayerResponse)
+      // @@protoc_insertion_point(builder_implements:MinecraftPlayer.OnlinePlayerResponse)
       com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayerResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayerResponse_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayerResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse.class, com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse.Builder.class);
     }
@@ -330,7 +330,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayerResponse_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor;
     }
 
     @java.lang.Override
@@ -452,14 +452,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.player.CommandStatus, com.yplugins.minecraftrpc.proto.player.CommandStatus.Builder, com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder> statusBuilder_;
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      * @return Whether the status field is set.
      */
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      * @return The status.
      */
     public com.yplugins.minecraftrpc.proto.player.CommandStatus getStatus() {
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     public Builder setStatus(com.yplugins.minecraftrpc.proto.player.CommandStatus value) {
       if (statusBuilder_ == null) {
@@ -486,7 +486,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     public Builder setStatus(
         com.yplugins.minecraftrpc.proto.player.CommandStatus.Builder builderForValue) {
@@ -500,7 +500,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     public Builder mergeStatus(com.yplugins.minecraftrpc.proto.player.CommandStatus value) {
       if (statusBuilder_ == null) {
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     public Builder clearStatus() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.player.CommandStatus.Builder getStatusBuilder() {
       bitField0_ |= 0x00000001;
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     public com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.player.CommandStatus, com.yplugins.minecraftrpc.proto.player.CommandStatus.Builder, com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder> 
@@ -573,14 +573,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.player.OnlinePlayer, com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder, com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder> playerBuilder_;
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      * @return Whether the player field is set.
      */
     public boolean hasPlayer() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      * @return The player.
      */
     public com.yplugins.minecraftrpc.proto.player.OnlinePlayer getPlayer() {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder setPlayer(com.yplugins.minecraftrpc.proto.player.OnlinePlayer value) {
       if (playerBuilder_ == null) {
@@ -607,7 +607,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder setPlayer(
         com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder builderForValue) {
@@ -621,7 +621,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder mergePlayer(com.yplugins.minecraftrpc.proto.player.OnlinePlayer value) {
       if (playerBuilder_ == null) {
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public Builder clearPlayer() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder getPlayerBuilder() {
       bitField0_ |= 0x00000002;
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
       return getPlayerFieldBuilder().getBuilder();
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     public com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayerOrBuilder() {
       if (playerBuilder_ != null) {
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.MinecraftTypes.OnlinePlayer player = 2;</code>
+     * <code>.MinecraftPlayer.OnlinePlayer player = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
         com.yplugins.minecraftrpc.proto.player.OnlinePlayer, com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder, com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder> 
@@ -690,10 +690,10 @@ private static final long serialVersionUID = 0L;
       return playerBuilder_;
     }
 
-    // @@protoc_insertion_point(builder_scope:MinecraftTypes.OnlinePlayerResponse)
+    // @@protoc_insertion_point(builder_scope:MinecraftPlayer.OnlinePlayerResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:MinecraftTypes.OnlinePlayerResponse)
+  // @@protoc_insertion_point(class_scope:MinecraftPlayer.OnlinePlayerResponse)
   private static final com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.player.OnlinePlayerResponse();

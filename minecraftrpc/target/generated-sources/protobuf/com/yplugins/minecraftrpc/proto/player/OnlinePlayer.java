@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 /**
- * Protobuf type {@code MinecraftTypes.OnlinePlayer}
+ * Protobuf type {@code MinecraftPlayer.OnlinePlayer}
  */
 public final class OnlinePlayer extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:MinecraftTypes.OnlinePlayer)
+    // @@protoc_insertion_point(message_implements:MinecraftPlayer.OnlinePlayer)
     OnlinePlayerOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -34,13 +34,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayer_descriptor;
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayer_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayer_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayer_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.player.OnlinePlayer.class, com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder.class);
   }
@@ -444,21 +444,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code MinecraftTypes.OnlinePlayer}
+   * Protobuf type {@code MinecraftPlayer.OnlinePlayer}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:MinecraftTypes.OnlinePlayer)
+      // @@protoc_insertion_point(builder_implements:MinecraftPlayer.OnlinePlayer)
       com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayer_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayer_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayer_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayer_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.player.OnlinePlayer.class, com.yplugins.minecraftrpc.proto.player.OnlinePlayer.Builder.class);
     }
@@ -498,7 +498,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_OnlinePlayer_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_OnlinePlayer_descriptor;
     }
 
     @java.lang.Override
@@ -1127,10 +1127,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:MinecraftTypes.OnlinePlayer)
+    // @@protoc_insertion_point(builder_scope:MinecraftPlayer.OnlinePlayer)
   }
 
-  // @@protoc_insertion_point(class_scope:MinecraftTypes.OnlinePlayer)
+  // @@protoc_insertion_point(class_scope:MinecraftPlayer.OnlinePlayer)
   private static final com.yplugins.minecraftrpc.proto.player.OnlinePlayer DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.player.OnlinePlayer();

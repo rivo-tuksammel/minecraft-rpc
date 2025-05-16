@@ -6,11 +6,11 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 /**
- * Protobuf type {@code MinecraftTypes.CommandStatus}
+ * Protobuf type {@code MinecraftPlayer.CommandStatus}
  */
 public final class CommandStatus extends
     com.google.protobuf.GeneratedMessage implements
-    // @@protoc_insertion_point(message_implements:MinecraftTypes.CommandStatus)
+    // @@protoc_insertion_point(message_implements:MinecraftPlayer.CommandStatus)
     CommandStatusOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
@@ -33,13 +33,13 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_CommandStatus_descriptor;
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_CommandStatus_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_CommandStatus_fieldAccessorTable
+    return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_CommandStatus_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.yplugins.minecraftrpc.proto.player.CommandStatus.class, com.yplugins.minecraftrpc.proto.player.CommandStatus.Builder.class);
   }
@@ -47,14 +47,14 @@ private static final long serialVersionUID = 0L;
   public static final int CODE_FIELD_NUMBER = 1;
   private int code_ = 0;
   /**
-   * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
    * @return The enum numeric value on the wire for code.
    */
   @java.lang.Override public int getCodeValue() {
     return code_;
   }
   /**
-   * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
    * @return The code.
    */
   @java.lang.Override public com.yplugins.minecraftrpc.proto.player.CommandStatusCode getCode() {
@@ -268,21 +268,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code MinecraftTypes.CommandStatus}
+   * Protobuf type {@code MinecraftPlayer.CommandStatus}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:MinecraftTypes.CommandStatus)
+      // @@protoc_insertion_point(builder_implements:MinecraftPlayer.CommandStatus)
       com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_CommandStatus_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_CommandStatus_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_CommandStatus_fieldAccessorTable
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_CommandStatus_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.yplugins.minecraftrpc.proto.player.CommandStatus.class, com.yplugins.minecraftrpc.proto.player.CommandStatus.Builder.class);
     }
@@ -309,7 +309,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftTypes_CommandStatus_descriptor;
+      return com.yplugins.minecraftrpc.proto.player.MinecraftRPC.internal_static_MinecraftPlayer_CommandStatus_descriptor;
     }
 
     @java.lang.Override
@@ -419,14 +419,14 @@ private static final long serialVersionUID = 0L;
 
     private int code_ = 0;
     /**
-     * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
      * @return The enum numeric value on the wire for code.
      */
     @java.lang.Override public int getCodeValue() {
       return code_;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
      * @param value The enum numeric value on the wire for code to set.
      * @return This builder for chaining.
      */
@@ -437,7 +437,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
      * @return The code.
      */
     @java.lang.Override
@@ -446,7 +446,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.yplugins.minecraftrpc.proto.player.CommandStatusCode.UNRECOGNIZED : result;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
      * @param value The code to set.
      * @return This builder for chaining.
      */
@@ -460,7 +460,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+     * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearCode() {
@@ -542,10 +542,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    // @@protoc_insertion_point(builder_scope:MinecraftTypes.CommandStatus)
+    // @@protoc_insertion_point(builder_scope:MinecraftPlayer.CommandStatus)
   }
 
-  // @@protoc_insertion_point(class_scope:MinecraftTypes.CommandStatus)
+  // @@protoc_insertion_point(class_scope:MinecraftPlayer.CommandStatus)
   private static final com.yplugins.minecraftrpc.proto.player.CommandStatus DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.yplugins.minecraftrpc.proto.player.CommandStatus();

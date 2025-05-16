@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 public interface OnlinePlayerOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:MinecraftTypes.OnlinePlayer)
+    // @@protoc_insertion_point(interface_extends:MinecraftPlayer.OnlinePlayer)
     com.google.protobuf.MessageOrBuilder {
 
   /**

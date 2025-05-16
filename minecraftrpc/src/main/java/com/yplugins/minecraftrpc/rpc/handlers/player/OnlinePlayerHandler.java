@@ -27,7 +27,8 @@ public class OnlinePlayerHandler {
         ImmutableList.copyOf(Bukkit.getOnlinePlayers()).forEach(player -> {
             responseBuilder.addPlayers(OnlinePlayerMapper.mapPlayerToRPC(player));
         });
-        responseBuilder.setStatus(CommandStatus.newBuilder()
+        responseBuilder.setStatus(
+            CommandStatus.newBuilder()
                 .setCode(CommandStatusCode.OK)
                 .build());
         return responseBuilder.build();
@@ -42,7 +43,8 @@ public class OnlinePlayerHandler {
             if (player != null) {
                 responseBuilder.setPlayer(OnlinePlayerMapper.mapPlayerToRPC(player));
             } else {
-                responseBuilder.setStatus(CommandStatus.newBuilder()
+                responseBuilder.setStatus(
+                    CommandStatus.newBuilder()
                         .setCode(CommandStatusCode.PLAYER_NOT_FOUND)
                         .setExtra(request.getUuid())
                         .build());
@@ -53,13 +55,15 @@ public class OnlinePlayerHandler {
             if (player != null) {
                 responseBuilder.setPlayer(OnlinePlayerMapper.mapPlayerToRPC(player));
             } else {
-                responseBuilder.setStatus(CommandStatus.newBuilder()
+                responseBuilder.setStatus(
+                    CommandStatus.newBuilder()
                         .setCode(CommandStatusCode.PLAYER_NOT_FOUND)
                         .setExtra(request.getName())
                         .build());
             }
         } else {
-            responseBuilder.setStatus(CommandStatus.newBuilder()
+            responseBuilder.setStatus(
+                CommandStatus.newBuilder()
                     .setCode(CommandStatusCode.INVALID_ARGUMENT)
                     .setExtra("OnlinePlayerRequest.name or OnlinePlayerRequest.uuid")
                     .build());

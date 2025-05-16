@@ -1,0 +1,31 @@
+syntax = "proto3";
+package MinecraftChat;
+option java_package = "com.yplugins.minecraftrpc.proto.chat";
+option java_multiple_files = true;
+option java_outer_classname = "MinecraftRPC";
+
+service MinecraftChat {
+    rpc broadcastMessage(BroadcastMessageRequest) returns (BroadcastMessageResponse);
+}
+
+message CommandStatus {
+    CommandStatusCode code = 1;
+    string extra = 2;
+}
+
+enum CommandStatusCode {
+    OK = 0;
+    UNKNOWN_ERROR = 1;
+    MISSING_ARGUMENT = 2;
+    INVALID_ARGUMENT = 3;
+    NOT_IMPLEMENTED = 4;
+}
+
+message BroadcastMessageRequest {
+    string message = 1; // message to send.
+}
+
+message BroadcastMessageResponse {
+    CommandStatus status = 1; // status of the command.
+    int32 playersReceived = 2; // number of players who received the message.
+}

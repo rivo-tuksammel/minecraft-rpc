@@ -26,35 +26,35 @@ public final class MinecraftRPC {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftTypes_CommandStatus_descriptor;
+    internal_static_MinecraftPlayer_CommandStatus_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftTypes_CommandStatus_fieldAccessorTable;
+      internal_static_MinecraftPlayer_CommandStatus_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftTypes_OnlinePlayer_descriptor;
+    internal_static_MinecraftPlayer_OnlinePlayer_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftTypes_OnlinePlayer_fieldAccessorTable;
+      internal_static_MinecraftPlayer_OnlinePlayer_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftTypes_OnlinePlayersRequest_descriptor;
+    internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftTypes_OnlinePlayersRequest_fieldAccessorTable;
+      internal_static_MinecraftPlayer_OnlinePlayersRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftTypes_OnlinePlayersResponse_descriptor;
+    internal_static_MinecraftPlayer_OnlinePlayersResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftTypes_OnlinePlayersResponse_fieldAccessorTable;
+      internal_static_MinecraftPlayer_OnlinePlayersResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftTypes_OnlinePlayerRequest_descriptor;
+    internal_static_MinecraftPlayer_OnlinePlayerRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftTypes_OnlinePlayerRequest_fieldAccessorTable;
+      internal_static_MinecraftPlayer_OnlinePlayerRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MinecraftTypes_OnlinePlayerResponse_descriptor;
+    internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MinecraftTypes_OnlinePlayerResponse_fieldAccessorTable;
+      internal_static_MinecraftPlayer_OnlinePlayerResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -64,32 +64,32 @@ public final class MinecraftRPC {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026minecraft_player.proto\022\016MinecraftTypes" +
-      "\032\026minecraft_entity.proto\032\025minecraft_worl" +
-      "d.proto\"O\n\rCommandStatus\022/\n\004code\030\001 \001(\0162!" +
-      ".MinecraftTypes.CommandStatusCode\022\r\n\005ext" +
-      "ra\030\002 \001(\t\"u\n\014OnlinePlayer\022\014\n\004name\030\001 \001(\t\022*" +
-      "\n\010location\030\002 \001(\0132\030.MinecraftWorld.Locati" +
-      "on\022\014\n\004uuid\030\003 \001(\t\022\017\n\007address\030\004 \001(\t\022\014\n\004pin" +
-      "g\030\005 \001(\005\"\026\n\024OnlinePlayersRequest\"u\n\025Onlin" +
-      "ePlayersResponse\022-\n\006status\030\001 \001(\0132\035.Minec" +
-      "raftTypes.CommandStatus\022-\n\007players\030\002 \003(\013" +
-      "2\034.MinecraftTypes.OnlinePlayer\"C\n\023Online" +
-      "PlayerRequest\022\016\n\004name\030\001 \001(\tH\000\022\016\n\004uuid\030\002 " +
-      "\001(\tH\000B\014\n\nidentifier\"s\n\024OnlinePlayerRespo" +
-      "nse\022-\n\006status\030\001 \001(\0132\035.MinecraftTypes.Com" +
-      "mandStatus\022,\n\006player\030\002 \001(\0132\034.MinecraftTy" +
-      "pes.OnlinePlayer*\205\001\n\021CommandStatusCode\022\006" +
-      "\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSING_ARG" +
-      "UMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NOT_IMP" +
-      "LEMENTED\020\004\022\024\n\020PLAYER_NOT_FOUND\020\0052\320\001\n\017Min" +
-      "ecraftPlayer\022_\n\020getOnlinePlayers\022$.Minec" +
-      "raftTypes.OnlinePlayersRequest\032%.Minecra" +
-      "ftTypes.OnlinePlayersResponse\022\\\n\017getOnli" +
-      "nePlayer\022#.MinecraftTypes.OnlinePlayerRe" +
-      "quest\032$.MinecraftTypes.OnlinePlayerRespo" +
-      "nseB8\n&com.yplugins.minecraftrpc.proto.p" +
-      "layerB\014MinecraftRPCP\001b\006proto3"
+      "\n\026minecraft_player.proto\022\017MinecraftPlaye" +
+      "r\032\026minecraft_entity.proto\032\025minecraft_wor" +
+      "ld.proto\"P\n\rCommandStatus\0220\n\004code\030\001 \001(\0162" +
+      "\".MinecraftPlayer.CommandStatusCode\022\r\n\005e" +
+      "xtra\030\002 \001(\t\"u\n\014OnlinePlayer\022\014\n\004name\030\001 \001(\t" +
+      "\022*\n\010location\030\002 \001(\0132\030.MinecraftWorld.Loca" +
+      "tion\022\014\n\004uuid\030\003 \001(\t\022\017\n\007address\030\004 \001(\t\022\014\n\004p" +
+      "ing\030\005 \001(\005\"\026\n\024OnlinePlayersRequest\"w\n\025Onl" +
+      "inePlayersResponse\022.\n\006status\030\001 \001(\0132\036.Min" +
+      "ecraftPlayer.CommandStatus\022.\n\007players\030\002 " +
+      "\003(\0132\035.MinecraftPlayer.OnlinePlayer\"C\n\023On" +
+      "linePlayerRequest\022\016\n\004name\030\001 \001(\tH\000\022\016\n\004uui" +
+      "d\030\002 \001(\tH\000B\014\n\nidentifier\"u\n\024OnlinePlayerR" +
+      "esponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlaye" +
+      "r.CommandStatus\022-\n\006player\030\002 \001(\0132\035.Minecr" +
+      "aftPlayer.OnlinePlayer*\205\001\n\021CommandStatus" +
+      "Code\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSI" +
+      "NG_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017N" +
+      "OT_IMPLEMENTED\020\004\022\024\n\020PLAYER_NOT_FOUND\020\0052\324" +
+      "\001\n\017MinecraftPlayer\022a\n\020getOnlinePlayers\022%" +
+      ".MinecraftPlayer.OnlinePlayersRequest\032&." +
+      "MinecraftPlayer.OnlinePlayersResponse\022^\n" +
+      "\017getOnlinePlayer\022$.MinecraftPlayer.Onlin" +
+      "ePlayerRequest\032%.MinecraftPlayer.OnlineP" +
+      "layerResponseB8\n&com.yplugins.minecraftr" +
+      "pc.proto.playerB\014MinecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -97,41 +97,41 @@ public final class MinecraftRPC {
           com.yplugins.minecraftrpc.proto.entity.MinecraftRPC.getDescriptor(),
           com.yplugins.minecraftrpc.proto.world.MinecraftRPC.getDescriptor(),
         });
-    internal_static_MinecraftTypes_CommandStatus_descriptor =
+    internal_static_MinecraftPlayer_CommandStatus_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MinecraftTypes_CommandStatus_fieldAccessorTable = new
+    internal_static_MinecraftPlayer_CommandStatus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftTypes_CommandStatus_descriptor,
+        internal_static_MinecraftPlayer_CommandStatus_descriptor,
         new java.lang.String[] { "Code", "Extra", });
-    internal_static_MinecraftTypes_OnlinePlayer_descriptor =
+    internal_static_MinecraftPlayer_OnlinePlayer_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_MinecraftTypes_OnlinePlayer_fieldAccessorTable = new
+    internal_static_MinecraftPlayer_OnlinePlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftTypes_OnlinePlayer_descriptor,
+        internal_static_MinecraftPlayer_OnlinePlayer_descriptor,
         new java.lang.String[] { "Name", "Location", "Uuid", "Address", "Ping", });
-    internal_static_MinecraftTypes_OnlinePlayersRequest_descriptor =
+    internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_MinecraftTypes_OnlinePlayersRequest_fieldAccessorTable = new
+    internal_static_MinecraftPlayer_OnlinePlayersRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftTypes_OnlinePlayersRequest_descriptor,
+        internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor,
         new java.lang.String[] { });
-    internal_static_MinecraftTypes_OnlinePlayersResponse_descriptor =
+    internal_static_MinecraftPlayer_OnlinePlayersResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_MinecraftTypes_OnlinePlayersResponse_fieldAccessorTable = new
+    internal_static_MinecraftPlayer_OnlinePlayersResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftTypes_OnlinePlayersResponse_descriptor,
+        internal_static_MinecraftPlayer_OnlinePlayersResponse_descriptor,
         new java.lang.String[] { "Status", "Players", });
-    internal_static_MinecraftTypes_OnlinePlayerRequest_descriptor =
+    internal_static_MinecraftPlayer_OnlinePlayerRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_MinecraftTypes_OnlinePlayerRequest_fieldAccessorTable = new
+    internal_static_MinecraftPlayer_OnlinePlayerRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftTypes_OnlinePlayerRequest_descriptor,
+        internal_static_MinecraftPlayer_OnlinePlayerRequest_descriptor,
         new java.lang.String[] { "Name", "Uuid", "Identifier", });
-    internal_static_MinecraftTypes_OnlinePlayerResponse_descriptor =
+    internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_MinecraftTypes_OnlinePlayerResponse_fieldAccessorTable = new
+    internal_static_MinecraftPlayer_OnlinePlayerResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_MinecraftTypes_OnlinePlayerResponse_descriptor,
+        internal_static_MinecraftPlayer_OnlinePlayerResponse_descriptor,
         new java.lang.String[] { "Status", "Player", });
     descriptor.resolveAllFeaturesImmutable();
     com.yplugins.minecraftrpc.proto.entity.MinecraftRPC.getDescriptor();

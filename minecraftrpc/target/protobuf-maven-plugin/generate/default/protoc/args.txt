@@ -2,6 +2,7 @@
 --plugin=protoc-gen-hyFOqJY2wYXeuCwplNr4qnzG6bA=C:\Users\Rivo\.m2\repository\io\grpc\protoc-gen-grpc-java\1.72.0\protoc-gen-grpc-java-1.72.0-windows-x86_64.exe
 --hyFOqJY2wYXeuCwplNr4qnzG6bA_out=c:\Users\Rivo\Desktop\minecraftRPC\minecraftrpc\target\generated-sources\protobuf
 c:\Users\Rivo\Desktop\minecraftRPC\minecraftrpc\src\main\protobuf\minecraft.proto
+c:\Users\Rivo\Desktop\minecraftRPC\minecraftrpc\src\main\protobuf\minecraft_chat.proto
 c:\Users\Rivo\Desktop\minecraftRPC\minecraftrpc\src\main\protobuf\minecraft_entity.proto
 c:\Users\Rivo\Desktop\minecraftRPC\minecraftrpc\src\main\protobuf\minecraft_player.proto
 c:\Users\Rivo\Desktop\minecraftRPC\minecraftrpc\src\main\protobuf\minecraft_types.proto

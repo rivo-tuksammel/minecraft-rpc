@@ -6,44 +6,44 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 public interface OnlinePlayersResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:MinecraftTypes.OnlinePlayersResponse)
+    // @@protoc_insertion_point(interface_extends:MinecraftPlayer.OnlinePlayersResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    * @return Whether the status field is set.
    */
   boolean hasStatus();
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    * @return The status.
    */
   com.yplugins.minecraftrpc.proto.player.CommandStatus getStatus();
   /**
-   * <code>.MinecraftTypes.CommandStatus status = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatus status = 1;</code>
    */
   com.yplugins.minecraftrpc.proto.player.CommandStatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>repeated .MinecraftTypes.OnlinePlayer players = 2;</code>
+   * <code>repeated .MinecraftPlayer.OnlinePlayer players = 2;</code>
    */
   java.util.List<com.yplugins.minecraftrpc.proto.player.OnlinePlayer> 
       getPlayersList();
   /**
-   * <code>repeated .MinecraftTypes.OnlinePlayer players = 2;</code>
+   * <code>repeated .MinecraftPlayer.OnlinePlayer players = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.player.OnlinePlayer getPlayers(int index);
   /**
-   * <code>repeated .MinecraftTypes.OnlinePlayer players = 2;</code>
+   * <code>repeated .MinecraftPlayer.OnlinePlayer players = 2;</code>
    */
   int getPlayersCount();
   /**
-   * <code>repeated .MinecraftTypes.OnlinePlayer players = 2;</code>
+   * <code>repeated .MinecraftPlayer.OnlinePlayer players = 2;</code>
    */
   java.util.List<? extends com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder> 
       getPlayersOrBuilderList();
   /**
-   * <code>repeated .MinecraftTypes.OnlinePlayer players = 2;</code>
+   * <code>repeated .MinecraftPlayer.OnlinePlayer players = 2;</code>
    */
   com.yplugins.minecraftrpc.proto.player.OnlinePlayerOrBuilder getPlayersOrBuilder(
       int index);

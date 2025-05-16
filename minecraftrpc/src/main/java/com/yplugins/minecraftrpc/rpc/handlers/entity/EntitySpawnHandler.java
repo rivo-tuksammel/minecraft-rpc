@@ -27,12 +27,18 @@ public class EntitySpawnHandler {
 
         // Validate that the request has a valid entity type.
         if (request.getType().isEmpty()) {
-            responseBuilder.setStatus(CommandStatus.newBuilder().setCode(CommandStatusCode.INVALID_ARGUMENT).setExtra("Entity.type").build());
+            responseBuilder.setStatus(
+                CommandStatus.newBuilder()
+                .setCode(CommandStatusCode.INVALID_ARGUMENT)
+                .setExtra("Entity.type").build());
             return responseBuilder.build();
         } 
 
         if (!request.hasLocation()) {
-            responseBuilder.setStatus(CommandStatus.newBuilder().setCode(CommandStatusCode.INVALID_ARGUMENT).setExtra("Entity.position").build());
+            responseBuilder
+                .setStatus(CommandStatus.newBuilder()
+                .setCode(CommandStatusCode.INVALID_ARGUMENT)
+                .setExtra("Entity.position").build());
             return responseBuilder.build();
         } 
 
@@ -40,7 +46,10 @@ public class EntitySpawnHandler {
               Bukkit.getWorld(request.getLocation().getDimension().getName()) :
               Bukkit.getWorlds().stream().findFirst().orElse(null);
         if (world == null) {
-            responseBuilder.setStatus(CommandStatus.newBuilder().setCode(CommandStatusCode.INVALID_ARGUMENT).setExtra("Entity.world").build());
+            responseBuilder.setStatus(
+                CommandStatus.newBuilder()
+                .setCode(CommandStatusCode.INVALID_ARGUMENT)
+                .setExtra("Entity.world").build());
             return responseBuilder.build();
         } 
 
@@ -48,12 +57,18 @@ public class EntitySpawnHandler {
         try {
             entityType = EntityType.valueOf(request.getType());
         } catch (IllegalArgumentException e) {
-            responseBuilder.setStatus(CommandStatus.newBuilder().setCode(CommandStatusCode.ENTITY_TYPE_NOT_FOUND).setExtra(request.getType()).build());
+            responseBuilder.setStatus(
+                CommandStatus.newBuilder()
+                .setCode(CommandStatusCode.ENTITY_TYPE_NOT_FOUND)
+                .setExtra(request.getType()).build());
             return responseBuilder.build();
         }
         
         if (!entityType.isSpawnable()) {
-            responseBuilder.setStatus(CommandStatus.newBuilder().setCode(CommandStatusCode.ENTITY_NOT_SPAWNABLE).setExtra(request.getType()).build());
+            responseBuilder.setStatus(
+                CommandStatus.newBuilder().
+                setCode(CommandStatusCode.ENTITY_NOT_SPAWNABLE)
+                .setExtra(request.getType()).build());
             return responseBuilder.build();
         }
 
@@ -65,12 +80,14 @@ public class EntitySpawnHandler {
         });
 
         return responseBuilder
-                .setStatus(CommandStatus.newBuilder().setCode(CommandStatusCode.OK).build())
-                .setEntity(Entity.newBuilder()
-                        .setType(request.getType())
-                        .setLocation(
-                            LocationMapper.mapLocationToRPC(spawnLocation)
-                        ))
-                .build();
+            .setStatus(
+                CommandStatus.newBuilder()
+                .setCode(CommandStatusCode.OK).build())
+            .setEntity(Entity.newBuilder()
+                    .setType(request.getType())
+                    .setLocation(
+                        LocationMapper.mapLocationToRPC(spawnLocation)
+                    ))
+            .build();
     }
 }

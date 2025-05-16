@@ -8,8 +8,12 @@ import org.bukkit.Bukkit;
 
 import io.grpc.Server;
 import io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder;
+import io.grpc.protobuf.services.ProtoReflectionService;
+import io.grpc.protobuf.services.ProtoReflectionServiceV1;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.yplugins.minecraftrpc.rpc.services.ChatService;
 import com.yplugins.minecraftrpc.rpc.services.EntityService;
 import com.yplugins.minecraftrpc.rpc.services.PlayerService;
 import com.yplugins.minecraftrpc.rpc.services.WorldService;
@@ -51,9 +55,11 @@ public class MinecraftRPC extends JavaPlugin {
 
         var grpcServerBuilder = NettyServerBuilder
             .forAddress(grpcAddress)
-            .addService(new EntityService(this))
-            .addService(new PlayerService(this))
-            .addService(new WorldService(this));
+            .addService(new EntityService(this)) // Register the EntityService.
+            .addService(new PlayerService(this)) // Register the PlayerService.
+            .addService(new WorldService(this)) // Register the WorldService.
+            .addService(new ChatService(this)) // Register the ChatService.
+            .addService(ProtoReflectionServiceV1.newInstance()); // Enable reflection for the gRPC server
 
         this.grpcServer = grpcServerBuilder.build();
 

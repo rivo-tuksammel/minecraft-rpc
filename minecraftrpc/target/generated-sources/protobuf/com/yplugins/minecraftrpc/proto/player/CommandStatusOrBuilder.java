@@ -6,16 +6,16 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 public interface CommandStatusOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:MinecraftTypes.CommandStatus)
+    // @@protoc_insertion_point(interface_extends:MinecraftPlayer.CommandStatus)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
    * @return The enum numeric value on the wire for code.
    */
   int getCodeValue();
   /**
-   * <code>.MinecraftTypes.CommandStatusCode code = 1;</code>
+   * <code>.MinecraftPlayer.CommandStatusCode code = 1;</code>
    * @return The code.
    */
   com.yplugins.minecraftrpc.proto.player.CommandStatusCode getCode();

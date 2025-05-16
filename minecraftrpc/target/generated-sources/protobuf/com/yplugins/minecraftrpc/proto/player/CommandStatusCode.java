@@ -6,7 +6,7 @@
 package com.yplugins.minecraftrpc.proto.player;
 
 /**
- * Protobuf enum {@code MinecraftTypes.CommandStatusCode}
+ * Protobuf enum {@code MinecraftPlayer.CommandStatusCode}
  */
 public enum CommandStatusCode
     implements com.google.protobuf.ProtocolMessageEnum {
@@ -155,6 +155,6 @@ public enum CommandStatusCode
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:MinecraftTypes.CommandStatusCode)
+  // @@protoc_insertion_point(enum_scope:MinecraftPlayer.CommandStatusCode)
 }
 
