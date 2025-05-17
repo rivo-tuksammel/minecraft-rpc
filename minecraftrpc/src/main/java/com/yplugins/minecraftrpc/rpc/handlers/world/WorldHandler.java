@@ -5,6 +5,8 @@ import com.yplugins.minecraftrpc.proto.world.CommandStatus;
 import com.yplugins.minecraftrpc.proto.world.CommandStatusCode;
 import com.yplugins.minecraftrpc.proto.world.GetWorldRequest;
 import com.yplugins.minecraftrpc.proto.world.GetWorldResponse;
+import com.yplugins.minecraftrpc.proto.world.SetTimeRequest;
+import com.yplugins.minecraftrpc.proto.world.SetTimeResponse;
 import com.yplugins.minecraftrpc.proto.world.WorldListRequest;
 import com.yplugins.minecraftrpc.proto.world.WorldListResponse;
 import com.yplugins.minecraftrpc.rpc.mappers.WorldMapper;
@@ -30,11 +32,44 @@ public class WorldHandler {
         return responseBuilder.build();
     }
 
+    public SetTimeResponse handleSetTimeRequest(SetTimeRequest request) {
+        SetTimeResponse.Builder responseBuilder = SetTimeResponse.newBuilder();
+
+        var worldName = request.getWorldName();
+        if (worldName == null || worldName.isEmpty()) {
+            responseBuilder.setStatus (
+                CommandStatus.newBuilder()
+                    .setCode(CommandStatusCode.INVALID_ARGUMENT)
+                    .setExtra("World name is required")
+                    )
+                .build();
+        } 
+
+        var world = plugin.getServer().getWorld(worldName);
+        if (world == null) {
+            return responseBuilder.setStatus(
+                CommandStatus.newBuilder()
+                    .setCode(CommandStatusCode.WORLD_NOT_FOUND)
+                    .setExtra(worldName)
+                    )
+                .build();
+        }
+
+        this.plugin.gameThreadExecutor().run(() -> {
+            world.setTime(request.getTime());
+        });
+
+        return responseBuilder.setStatus(
+            CommandStatus.newBuilder()
+                .setCode(CommandStatusCode.OK)
+                )
+            .build();
+    }
 
     public GetWorldResponse handleGetWorldRequest(GetWorldRequest request) {
         GetWorldResponse.Builder responseBuilder = GetWorldResponse.newBuilder();
 
-        var namespace = request.getName();
+        var namespace = request.getWorldName();
 
         if (namespace == null || namespace.isEmpty()) {
             return responseBuilder.setStatus(

@@ -21,7 +21,7 @@ public class WeatherHandler {
     public SetWeatherResponse handleSetWeatherRequest(SetWeatherRequest request) {
         SetWeatherResponse.Builder responseBuilder = SetWeatherResponse.newBuilder();
 
-        var worldName = request.getName();
+        var worldName = request.getWorldName();
 
         if (worldName == null || worldName.isEmpty()) {
             return responseBuilder.setStatus(

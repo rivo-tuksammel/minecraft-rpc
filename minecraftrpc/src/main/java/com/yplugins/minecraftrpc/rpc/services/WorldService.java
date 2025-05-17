@@ -6,12 +6,13 @@ import com.yplugins.minecraftrpc.MinecraftRPC;
 import com.yplugins.minecraftrpc.proto.world.CommandStatus;
 import com.yplugins.minecraftrpc.proto.world.GetWorldRequest;
 import com.yplugins.minecraftrpc.proto.world.GetWorldResponse;
+import com.yplugins.minecraftrpc.proto.world.SetTimeRequest;
+import com.yplugins.minecraftrpc.proto.world.SetTimeResponse;
 import com.yplugins.minecraftrpc.proto.world.SetWeatherRequest;
 import com.yplugins.minecraftrpc.proto.world.SetWeatherResponse;
 import com.yplugins.minecraftrpc.proto.world.WeatherResponse;
 import com.yplugins.minecraftrpc.proto.world.WorldListRequest;
 import com.yplugins.minecraftrpc.proto.world.WorldListResponse;
-import com.yplugins.minecraftrpc.proto.world.WorldRequest;
 import com.yplugins.minecraftrpc.rpc.handlers.world.WeatherHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.world.WorldHandler;
 
@@ -47,6 +48,13 @@ public class WorldService extends com.yplugins.minecraftrpc.proto.world.Minecraf
     @Override
     public void setWeather(SetWeatherRequest request, StreamObserver<SetWeatherResponse> responseObserver) {
         SetWeatherResponse response = weatherHandler.handleSetWeatherRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void setTime(SetTimeRequest request, StreamObserver<SetTimeResponse> responseObserver) {
+        SetTimeResponse response = worldHandler.handleSetTimeRequest(request);
         responseObserver.onNext(response);
         responseObserver.onCompleted();
     }

@@ -10,6 +10,7 @@ service MinecraftWorld {
     rpc getWorldList(WorldListRequest) returns (WorldListResponse);
     rpc getWorld(GetWorldRequest) returns (GetWorldResponse);
     rpc setWeather(SetWeatherRequest) returns (SetWeatherResponse);
+    rpc setTime(SetTimeRequest) returns (SetTimeResponse);
 }
 
 message CommandStatus {
@@ -80,7 +81,7 @@ message WorldInfo {
 }
 
 message GetWorldRequest {
-    string name = 1; // namespace of the world folder (eg. world)
+    string worldName = 1; // namespace of the world folder (eg. world)
 }
 
 message GetWorldResponse {
@@ -109,11 +110,21 @@ message WeatherInfo {
 }
 
 message SetWeatherRequest {
-    string name = 1;        // Name of the world (eg. world)
+    string worldName = 1;        // Name of the world (eg. world)
     WeatherState weather = 2;    // The desired weather state
     int32 duration = 3;          // Duration in ticks (optional, server will use default if not specified)
 }
 
 message SetWeatherResponse {
     CommandStatus status = 1;    // Status of the command
+}
+
+
+message SetTimeRequest {
+    string world_name = 1;  // Name of the world
+    int64 time = 2;         // Time in ticks (0 = day)
+}
+
+message SetTimeResponse {
+    CommandStatus status = 1;
 }

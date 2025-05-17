@@ -95,6 +95,16 @@ public final class MinecraftRPC {
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MinecraftWorld_SetWeatherResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftWorld_SetTimeRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftWorld_SetTimeRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MinecraftWorld_SetTimeResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MinecraftWorld_SetTimeResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -119,40 +129,45 @@ public final class MinecraftRPC {
       "\n\nisHardcore\030\003 \001(\010\022\023\n\013isUltraWarm\030\006 \001(\010\022" +
       ".\n\ndifficulty\030\007 \001(\0162\032.MinecraftWorld.Dif" +
       "ficulty\0220\n\013weatherInfo\030\010 \001(\0132\033.Minecraft" +
-      "World.WeatherInfo\"\037\n\017GetWorldRequest\022\014\n\004" +
-      "name\030\001 \001(\t\"g\n\020GetWorldResponse\022-\n\006status" +
-      "\030\001 \001(\0132\035.MinecraftWorld.CommandStatus\022$\n" +
-      "\005world\030\002 \001(\0132\025.MinecraftWorld.World\"C\n\020W" +
-      "orldListRequest\022/\n\006filter\030\001 \003(\0132\037.Minecr" +
-      "aftWorld.GetWorldRequest\"i\n\021WorldListRes" +
-      "ponse\022-\n\006status\030\001 \001(\0132\035.MinecraftWorld.C" +
-      "ommandStatus\022%\n\006worlds\030\002 \003(\0132\025.Minecraft" +
-      "World.World\"r\n\017WeatherResponse\022-\n\006status" +
-      "\030\001 \001(\0132\035.MinecraftWorld.CommandStatus\0220\n" +
-      "\013weatherInfo\030\002 \001(\0132\033.MinecraftWorld.Weat" +
-      "herInfo\"U\n\013WeatherInfo\0224\n\016currentWeather" +
-      "\030\001 \001(\0162\034.MinecraftWorld.WeatherState\022\020\n\010" +
-      "duration\030\002 \001(\005\"b\n\021SetWeatherRequest\022\014\n\004n" +
-      "ame\030\001 \001(\t\022-\n\007weather\030\002 \001(\0162\034.MinecraftWo" +
-      "rld.WeatherState\022\020\n\010duration\030\003 \001(\005\"C\n\022Se" +
-      "tWeatherResponse\022-\n\006status\030\001 \001(\0132\035.Minec" +
-      "raftWorld.CommandStatus*\273\001\n\021CommandStatu" +
-      "sCode\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISS" +
-      "ING_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017" +
-      "NOT_IMPLEMENTED\020\004\022\023\n\017WORLD_NOT_FOUND\020\005\022\032" +
-      "\n\026WEATHER_CONTROL_FAILED\020\006\022\031\n\025INVALID_WE" +
-      "ATHER_STATE\020\007*:\n\nDifficulty\022\014\n\010PEACEFUL\020" +
-      "\000\022\010\n\004EASY\020\001\022\n\n\006NORMAL\020\002\022\010\n\004HARD\020\003*1\n\014Wea" +
-      "therState\022\t\n\005CLEAR\020\000\022\t\n\005STORM\020\001\022\013\n\007THUND" +
-      "ER\020\0022\211\002\n\016MinecraftWorld\022S\n\014getWorldList\022" +
-      " .MinecraftWorld.WorldListRequest\032!.Mine" +
-      "craftWorld.WorldListResponse\022M\n\010getWorld" +
-      "\022\037.MinecraftWorld.GetWorldRequest\032 .Mine" +
-      "craftWorld.GetWorldResponse\022S\n\nsetWeathe" +
-      "r\022!.MinecraftWorld.SetWeatherRequest\032\".M" +
-      "inecraftWorld.SetWeatherResponseB7\n%com." +
-      "yplugins.minecraftrpc.proto.worldB\014Minec" +
-      "raftRPCP\001b\006proto3"
+      "World.WeatherInfo\"$\n\017GetWorldRequest\022\021\n\t" +
+      "worldName\030\001 \001(\t\"g\n\020GetWorldResponse\022-\n\006s" +
+      "tatus\030\001 \001(\0132\035.MinecraftWorld.CommandStat" +
+      "us\022$\n\005world\030\002 \001(\0132\025.MinecraftWorld.World" +
+      "\"C\n\020WorldListRequest\022/\n\006filter\030\001 \003(\0132\037.M" +
+      "inecraftWorld.GetWorldRequest\"i\n\021WorldLi" +
+      "stResponse\022-\n\006status\030\001 \001(\0132\035.MinecraftWo" +
+      "rld.CommandStatus\022%\n\006worlds\030\002 \003(\0132\025.Mine" +
+      "craftWorld.World\"r\n\017WeatherResponse\022-\n\006s" +
+      "tatus\030\001 \001(\0132\035.MinecraftWorld.CommandStat" +
+      "us\0220\n\013weatherInfo\030\002 \001(\0132\033.MinecraftWorld" +
+      ".WeatherInfo\"U\n\013WeatherInfo\0224\n\016currentWe" +
+      "ather\030\001 \001(\0162\034.MinecraftWorld.WeatherStat" +
+      "e\022\020\n\010duration\030\002 \001(\005\"g\n\021SetWeatherRequest" +
+      "\022\021\n\tworldName\030\001 \001(\t\022-\n\007weather\030\002 \001(\0162\034.M" +
+      "inecraftWorld.WeatherState\022\020\n\010duration\030\003" +
+      " \001(\005\"C\n\022SetWeatherResponse\022-\n\006status\030\001 \001" +
+      "(\0132\035.MinecraftWorld.CommandStatus\"2\n\016Set" +
+      "TimeRequest\022\022\n\nworld_name\030\001 \001(\t\022\014\n\004time\030" +
+      "\002 \001(\003\"@\n\017SetTimeResponse\022-\n\006status\030\001 \001(\013" +
+      "2\035.MinecraftWorld.CommandStatus*\273\001\n\021Comm" +
+      "andStatusCode\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001" +
+      "\022\024\n\020MISSING_ARGUMENT\020\002\022\024\n\020INVALID_ARGUME" +
+      "NT\020\003\022\023\n\017NOT_IMPLEMENTED\020\004\022\023\n\017WORLD_NOT_F" +
+      "OUND\020\005\022\032\n\026WEATHER_CONTROL_FAILED\020\006\022\031\n\025IN" +
+      "VALID_WEATHER_STATE\020\007*:\n\nDifficulty\022\014\n\010P" +
+      "EACEFUL\020\000\022\010\n\004EASY\020\001\022\n\n\006NORMAL\020\002\022\010\n\004HARD\020" +
+      "\003*1\n\014WeatherState\022\t\n\005CLEAR\020\000\022\t\n\005STORM\020\001\022" +
+      "\013\n\007THUNDER\020\0022\325\002\n\016MinecraftWorld\022S\n\014getWo" +
+      "rldList\022 .MinecraftWorld.WorldListReques" +
+      "t\032!.MinecraftWorld.WorldListResponse\022M\n\010" +
+      "getWorld\022\037.MinecraftWorld.GetWorldReques" +
+      "t\032 .MinecraftWorld.GetWorldResponse\022S\n\ns" +
+      "etWeather\022!.MinecraftWorld.SetWeatherReq" +
+      "uest\032\".MinecraftWorld.SetWeatherResponse" +
+      "\022J\n\007setTime\022\036.MinecraftWorld.SetTimeRequ" +
+      "est\032\037.MinecraftWorld.SetTimeResponseB7\n%" +
+      "com.yplugins.minecraftrpc.proto.worldB\014M" +
+      "inecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -200,7 +215,7 @@ public final class MinecraftRPC {
     internal_static_MinecraftWorld_GetWorldRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_GetWorldRequest_descriptor,
-        new java.lang.String[] { "Name", });
+        new java.lang.String[] { "WorldName", });
     internal_static_MinecraftWorld_GetWorldResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_MinecraftWorld_GetWorldResponse_fieldAccessorTable = new
@@ -236,12 +251,24 @@ public final class MinecraftRPC {
     internal_static_MinecraftWorld_SetWeatherRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_SetWeatherRequest_descriptor,
-        new java.lang.String[] { "Name", "Weather", "Duration", });
+        new java.lang.String[] { "WorldName", "Weather", "Duration", });
     internal_static_MinecraftWorld_SetWeatherResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_MinecraftWorld_SetWeatherResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftWorld_SetWeatherResponse_descriptor,
+        new java.lang.String[] { "Status", });
+    internal_static_MinecraftWorld_SetTimeRequest_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_MinecraftWorld_SetTimeRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftWorld_SetTimeRequest_descriptor,
+        new java.lang.String[] { "WorldName", "Time", });
+    internal_static_MinecraftWorld_SetTimeResponse_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_MinecraftWorld_SetTimeResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MinecraftWorld_SetTimeResponse_descriptor,
         new java.lang.String[] { "Status", });
     descriptor.resolveAllFeaturesImmutable();
     com.yplugins.minecraftrpc.proto.types.MinecraftRPC.getDescriptor();
