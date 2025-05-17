@@ -112,7 +112,7 @@ message PlayerSetHealthRequest {
         OnlinePlayer player = 2; // entity of the player
         string playerUniqueId = 3; // id of the player
     }
-    int32 health = 1; // health of the player
+    float health = 1; // health of the player
 }
 
 message PlayerSetHealthResponse {
@@ -125,7 +125,7 @@ message PlayerSetMaxHealthRequest {
         OnlinePlayer player = 2; // entity of the player
         string playerUniqueId = 3; // id of the player
     }
-    int32 maxHealth = 1; // max health of the player
+    float maxHealth = 1; // max health of the player
 }
 
 message PlayerSetMaxHealthResponse {

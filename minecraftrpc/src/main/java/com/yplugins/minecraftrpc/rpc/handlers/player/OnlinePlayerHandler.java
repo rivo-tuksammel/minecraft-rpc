@@ -1,7 +1,6 @@
 package com.yplugins.minecraftrpc.rpc.handlers.player;
 
 import java.util.UUID;
-
 import org.bukkit.Bukkit;
 
 import com.google.common.collect.ImmutableList;
@@ -37,8 +36,8 @@ public class OnlinePlayerHandler {
     public OnlinePlayerResponse handleGetOnlinePlayerRequest(OnlinePlayerRequest request) {
         OnlinePlayerResponse.Builder responseBuilder = OnlinePlayerResponse.newBuilder();
 
-        if (!request.getUuid().isEmpty()) {
-            var player = Bukkit.getPlayer(UUID.fromString(request.getUuid()));
+        if (request.hasPlayerUniqueId()) {
+            var player = Bukkit.getPlayer(UUID.fromString(request.getPlayerUniqueId()));
 
             if (player != null) {
                 responseBuilder.setPlayer(OnlinePlayerMapper.mapPlayerToRPC(player));
@@ -46,11 +45,11 @@ public class OnlinePlayerHandler {
                 responseBuilder.setStatus(
                     CommandStatus.newBuilder()
                         .setCode(CommandStatusCode.PLAYER_NOT_FOUND)
-                        .setExtra(request.getUuid())
+                        .setExtra(request.getPlayerUniqueId())
                         .build());
             }
-        } else if (!request.getName().isEmpty()) {
-            var player = Bukkit.getPlayer(request.getName());
+        } else if (request.hasPlayerName()) {
+            var player = Bukkit.getPlayer(request.getPlayerName());
 
             if (player != null) {
                 responseBuilder.setPlayer(OnlinePlayerMapper.mapPlayerToRPC(player));
@@ -58,7 +57,7 @@ public class OnlinePlayerHandler {
                 responseBuilder.setStatus(
                     CommandStatus.newBuilder()
                         .setCode(CommandStatusCode.PLAYER_NOT_FOUND)
-                        .setExtra(request.getName())
+                        .setExtra(request.getPlayerName())
                         .build());
             }
         } else {

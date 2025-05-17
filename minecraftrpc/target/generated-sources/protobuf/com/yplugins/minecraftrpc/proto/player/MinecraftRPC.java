@@ -213,14 +213,14 @@ public final class MinecraftRPC {
       "tPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\201\001\n" +
       "\026PlayerSetHealthRequest\022/\n\006player\030\002 \001(\0132" +
       "\035.MinecraftPlayer.OnlinePlayerH\000\022\030\n\016play" +
-      "erUniqueId\030\003 \001(\tH\000\022\016\n\006health\030\001 \001(\005B\014\n\nid" +
+      "erUniqueId\030\003 \001(\tH\000\022\016\n\006health\030\001 \001(\002B\014\n\nid" +
       "entifier\"\210\001\n\027PlayerSetHealthResponse\022.\n\006" +
       "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
       "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
       "nlinePlayerH\000\210\001\001B\t\n\007_player\"\207\001\n\031PlayerSe" +
       "tMaxHealthRequest\022/\n\006player\030\002 \001(\0132\035.Mine" +
       "craftPlayer.OnlinePlayerH\000\022\030\n\016playerUniq" +
-      "ueId\030\003 \001(\tH\000\022\021\n\tmaxHealth\030\001 \001(\005B\014\n\nident" +
+      "ueId\030\003 \001(\tH\000\022\021\n\tmaxHealth\030\001 \001(\002B\014\n\nident" +
       "ifier\"\213\001\n\032PlayerSetMaxHealthResponse\022.\n\006" +
       "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
       "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
@@ -299,7 +299,7 @@ public final class MinecraftRPC {
       "\n\010DISMOUNT\020\002\022\017\n\013END_GATEWAY\020\003\022\016\n\nEND_POR" +
       "TAL\020\004\022\017\n\013ENDER_PEARL\020\005\022\014\n\010EXIT_BED\020\006\022\021\n\r" +
       "NETHER_PORTAL\020\007\022\n\n\006PLUGIN\020\010\022\014\n\010SPECTATE\020" +
-      "\t\022\013\n\007UNKNOWN\020\n2\241\n\n\017MinecraftPlayer\022a\n\020ge" +
+      "\t\022\013\n\007UNKNOWN\020\n2\235\014\n\017MinecraftPlayer\022a\n\020ge" +
       "tOnlinePlayers\022%.MinecraftPlayer.OnlineP" +
       "layersRequest\032&.MinecraftPlayer.OnlinePl" +
       "ayersResponse\022^\n\017getOnlinePlayer\022$.Minec" +
@@ -332,8 +332,15 @@ public final class MinecraftRPC {
       "SetAllowFlightResponse\022j\n\021sendPlayerMess" +
       "age\022).MinecraftPlayer.PlayerSendMessageR" +
       "equest\032*.MinecraftPlayer.PlayerSendMessa" +
-      "geResponseB8\n&com.yplugins.minecraftrpc." +
-      "proto.playerB\014MinecraftRPCP\001b\006proto3"
+      "geResponse\022\177\n\030teleportPlayerToLocation\0220" +
+      ".MinecraftPlayer.PlayerTeleportToLocatio" +
+      "nRequest\0321.MinecraftPlayer.PlayerTelepor" +
+      "tToLocationResponse\022y\n\026teleportPlayerToE" +
+      "ntity\022..MinecraftPlayer.PlayerTeleportTo" +
+      "EntityRequest\032/.MinecraftPlayer.PlayerTe" +
+      "leportToEntityResponseB8\n&com.yplugins.m" +
+      "inecraftrpc.proto.playerB\014MinecraftRPCP\001" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

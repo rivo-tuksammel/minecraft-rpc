@@ -387,6 +387,68 @@ public final class MinecraftPlayerGrpc {
     return getSendPlayerMessageMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest,
+      com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse> getTeleportPlayerToLocationMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "teleportPlayerToLocation",
+      requestType = com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest.class,
+      responseType = com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest,
+      com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse> getTeleportPlayerToLocationMethod() {
+    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest, com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse> getTeleportPlayerToLocationMethod;
+    if ((getTeleportPlayerToLocationMethod = MinecraftPlayerGrpc.getTeleportPlayerToLocationMethod) == null) {
+      synchronized (MinecraftPlayerGrpc.class) {
+        if ((getTeleportPlayerToLocationMethod = MinecraftPlayerGrpc.getTeleportPlayerToLocationMethod) == null) {
+          MinecraftPlayerGrpc.getTeleportPlayerToLocationMethod = getTeleportPlayerToLocationMethod =
+              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest, com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "teleportPlayerToLocation"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new MinecraftPlayerMethodDescriptorSupplier("teleportPlayerToLocation"))
+              .build();
+        }
+      }
+    }
+    return getTeleportPlayerToLocationMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest,
+      com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse> getTeleportPlayerToEntityMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "teleportPlayerToEntity",
+      requestType = com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest.class,
+      responseType = com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest,
+      com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse> getTeleportPlayerToEntityMethod() {
+    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest, com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse> getTeleportPlayerToEntityMethod;
+    if ((getTeleportPlayerToEntityMethod = MinecraftPlayerGrpc.getTeleportPlayerToEntityMethod) == null) {
+      synchronized (MinecraftPlayerGrpc.class) {
+        if ((getTeleportPlayerToEntityMethod = MinecraftPlayerGrpc.getTeleportPlayerToEntityMethod) == null) {
+          MinecraftPlayerGrpc.getTeleportPlayerToEntityMethod = getTeleportPlayerToEntityMethod =
+              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest, com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "teleportPlayerToEntity"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new MinecraftPlayerMethodDescriptorSupplier("teleportPlayerToEntity"))
+              .build();
+        }
+      }
+    }
+    return getTeleportPlayerToEntityMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -533,6 +595,20 @@ public final class MinecraftPlayerGrpc {
         io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSendMessageResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSendPlayerMessageMethod(), responseObserver);
     }
+
+    /**
+     */
+    default void teleportPlayerToLocation(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTeleportPlayerToLocationMethod(), responseObserver);
+    }
+
+    /**
+     */
+    default void teleportPlayerToEntity(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTeleportPlayerToEntityMethod(), responseObserver);
+    }
   }
 
   /**
@@ -657,6 +733,22 @@ public final class MinecraftPlayerGrpc {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSendPlayerMessageMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void teleportPlayerToLocation(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getTeleportPlayerToLocationMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void teleportPlayerToEntity(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getTeleportPlayerToEntityMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -758,6 +850,20 @@ public final class MinecraftPlayerGrpc {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSendPlayerMessageMethod(), getCallOptions(), request);
     }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse teleportPlayerToLocation(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getTeleportPlayerToLocationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse teleportPlayerToEntity(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getTeleportPlayerToEntityMethod(), getCallOptions(), request);
+    }
   }
 
   /**
@@ -858,6 +964,20 @@ public final class MinecraftPlayerGrpc {
     public com.yplugins.minecraftrpc.proto.player.PlayerSendMessageResponse sendPlayerMessage(com.yplugins.minecraftrpc.proto.player.PlayerSendMessageRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSendPlayerMessageMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse teleportPlayerToLocation(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getTeleportPlayerToLocationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse teleportPlayerToEntity(com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getTeleportPlayerToEntityMethod(), getCallOptions(), request);
     }
   }
 
@@ -972,6 +1092,22 @@ public final class MinecraftPlayerGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSendPlayerMessageMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse> teleportPlayerToLocation(
+        com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getTeleportPlayerToLocationMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse> teleportPlayerToEntity(
+        com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getTeleportPlayerToEntityMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_GET_ONLINE_PLAYERS = 0;
@@ -986,6 +1122,8 @@ public final class MinecraftPlayerGrpc {
   private static final int METHODID_SET_PLAYER_GAMEMODE = 9;
   private static final int METHODID_SET_PLAYER_ALLOW_FLIGHT = 10;
   private static final int METHODID_SEND_PLAYER_MESSAGE = 11;
+  private static final int METHODID_TELEPORT_PLAYER_TO_LOCATION = 12;
+  private static final int METHODID_TELEPORT_PLAYER_TO_ENTITY = 13;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -1051,6 +1189,14 @@ public final class MinecraftPlayerGrpc {
         case METHODID_SEND_PLAYER_MESSAGE:
           serviceImpl.sendPlayerMessage((com.yplugins.minecraftrpc.proto.player.PlayerSendMessageRequest) request,
               (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSendMessageResponse>) responseObserver);
+          break;
+        case METHODID_TELEPORT_PLAYER_TO_LOCATION:
+          serviceImpl.teleportPlayerToLocation((com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest) request,
+              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse>) responseObserver);
+          break;
+        case METHODID_TELEPORT_PLAYER_TO_ENTITY:
+          serviceImpl.teleportPlayerToEntity((com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest) request,
+              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -1154,6 +1300,20 @@ public final class MinecraftPlayerGrpc {
               com.yplugins.minecraftrpc.proto.player.PlayerSendMessageRequest,
               com.yplugins.minecraftrpc.proto.player.PlayerSendMessageResponse>(
                 service, METHODID_SEND_PLAYER_MESSAGE)))
+        .addMethod(
+          getTeleportPlayerToLocationMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationRequest,
+              com.yplugins.minecraftrpc.proto.player.PlayerTeleportToLocationResponse>(
+                service, METHODID_TELEPORT_PLAYER_TO_LOCATION)))
+        .addMethod(
+          getTeleportPlayerToEntityMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityRequest,
+              com.yplugins.minecraftrpc.proto.player.PlayerTeleportToEntityResponse>(
+                service, METHODID_TELEPORT_PLAYER_TO_ENTITY)))
         .build();
   }
 
@@ -1214,6 +1374,8 @@ public final class MinecraftPlayerGrpc {
               .addMethod(getSetPlayerGamemodeMethod())
               .addMethod(getSetPlayerAllowFlightMethod())
               .addMethod(getSendPlayerMessageMethod())
+              .addMethod(getTeleportPlayerToLocationMethod())
+              .addMethod(getTeleportPlayerToEntityMethod())
               .build();
         }
       }
