@@ -3,7 +3,6 @@ package com.yplugins.minecraftrpc.rpc.handlers.player;
 import java.util.UUID;
 
 import org.bukkit.attribute.Attribute;
-import org.bukkit.entity.Player;
 
 import com.yplugins.minecraftrpc.MinecraftRPC;
 import com.yplugins.minecraftrpc.proto.player.CommandStatus;

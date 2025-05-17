@@ -7,12 +7,15 @@ import com.yplugins.minecraftrpc.proto.player.OnlinePlayersRequest;
 import com.yplugins.minecraftrpc.proto.player.OnlinePlayersResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerKickRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerKickResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetGamemodeRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetGamemodeResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetHealthRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetHealthResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthResponse;
 import com.yplugins.minecraftrpc.rpc.handlers.player.KickPlayerHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.OnlinePlayerHandler;
+import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerGamemodeHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerHealthHandler;
 
 import io.grpc.stub.StreamObserver;
@@ -22,11 +25,13 @@ public class PlayerService extends com.yplugins.minecraftrpc.proto.player.Minecr
     private final OnlinePlayerHandler playerHandler;
     private final KickPlayerHandler kickPlayerHandler;
     private final PlayerHealthHandler playerHealthHandler;
+    private final PlayerGamemodeHandler playerGamemodeHandler;
 
     public PlayerService(MinecraftRPC plugin) {
         this.playerHandler = new OnlinePlayerHandler(plugin);
         this.kickPlayerHandler = new KickPlayerHandler(plugin);
         this.playerHealthHandler = new PlayerHealthHandler(plugin);
+        this.playerGamemodeHandler = new PlayerGamemodeHandler(plugin);
     }
 
     @Override
@@ -64,4 +69,10 @@ public class PlayerService extends com.yplugins.minecraftrpc.proto.player.Minecr
         responseObserver.onCompleted();
     }
 
+    @Override
+    public void setPlayerGamemode(PlayerSetGamemodeRequest request, StreamObserver<PlayerSetGamemodeResponse> responseObserver) {
+        PlayerSetGamemodeResponse response = playerGamemodeHandler.handleSetPlayerGamemodeRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
 }
