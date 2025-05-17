@@ -9,15 +9,27 @@ import com.yplugins.minecraftrpc.proto.player.PlayerKickRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerKickResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetAllowFlightRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetAllowFlightResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetExperienceRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetExperienceResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetGamemodeRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetGamemodeResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetHealthRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetHealthResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetLevelRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetLevelResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthResponse;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetTotalExperienceRequest;
+import com.yplugins.minecraftrpc.proto.player.PlayerSetTotalExperienceResponse;
 import com.yplugins.minecraftrpc.rpc.handlers.player.KickPlayerHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.OnlinePlayerHandler;
+import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerExperienceHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerFlightHandler;
+import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerFoodHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerGamemodeHandler;
 import com.yplugins.minecraftrpc.rpc.handlers.player.PlayerHealthHandler;
 
@@ -30,6 +42,8 @@ public class PlayerService extends com.yplugins.minecraftrpc.proto.player.Minecr
     private final PlayerHealthHandler playerHealthHandler;
     private final PlayerGamemodeHandler playerGamemodeHandler;
     private final PlayerFlightHandler playerFlightHandler;
+    private final PlayerExperienceHandler playerExperienceHandler;
+    private final PlayerFoodHandler playerFoodHandler;
 
     public PlayerService(MinecraftRPC plugin) {
         this.playerHandler = new OnlinePlayerHandler(plugin);
@@ -37,6 +51,8 @@ public class PlayerService extends com.yplugins.minecraftrpc.proto.player.Minecr
         this.playerHealthHandler = new PlayerHealthHandler(plugin);
         this.playerGamemodeHandler = new PlayerGamemodeHandler(plugin);
         this.playerFlightHandler = new PlayerFlightHandler(plugin);
+        this.playerExperienceHandler = new PlayerExperienceHandler(plugin);
+        this.playerFoodHandler = new PlayerFoodHandler(plugin);
     }
 
     @Override
@@ -84,6 +100,34 @@ public class PlayerService extends com.yplugins.minecraftrpc.proto.player.Minecr
     @Override
     public void setPlayerAllowFlight(PlayerSetAllowFlightRequest request, StreamObserver<PlayerSetAllowFlightResponse> responseObserver) {
         PlayerSetAllowFlightResponse response = playerFlightHandler.handleSetAllowFlightRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void setPlayerExperience(PlayerSetExperienceRequest request, StreamObserver<PlayerSetExperienceResponse> responseObserver) {
+        PlayerSetExperienceResponse response = playerExperienceHandler.handleSetPlayerExpRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void setPlayerTotalExperience(PlayerSetTotalExperienceRequest request, StreamObserver<PlayerSetTotalExperienceResponse> responseObserver) {
+        PlayerSetTotalExperienceResponse response = playerExperienceHandler.handleSetPlayerTotalExpRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void setPlayerLevel(PlayerSetLevelRequest request, StreamObserver<PlayerSetLevelResponse> responseObserver) {
+        PlayerSetLevelResponse response = playerExperienceHandler.handleSetPlayerLevelRequest(request);
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void setPlayerFoodLevel(PlayerSetFoodLevelRequest request, StreamObserver<PlayerSetFoodLevelResponse> responseObserver) {
+        PlayerSetFoodLevelResponse response = playerFoodHandler.handleSetFoodLevelRequest(request);
         responseObserver.onNext(response);
         responseObserver.onCompleted();
     }

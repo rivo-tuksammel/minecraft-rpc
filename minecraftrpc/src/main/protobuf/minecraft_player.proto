@@ -15,7 +15,7 @@ service MinecraftPlayer {
     rpc setPlayerExperience(PlayerSetExperienceRequest) returns (PlayerSetExperienceResponse);
     rpc setPlayerLevel(PlayerSetLevelRequest) returns (PlayerSetLevelResponse);
     rpc setPlayerMaxHealth(PlayerSetMaxHealthRequest) returns (PlayerSetMaxHealthResponse);
-    rpc setPlayerFoodSaturation(PlayerSetFoodSaturationRequest) returns (PlayerSetFoodSaturationResponse);
+    rpc setPlayerFoodLevel(PlayerSetFoodLevelRequest) returns (PlayerSetFoodLevelResponse);
     rpc setPlayerTotalExperience(PlayerSetTotalExperienceRequest) returns (PlayerSetTotalExperienceResponse);
     rpc setPlayerGamemode(PlayerSetGamemodeRequest) returns (PlayerSetGamemodeResponse);
     rpc setPlayerAllowFlight(PlayerSetAllowFlightRequest) returns (PlayerSetAllowFlightResponse);
@@ -133,15 +133,15 @@ message PlayerSetMaxHealthResponse {
     optional OnlinePlayer player = 2;
 }
 
-message PlayerSetFoodSaturationRequest {
+message PlayerSetFoodLevelRequest {
     oneof identifier {
         OnlinePlayer player = 2; // entity of the player
         string playerUniqueId = 3; // id of the player
     }
-    int32 foodSaturation = 1; // food saturation of the player
+    int32 foodLevel = 1; // food saturation of the player
 }
 
-message PlayerSetFoodSaturationResponse {
+message PlayerSetFoodLevelResponse {
     CommandStatus status = 1;
     optional OnlinePlayer player = 2;
 }
@@ -152,7 +152,9 @@ message PlayerSetExperienceRequest {
         OnlinePlayer player = 2; // entity of the player
         string playerUniqueId = 3; // id of the player
     }
-    int32 experience = 1; // experience of the player
+
+    //This is a percentage value. 0 is "no progress" and 1 is "next level"
+    float experience = 1; // experience of the player
 }
 
 message PlayerSetExperienceResponse {
@@ -179,7 +181,7 @@ message PlayerSetTotalExperienceRequest {
         OnlinePlayer player = 2; // entity of the player
         string playerUniqueId = 3; // id of the player
     }
-    float totalExperience = 1; // total experience of the player
+    int32 totalExperience = 1; // total experience of the player
 }
 
 message PlayerSetTotalExperienceResponse {

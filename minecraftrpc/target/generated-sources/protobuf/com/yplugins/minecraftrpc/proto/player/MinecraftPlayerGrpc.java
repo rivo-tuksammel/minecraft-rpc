@@ -232,35 +232,35 @@ public final class MinecraftPlayerGrpc {
     return getSetPlayerMaxHealthMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest,
-      com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse> getSetPlayerFoodSaturationMethod;
+  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest,
+      com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse> getSetPlayerFoodLevelMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "setPlayerFoodSaturation",
-      requestType = com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest.class,
-      responseType = com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "setPlayerFoodLevel",
+      requestType = com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest.class,
+      responseType = com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest,
-      com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse> getSetPlayerFoodSaturationMethod() {
-    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest, com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse> getSetPlayerFoodSaturationMethod;
-    if ((getSetPlayerFoodSaturationMethod = MinecraftPlayerGrpc.getSetPlayerFoodSaturationMethod) == null) {
+  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest,
+      com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse> getSetPlayerFoodLevelMethod() {
+    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest, com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse> getSetPlayerFoodLevelMethod;
+    if ((getSetPlayerFoodLevelMethod = MinecraftPlayerGrpc.getSetPlayerFoodLevelMethod) == null) {
       synchronized (MinecraftPlayerGrpc.class) {
-        if ((getSetPlayerFoodSaturationMethod = MinecraftPlayerGrpc.getSetPlayerFoodSaturationMethod) == null) {
-          MinecraftPlayerGrpc.getSetPlayerFoodSaturationMethod = getSetPlayerFoodSaturationMethod =
-              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest, com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse>newBuilder()
+        if ((getSetPlayerFoodLevelMethod = MinecraftPlayerGrpc.getSetPlayerFoodLevelMethod) == null) {
+          MinecraftPlayerGrpc.getSetPlayerFoodLevelMethod = getSetPlayerFoodLevelMethod =
+              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest, com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "setPlayerFoodSaturation"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "setPlayerFoodLevel"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest.getDefaultInstance()))
+                  com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new MinecraftPlayerMethodDescriptorSupplier("setPlayerFoodSaturation"))
+                  com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new MinecraftPlayerMethodDescriptorSupplier("setPlayerFoodLevel"))
               .build();
         }
       }
     }
-    return getSetPlayerFoodSaturationMethod;
+    return getSetPlayerFoodLevelMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.player.PlayerSetTotalExperienceRequest,
@@ -563,9 +563,9 @@ public final class MinecraftPlayerGrpc {
 
     /**
      */
-    default void setPlayerFoodSaturation(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest request,
-        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSetPlayerFoodSaturationMethod(), responseObserver);
+    default void setPlayerFoodLevel(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSetPlayerFoodLevelMethod(), responseObserver);
     }
 
     /**
@@ -696,10 +696,10 @@ public final class MinecraftPlayerGrpc {
 
     /**
      */
-    public void setPlayerFoodSaturation(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest request,
-        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse> responseObserver) {
+    public void setPlayerFoodLevel(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getSetPlayerFoodSaturationMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getSetPlayerFoodLevelMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -818,9 +818,9 @@ public final class MinecraftPlayerGrpc {
 
     /**
      */
-    public com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse setPlayerFoodSaturation(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest request) {
+    public com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse setPlayerFoodLevel(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getSetPlayerFoodSaturationMethod(), getCallOptions(), request);
+          getChannel(), getSetPlayerFoodLevelMethod(), getCallOptions(), request);
     }
 
     /**
@@ -933,9 +933,9 @@ public final class MinecraftPlayerGrpc {
 
     /**
      */
-    public com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse setPlayerFoodSaturation(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest request) {
+    public com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse setPlayerFoodLevel(com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getSetPlayerFoodSaturationMethod(), getCallOptions(), request);
+          getChannel(), getSetPlayerFoodLevelMethod(), getCallOptions(), request);
     }
 
     /**
@@ -1055,10 +1055,10 @@ public final class MinecraftPlayerGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse> setPlayerFoodSaturation(
-        com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse> setPlayerFoodLevel(
+        com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getSetPlayerFoodSaturationMethod(), getCallOptions()), request);
+          getChannel().newCall(getSetPlayerFoodLevelMethod(), getCallOptions()), request);
     }
 
     /**
@@ -1117,7 +1117,7 @@ public final class MinecraftPlayerGrpc {
   private static final int METHODID_SET_PLAYER_EXPERIENCE = 4;
   private static final int METHODID_SET_PLAYER_LEVEL = 5;
   private static final int METHODID_SET_PLAYER_MAX_HEALTH = 6;
-  private static final int METHODID_SET_PLAYER_FOOD_SATURATION = 7;
+  private static final int METHODID_SET_PLAYER_FOOD_LEVEL = 7;
   private static final int METHODID_SET_PLAYER_TOTAL_EXPERIENCE = 8;
   private static final int METHODID_SET_PLAYER_GAMEMODE = 9;
   private static final int METHODID_SET_PLAYER_ALLOW_FLIGHT = 10;
@@ -1170,9 +1170,9 @@ public final class MinecraftPlayerGrpc {
           serviceImpl.setPlayerMaxHealth((com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthRequest) request,
               (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthResponse>) responseObserver);
           break;
-        case METHODID_SET_PLAYER_FOOD_SATURATION:
-          serviceImpl.setPlayerFoodSaturation((com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest) request,
-              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse>) responseObserver);
+        case METHODID_SET_PLAYER_FOOD_LEVEL:
+          serviceImpl.setPlayerFoodLevel((com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest) request,
+              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse>) responseObserver);
           break;
         case METHODID_SET_PLAYER_TOTAL_EXPERIENCE:
           serviceImpl.setPlayerTotalExperience((com.yplugins.minecraftrpc.proto.player.PlayerSetTotalExperienceRequest) request,
@@ -1266,12 +1266,12 @@ public final class MinecraftPlayerGrpc {
               com.yplugins.minecraftrpc.proto.player.PlayerSetMaxHealthResponse>(
                 service, METHODID_SET_PLAYER_MAX_HEALTH)))
         .addMethod(
-          getSetPlayerFoodSaturationMethod(),
+          getSetPlayerFoodLevelMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest,
-              com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse>(
-                service, METHODID_SET_PLAYER_FOOD_SATURATION)))
+              com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest,
+              com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse>(
+                service, METHODID_SET_PLAYER_FOOD_LEVEL)))
         .addMethod(
           getSetPlayerTotalExperienceMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
@@ -1369,7 +1369,7 @@ public final class MinecraftPlayerGrpc {
               .addMethod(getSetPlayerExperienceMethod())
               .addMethod(getSetPlayerLevelMethod())
               .addMethod(getSetPlayerMaxHealthMethod())
-              .addMethod(getSetPlayerFoodSaturationMethod())
+              .addMethod(getSetPlayerFoodLevelMethod())
               .addMethod(getSetPlayerTotalExperienceMethod())
               .addMethod(getSetPlayerGamemodeMethod())
               .addMethod(getSetPlayerAllowFlightMethod())
