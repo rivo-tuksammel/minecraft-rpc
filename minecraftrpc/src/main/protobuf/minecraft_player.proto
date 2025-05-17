@@ -67,11 +67,25 @@ message OnlinePlayer {
     int32 ping = 5; // ping of the player
     float health = 6; // health of the player
     float maxHealth = 7; // max health of the player
-    float foodSaturation = 8; // food saturation of the player
+    float foodLevel = 8; // food saturation of the player
     float experience = 9; // experience of the player
     int32 level = 10; // level of the player
     Gamemode gamemode = 11; // gamemode of the player
     bool allowFlight = 12; // allow flight of the player
+    int32 totalExperience = 13; // total experience of the player
+    bool isFlying = 14; // is the player flying
+    bool isSneaking = 15; // is the player sneaking
+    bool isSprinting = 16; // is the player sprinting
+    bool isBlocking = 17; // is the player blocking
+    bool isGliding = 18; // is the player gliding
+    bool isSwimming = 19; // is the player swimming
+    bool isRiding = 20; // is the player riding
+    bool isOnGround = 21; // is the player on ground, this is sus. Can be spoofed by clients.
+    bool isOperator = 22; // is the player operator
+    bool isInvisible = 23; // is the player invisible
+    bool isSleeping = 24; // is the player sleeping
+
+    string displayName = 25; // display name of the player
 }
 
 message OnlinePlayersRequest {

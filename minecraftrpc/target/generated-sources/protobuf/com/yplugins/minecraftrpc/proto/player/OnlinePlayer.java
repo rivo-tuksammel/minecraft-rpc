@@ -31,6 +31,7 @@ private static final long serialVersionUID = 0L;
     uuid_ = "";
     address_ = "";
     gamemode_ = 0;
+    displayName_ = "";
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
@@ -271,19 +272,19 @@ private static final long serialVersionUID = 0L;
     return maxHealth_;
   }
 
-  public static final int FOODSATURATION_FIELD_NUMBER = 8;
-  private float foodSaturation_ = 0F;
+  public static final int FOODLEVEL_FIELD_NUMBER = 8;
+  private float foodLevel_ = 0F;
   /**
    * <pre>
    * food saturation of the player
    * </pre>
    *
-   * <code>float foodSaturation = 8;</code>
-   * @return The foodSaturation.
+   * <code>float foodLevel = 8;</code>
+   * @return The foodLevel.
    */
   @java.lang.Override
-  public float getFoodSaturation() {
-    return foodSaturation_;
+  public float getFoodLevel() {
+    return foodLevel_;
   }
 
   public static final int EXPERIENCE_FIELD_NUMBER = 9;
@@ -357,6 +358,233 @@ private static final long serialVersionUID = 0L;
     return allowFlight_;
   }
 
+  public static final int TOTALEXPERIENCE_FIELD_NUMBER = 13;
+  private int totalExperience_ = 0;
+  /**
+   * <pre>
+   * total experience of the player
+   * </pre>
+   *
+   * <code>int32 totalExperience = 13;</code>
+   * @return The totalExperience.
+   */
+  @java.lang.Override
+  public int getTotalExperience() {
+    return totalExperience_;
+  }
+
+  public static final int ISFLYING_FIELD_NUMBER = 14;
+  private boolean isFlying_ = false;
+  /**
+   * <pre>
+   * is the player flying
+   * </pre>
+   *
+   * <code>bool isFlying = 14;</code>
+   * @return The isFlying.
+   */
+  @java.lang.Override
+  public boolean getIsFlying() {
+    return isFlying_;
+  }
+
+  public static final int ISSNEAKING_FIELD_NUMBER = 15;
+  private boolean isSneaking_ = false;
+  /**
+   * <pre>
+   * is the player sneaking
+   * </pre>
+   *
+   * <code>bool isSneaking = 15;</code>
+   * @return The isSneaking.
+   */
+  @java.lang.Override
+  public boolean getIsSneaking() {
+    return isSneaking_;
+  }
+
+  public static final int ISSPRINTING_FIELD_NUMBER = 16;
+  private boolean isSprinting_ = false;
+  /**
+   * <pre>
+   * is the player sprinting
+   * </pre>
+   *
+   * <code>bool isSprinting = 16;</code>
+   * @return The isSprinting.
+   */
+  @java.lang.Override
+  public boolean getIsSprinting() {
+    return isSprinting_;
+  }
+
+  public static final int ISBLOCKING_FIELD_NUMBER = 17;
+  private boolean isBlocking_ = false;
+  /**
+   * <pre>
+   * is the player blocking
+   * </pre>
+   *
+   * <code>bool isBlocking = 17;</code>
+   * @return The isBlocking.
+   */
+  @java.lang.Override
+  public boolean getIsBlocking() {
+    return isBlocking_;
+  }
+
+  public static final int ISGLIDING_FIELD_NUMBER = 18;
+  private boolean isGliding_ = false;
+  /**
+   * <pre>
+   * is the player gliding
+   * </pre>
+   *
+   * <code>bool isGliding = 18;</code>
+   * @return The isGliding.
+   */
+  @java.lang.Override
+  public boolean getIsGliding() {
+    return isGliding_;
+  }
+
+  public static final int ISSWIMMING_FIELD_NUMBER = 19;
+  private boolean isSwimming_ = false;
+  /**
+   * <pre>
+   * is the player swimming
+   * </pre>
+   *
+   * <code>bool isSwimming = 19;</code>
+   * @return The isSwimming.
+   */
+  @java.lang.Override
+  public boolean getIsSwimming() {
+    return isSwimming_;
+  }
+
+  public static final int ISRIDING_FIELD_NUMBER = 20;
+  private boolean isRiding_ = false;
+  /**
+   * <pre>
+   * is the player riding
+   * </pre>
+   *
+   * <code>bool isRiding = 20;</code>
+   * @return The isRiding.
+   */
+  @java.lang.Override
+  public boolean getIsRiding() {
+    return isRiding_;
+  }
+
+  public static final int ISONGROUND_FIELD_NUMBER = 21;
+  private boolean isOnGround_ = false;
+  /**
+   * <pre>
+   * is the player on ground, this is sus. Can be spoofed by clients.
+   * </pre>
+   *
+   * <code>bool isOnGround = 21;</code>
+   * @return The isOnGround.
+   */
+  @java.lang.Override
+  public boolean getIsOnGround() {
+    return isOnGround_;
+  }
+
+  public static final int ISOPERATOR_FIELD_NUMBER = 22;
+  private boolean isOperator_ = false;
+  /**
+   * <pre>
+   * is the player operator
+   * </pre>
+   *
+   * <code>bool isOperator = 22;</code>
+   * @return The isOperator.
+   */
+  @java.lang.Override
+  public boolean getIsOperator() {
+    return isOperator_;
+  }
+
+  public static final int ISINVISIBLE_FIELD_NUMBER = 23;
+  private boolean isInvisible_ = false;
+  /**
+   * <pre>
+   * is the player invisible
+   * </pre>
+   *
+   * <code>bool isInvisible = 23;</code>
+   * @return The isInvisible.
+   */
+  @java.lang.Override
+  public boolean getIsInvisible() {
+    return isInvisible_;
+  }
+
+  public static final int ISSLEEPING_FIELD_NUMBER = 24;
+  private boolean isSleeping_ = false;
+  /**
+   * <pre>
+   * is the player sleeping
+   * </pre>
+   *
+   * <code>bool isSleeping = 24;</code>
+   * @return The isSleeping.
+   */
+  @java.lang.Override
+  public boolean getIsSleeping() {
+    return isSleeping_;
+  }
+
+  public static final int DISPLAYNAME_FIELD_NUMBER = 25;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object displayName_ = "";
+  /**
+   * <pre>
+   * display name of the player
+   * </pre>
+   *
+   * <code>string displayName = 25;</code>
+   * @return The displayName.
+   */
+  @java.lang.Override
+  public java.lang.String getDisplayName() {
+    java.lang.Object ref = displayName_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      displayName_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * display name of the player
+   * </pre>
+   *
+   * <code>string displayName = 25;</code>
+   * @return The bytes for displayName.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getDisplayNameBytes() {
+    java.lang.Object ref = displayName_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      displayName_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -392,8 +620,8 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Float.floatToRawIntBits(maxHealth_) != 0) {
       output.writeFloat(7, maxHealth_);
     }
-    if (java.lang.Float.floatToRawIntBits(foodSaturation_) != 0) {
-      output.writeFloat(8, foodSaturation_);
+    if (java.lang.Float.floatToRawIntBits(foodLevel_) != 0) {
+      output.writeFloat(8, foodLevel_);
     }
     if (java.lang.Float.floatToRawIntBits(experience_) != 0) {
       output.writeFloat(9, experience_);
@@ -406,6 +634,45 @@ private static final long serialVersionUID = 0L;
     }
     if (allowFlight_ != false) {
       output.writeBool(12, allowFlight_);
+    }
+    if (totalExperience_ != 0) {
+      output.writeInt32(13, totalExperience_);
+    }
+    if (isFlying_ != false) {
+      output.writeBool(14, isFlying_);
+    }
+    if (isSneaking_ != false) {
+      output.writeBool(15, isSneaking_);
+    }
+    if (isSprinting_ != false) {
+      output.writeBool(16, isSprinting_);
+    }
+    if (isBlocking_ != false) {
+      output.writeBool(17, isBlocking_);
+    }
+    if (isGliding_ != false) {
+      output.writeBool(18, isGliding_);
+    }
+    if (isSwimming_ != false) {
+      output.writeBool(19, isSwimming_);
+    }
+    if (isRiding_ != false) {
+      output.writeBool(20, isRiding_);
+    }
+    if (isOnGround_ != false) {
+      output.writeBool(21, isOnGround_);
+    }
+    if (isOperator_ != false) {
+      output.writeBool(22, isOperator_);
+    }
+    if (isInvisible_ != false) {
+      output.writeBool(23, isInvisible_);
+    }
+    if (isSleeping_ != false) {
+      output.writeBool(24, isSleeping_);
+    }
+    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(displayName_)) {
+      com.google.protobuf.GeneratedMessage.writeString(output, 25, displayName_);
     }
     getUnknownFields().writeTo(output);
   }
@@ -441,9 +708,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(7, maxHealth_);
     }
-    if (java.lang.Float.floatToRawIntBits(foodSaturation_) != 0) {
+    if (java.lang.Float.floatToRawIntBits(foodLevel_) != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(8, foodSaturation_);
+        .computeFloatSize(8, foodLevel_);
     }
     if (java.lang.Float.floatToRawIntBits(experience_) != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -460,6 +727,57 @@ private static final long serialVersionUID = 0L;
     if (allowFlight_ != false) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(12, allowFlight_);
+    }
+    if (totalExperience_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(13, totalExperience_);
+    }
+    if (isFlying_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(14, isFlying_);
+    }
+    if (isSneaking_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(15, isSneaking_);
+    }
+    if (isSprinting_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(16, isSprinting_);
+    }
+    if (isBlocking_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(17, isBlocking_);
+    }
+    if (isGliding_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(18, isGliding_);
+    }
+    if (isSwimming_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(19, isSwimming_);
+    }
+    if (isRiding_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(20, isRiding_);
+    }
+    if (isOnGround_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(21, isOnGround_);
+    }
+    if (isOperator_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(22, isOperator_);
+    }
+    if (isInvisible_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(23, isInvisible_);
+    }
+    if (isSleeping_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(24, isSleeping_);
+    }
+    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(displayName_)) {
+      size += com.google.protobuf.GeneratedMessage.computeStringSize(25, displayName_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -495,9 +813,9 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Float.floatToIntBits(getMaxHealth())
         != java.lang.Float.floatToIntBits(
             other.getMaxHealth())) return false;
-    if (java.lang.Float.floatToIntBits(getFoodSaturation())
+    if (java.lang.Float.floatToIntBits(getFoodLevel())
         != java.lang.Float.floatToIntBits(
-            other.getFoodSaturation())) return false;
+            other.getFoodLevel())) return false;
     if (java.lang.Float.floatToIntBits(getExperience())
         != java.lang.Float.floatToIntBits(
             other.getExperience())) return false;
@@ -506,6 +824,32 @@ private static final long serialVersionUID = 0L;
     if (gamemode_ != other.gamemode_) return false;
     if (getAllowFlight()
         != other.getAllowFlight()) return false;
+    if (getTotalExperience()
+        != other.getTotalExperience()) return false;
+    if (getIsFlying()
+        != other.getIsFlying()) return false;
+    if (getIsSneaking()
+        != other.getIsSneaking()) return false;
+    if (getIsSprinting()
+        != other.getIsSprinting()) return false;
+    if (getIsBlocking()
+        != other.getIsBlocking()) return false;
+    if (getIsGliding()
+        != other.getIsGliding()) return false;
+    if (getIsSwimming()
+        != other.getIsSwimming()) return false;
+    if (getIsRiding()
+        != other.getIsRiding()) return false;
+    if (getIsOnGround()
+        != other.getIsOnGround()) return false;
+    if (getIsOperator()
+        != other.getIsOperator()) return false;
+    if (getIsInvisible()
+        != other.getIsInvisible()) return false;
+    if (getIsSleeping()
+        != other.getIsSleeping()) return false;
+    if (!getDisplayName()
+        .equals(other.getDisplayName())) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -535,9 +879,9 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + MAXHEALTH_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
         getMaxHealth());
-    hash = (37 * hash) + FOODSATURATION_FIELD_NUMBER;
+    hash = (37 * hash) + FOODLEVEL_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getFoodSaturation());
+        getFoodLevel());
     hash = (37 * hash) + EXPERIENCE_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
         getExperience());
@@ -548,6 +892,43 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ALLOWFLIGHT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getAllowFlight());
+    hash = (37 * hash) + TOTALEXPERIENCE_FIELD_NUMBER;
+    hash = (53 * hash) + getTotalExperience();
+    hash = (37 * hash) + ISFLYING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsFlying());
+    hash = (37 * hash) + ISSNEAKING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsSneaking());
+    hash = (37 * hash) + ISSPRINTING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsSprinting());
+    hash = (37 * hash) + ISBLOCKING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsBlocking());
+    hash = (37 * hash) + ISGLIDING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsGliding());
+    hash = (37 * hash) + ISSWIMMING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsSwimming());
+    hash = (37 * hash) + ISRIDING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsRiding());
+    hash = (37 * hash) + ISONGROUND_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsOnGround());
+    hash = (37 * hash) + ISOPERATOR_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsOperator());
+    hash = (37 * hash) + ISINVISIBLE_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsInvisible());
+    hash = (37 * hash) + ISSLEEPING_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsSleeping());
+    hash = (37 * hash) + DISPLAYNAME_FIELD_NUMBER;
+    hash = (53 * hash) + getDisplayName().hashCode();
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -696,11 +1077,24 @@ private static final long serialVersionUID = 0L;
       ping_ = 0;
       health_ = 0F;
       maxHealth_ = 0F;
-      foodSaturation_ = 0F;
+      foodLevel_ = 0F;
       experience_ = 0F;
       level_ = 0;
       gamemode_ = 0;
       allowFlight_ = false;
+      totalExperience_ = 0;
+      isFlying_ = false;
+      isSneaking_ = false;
+      isSprinting_ = false;
+      isBlocking_ = false;
+      isGliding_ = false;
+      isSwimming_ = false;
+      isRiding_ = false;
+      isOnGround_ = false;
+      isOperator_ = false;
+      isInvisible_ = false;
+      isSleeping_ = false;
+      displayName_ = "";
       return this;
     }
 
@@ -760,7 +1154,7 @@ private static final long serialVersionUID = 0L;
         result.maxHealth_ = maxHealth_;
       }
       if (((from_bitField0_ & 0x00000080) != 0)) {
-        result.foodSaturation_ = foodSaturation_;
+        result.foodLevel_ = foodLevel_;
       }
       if (((from_bitField0_ & 0x00000100) != 0)) {
         result.experience_ = experience_;
@@ -773,6 +1167,45 @@ private static final long serialVersionUID = 0L;
       }
       if (((from_bitField0_ & 0x00000800) != 0)) {
         result.allowFlight_ = allowFlight_;
+      }
+      if (((from_bitField0_ & 0x00001000) != 0)) {
+        result.totalExperience_ = totalExperience_;
+      }
+      if (((from_bitField0_ & 0x00002000) != 0)) {
+        result.isFlying_ = isFlying_;
+      }
+      if (((from_bitField0_ & 0x00004000) != 0)) {
+        result.isSneaking_ = isSneaking_;
+      }
+      if (((from_bitField0_ & 0x00008000) != 0)) {
+        result.isSprinting_ = isSprinting_;
+      }
+      if (((from_bitField0_ & 0x00010000) != 0)) {
+        result.isBlocking_ = isBlocking_;
+      }
+      if (((from_bitField0_ & 0x00020000) != 0)) {
+        result.isGliding_ = isGliding_;
+      }
+      if (((from_bitField0_ & 0x00040000) != 0)) {
+        result.isSwimming_ = isSwimming_;
+      }
+      if (((from_bitField0_ & 0x00080000) != 0)) {
+        result.isRiding_ = isRiding_;
+      }
+      if (((from_bitField0_ & 0x00100000) != 0)) {
+        result.isOnGround_ = isOnGround_;
+      }
+      if (((from_bitField0_ & 0x00200000) != 0)) {
+        result.isOperator_ = isOperator_;
+      }
+      if (((from_bitField0_ & 0x00400000) != 0)) {
+        result.isInvisible_ = isInvisible_;
+      }
+      if (((from_bitField0_ & 0x00800000) != 0)) {
+        result.isSleeping_ = isSleeping_;
+      }
+      if (((from_bitField0_ & 0x01000000) != 0)) {
+        result.displayName_ = displayName_;
       }
       result.bitField0_ |= to_bitField0_;
     }
@@ -816,8 +1249,8 @@ private static final long serialVersionUID = 0L;
       if (other.getMaxHealth() != 0F) {
         setMaxHealth(other.getMaxHealth());
       }
-      if (other.getFoodSaturation() != 0F) {
-        setFoodSaturation(other.getFoodSaturation());
+      if (other.getFoodLevel() != 0F) {
+        setFoodLevel(other.getFoodLevel());
       }
       if (other.getExperience() != 0F) {
         setExperience(other.getExperience());
@@ -830,6 +1263,47 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getAllowFlight() != false) {
         setAllowFlight(other.getAllowFlight());
+      }
+      if (other.getTotalExperience() != 0) {
+        setTotalExperience(other.getTotalExperience());
+      }
+      if (other.getIsFlying() != false) {
+        setIsFlying(other.getIsFlying());
+      }
+      if (other.getIsSneaking() != false) {
+        setIsSneaking(other.getIsSneaking());
+      }
+      if (other.getIsSprinting() != false) {
+        setIsSprinting(other.getIsSprinting());
+      }
+      if (other.getIsBlocking() != false) {
+        setIsBlocking(other.getIsBlocking());
+      }
+      if (other.getIsGliding() != false) {
+        setIsGliding(other.getIsGliding());
+      }
+      if (other.getIsSwimming() != false) {
+        setIsSwimming(other.getIsSwimming());
+      }
+      if (other.getIsRiding() != false) {
+        setIsRiding(other.getIsRiding());
+      }
+      if (other.getIsOnGround() != false) {
+        setIsOnGround(other.getIsOnGround());
+      }
+      if (other.getIsOperator() != false) {
+        setIsOperator(other.getIsOperator());
+      }
+      if (other.getIsInvisible() != false) {
+        setIsInvisible(other.getIsInvisible());
+      }
+      if (other.getIsSleeping() != false) {
+        setIsSleeping(other.getIsSleeping());
+      }
+      if (!other.getDisplayName().isEmpty()) {
+        displayName_ = other.displayName_;
+        bitField0_ |= 0x01000000;
+        onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -895,7 +1369,7 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 61
             case 69: {
-              foodSaturation_ = input.readFloat();
+              foodLevel_ = input.readFloat();
               bitField0_ |= 0x00000080;
               break;
             } // case 69
@@ -919,6 +1393,71 @@ private static final long serialVersionUID = 0L;
               bitField0_ |= 0x00000800;
               break;
             } // case 96
+            case 104: {
+              totalExperience_ = input.readInt32();
+              bitField0_ |= 0x00001000;
+              break;
+            } // case 104
+            case 112: {
+              isFlying_ = input.readBool();
+              bitField0_ |= 0x00002000;
+              break;
+            } // case 112
+            case 120: {
+              isSneaking_ = input.readBool();
+              bitField0_ |= 0x00004000;
+              break;
+            } // case 120
+            case 128: {
+              isSprinting_ = input.readBool();
+              bitField0_ |= 0x00008000;
+              break;
+            } // case 128
+            case 136: {
+              isBlocking_ = input.readBool();
+              bitField0_ |= 0x00010000;
+              break;
+            } // case 136
+            case 144: {
+              isGliding_ = input.readBool();
+              bitField0_ |= 0x00020000;
+              break;
+            } // case 144
+            case 152: {
+              isSwimming_ = input.readBool();
+              bitField0_ |= 0x00040000;
+              break;
+            } // case 152
+            case 160: {
+              isRiding_ = input.readBool();
+              bitField0_ |= 0x00080000;
+              break;
+            } // case 160
+            case 168: {
+              isOnGround_ = input.readBool();
+              bitField0_ |= 0x00100000;
+              break;
+            } // case 168
+            case 176: {
+              isOperator_ = input.readBool();
+              bitField0_ |= 0x00200000;
+              break;
+            } // case 176
+            case 184: {
+              isInvisible_ = input.readBool();
+              bitField0_ |= 0x00400000;
+              break;
+            } // case 184
+            case 192: {
+              isSleeping_ = input.readBool();
+              bitField0_ |= 0x00800000;
+              break;
+            } // case 192
+            case 202: {
+              displayName_ = input.readStringRequireUtf8();
+              bitField0_ |= 0x01000000;
+              break;
+            } // case 202
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -1501,31 +2040,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private float foodSaturation_ ;
+    private float foodLevel_ ;
     /**
      * <pre>
      * food saturation of the player
      * </pre>
      *
-     * <code>float foodSaturation = 8;</code>
-     * @return The foodSaturation.
+     * <code>float foodLevel = 8;</code>
+     * @return The foodLevel.
      */
     @java.lang.Override
-    public float getFoodSaturation() {
-      return foodSaturation_;
+    public float getFoodLevel() {
+      return foodLevel_;
     }
     /**
      * <pre>
      * food saturation of the player
      * </pre>
      *
-     * <code>float foodSaturation = 8;</code>
-     * @param value The foodSaturation to set.
+     * <code>float foodLevel = 8;</code>
+     * @param value The foodLevel to set.
      * @return This builder for chaining.
      */
-    public Builder setFoodSaturation(float value) {
+    public Builder setFoodLevel(float value) {
 
-      foodSaturation_ = value;
+      foodLevel_ = value;
       bitField0_ |= 0x00000080;
       onChanged();
       return this;
@@ -1535,12 +2074,12 @@ private static final long serialVersionUID = 0L;
      * food saturation of the player
      * </pre>
      *
-     * <code>float foodSaturation = 8;</code>
+     * <code>float foodLevel = 8;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFoodSaturation() {
+    public Builder clearFoodLevel() {
       bitField0_ = (bitField0_ & ~0x00000080);
-      foodSaturation_ = 0F;
+      foodLevel_ = 0F;
       onChanged();
       return this;
     }
@@ -1746,6 +2285,626 @@ private static final long serialVersionUID = 0L;
     public Builder clearAllowFlight() {
       bitField0_ = (bitField0_ & ~0x00000800);
       allowFlight_ = false;
+      onChanged();
+      return this;
+    }
+
+    private int totalExperience_ ;
+    /**
+     * <pre>
+     * total experience of the player
+     * </pre>
+     *
+     * <code>int32 totalExperience = 13;</code>
+     * @return The totalExperience.
+     */
+    @java.lang.Override
+    public int getTotalExperience() {
+      return totalExperience_;
+    }
+    /**
+     * <pre>
+     * total experience of the player
+     * </pre>
+     *
+     * <code>int32 totalExperience = 13;</code>
+     * @param value The totalExperience to set.
+     * @return This builder for chaining.
+     */
+    public Builder setTotalExperience(int value) {
+
+      totalExperience_ = value;
+      bitField0_ |= 0x00001000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * total experience of the player
+     * </pre>
+     *
+     * <code>int32 totalExperience = 13;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearTotalExperience() {
+      bitField0_ = (bitField0_ & ~0x00001000);
+      totalExperience_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private boolean isFlying_ ;
+    /**
+     * <pre>
+     * is the player flying
+     * </pre>
+     *
+     * <code>bool isFlying = 14;</code>
+     * @return The isFlying.
+     */
+    @java.lang.Override
+    public boolean getIsFlying() {
+      return isFlying_;
+    }
+    /**
+     * <pre>
+     * is the player flying
+     * </pre>
+     *
+     * <code>bool isFlying = 14;</code>
+     * @param value The isFlying to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsFlying(boolean value) {
+
+      isFlying_ = value;
+      bitField0_ |= 0x00002000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player flying
+     * </pre>
+     *
+     * <code>bool isFlying = 14;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsFlying() {
+      bitField0_ = (bitField0_ & ~0x00002000);
+      isFlying_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isSneaking_ ;
+    /**
+     * <pre>
+     * is the player sneaking
+     * </pre>
+     *
+     * <code>bool isSneaking = 15;</code>
+     * @return The isSneaking.
+     */
+    @java.lang.Override
+    public boolean getIsSneaking() {
+      return isSneaking_;
+    }
+    /**
+     * <pre>
+     * is the player sneaking
+     * </pre>
+     *
+     * <code>bool isSneaking = 15;</code>
+     * @param value The isSneaking to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsSneaking(boolean value) {
+
+      isSneaking_ = value;
+      bitField0_ |= 0x00004000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player sneaking
+     * </pre>
+     *
+     * <code>bool isSneaking = 15;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsSneaking() {
+      bitField0_ = (bitField0_ & ~0x00004000);
+      isSneaking_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isSprinting_ ;
+    /**
+     * <pre>
+     * is the player sprinting
+     * </pre>
+     *
+     * <code>bool isSprinting = 16;</code>
+     * @return The isSprinting.
+     */
+    @java.lang.Override
+    public boolean getIsSprinting() {
+      return isSprinting_;
+    }
+    /**
+     * <pre>
+     * is the player sprinting
+     * </pre>
+     *
+     * <code>bool isSprinting = 16;</code>
+     * @param value The isSprinting to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsSprinting(boolean value) {
+
+      isSprinting_ = value;
+      bitField0_ |= 0x00008000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player sprinting
+     * </pre>
+     *
+     * <code>bool isSprinting = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsSprinting() {
+      bitField0_ = (bitField0_ & ~0x00008000);
+      isSprinting_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isBlocking_ ;
+    /**
+     * <pre>
+     * is the player blocking
+     * </pre>
+     *
+     * <code>bool isBlocking = 17;</code>
+     * @return The isBlocking.
+     */
+    @java.lang.Override
+    public boolean getIsBlocking() {
+      return isBlocking_;
+    }
+    /**
+     * <pre>
+     * is the player blocking
+     * </pre>
+     *
+     * <code>bool isBlocking = 17;</code>
+     * @param value The isBlocking to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsBlocking(boolean value) {
+
+      isBlocking_ = value;
+      bitField0_ |= 0x00010000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player blocking
+     * </pre>
+     *
+     * <code>bool isBlocking = 17;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsBlocking() {
+      bitField0_ = (bitField0_ & ~0x00010000);
+      isBlocking_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isGliding_ ;
+    /**
+     * <pre>
+     * is the player gliding
+     * </pre>
+     *
+     * <code>bool isGliding = 18;</code>
+     * @return The isGliding.
+     */
+    @java.lang.Override
+    public boolean getIsGliding() {
+      return isGliding_;
+    }
+    /**
+     * <pre>
+     * is the player gliding
+     * </pre>
+     *
+     * <code>bool isGliding = 18;</code>
+     * @param value The isGliding to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsGliding(boolean value) {
+
+      isGliding_ = value;
+      bitField0_ |= 0x00020000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player gliding
+     * </pre>
+     *
+     * <code>bool isGliding = 18;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsGliding() {
+      bitField0_ = (bitField0_ & ~0x00020000);
+      isGliding_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isSwimming_ ;
+    /**
+     * <pre>
+     * is the player swimming
+     * </pre>
+     *
+     * <code>bool isSwimming = 19;</code>
+     * @return The isSwimming.
+     */
+    @java.lang.Override
+    public boolean getIsSwimming() {
+      return isSwimming_;
+    }
+    /**
+     * <pre>
+     * is the player swimming
+     * </pre>
+     *
+     * <code>bool isSwimming = 19;</code>
+     * @param value The isSwimming to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsSwimming(boolean value) {
+
+      isSwimming_ = value;
+      bitField0_ |= 0x00040000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player swimming
+     * </pre>
+     *
+     * <code>bool isSwimming = 19;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsSwimming() {
+      bitField0_ = (bitField0_ & ~0x00040000);
+      isSwimming_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isRiding_ ;
+    /**
+     * <pre>
+     * is the player riding
+     * </pre>
+     *
+     * <code>bool isRiding = 20;</code>
+     * @return The isRiding.
+     */
+    @java.lang.Override
+    public boolean getIsRiding() {
+      return isRiding_;
+    }
+    /**
+     * <pre>
+     * is the player riding
+     * </pre>
+     *
+     * <code>bool isRiding = 20;</code>
+     * @param value The isRiding to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsRiding(boolean value) {
+
+      isRiding_ = value;
+      bitField0_ |= 0x00080000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player riding
+     * </pre>
+     *
+     * <code>bool isRiding = 20;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsRiding() {
+      bitField0_ = (bitField0_ & ~0x00080000);
+      isRiding_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isOnGround_ ;
+    /**
+     * <pre>
+     * is the player on ground, this is sus. Can be spoofed by clients.
+     * </pre>
+     *
+     * <code>bool isOnGround = 21;</code>
+     * @return The isOnGround.
+     */
+    @java.lang.Override
+    public boolean getIsOnGround() {
+      return isOnGround_;
+    }
+    /**
+     * <pre>
+     * is the player on ground, this is sus. Can be spoofed by clients.
+     * </pre>
+     *
+     * <code>bool isOnGround = 21;</code>
+     * @param value The isOnGround to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsOnGround(boolean value) {
+
+      isOnGround_ = value;
+      bitField0_ |= 0x00100000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player on ground, this is sus. Can be spoofed by clients.
+     * </pre>
+     *
+     * <code>bool isOnGround = 21;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsOnGround() {
+      bitField0_ = (bitField0_ & ~0x00100000);
+      isOnGround_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isOperator_ ;
+    /**
+     * <pre>
+     * is the player operator
+     * </pre>
+     *
+     * <code>bool isOperator = 22;</code>
+     * @return The isOperator.
+     */
+    @java.lang.Override
+    public boolean getIsOperator() {
+      return isOperator_;
+    }
+    /**
+     * <pre>
+     * is the player operator
+     * </pre>
+     *
+     * <code>bool isOperator = 22;</code>
+     * @param value The isOperator to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsOperator(boolean value) {
+
+      isOperator_ = value;
+      bitField0_ |= 0x00200000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player operator
+     * </pre>
+     *
+     * <code>bool isOperator = 22;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsOperator() {
+      bitField0_ = (bitField0_ & ~0x00200000);
+      isOperator_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isInvisible_ ;
+    /**
+     * <pre>
+     * is the player invisible
+     * </pre>
+     *
+     * <code>bool isInvisible = 23;</code>
+     * @return The isInvisible.
+     */
+    @java.lang.Override
+    public boolean getIsInvisible() {
+      return isInvisible_;
+    }
+    /**
+     * <pre>
+     * is the player invisible
+     * </pre>
+     *
+     * <code>bool isInvisible = 23;</code>
+     * @param value The isInvisible to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsInvisible(boolean value) {
+
+      isInvisible_ = value;
+      bitField0_ |= 0x00400000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player invisible
+     * </pre>
+     *
+     * <code>bool isInvisible = 23;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsInvisible() {
+      bitField0_ = (bitField0_ & ~0x00400000);
+      isInvisible_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isSleeping_ ;
+    /**
+     * <pre>
+     * is the player sleeping
+     * </pre>
+     *
+     * <code>bool isSleeping = 24;</code>
+     * @return The isSleeping.
+     */
+    @java.lang.Override
+    public boolean getIsSleeping() {
+      return isSleeping_;
+    }
+    /**
+     * <pre>
+     * is the player sleeping
+     * </pre>
+     *
+     * <code>bool isSleeping = 24;</code>
+     * @param value The isSleeping to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsSleeping(boolean value) {
+
+      isSleeping_ = value;
+      bitField0_ |= 0x00800000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * is the player sleeping
+     * </pre>
+     *
+     * <code>bool isSleeping = 24;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsSleeping() {
+      bitField0_ = (bitField0_ & ~0x00800000);
+      isSleeping_ = false;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object displayName_ = "";
+    /**
+     * <pre>
+     * display name of the player
+     * </pre>
+     *
+     * <code>string displayName = 25;</code>
+     * @return The displayName.
+     */
+    public java.lang.String getDisplayName() {
+      java.lang.Object ref = displayName_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        displayName_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * display name of the player
+     * </pre>
+     *
+     * <code>string displayName = 25;</code>
+     * @return The bytes for displayName.
+     */
+    public com.google.protobuf.ByteString
+        getDisplayNameBytes() {
+      java.lang.Object ref = displayName_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        displayName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * display name of the player
+     * </pre>
+     *
+     * <code>string displayName = 25;</code>
+     * @param value The displayName to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDisplayName(
+        java.lang.String value) {
+      if (value == null) { throw new NullPointerException(); }
+      displayName_ = value;
+      bitField0_ |= 0x01000000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * display name of the player
+     * </pre>
+     *
+     * <code>string displayName = 25;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDisplayName() {
+      displayName_ = getDefaultInstance().getDisplayName();
+      bitField0_ = (bitField0_ & ~0x01000000);
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * display name of the player
+     * </pre>
+     *
+     * <code>string displayName = 25;</code>
+     * @param value The bytes for displayName to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDisplayNameBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
+      displayName_ = value;
+      bitField0_ |= 0x01000000;
       onChanged();
       return this;
     }

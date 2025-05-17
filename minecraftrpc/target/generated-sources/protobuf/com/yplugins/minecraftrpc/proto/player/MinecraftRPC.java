@@ -188,158 +188,164 @@ public final class MinecraftRPC {
       "r\032\026minecraft_entity.proto\032\025minecraft_wor" +
       "ld.proto\"P\n\rCommandStatus\0220\n\004code\030\001 \001(\0162" +
       "\".MinecraftPlayer.CommandStatusCode\022\r\n\005e" +
-      "xtra\030\002 \001(\t\"\225\002\n\014OnlinePlayer\022\014\n\004name\030\001 \001(" +
+      "xtra\030\002 \001(\t\"\227\004\n\014OnlinePlayer\022\014\n\004name\030\001 \001(" +
       "\t\022*\n\010location\030\002 \001(\0132\030.MinecraftWorld.Loc" +
       "ation\022\014\n\004uuid\030\003 \001(\t\022\017\n\007address\030\004 \001(\t\022\014\n\004" +
       "ping\030\005 \001(\005\022\016\n\006health\030\006 \001(\002\022\021\n\tmaxHealth\030" +
-      "\007 \001(\002\022\026\n\016foodSaturation\030\010 \001(\002\022\022\n\nexperie" +
-      "nce\030\t \001(\002\022\r\n\005level\030\n \001(\005\022+\n\010gamemode\030\013 \001" +
-      "(\0162\031.MinecraftPlayer.Gamemode\022\023\n\013allowFl" +
-      "ight\030\014 \001(\010\"\026\n\024OnlinePlayersRequest\"w\n\025On" +
-      "linePlayersResponse\022.\n\006status\030\001 \001(\0132\036.Mi" +
-      "necraftPlayer.CommandStatus\022.\n\007players\030\002" +
-      " \003(\0132\035.MinecraftPlayer.OnlinePlayer\"S\n\023O" +
-      "nlinePlayerRequest\022\024\n\nplayerName\030\001 \001(\tH\000" +
-      "\022\030\n\016playerUniqueId\030\002 \001(\tH\000B\014\n\nidentifier" +
-      "\"\205\001\n\024OnlinePlayerResponse\022.\n\006status\030\001 \001(" +
-      "\0132\036.MinecraftPlayer.CommandStatus\0222\n\006pla" +
-      "yer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayer" +
-      "H\000\210\001\001B\t\n\007_player\"|\n\021PlayerKickRequest\022\030\n" +
-      "\016playerUniqueId\030\001 \001(\tH\000\022/\n\006player\030\002 \001(\0132" +
-      "\035.MinecraftPlayer.OnlinePlayerH\000\022\016\n\006reas" +
-      "on\030\003 \001(\tB\014\n\nidentifier\"\203\001\n\022PlayerKickRes" +
-      "ponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer." +
-      "CommandStatus\0222\n\006player\030\002 \001(\0132\035.Minecraf" +
-      "tPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\201\001\n" +
-      "\026PlayerSetHealthRequest\022/\n\006player\030\002 \001(\0132" +
-      "\035.MinecraftPlayer.OnlinePlayerH\000\022\030\n\016play" +
-      "erUniqueId\030\003 \001(\tH\000\022\016\n\006health\030\001 \001(\002B\014\n\nid" +
-      "entifier\"\210\001\n\027PlayerSetHealthResponse\022.\n\006" +
-      "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
-      "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
-      "nlinePlayerH\000\210\001\001B\t\n\007_player\"\207\001\n\031PlayerSe" +
-      "tMaxHealthRequest\022/\n\006player\030\002 \001(\0132\035.Mine" +
-      "craftPlayer.OnlinePlayerH\000\022\030\n\016playerUniq" +
-      "ueId\030\003 \001(\tH\000\022\021\n\tmaxHealth\030\001 \001(\002B\014\n\nident" +
-      "ifier\"\213\001\n\032PlayerSetMaxHealthResponse\022.\n\006" +
-      "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
-      "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
-      "nlinePlayerH\000\210\001\001B\t\n\007_player\"\207\001\n\031PlayerSe" +
-      "tFoodLevelRequest\022/\n\006player\030\002 \001(\0132\035.Mine" +
-      "craftPlayer.OnlinePlayerH\000\022\030\n\016playerUniq" +
-      "ueId\030\003 \001(\tH\000\022\021\n\tfoodLevel\030\001 \001(\005B\014\n\nident" +
-      "ifier\"\213\001\n\032PlayerSetFoodLevelResponse\022.\n\006" +
-      "status\030\001 \001(\0132\036.MinecraftPlayer.CommandSt" +
-      "atus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.O" +
-      "nlinePlayerH\000\210\001\001B\t\n\007_player\"\211\001\n\032PlayerSe" +
-      "tExperienceRequest\022/\n\006player\030\002 \001(\0132\035.Min" +
-      "ecraftPlayer.OnlinePlayerH\000\022\030\n\016playerUni" +
-      "queId\030\003 \001(\tH\000\022\022\n\nexperience\030\001 \001(\002B\014\n\nide" +
-      "ntifier\"\214\001\n\033PlayerSetExperienceResponse\022" +
-      ".\n\006status\030\001 \001(\0132\036.MinecraftPlayer.Comman" +
-      "dStatus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlaye" +
-      "r.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\177\n\025Player" +
-      "SetLevelRequest\022/\n\006player\030\002 \001(\0132\035.Minecr" +
-      "aftPlayer.OnlinePlayerH\000\022\030\n\016playerUnique" +
-      "Id\030\003 \001(\tH\000\022\r\n\005level\030\001 \001(\005B\014\n\nidentifier\"" +
-      "\207\001\n\026PlayerSetLevelResponse\022.\n\006status\030\001 \001" +
-      "(\0132\036.MinecraftPlayer.CommandStatus\0222\n\006pl" +
-      "ayer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlaye" +
-      "rH\000\210\001\001B\t\n\007_player\"\223\001\n\037PlayerSetTotalExpe" +
-      "rienceRequest\022/\n\006player\030\002 \001(\0132\035.Minecraf" +
-      "tPlayer.OnlinePlayerH\000\022\030\n\016playerUniqueId" +
-      "\030\003 \001(\tH\000\022\027\n\017totalExperience\030\001 \001(\005B\014\n\nide" +
-      "ntifier\"\221\001\n PlayerSetTotalExperienceResp" +
-      "onse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.C" +
-      "ommandStatus\0222\n\006player\030\002 \001(\0132\035.Minecraft" +
-      "Player.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\240\001\n\030" +
-      "PlayerSetGamemodeRequest\022/\n\006player\030\002 \001(\013" +
-      "2\035.MinecraftPlayer.OnlinePlayerH\000\022\030\n\016pla" +
-      "yerUniqueId\030\003 \001(\tH\000\022+\n\010gamemode\030\001 \001(\0162\031." +
-      "MinecraftPlayer.GamemodeB\014\n\nidentifier\"\212" +
-      "\001\n\031PlayerSetGamemodeResponse\022.\n\006status\030\001" +
-      " \001(\0132\036.MinecraftPlayer.CommandStatus\0222\n\006" +
+      "\007 \001(\002\022\021\n\tfoodLevel\030\010 \001(\002\022\022\n\nexperience\030\t" +
+      " \001(\002\022\r\n\005level\030\n \001(\005\022+\n\010gamemode\030\013 \001(\0162\031." +
+      "MinecraftPlayer.Gamemode\022\023\n\013allowFlight\030" +
+      "\014 \001(\010\022\027\n\017totalExperience\030\r \001(\005\022\020\n\010isFlyi" +
+      "ng\030\016 \001(\010\022\022\n\nisSneaking\030\017 \001(\010\022\023\n\013isSprint" +
+      "ing\030\020 \001(\010\022\022\n\nisBlocking\030\021 \001(\010\022\021\n\tisGlidi" +
+      "ng\030\022 \001(\010\022\022\n\nisSwimming\030\023 \001(\010\022\020\n\010isRiding" +
+      "\030\024 \001(\010\022\022\n\nisOnGround\030\025 \001(\010\022\022\n\nisOperator" +
+      "\030\026 \001(\010\022\023\n\013isInvisible\030\027 \001(\010\022\022\n\nisSleepin" +
+      "g\030\030 \001(\010\022\023\n\013displayName\030\031 \001(\t\"\026\n\024OnlinePl" +
+      "ayersRequest\"w\n\025OnlinePlayersResponse\022.\n" +
+      "\006status\030\001 \001(\0132\036.MinecraftPlayer.CommandS" +
+      "tatus\022.\n\007players\030\002 \003(\0132\035.MinecraftPlayer" +
+      ".OnlinePlayer\"S\n\023OnlinePlayerRequest\022\024\n\n" +
+      "playerName\030\001 \001(\tH\000\022\030\n\016playerUniqueId\030\002 \001" +
+      "(\tH\000B\014\n\nidentifier\"\205\001\n\024OnlinePlayerRespo" +
+      "nse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.Co" +
+      "mmandStatus\0222\n\006player\030\002 \001(\0132\035.MinecraftP" +
+      "layer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"|\n\021Pl" +
+      "ayerKickRequest\022\030\n\016playerUniqueId\030\001 \001(\tH" +
+      "\000\022/\n\006player\030\002 \001(\0132\035.MinecraftPlayer.Onli" +
+      "nePlayerH\000\022\016\n\006reason\030\003 \001(\tB\014\n\nidentifier" +
+      "\"\203\001\n\022PlayerKickResponse\022.\n\006status\030\001 \001(\0132" +
+      "\036.MinecraftPlayer.CommandStatus\0222\n\006playe" +
+      "r\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000" +
+      "\210\001\001B\t\n\007_player\"\201\001\n\026PlayerSetHealthReques" +
+      "t\022/\n\006player\030\002 \001(\0132\035.MinecraftPlayer.Onli" +
+      "nePlayerH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\016\n\006" +
+      "health\030\001 \001(\002B\014\n\nidentifier\"\210\001\n\027PlayerSet" +
+      "HealthResponse\022.\n\006status\030\001 \001(\0132\036.Minecra" +
+      "ftPlayer.CommandStatus\0222\n\006player\030\002 \001(\0132\035" +
+      ".MinecraftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_p" +
+      "layer\"\207\001\n\031PlayerSetMaxHealthRequest\022/\n\006p" +
+      "layer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlay" +
+      "erH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\021\n\tmaxHea" +
+      "lth\030\001 \001(\002B\014\n\nidentifier\"\213\001\n\032PlayerSetMax" +
+      "HealthResponse\022.\n\006status\030\001 \001(\0132\036.Minecra" +
+      "ftPlayer.CommandStatus\0222\n\006player\030\002 \001(\0132\035" +
+      ".MinecraftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_p" +
+      "layer\"\207\001\n\031PlayerSetFoodLevelRequest\022/\n\006p" +
+      "layer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlay" +
+      "erH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\021\n\tfoodLe" +
+      "vel\030\001 \001(\005B\014\n\nidentifier\"\213\001\n\032PlayerSetFoo" +
+      "dLevelResponse\022.\n\006status\030\001 \001(\0132\036.Minecra" +
+      "ftPlayer.CommandStatus\0222\n\006player\030\002 \001(\0132\035" +
+      ".MinecraftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_p" +
+      "layer\"\211\001\n\032PlayerSetExperienceRequest\022/\n\006" +
       "player\030\002 \001(\0132\035.MinecraftPlayer.OnlinePla" +
-      "yerH\000\210\001\001B\t\n\007_player\"\213\001\n\033PlayerSetAllowFl" +
-      "ightRequest\022/\n\006player\030\002 \001(\0132\035.MinecraftP" +
-      "layer.OnlinePlayerH\000\022\030\n\016playerUniqueId\030\003" +
-      " \001(\tH\000\022\023\n\013allowFlight\030\001 \001(\010B\014\n\nidentifie" +
-      "r\"\215\001\n\034PlayerSetAllowFlightResponse\022.\n\006st" +
-      "atus\030\001 \001(\0132\036.MinecraftPlayer.CommandStat" +
-      "us\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.Onl" +
-      "inePlayerH\000\210\001\001B\t\n\007_player\"\204\001\n\030PlayerSend" +
-      "MessageRequest\022/\n\006player\030\002 \001(\0132\035.Minecra" +
-      "ftPlayer.OnlinePlayerH\000\022\030\n\016playerUniqueI" +
-      "d\030\003 \001(\tH\000\022\017\n\007message\030\001 \001(\tB\014\n\nidentifier" +
-      "\"K\n\031PlayerSendMessageResponse\022.\n\006status\030" +
-      "\001 \001(\0132\036.MinecraftPlayer.CommandStatus\"\344\001" +
-      "\n\037PlayerTeleportToLocationRequest\022/\n\006pla" +
-      "yer\030\001 \001(\0132\035.MinecraftPlayer.OnlinePlayer" +
-      "H\000\022\030\n\016playerUniqueId\030\002 \001(\tH\000\022*\n\010location" +
-      "\030\004 \001(\0132\030.MinecraftWorld.Location\0222\n\005caus" +
-      "e\030\003 \001(\0162\036.MinecraftPlayer.TeleportCauseH" +
-      "\001\210\001\001B\014\n\nidentifierB\010\n\006_cause\"\221\001\n PlayerT" +
-      "eleportToLocationResponse\022.\n\006status\030\001 \001(" +
-      "\0132\036.MinecraftPlayer.CommandStatus\0222\n\006pla" +
-      "yer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayer" +
-      "H\000\210\001\001B\t\n\007_player\"|\n\035PlayerTeleportToEnti" +
-      "tyRequest\022\014\n\004uuid\030\001 \001(\t\022)\n\006entity\030\002 \001(\0132" +
-      "\027.MinecraftEntity.EntityH\000\022\030\n\016playerUniq" +
-      "ueId\030\003 \001(\tH\000B\010\n\006target\"\217\001\n\036PlayerTelepor" +
-      "tToEntityResponse\022.\n\006status\030\001 \001(\0132\036.Mine" +
+      "yerH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\022\n\nexper" +
+      "ience\030\001 \001(\002B\014\n\nidentifier\"\214\001\n\033PlayerSetE" +
+      "xperienceResponse\022.\n\006status\030\001 \001(\0132\036.Mine" +
       "craftPlayer.CommandStatus\0222\n\006player\030\002 \001(" +
       "\0132\035.MinecraftPlayer.OnlinePlayerH\000\210\001\001B\t\n" +
-      "\007_player*\205\001\n\021CommandStatusCode\022\006\n\002OK\020\000\022\021" +
-      "\n\rUNKNOWN_ERROR\020\001\022\024\n\020MISSING_ARGUMENT\020\002\022" +
-      "\024\n\020INVALID_ARGUMENT\020\003\022\023\n\017NOT_IMPLEMENTED" +
-      "\020\004\022\024\n\020PLAYER_NOT_FOUND\020\005*D\n\010Gamemode\022\014\n\010" +
-      "SURVIVAL\020\000\022\014\n\010CREATIVE\020\001\022\r\n\tADVENTURE\020\002\022" +
-      "\r\n\tSPECTATOR\020\003*\266\001\n\rTeleportCause\022\020\n\014CHOR" +
-      "US_FRUIT\020\000\022\013\n\007COMMAND\020\001\022\014\n\010DISMOUNT\020\002\022\017\n" +
-      "\013END_GATEWAY\020\003\022\016\n\nEND_PORTAL\020\004\022\017\n\013ENDER_" +
-      "PEARL\020\005\022\014\n\010EXIT_BED\020\006\022\021\n\rNETHER_PORTAL\020\007" +
-      "\022\n\n\006PLUGIN\020\010\022\014\n\010SPECTATE\020\t\022\013\n\007UNKNOWN\020\n2" +
-      "\216\014\n\017MinecraftPlayer\022a\n\020getOnlinePlayers\022" +
-      "%.MinecraftPlayer.OnlinePlayersRequest\032&" +
-      ".MinecraftPlayer.OnlinePlayersResponse\022^" +
-      "\n\017getOnlinePlayer\022$.MinecraftPlayer.Onli" +
-      "nePlayerRequest\032%.MinecraftPlayer.Online" +
-      "PlayerResponse\022U\n\nkickPlayer\022\".Minecraft" +
-      "Player.PlayerKickRequest\032#.MinecraftPlay" +
-      "er.PlayerKickResponse\022d\n\017setPlayerHealth" +
-      "\022\'.MinecraftPlayer.PlayerSetHealthReques" +
-      "t\032(.MinecraftPlayer.PlayerSetHealthRespo" +
-      "nse\022p\n\023setPlayerExperience\022+.MinecraftPl" +
-      "ayer.PlayerSetExperienceRequest\032,.Minecr" +
-      "aftPlayer.PlayerSetExperienceResponse\022a\n" +
-      "\016setPlayerLevel\022&.MinecraftPlayer.Player" +
-      "SetLevelRequest\032\'.MinecraftPlayer.Player" +
-      "SetLevelResponse\022m\n\022setPlayerMaxHealth\022*" +
-      ".MinecraftPlayer.PlayerSetMaxHealthReque" +
-      "st\032+.MinecraftPlayer.PlayerSetMaxHealthR" +
-      "esponse\022m\n\022setPlayerFoodLevel\022*.Minecraf" +
-      "tPlayer.PlayerSetFoodLevelRequest\032+.Mine" +
-      "craftPlayer.PlayerSetFoodLevelResponse\022\177" +
-      "\n\030setPlayerTotalExperience\0220.MinecraftPl" +
-      "ayer.PlayerSetTotalExperienceRequest\0321.M" +
-      "inecraftPlayer.PlayerSetTotalExperienceR" +
-      "esponse\022j\n\021setPlayerGamemode\022).Minecraft" +
-      "Player.PlayerSetGamemodeRequest\032*.Minecr" +
-      "aftPlayer.PlayerSetGamemodeResponse\022s\n\024s" +
-      "etPlayerAllowFlight\022,.MinecraftPlayer.Pl" +
-      "ayerSetAllowFlightRequest\032-.MinecraftPla" +
-      "yer.PlayerSetAllowFlightResponse\022j\n\021send" +
-      "PlayerMessage\022).MinecraftPlayer.PlayerSe" +
-      "ndMessageRequest\032*.MinecraftPlayer.Playe" +
-      "rSendMessageResponse\022\177\n\030teleportPlayerTo" +
-      "Location\0220.MinecraftPlayer.PlayerTelepor" +
-      "tToLocationRequest\0321.MinecraftPlayer.Pla" +
-      "yerTeleportToLocationResponse\022y\n\026telepor" +
-      "tPlayerToEntity\022..MinecraftPlayer.Player" +
-      "TeleportToEntityRequest\032/.MinecraftPlaye" +
-      "r.PlayerTeleportToEntityResponseB8\n&com." +
-      "yplugins.minecraftrpc.proto.playerB\014Mine" +
-      "craftRPCP\001b\006proto3"
+      "\007_player\"\177\n\025PlayerSetLevelRequest\022/\n\006pla" +
+      "yer\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayer" +
+      "H\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\r\n\005level\030\001 " +
+      "\001(\005B\014\n\nidentifier\"\207\001\n\026PlayerSetLevelResp" +
+      "onse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.C" +
+      "ommandStatus\0222\n\006player\030\002 \001(\0132\035.Minecraft" +
+      "Player.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\223\001\n\037" +
+      "PlayerSetTotalExperienceRequest\022/\n\006playe" +
+      "r\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000" +
+      "\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\027\n\017totalExper" +
+      "ience\030\001 \001(\005B\014\n\nidentifier\"\221\001\n PlayerSetT" +
+      "otalExperienceResponse\022.\n\006status\030\001 \001(\0132\036" +
+      ".MinecraftPlayer.CommandStatus\0222\n\006player" +
+      "\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000\210" +
+      "\001\001B\t\n\007_player\"\240\001\n\030PlayerSetGamemodeReque" +
+      "st\022/\n\006player\030\002 \001(\0132\035.MinecraftPlayer.Onl" +
+      "inePlayerH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022+\n" +
+      "\010gamemode\030\001 \001(\0162\031.MinecraftPlayer.Gamemo" +
+      "deB\014\n\nidentifier\"\212\001\n\031PlayerSetGamemodeRe" +
+      "sponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer" +
+      ".CommandStatus\0222\n\006player\030\002 \001(\0132\035.Minecra" +
+      "ftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"\213\001" +
+      "\n\033PlayerSetAllowFlightRequest\022/\n\006player\030" +
+      "\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH\000\022\030" +
+      "\n\016playerUniqueId\030\003 \001(\tH\000\022\023\n\013allowFlight\030" +
+      "\001 \001(\010B\014\n\nidentifier\"\215\001\n\034PlayerSetAllowFl" +
+      "ightResponse\022.\n\006status\030\001 \001(\0132\036.Minecraft" +
+      "Player.CommandStatus\0222\n\006player\030\002 \001(\0132\035.M" +
+      "inecraftPlayer.OnlinePlayerH\000\210\001\001B\t\n\007_pla" +
+      "yer\"\204\001\n\030PlayerSendMessageRequest\022/\n\006play" +
+      "er\030\002 \001(\0132\035.MinecraftPlayer.OnlinePlayerH" +
+      "\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000\022\017\n\007message\030\001" +
+      " \001(\tB\014\n\nidentifier\"K\n\031PlayerSendMessageR" +
+      "esponse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlaye" +
+      "r.CommandStatus\"\344\001\n\037PlayerTeleportToLoca" +
+      "tionRequest\022/\n\006player\030\001 \001(\0132\035.MinecraftP" +
+      "layer.OnlinePlayerH\000\022\030\n\016playerUniqueId\030\002" +
+      " \001(\tH\000\022*\n\010location\030\004 \001(\0132\030.MinecraftWorl" +
+      "d.Location\0222\n\005cause\030\003 \001(\0162\036.MinecraftPla" +
+      "yer.TeleportCauseH\001\210\001\001B\014\n\nidentifierB\010\n\006" +
+      "_cause\"\221\001\n PlayerTeleportToLocationRespo" +
+      "nse\022.\n\006status\030\001 \001(\0132\036.MinecraftPlayer.Co" +
+      "mmandStatus\0222\n\006player\030\002 \001(\0132\035.MinecraftP" +
+      "layer.OnlinePlayerH\000\210\001\001B\t\n\007_player\"|\n\035Pl" +
+      "ayerTeleportToEntityRequest\022\014\n\004uuid\030\001 \001(" +
+      "\t\022)\n\006entity\030\002 \001(\0132\027.MinecraftEntity.Enti" +
+      "tyH\000\022\030\n\016playerUniqueId\030\003 \001(\tH\000B\010\n\006target" +
+      "\"\217\001\n\036PlayerTeleportToEntityResponse\022.\n\006s" +
+      "tatus\030\001 \001(\0132\036.MinecraftPlayer.CommandSta" +
+      "tus\0222\n\006player\030\002 \001(\0132\035.MinecraftPlayer.On" +
+      "linePlayerH\000\210\001\001B\t\n\007_player*\205\001\n\021CommandSt" +
+      "atusCode\022\006\n\002OK\020\000\022\021\n\rUNKNOWN_ERROR\020\001\022\024\n\020M" +
+      "ISSING_ARGUMENT\020\002\022\024\n\020INVALID_ARGUMENT\020\003\022" +
+      "\023\n\017NOT_IMPLEMENTED\020\004\022\024\n\020PLAYER_NOT_FOUND" +
+      "\020\005*D\n\010Gamemode\022\014\n\010SURVIVAL\020\000\022\014\n\010CREATIVE" +
+      "\020\001\022\r\n\tADVENTURE\020\002\022\r\n\tSPECTATOR\020\003*\266\001\n\rTel" +
+      "eportCause\022\020\n\014CHORUS_FRUIT\020\000\022\013\n\007COMMAND\020" +
+      "\001\022\014\n\010DISMOUNT\020\002\022\017\n\013END_GATEWAY\020\003\022\016\n\nEND_" +
+      "PORTAL\020\004\022\017\n\013ENDER_PEARL\020\005\022\014\n\010EXIT_BED\020\006\022" +
+      "\021\n\rNETHER_PORTAL\020\007\022\n\n\006PLUGIN\020\010\022\014\n\010SPECTA" +
+      "TE\020\t\022\013\n\007UNKNOWN\020\n2\216\014\n\017MinecraftPlayer\022a\n" +
+      "\020getOnlinePlayers\022%.MinecraftPlayer.Onli" +
+      "nePlayersRequest\032&.MinecraftPlayer.Onlin" +
+      "ePlayersResponse\022^\n\017getOnlinePlayer\022$.Mi" +
+      "necraftPlayer.OnlinePlayerRequest\032%.Mine" +
+      "craftPlayer.OnlinePlayerResponse\022U\n\nkick" +
+      "Player\022\".MinecraftPlayer.PlayerKickReque" +
+      "st\032#.MinecraftPlayer.PlayerKickResponse\022" +
+      "d\n\017setPlayerHealth\022\'.MinecraftPlayer.Pla" +
+      "yerSetHealthRequest\032(.MinecraftPlayer.Pl" +
+      "ayerSetHealthResponse\022p\n\023setPlayerExperi" +
+      "ence\022+.MinecraftPlayer.PlayerSetExperien" +
+      "ceRequest\032,.MinecraftPlayer.PlayerSetExp" +
+      "erienceResponse\022a\n\016setPlayerLevel\022&.Mine" +
+      "craftPlayer.PlayerSetLevelRequest\032\'.Mine" +
+      "craftPlayer.PlayerSetLevelResponse\022m\n\022se" +
+      "tPlayerMaxHealth\022*.MinecraftPlayer.Playe" +
+      "rSetMaxHealthRequest\032+.MinecraftPlayer.P" +
+      "layerSetMaxHealthResponse\022m\n\022setPlayerFo" +
+      "odLevel\022*.MinecraftPlayer.PlayerSetFoodL" +
+      "evelRequest\032+.MinecraftPlayer.PlayerSetF" +
+      "oodLevelResponse\022\177\n\030setPlayerTotalExperi" +
+      "ence\0220.MinecraftPlayer.PlayerSetTotalExp" +
+      "erienceRequest\0321.MinecraftPlayer.PlayerS" +
+      "etTotalExperienceResponse\022j\n\021setPlayerGa" +
+      "memode\022).MinecraftPlayer.PlayerSetGamemo" +
+      "deRequest\032*.MinecraftPlayer.PlayerSetGam" +
+      "emodeResponse\022s\n\024setPlayerAllowFlight\022,." +
+      "MinecraftPlayer.PlayerSetAllowFlightRequ" +
+      "est\032-.MinecraftPlayer.PlayerSetAllowFlig" +
+      "htResponse\022j\n\021sendPlayerMessage\022).Minecr" +
+      "aftPlayer.PlayerSendMessageRequest\032*.Min" +
+      "ecraftPlayer.PlayerSendMessageResponse\022\177" +
+      "\n\030teleportPlayerToLocation\0220.MinecraftPl" +
+      "ayer.PlayerTeleportToLocationRequest\0321.M" +
+      "inecraftPlayer.PlayerTeleportToLocationR" +
+      "esponse\022y\n\026teleportPlayerToEntity\022..Mine" +
+      "craftPlayer.PlayerTeleportToEntityReques" +
+      "t\032/.MinecraftPlayer.PlayerTeleportToEnti" +
+      "tyResponseB8\n&com.yplugins.minecraftrpc." +
+      "proto.playerB\014MinecraftRPCP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -358,7 +364,7 @@ public final class MinecraftRPC {
     internal_static_MinecraftPlayer_OnlinePlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_MinecraftPlayer_OnlinePlayer_descriptor,
-        new java.lang.String[] { "Name", "Location", "Uuid", "Address", "Ping", "Health", "MaxHealth", "FoodSaturation", "Experience", "Level", "Gamemode", "AllowFlight", });
+        new java.lang.String[] { "Name", "Location", "Uuid", "Address", "Ping", "Health", "MaxHealth", "FoodLevel", "Experience", "Level", "Gamemode", "AllowFlight", "TotalExperience", "IsFlying", "IsSneaking", "IsSprinting", "IsBlocking", "IsGliding", "IsSwimming", "IsRiding", "IsOnGround", "IsOperator", "IsInvisible", "IsSleeping", "DisplayName", });
     internal_static_MinecraftPlayer_OnlinePlayersRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_MinecraftPlayer_OnlinePlayersRequest_fieldAccessorTable = new

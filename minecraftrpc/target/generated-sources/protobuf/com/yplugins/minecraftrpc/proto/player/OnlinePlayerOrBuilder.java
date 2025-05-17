@@ -131,10 +131,10 @@ public interface OnlinePlayerOrBuilder extends
    * food saturation of the player
    * </pre>
    *
-   * <code>float foodSaturation = 8;</code>
-   * @return The foodSaturation.
+   * <code>float foodLevel = 8;</code>
+   * @return The foodLevel.
    */
-  float getFoodSaturation();
+  float getFoodLevel();
 
   /**
    * <pre>
@@ -184,4 +184,144 @@ public interface OnlinePlayerOrBuilder extends
    * @return The allowFlight.
    */
   boolean getAllowFlight();
+
+  /**
+   * <pre>
+   * total experience of the player
+   * </pre>
+   *
+   * <code>int32 totalExperience = 13;</code>
+   * @return The totalExperience.
+   */
+  int getTotalExperience();
+
+  /**
+   * <pre>
+   * is the player flying
+   * </pre>
+   *
+   * <code>bool isFlying = 14;</code>
+   * @return The isFlying.
+   */
+  boolean getIsFlying();
+
+  /**
+   * <pre>
+   * is the player sneaking
+   * </pre>
+   *
+   * <code>bool isSneaking = 15;</code>
+   * @return The isSneaking.
+   */
+  boolean getIsSneaking();
+
+  /**
+   * <pre>
+   * is the player sprinting
+   * </pre>
+   *
+   * <code>bool isSprinting = 16;</code>
+   * @return The isSprinting.
+   */
+  boolean getIsSprinting();
+
+  /**
+   * <pre>
+   * is the player blocking
+   * </pre>
+   *
+   * <code>bool isBlocking = 17;</code>
+   * @return The isBlocking.
+   */
+  boolean getIsBlocking();
+
+  /**
+   * <pre>
+   * is the player gliding
+   * </pre>
+   *
+   * <code>bool isGliding = 18;</code>
+   * @return The isGliding.
+   */
+  boolean getIsGliding();
+
+  /**
+   * <pre>
+   * is the player swimming
+   * </pre>
+   *
+   * <code>bool isSwimming = 19;</code>
+   * @return The isSwimming.
+   */
+  boolean getIsSwimming();
+
+  /**
+   * <pre>
+   * is the player riding
+   * </pre>
+   *
+   * <code>bool isRiding = 20;</code>
+   * @return The isRiding.
+   */
+  boolean getIsRiding();
+
+  /**
+   * <pre>
+   * is the player on ground, this is sus. Can be spoofed by clients.
+   * </pre>
+   *
+   * <code>bool isOnGround = 21;</code>
+   * @return The isOnGround.
+   */
+  boolean getIsOnGround();
+
+  /**
+   * <pre>
+   * is the player operator
+   * </pre>
+   *
+   * <code>bool isOperator = 22;</code>
+   * @return The isOperator.
+   */
+  boolean getIsOperator();
+
+  /**
+   * <pre>
+   * is the player invisible
+   * </pre>
+   *
+   * <code>bool isInvisible = 23;</code>
+   * @return The isInvisible.
+   */
+  boolean getIsInvisible();
+
+  /**
+   * <pre>
+   * is the player sleeping
+   * </pre>
+   *
+   * <code>bool isSleeping = 24;</code>
+   * @return The isSleeping.
+   */
+  boolean getIsSleeping();
+
+  /**
+   * <pre>
+   * display name of the player
+   * </pre>
+   *
+   * <code>string displayName = 25;</code>
+   * @return The displayName.
+   */
+  java.lang.String getDisplayName();
+  /**
+   * <pre>
+   * display name of the player
+   * </pre>
+   *
+   * <code>string displayName = 25;</code>
+   * @return The bytes for displayName.
+   */
+  com.google.protobuf.ByteString
+      getDisplayNameBytes();
 }
