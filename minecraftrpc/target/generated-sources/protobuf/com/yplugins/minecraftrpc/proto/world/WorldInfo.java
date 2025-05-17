@@ -44,6 +44,7 @@ private static final long serialVersionUID = 0L;
             com.yplugins.minecraftrpc.proto.world.WorldInfo.class, com.yplugins.minecraftrpc.proto.world.WorldInfo.Builder.class);
   }
 
+  private int bitField0_;
   public static final int KEY_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
   private volatile java.lang.Object key_ = "";
@@ -113,28 +114,6 @@ private static final long serialVersionUID = 0L;
     return isHardcore_;
   }
 
-  public static final int ISTHUNDERING_FIELD_NUMBER = 4;
-  private boolean isThundering_ = false;
-  /**
-   * <code>bool isThundering = 4;</code>
-   * @return The isThundering.
-   */
-  @java.lang.Override
-  public boolean getIsThundering() {
-    return isThundering_;
-  }
-
-  public static final int ISCLEARWEATHER_FIELD_NUMBER = 5;
-  private boolean isClearWeather_ = false;
-  /**
-   * <code>bool isClearWeather = 5;</code>
-   * @return The isClearWeather.
-   */
-  @java.lang.Override
-  public boolean getIsClearWeather() {
-    return isClearWeather_;
-  }
-
   public static final int ISULTRAWARM_FIELD_NUMBER = 6;
   private boolean isUltraWarm_ = false;
   /**
@@ -172,6 +151,44 @@ private static final long serialVersionUID = 0L;
     return result == null ? com.yplugins.minecraftrpc.proto.world.Difficulty.UNRECOGNIZED : result;
   }
 
+  public static final int WEATHERINFO_FIELD_NUMBER = 8;
+  private com.yplugins.minecraftrpc.proto.world.WeatherInfo weatherInfo_;
+  /**
+   * <pre>
+   * current weather state
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+   * @return Whether the weatherInfo field is set.
+   */
+  @java.lang.Override
+  public boolean hasWeatherInfo() {
+    return ((bitField0_ & 0x00000001) != 0);
+  }
+  /**
+   * <pre>
+   * current weather state
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+   * @return The weatherInfo.
+   */
+  @java.lang.Override
+  public com.yplugins.minecraftrpc.proto.world.WeatherInfo getWeatherInfo() {
+    return weatherInfo_ == null ? com.yplugins.minecraftrpc.proto.world.WeatherInfo.getDefaultInstance() : weatherInfo_;
+  }
+  /**
+   * <pre>
+   * current weather state
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+   */
+  @java.lang.Override
+  public com.yplugins.minecraftrpc.proto.world.WeatherInfoOrBuilder getWeatherInfoOrBuilder() {
+    return weatherInfo_ == null ? com.yplugins.minecraftrpc.proto.world.WeatherInfo.getDefaultInstance() : weatherInfo_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -195,17 +212,14 @@ private static final long serialVersionUID = 0L;
     if (isHardcore_ != false) {
       output.writeBool(3, isHardcore_);
     }
-    if (isThundering_ != false) {
-      output.writeBool(4, isThundering_);
-    }
-    if (isClearWeather_ != false) {
-      output.writeBool(5, isClearWeather_);
-    }
     if (isUltraWarm_ != false) {
       output.writeBool(6, isUltraWarm_);
     }
     if (difficulty_ != com.yplugins.minecraftrpc.proto.world.Difficulty.PEACEFUL.getNumber()) {
       output.writeEnum(7, difficulty_);
+    }
+    if (((bitField0_ & 0x00000001) != 0)) {
+      output.writeMessage(8, getWeatherInfo());
     }
     getUnknownFields().writeTo(output);
   }
@@ -227,14 +241,6 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(3, isHardcore_);
     }
-    if (isThundering_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(4, isThundering_);
-    }
-    if (isClearWeather_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(5, isClearWeather_);
-    }
     if (isUltraWarm_ != false) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(6, isUltraWarm_);
@@ -242,6 +248,10 @@ private static final long serialVersionUID = 0L;
     if (difficulty_ != com.yplugins.minecraftrpc.proto.world.Difficulty.PEACEFUL.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(7, difficulty_);
+    }
+    if (((bitField0_ & 0x00000001) != 0)) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(8, getWeatherInfo());
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -264,13 +274,14 @@ private static final long serialVersionUID = 0L;
         != other.getIsPVP()) return false;
     if (getIsHardcore()
         != other.getIsHardcore()) return false;
-    if (getIsThundering()
-        != other.getIsThundering()) return false;
-    if (getIsClearWeather()
-        != other.getIsClearWeather()) return false;
     if (getIsUltraWarm()
         != other.getIsUltraWarm()) return false;
     if (difficulty_ != other.difficulty_) return false;
+    if (hasWeatherInfo() != other.hasWeatherInfo()) return false;
+    if (hasWeatherInfo()) {
+      if (!getWeatherInfo()
+          .equals(other.getWeatherInfo())) return false;
+    }
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -290,17 +301,15 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ISHARDCORE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getIsHardcore());
-    hash = (37 * hash) + ISTHUNDERING_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getIsThundering());
-    hash = (37 * hash) + ISCLEARWEATHER_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getIsClearWeather());
     hash = (37 * hash) + ISULTRAWARM_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getIsUltraWarm());
     hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
     hash = (53 * hash) + difficulty_;
+    if (hasWeatherInfo()) {
+      hash = (37 * hash) + WEATHERINFO_FIELD_NUMBER;
+      hash = (53 * hash) + getWeatherInfo().hashCode();
+    }
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -420,13 +429,19 @@ private static final long serialVersionUID = 0L;
 
     // Construct using com.yplugins.minecraftrpc.proto.world.WorldInfo.newBuilder()
     private Builder() {
-
+      maybeForceBuilderInitialization();
     }
 
     private Builder(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       super(parent);
-
+      maybeForceBuilderInitialization();
+    }
+    private void maybeForceBuilderInitialization() {
+      if (com.google.protobuf.GeneratedMessage
+              .alwaysUseFieldBuilders) {
+        getWeatherInfoFieldBuilder();
+      }
     }
     @java.lang.Override
     public Builder clear() {
@@ -435,10 +450,13 @@ private static final long serialVersionUID = 0L;
       key_ = "";
       isPVP_ = false;
       isHardcore_ = false;
-      isThundering_ = false;
-      isClearWeather_ = false;
       isUltraWarm_ = false;
       difficulty_ = 0;
+      weatherInfo_ = null;
+      if (weatherInfoBuilder_ != null) {
+        weatherInfoBuilder_.dispose();
+        weatherInfoBuilder_ = null;
+      }
       return this;
     }
 
@@ -482,17 +500,19 @@ private static final long serialVersionUID = 0L;
         result.isHardcore_ = isHardcore_;
       }
       if (((from_bitField0_ & 0x00000008) != 0)) {
-        result.isThundering_ = isThundering_;
-      }
-      if (((from_bitField0_ & 0x00000010) != 0)) {
-        result.isClearWeather_ = isClearWeather_;
-      }
-      if (((from_bitField0_ & 0x00000020) != 0)) {
         result.isUltraWarm_ = isUltraWarm_;
       }
-      if (((from_bitField0_ & 0x00000040) != 0)) {
+      if (((from_bitField0_ & 0x00000010) != 0)) {
         result.difficulty_ = difficulty_;
       }
+      int to_bitField0_ = 0;
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.weatherInfo_ = weatherInfoBuilder_ == null
+            ? weatherInfo_
+            : weatherInfoBuilder_.build();
+        to_bitField0_ |= 0x00000001;
+      }
+      result.bitField0_ |= to_bitField0_;
     }
 
     @java.lang.Override
@@ -518,17 +538,14 @@ private static final long serialVersionUID = 0L;
       if (other.getIsHardcore() != false) {
         setIsHardcore(other.getIsHardcore());
       }
-      if (other.getIsThundering() != false) {
-        setIsThundering(other.getIsThundering());
-      }
-      if (other.getIsClearWeather() != false) {
-        setIsClearWeather(other.getIsClearWeather());
-      }
       if (other.getIsUltraWarm() != false) {
         setIsUltraWarm(other.getIsUltraWarm());
       }
       if (other.difficulty_ != 0) {
         setDifficultyValue(other.getDifficultyValue());
+      }
+      if (other.hasWeatherInfo()) {
+        mergeWeatherInfo(other.getWeatherInfo());
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -571,26 +588,23 @@ private static final long serialVersionUID = 0L;
               bitField0_ |= 0x00000004;
               break;
             } // case 24
-            case 32: {
-              isThundering_ = input.readBool();
-              bitField0_ |= 0x00000008;
-              break;
-            } // case 32
-            case 40: {
-              isClearWeather_ = input.readBool();
-              bitField0_ |= 0x00000010;
-              break;
-            } // case 40
             case 48: {
               isUltraWarm_ = input.readBool();
-              bitField0_ |= 0x00000020;
+              bitField0_ |= 0x00000008;
               break;
             } // case 48
             case 56: {
               difficulty_ = input.readEnum();
-              bitField0_ |= 0x00000040;
+              bitField0_ |= 0x00000010;
               break;
             } // case 56
+            case 66: {
+              input.readMessage(
+                  getWeatherInfoFieldBuilder().getBuilder(),
+                  extensionRegistry);
+              bitField0_ |= 0x00000020;
+              break;
+            } // case 66
             default: {
               if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                 done = true; // was an endgroup tag
@@ -764,70 +778,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private boolean isThundering_ ;
-    /**
-     * <code>bool isThundering = 4;</code>
-     * @return The isThundering.
-     */
-    @java.lang.Override
-    public boolean getIsThundering() {
-      return isThundering_;
-    }
-    /**
-     * <code>bool isThundering = 4;</code>
-     * @param value The isThundering to set.
-     * @return This builder for chaining.
-     */
-    public Builder setIsThundering(boolean value) {
-
-      isThundering_ = value;
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool isThundering = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearIsThundering() {
-      bitField0_ = (bitField0_ & ~0x00000008);
-      isThundering_ = false;
-      onChanged();
-      return this;
-    }
-
-    private boolean isClearWeather_ ;
-    /**
-     * <code>bool isClearWeather = 5;</code>
-     * @return The isClearWeather.
-     */
-    @java.lang.Override
-    public boolean getIsClearWeather() {
-      return isClearWeather_;
-    }
-    /**
-     * <code>bool isClearWeather = 5;</code>
-     * @param value The isClearWeather to set.
-     * @return This builder for chaining.
-     */
-    public Builder setIsClearWeather(boolean value) {
-
-      isClearWeather_ = value;
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool isClearWeather = 5;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearIsClearWeather() {
-      bitField0_ = (bitField0_ & ~0x00000010);
-      isClearWeather_ = false;
-      onChanged();
-      return this;
-    }
-
     private boolean isUltraWarm_ ;
     /**
      * <code>bool isUltraWarm = 6;</code>
@@ -845,7 +795,7 @@ private static final long serialVersionUID = 0L;
     public Builder setIsUltraWarm(boolean value) {
 
       isUltraWarm_ = value;
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -854,7 +804,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearIsUltraWarm() {
-      bitField0_ = (bitField0_ & ~0x00000020);
+      bitField0_ = (bitField0_ & ~0x00000008);
       isUltraWarm_ = false;
       onChanged();
       return this;
@@ -883,7 +833,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setDifficultyValue(int value) {
       difficulty_ = value;
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -913,7 +863,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000010;
       difficulty_ = value.getNumber();
       onChanged();
       return this;
@@ -927,10 +877,167 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearDifficulty() {
-      bitField0_ = (bitField0_ & ~0x00000040);
+      bitField0_ = (bitField0_ & ~0x00000010);
       difficulty_ = 0;
       onChanged();
       return this;
+    }
+
+    private com.yplugins.minecraftrpc.proto.world.WeatherInfo weatherInfo_;
+    private com.google.protobuf.SingleFieldBuilder<
+        com.yplugins.minecraftrpc.proto.world.WeatherInfo, com.yplugins.minecraftrpc.proto.world.WeatherInfo.Builder, com.yplugins.minecraftrpc.proto.world.WeatherInfoOrBuilder> weatherInfoBuilder_;
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     * @return Whether the weatherInfo field is set.
+     */
+    public boolean hasWeatherInfo() {
+      return ((bitField0_ & 0x00000020) != 0);
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     * @return The weatherInfo.
+     */
+    public com.yplugins.minecraftrpc.proto.world.WeatherInfo getWeatherInfo() {
+      if (weatherInfoBuilder_ == null) {
+        return weatherInfo_ == null ? com.yplugins.minecraftrpc.proto.world.WeatherInfo.getDefaultInstance() : weatherInfo_;
+      } else {
+        return weatherInfoBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    public Builder setWeatherInfo(com.yplugins.minecraftrpc.proto.world.WeatherInfo value) {
+      if (weatherInfoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        weatherInfo_ = value;
+      } else {
+        weatherInfoBuilder_.setMessage(value);
+      }
+      bitField0_ |= 0x00000020;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    public Builder setWeatherInfo(
+        com.yplugins.minecraftrpc.proto.world.WeatherInfo.Builder builderForValue) {
+      if (weatherInfoBuilder_ == null) {
+        weatherInfo_ = builderForValue.build();
+      } else {
+        weatherInfoBuilder_.setMessage(builderForValue.build());
+      }
+      bitField0_ |= 0x00000020;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    public Builder mergeWeatherInfo(com.yplugins.minecraftrpc.proto.world.WeatherInfo value) {
+      if (weatherInfoBuilder_ == null) {
+        if (((bitField0_ & 0x00000020) != 0) &&
+          weatherInfo_ != null &&
+          weatherInfo_ != com.yplugins.minecraftrpc.proto.world.WeatherInfo.getDefaultInstance()) {
+          getWeatherInfoBuilder().mergeFrom(value);
+        } else {
+          weatherInfo_ = value;
+        }
+      } else {
+        weatherInfoBuilder_.mergeFrom(value);
+      }
+      if (weatherInfo_ != null) {
+        bitField0_ |= 0x00000020;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    public Builder clearWeatherInfo() {
+      bitField0_ = (bitField0_ & ~0x00000020);
+      weatherInfo_ = null;
+      if (weatherInfoBuilder_ != null) {
+        weatherInfoBuilder_.dispose();
+        weatherInfoBuilder_ = null;
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    public com.yplugins.minecraftrpc.proto.world.WeatherInfo.Builder getWeatherInfoBuilder() {
+      bitField0_ |= 0x00000020;
+      onChanged();
+      return getWeatherInfoFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    public com.yplugins.minecraftrpc.proto.world.WeatherInfoOrBuilder getWeatherInfoOrBuilder() {
+      if (weatherInfoBuilder_ != null) {
+        return weatherInfoBuilder_.getMessageOrBuilder();
+      } else {
+        return weatherInfo_ == null ?
+            com.yplugins.minecraftrpc.proto.world.WeatherInfo.getDefaultInstance() : weatherInfo_;
+      }
+    }
+    /**
+     * <pre>
+     * current weather state
+     * </pre>
+     *
+     * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilder<
+        com.yplugins.minecraftrpc.proto.world.WeatherInfo, com.yplugins.minecraftrpc.proto.world.WeatherInfo.Builder, com.yplugins.minecraftrpc.proto.world.WeatherInfoOrBuilder> 
+        getWeatherInfoFieldBuilder() {
+      if (weatherInfoBuilder_ == null) {
+        weatherInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+            com.yplugins.minecraftrpc.proto.world.WeatherInfo, com.yplugins.minecraftrpc.proto.world.WeatherInfo.Builder, com.yplugins.minecraftrpc.proto.world.WeatherInfoOrBuilder>(
+                getWeatherInfo(),
+                getParentForChildren(),
+                isClean());
+        weatherInfo_ = null;
+      }
+      return weatherInfoBuilder_;
     }
 
     // @@protoc_insertion_point(builder_scope:MinecraftWorld.WorldInfo)

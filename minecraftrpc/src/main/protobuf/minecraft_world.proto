@@ -8,6 +8,8 @@ import "minecraft_types.proto";
 
 service MinecraftWorld {
     rpc getWorldList(WorldListRequest) returns (WorldListResponse);
+    rpc getWorld(GetWorldRequest) returns (GetWorldResponse);
+    rpc setWeather(SetWeatherRequest) returns (SetWeatherResponse);
 }
 
 message CommandStatus {
@@ -22,6 +24,8 @@ enum CommandStatusCode {
     INVALID_ARGUMENT = 3;
     NOT_IMPLEMENTED = 4;
     WORLD_NOT_FOUND = 5;
+    WEATHER_CONTROL_FAILED = 6;
+    INVALID_WEATHER_STATE = 7;
 }
 
 message Dimension {
@@ -53,6 +57,12 @@ enum Difficulty {
     HARD = 3;
 }
 
+enum WeatherState {
+    CLEAR = 0;
+    STORM = 1; // Rain or Snow
+    THUNDER = 2;
+}
+
 /** A Minecraft world */
 message World {
     string name = 1; // name of world == folder name (eg. world, world_nether, world_the_end)
@@ -64,21 +74,46 @@ message WorldInfo {
     string key = 1;  // Namespace key of world identifying it ingame (eg. minecraft:overworld, minecraft:the_nether, minecraft:the_end)
     bool isPVP = 2;
     bool isHardcore = 3;
-    bool isThundering = 4;
-    bool isClearWeather = 5;
     bool isUltraWarm = 6;
     Difficulty difficulty = 7; // difficulty of the world
+    WeatherInfo weatherInfo = 8; // current weather state
 }
 
-message WorldRequest {
-    string namespace = 1; // namespace of the world (eg. minecraft:overworld)
+message GetWorldRequest {
+    string name = 1; // namespace of the world folder (eg. world)
+}
+
+message GetWorldResponse {
+    CommandStatus status = 1;
+    World world = 2; // the world requested
 }
 
 message WorldListRequest {
-    repeated WorldRequest filter = 1; // if empty just get all worlds, else set worlds
+    repeated GetWorldRequest filter = 1; // if empty just get all worlds, else set worlds
 }
 
 message WorldListResponse {
     CommandStatus status = 1;
     repeated World worlds = 2;
+}
+
+// Weather control messages
+message WeatherResponse {
+    CommandStatus status = 1;
+    WeatherInfo weatherInfo = 2;
+}
+
+message WeatherInfo {
+    WeatherState currentWeather = 1;
+    int32 duration = 2; // Duration in ticks
+}
+
+message SetWeatherRequest {
+    string name = 1;        // Name of the world (eg. world)
+    WeatherState weather = 2;    // The desired weather state
+    int32 duration = 3;          // Duration in ticks (optional, server will use default if not specified)
+}
+
+message SetWeatherResponse {
+    CommandStatus status = 1;    // Status of the command
 }

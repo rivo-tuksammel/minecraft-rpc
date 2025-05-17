@@ -2,6 +2,9 @@ package com.yplugins.minecraftrpc.utils;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 
@@ -20,7 +23,6 @@ public class GameThreadExecutor {
             Bukkit.getScheduler().runTask(plugin, task);
         }
     }
-
     public <T> CompletableFuture<T> call(Callable<T> task) {
         CompletableFuture<T> future = new CompletableFuture<>();
         run(() -> {

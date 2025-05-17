@@ -46,6 +46,68 @@ public final class MinecraftWorldGrpc {
     return getGetWorldListMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.world.GetWorldRequest,
+      com.yplugins.minecraftrpc.proto.world.GetWorldResponse> getGetWorldMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getWorld",
+      requestType = com.yplugins.minecraftrpc.proto.world.GetWorldRequest.class,
+      responseType = com.yplugins.minecraftrpc.proto.world.GetWorldResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.world.GetWorldRequest,
+      com.yplugins.minecraftrpc.proto.world.GetWorldResponse> getGetWorldMethod() {
+    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.world.GetWorldRequest, com.yplugins.minecraftrpc.proto.world.GetWorldResponse> getGetWorldMethod;
+    if ((getGetWorldMethod = MinecraftWorldGrpc.getGetWorldMethod) == null) {
+      synchronized (MinecraftWorldGrpc.class) {
+        if ((getGetWorldMethod = MinecraftWorldGrpc.getGetWorldMethod) == null) {
+          MinecraftWorldGrpc.getGetWorldMethod = getGetWorldMethod =
+              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.world.GetWorldRequest, com.yplugins.minecraftrpc.proto.world.GetWorldResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getWorld"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.world.GetWorldRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.world.GetWorldResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new MinecraftWorldMethodDescriptorSupplier("getWorld"))
+              .build();
+        }
+      }
+    }
+    return getGetWorldMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.world.SetWeatherRequest,
+      com.yplugins.minecraftrpc.proto.world.SetWeatherResponse> getSetWeatherMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "setWeather",
+      requestType = com.yplugins.minecraftrpc.proto.world.SetWeatherRequest.class,
+      responseType = com.yplugins.minecraftrpc.proto.world.SetWeatherResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.world.SetWeatherRequest,
+      com.yplugins.minecraftrpc.proto.world.SetWeatherResponse> getSetWeatherMethod() {
+    io.grpc.MethodDescriptor<com.yplugins.minecraftrpc.proto.world.SetWeatherRequest, com.yplugins.minecraftrpc.proto.world.SetWeatherResponse> getSetWeatherMethod;
+    if ((getSetWeatherMethod = MinecraftWorldGrpc.getSetWeatherMethod) == null) {
+      synchronized (MinecraftWorldGrpc.class) {
+        if ((getSetWeatherMethod = MinecraftWorldGrpc.getSetWeatherMethod) == null) {
+          MinecraftWorldGrpc.getSetWeatherMethod = getSetWeatherMethod =
+              io.grpc.MethodDescriptor.<com.yplugins.minecraftrpc.proto.world.SetWeatherRequest, com.yplugins.minecraftrpc.proto.world.SetWeatherResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "setWeather"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.world.SetWeatherRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.yplugins.minecraftrpc.proto.world.SetWeatherResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new MinecraftWorldMethodDescriptorSupplier("setWeather"))
+              .build();
+        }
+      }
+    }
+    return getSetWeatherMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -115,6 +177,20 @@ public final class MinecraftWorldGrpc {
         io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.WorldListResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetWorldListMethod(), responseObserver);
     }
+
+    /**
+     */
+    default void getWorld(com.yplugins.minecraftrpc.proto.world.GetWorldRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.GetWorldResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetWorldMethod(), responseObserver);
+    }
+
+    /**
+     */
+    default void setWeather(com.yplugins.minecraftrpc.proto.world.SetWeatherRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.SetWeatherResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSetWeatherMethod(), responseObserver);
+    }
   }
 
   /**
@@ -151,6 +227,22 @@ public final class MinecraftWorldGrpc {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetWorldListMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void getWorld(com.yplugins.minecraftrpc.proto.world.GetWorldRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.GetWorldResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getGetWorldMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void setWeather(com.yplugins.minecraftrpc.proto.world.SetWeatherRequest request,
+        io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.SetWeatherResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getSetWeatherMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -175,6 +267,20 @@ public final class MinecraftWorldGrpc {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetWorldListMethod(), getCallOptions(), request);
     }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.world.GetWorldResponse getWorld(com.yplugins.minecraftrpc.proto.world.GetWorldRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getGetWorldMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.world.SetWeatherResponse setWeather(com.yplugins.minecraftrpc.proto.world.SetWeatherRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSetWeatherMethod(), getCallOptions(), request);
+    }
   }
 
   /**
@@ -198,6 +304,20 @@ public final class MinecraftWorldGrpc {
     public com.yplugins.minecraftrpc.proto.world.WorldListResponse getWorldList(com.yplugins.minecraftrpc.proto.world.WorldListRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetWorldListMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.world.GetWorldResponse getWorld(com.yplugins.minecraftrpc.proto.world.GetWorldRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getGetWorldMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.yplugins.minecraftrpc.proto.world.SetWeatherResponse setWeather(com.yplugins.minecraftrpc.proto.world.SetWeatherRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSetWeatherMethod(), getCallOptions(), request);
     }
   }
 
@@ -224,9 +344,27 @@ public final class MinecraftWorldGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetWorldListMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.world.GetWorldResponse> getWorld(
+        com.yplugins.minecraftrpc.proto.world.GetWorldRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getGetWorldMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.yplugins.minecraftrpc.proto.world.SetWeatherResponse> setWeather(
+        com.yplugins.minecraftrpc.proto.world.SetWeatherRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getSetWeatherMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_GET_WORLD_LIST = 0;
+  private static final int METHODID_GET_WORLD = 1;
+  private static final int METHODID_SET_WEATHER = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -248,6 +386,14 @@ public final class MinecraftWorldGrpc {
         case METHODID_GET_WORLD_LIST:
           serviceImpl.getWorldList((com.yplugins.minecraftrpc.proto.world.WorldListRequest) request,
               (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.WorldListResponse>) responseObserver);
+          break;
+        case METHODID_GET_WORLD:
+          serviceImpl.getWorld((com.yplugins.minecraftrpc.proto.world.GetWorldRequest) request,
+              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.GetWorldResponse>) responseObserver);
+          break;
+        case METHODID_SET_WEATHER:
+          serviceImpl.setWeather((com.yplugins.minecraftrpc.proto.world.SetWeatherRequest) request,
+              (io.grpc.stub.StreamObserver<com.yplugins.minecraftrpc.proto.world.SetWeatherResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -274,6 +420,20 @@ public final class MinecraftWorldGrpc {
               com.yplugins.minecraftrpc.proto.world.WorldListRequest,
               com.yplugins.minecraftrpc.proto.world.WorldListResponse>(
                 service, METHODID_GET_WORLD_LIST)))
+        .addMethod(
+          getGetWorldMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.yplugins.minecraftrpc.proto.world.GetWorldRequest,
+              com.yplugins.minecraftrpc.proto.world.GetWorldResponse>(
+                service, METHODID_GET_WORLD)))
+        .addMethod(
+          getSetWeatherMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.yplugins.minecraftrpc.proto.world.SetWeatherRequest,
+              com.yplugins.minecraftrpc.proto.world.SetWeatherResponse>(
+                service, METHODID_SET_WEATHER)))
         .build();
   }
 
@@ -323,6 +483,8 @@ public final class MinecraftWorldGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new MinecraftWorldFileDescriptorSupplier())
               .addMethod(getGetWorldListMethod())
+              .addMethod(getGetWorldMethod())
+              .addMethod(getSetWeatherMethod())
               .build();
         }
       }

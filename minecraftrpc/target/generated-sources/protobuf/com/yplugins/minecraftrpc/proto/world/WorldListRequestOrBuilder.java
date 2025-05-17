@@ -14,24 +14,24 @@ public interface WorldListRequestOrBuilder extends
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
-  java.util.List<com.yplugins.minecraftrpc.proto.world.WorldRequest> 
+  java.util.List<com.yplugins.minecraftrpc.proto.world.GetWorldRequest> 
       getFilterList();
   /**
    * <pre>
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
-  com.yplugins.minecraftrpc.proto.world.WorldRequest getFilter(int index);
+  com.yplugins.minecraftrpc.proto.world.GetWorldRequest getFilter(int index);
   /**
    * <pre>
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
   int getFilterCount();
   /**
@@ -39,17 +39,17 @@ public interface WorldListRequestOrBuilder extends
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
-  java.util.List<? extends com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder> 
+  java.util.List<? extends com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder> 
       getFilterOrBuilderList();
   /**
    * <pre>
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
-  com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder getFilterOrBuilder(
+  com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder getFilterOrBuilder(
       int index);
 }

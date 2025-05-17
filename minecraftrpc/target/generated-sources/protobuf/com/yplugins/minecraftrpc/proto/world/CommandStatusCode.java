@@ -34,6 +34,14 @@ public enum CommandStatusCode
    * <code>WORLD_NOT_FOUND = 5;</code>
    */
   WORLD_NOT_FOUND(5),
+  /**
+   * <code>WEATHER_CONTROL_FAILED = 6;</code>
+   */
+  WEATHER_CONTROL_FAILED(6),
+  /**
+   * <code>INVALID_WEATHER_STATE = 7;</code>
+   */
+  INVALID_WEATHER_STATE(7),
   UNRECOGNIZED(-1),
   ;
 
@@ -70,6 +78,14 @@ public enum CommandStatusCode
    * <code>WORLD_NOT_FOUND = 5;</code>
    */
   public static final int WORLD_NOT_FOUND_VALUE = 5;
+  /**
+   * <code>WEATHER_CONTROL_FAILED = 6;</code>
+   */
+  public static final int WEATHER_CONTROL_FAILED_VALUE = 6;
+  /**
+   * <code>INVALID_WEATHER_STATE = 7;</code>
+   */
+  public static final int INVALID_WEATHER_STATE_VALUE = 7;
 
 
   public final int getNumber() {
@@ -102,6 +118,8 @@ public enum CommandStatusCode
       case 3: return INVALID_ARGUMENT;
       case 4: return NOT_IMPLEMENTED;
       case 5: return WORLD_NOT_FOUND;
+      case 6: return WEATHER_CONTROL_FAILED;
+      case 7: return INVALID_WEATHER_STATE;
       default: return null;
     }
   }

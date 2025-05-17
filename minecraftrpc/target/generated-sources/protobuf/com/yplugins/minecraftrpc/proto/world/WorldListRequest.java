@@ -45,16 +45,16 @@ private static final long serialVersionUID = 0L;
 
   public static final int FILTER_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.yplugins.minecraftrpc.proto.world.WorldRequest> filter_;
+  private java.util.List<com.yplugins.minecraftrpc.proto.world.GetWorldRequest> filter_;
   /**
    * <pre>
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<com.yplugins.minecraftrpc.proto.world.WorldRequest> getFilterList() {
+  public java.util.List<com.yplugins.minecraftrpc.proto.world.GetWorldRequest> getFilterList() {
     return filter_;
   }
   /**
@@ -62,10 +62,10 @@ private static final long serialVersionUID = 0L;
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder> 
+  public java.util.List<? extends com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder> 
       getFilterOrBuilderList() {
     return filter_;
   }
@@ -74,7 +74,7 @@ private static final long serialVersionUID = 0L;
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
   @java.lang.Override
   public int getFilterCount() {
@@ -85,10 +85,10 @@ private static final long serialVersionUID = 0L;
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.world.WorldRequest getFilter(int index) {
+  public com.yplugins.minecraftrpc.proto.world.GetWorldRequest getFilter(int index) {
     return filter_.get(index);
   }
   /**
@@ -96,10 +96,10 @@ private static final long serialVersionUID = 0L;
    * if empty just get all worlds, else set worlds
    * </pre>
    *
-   * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+   * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
    */
   @java.lang.Override
-  public com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder getFilterOrBuilder(
+  public com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder getFilterOrBuilder(
       int index) {
     return filter_.get(index);
   }
@@ -417,9 +417,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.yplugins.minecraftrpc.proto.world.WorldRequest m =
+              com.yplugins.minecraftrpc.proto.world.GetWorldRequest m =
                   input.readMessage(
-                      com.yplugins.minecraftrpc.proto.world.WorldRequest.parser(),
+                      com.yplugins.minecraftrpc.proto.world.GetWorldRequest.parser(),
                       extensionRegistry);
               if (filterBuilder_ == null) {
                 ensureFilterIsMutable();
@@ -446,26 +446,26 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.yplugins.minecraftrpc.proto.world.WorldRequest> filter_ =
+    private java.util.List<com.yplugins.minecraftrpc.proto.world.GetWorldRequest> filter_ =
       java.util.Collections.emptyList();
     private void ensureFilterIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        filter_ = new java.util.ArrayList<com.yplugins.minecraftrpc.proto.world.WorldRequest>(filter_);
+        filter_ = new java.util.ArrayList<com.yplugins.minecraftrpc.proto.world.GetWorldRequest>(filter_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilder<
-        com.yplugins.minecraftrpc.proto.world.WorldRequest, com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder, com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder> filterBuilder_;
+        com.yplugins.minecraftrpc.proto.world.GetWorldRequest, com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder, com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder> filterBuilder_;
 
     /**
      * <pre>
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public java.util.List<com.yplugins.minecraftrpc.proto.world.WorldRequest> getFilterList() {
+    public java.util.List<com.yplugins.minecraftrpc.proto.world.GetWorldRequest> getFilterList() {
       if (filterBuilder_ == null) {
         return java.util.Collections.unmodifiableList(filter_);
       } else {
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public int getFilterCount() {
       if (filterBuilder_ == null) {
@@ -491,9 +491,9 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldRequest getFilter(int index) {
+    public com.yplugins.minecraftrpc.proto.world.GetWorldRequest getFilter(int index) {
       if (filterBuilder_ == null) {
         return filter_.get(index);
       } else {
@@ -505,10 +505,10 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder setFilter(
-        int index, com.yplugins.minecraftrpc.proto.world.WorldRequest value) {
+        int index, com.yplugins.minecraftrpc.proto.world.GetWorldRequest value) {
       if (filterBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -526,10 +526,10 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder setFilter(
-        int index, com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder builderForValue) {
+        int index, com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder builderForValue) {
       if (filterBuilder_ == null) {
         ensureFilterIsMutable();
         filter_.set(index, builderForValue.build());
@@ -544,9 +544,9 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public Builder addFilter(com.yplugins.minecraftrpc.proto.world.WorldRequest value) {
+    public Builder addFilter(com.yplugins.minecraftrpc.proto.world.GetWorldRequest value) {
       if (filterBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -564,10 +564,10 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder addFilter(
-        int index, com.yplugins.minecraftrpc.proto.world.WorldRequest value) {
+        int index, com.yplugins.minecraftrpc.proto.world.GetWorldRequest value) {
       if (filterBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -585,10 +585,10 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder addFilter(
-        com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder builderForValue) {
+        com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder builderForValue) {
       if (filterBuilder_ == null) {
         ensureFilterIsMutable();
         filter_.add(builderForValue.build());
@@ -603,10 +603,10 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder addFilter(
-        int index, com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder builderForValue) {
+        int index, com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder builderForValue) {
       if (filterBuilder_ == null) {
         ensureFilterIsMutable();
         filter_.add(index, builderForValue.build());
@@ -621,10 +621,10 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder addAllFilter(
-        java.lang.Iterable<? extends com.yplugins.minecraftrpc.proto.world.WorldRequest> values) {
+        java.lang.Iterable<? extends com.yplugins.minecraftrpc.proto.world.GetWorldRequest> values) {
       if (filterBuilder_ == null) {
         ensureFilterIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -640,7 +640,7 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder clearFilter() {
       if (filterBuilder_ == null) {
@@ -657,7 +657,7 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
     public Builder removeFilter(int index) {
       if (filterBuilder_ == null) {
@@ -674,9 +674,9 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder getFilterBuilder(
+    public com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder getFilterBuilder(
         int index) {
       return getFilterFieldBuilder().getBuilder(index);
     }
@@ -685,9 +685,9 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder getFilterOrBuilder(
+    public com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder getFilterOrBuilder(
         int index) {
       if (filterBuilder_ == null) {
         return filter_.get(index);  } else {
@@ -699,9 +699,9 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public java.util.List<? extends com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder> 
+    public java.util.List<? extends com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder> 
          getFilterOrBuilderList() {
       if (filterBuilder_ != null) {
         return filterBuilder_.getMessageOrBuilderList();
@@ -714,41 +714,41 @@ private static final long serialVersionUID = 0L;
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder addFilterBuilder() {
+    public com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder addFilterBuilder() {
       return getFilterFieldBuilder().addBuilder(
-          com.yplugins.minecraftrpc.proto.world.WorldRequest.getDefaultInstance());
+          com.yplugins.minecraftrpc.proto.world.GetWorldRequest.getDefaultInstance());
     }
     /**
      * <pre>
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder addFilterBuilder(
+    public com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder addFilterBuilder(
         int index) {
       return getFilterFieldBuilder().addBuilder(
-          index, com.yplugins.minecraftrpc.proto.world.WorldRequest.getDefaultInstance());
+          index, com.yplugins.minecraftrpc.proto.world.GetWorldRequest.getDefaultInstance());
     }
     /**
      * <pre>
      * if empty just get all worlds, else set worlds
      * </pre>
      *
-     * <code>repeated .MinecraftWorld.WorldRequest filter = 1;</code>
+     * <code>repeated .MinecraftWorld.GetWorldRequest filter = 1;</code>
      */
-    public java.util.List<com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder> 
+    public java.util.List<com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder> 
          getFilterBuilderList() {
       return getFilterFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilder<
-        com.yplugins.minecraftrpc.proto.world.WorldRequest, com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder, com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder> 
+        com.yplugins.minecraftrpc.proto.world.GetWorldRequest, com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder, com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder> 
         getFilterFieldBuilder() {
       if (filterBuilder_ == null) {
         filterBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-            com.yplugins.minecraftrpc.proto.world.WorldRequest, com.yplugins.minecraftrpc.proto.world.WorldRequest.Builder, com.yplugins.minecraftrpc.proto.world.WorldRequestOrBuilder>(
+            com.yplugins.minecraftrpc.proto.world.GetWorldRequest, com.yplugins.minecraftrpc.proto.world.GetWorldRequest.Builder, com.yplugins.minecraftrpc.proto.world.GetWorldRequestOrBuilder>(
                 filter_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

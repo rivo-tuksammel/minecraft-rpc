@@ -42,18 +42,6 @@ public interface WorldInfoOrBuilder extends
   boolean getIsHardcore();
 
   /**
-   * <code>bool isThundering = 4;</code>
-   * @return The isThundering.
-   */
-  boolean getIsThundering();
-
-  /**
-   * <code>bool isClearWeather = 5;</code>
-   * @return The isClearWeather.
-   */
-  boolean getIsClearWeather();
-
-  /**
    * <code>bool isUltraWarm = 6;</code>
    * @return The isUltraWarm.
    */
@@ -77,4 +65,31 @@ public interface WorldInfoOrBuilder extends
    * @return The difficulty.
    */
   com.yplugins.minecraftrpc.proto.world.Difficulty getDifficulty();
+
+  /**
+   * <pre>
+   * current weather state
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+   * @return Whether the weatherInfo field is set.
+   */
+  boolean hasWeatherInfo();
+  /**
+   * <pre>
+   * current weather state
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+   * @return The weatherInfo.
+   */
+  com.yplugins.minecraftrpc.proto.world.WeatherInfo getWeatherInfo();
+  /**
+   * <pre>
+   * current weather state
+   * </pre>
+   *
+   * <code>.MinecraftWorld.WeatherInfo weatherInfo = 8;</code>
+   */
+  com.yplugins.minecraftrpc.proto.world.WeatherInfoOrBuilder getWeatherInfoOrBuilder();
 }
