@@ -35,11 +35,13 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
         GITHUB_ACTOR: ${{ github.actor }}
 
-    - name: Find built JAR filename
+    - name: Find versioned JAR file
       id: find_jar
       run: |
-        JAR_FILE=$(ls target/*.jar | grep -v 'original' | head -n 1)
+        JAR_FILE=$(ls target/minecraftrpc-*.jar | grep -v 'original' | head -n 1)
         echo "jar=$JAR_FILE" >> $GITHUB_OUTPUT
+        FILE_NAME=$(basename "$JAR_FILE")
+        echo "filename=$FILE_NAME" >> $GITHUB_OUTPUT
 
     - name: Upload JAR as release asset
       uses: actions/upload-release-asset@v1
@@ -48,5 +50,5 @@ jobs:
       with:
         upload_url: ${{ github.event.release.upload_url }}
         asset_path: ${{ steps.find_jar.outputs.jar }}
-        asset_name: ${{ steps.find_jar.outputs.jar | split('/') | last }}
+        asset_name: ${{ steps.find_jar.outputs.filename }}
         asset_content_type: application/java-archive
