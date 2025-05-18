@@ -14,6 +14,14 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/rivo-tuksammel/minecraft-rpc</url>
+        </repository>
+    </distributionManagement>
+
     <!-- Dependencies -->
     <dependencies>
         <!--Spigot API-->
