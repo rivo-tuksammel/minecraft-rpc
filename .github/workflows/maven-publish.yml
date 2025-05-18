@@ -43,12 +43,9 @@ jobs:
         FILE_NAME=$(basename "$JAR_FILE")
         echo "filename=$FILE_NAME" >> $GITHUB_OUTPUT
 
-    - name: Upload JAR as release asset
-      uses: actions/upload-release-asset@v1
+    - name: Upload JAR to GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ${{ steps.find_jar.outputs.jar }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ${{ steps.find_jar.outputs.jar }}
-        asset_name: ${{ steps.find_jar.outputs.filename }}
-        asset_content_type: application/java-archive
