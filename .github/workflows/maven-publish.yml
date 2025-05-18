@@ -38,7 +38,7 @@ jobs:
     - name: Find versioned JAR file
       id: find_jar
       run: |
-        JAR_FILE=$(ls target/minecraftrpc-*.jar | grep -v 'original' | head -n 1)
+        JAR_FILE=$(ls minecraftrpc/target/minecraftrpc-*.jar | grep -v 'original' | head -n 1)
         echo "jar=$JAR_FILE" >> $GITHUB_OUTPUT
         FILE_NAME=$(basename "$JAR_FILE")
         echo "filename=$FILE_NAME" >> $GITHUB_OUTPUT
