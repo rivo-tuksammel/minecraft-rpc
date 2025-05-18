@@ -59,5 +59,5 @@ For more details, visit our [GitHub repository](https://github.com/YPlugins/Mine
 
 Engage with other developers and stay updated:
 
-* [Discord Server](https://discord.gg/minecraftrpc)
+* [Discord Server](https://discord.gg/hKBHvxMt2S)
 * [GitHub Discussions](https://github.com/YPlugins/MinecraftRPC/discussions)
