@@ -26,10 +26,10 @@ jobs:
     - name: List folders in root
       run: ls -la
     - run: |
-        cd minecraftrpc_js
-        npm ci
+        cd ./minecraftrpc_js
+        npm install
     - run: |
-        cd minecraftrpc_js
+        cd ./minecraftrpc_js
         npm publish --provenance --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
