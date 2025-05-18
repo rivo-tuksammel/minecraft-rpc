@@ -1,21 +1,21 @@
 {
-  "name": "minecraftrpc",
+  "name": "@minecraftrpc/proto",
   "type": "module",
   "version": "1.0.0",
   "description": "MinecraftRPC provides a modern, efficient, and type-safe way to interact with your Minecraft servers. Say goodbye to limited RCON and hello to bidirectional streaming, strong typing, and enhanced performance. ",
-  "main": "build/minecraft.js",
-  "types": "build/minecraft.d.ts",
+  "main": "dist/minecraft.ts",
    "exports": {
     "./*": {
-      "import": "./build/*",
-      "require": "./build/*"
-    }
+      "import": "./dist/*",
+      "require": "./dist/*"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
-    "build-protos": "node utils/copy-protos.js && proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --includeComments --grpcLib=@grpc/grpc-js --includeComments --outDir=gen/protos protos/*.proto"
+    "build" : "node utils/build.js"
   },
   "repository": {
     "type": "git",

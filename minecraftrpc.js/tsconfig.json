@@ -8,9 +8,9 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "skipLibCheck": true,
-        "outDir": "build",
-        "rootDir": "dist"
+        "outDir": "./dist",
+        "rootDir": "./temp"
     },
-    "include": ["dist"],
-    "exclude": ["node_modules", "build"]
+    "include": ["temp"],
+    "exclude": ["node_modules", "dist"]
 }
