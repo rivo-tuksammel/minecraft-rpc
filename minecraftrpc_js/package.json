@@ -2,6 +2,7 @@
   "name": "@minecraftrpc/proto",
   "type": "module",
   "version": "1.0.0",
+  "private" : false,
   "description": "MinecraftRPC provides a modern, efficient, and type-safe way to interact with your Minecraft servers. Say goodbye to limited RCON and hello to bidirectional streaming, strong typing, and enhanced performance. ",
   "main": "dist/minecraft.ts",
    "exports": {
