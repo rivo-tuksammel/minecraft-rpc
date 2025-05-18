@@ -13,8 +13,6 @@ import com.yplugins.minecraftrpc.proto.player.PlayerSetExperienceRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetExperienceResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodLevelResponse;
-import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationRequest;
-import com.yplugins.minecraftrpc.proto.player.PlayerSetFoodSaturationResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetGamemodeRequest;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetGamemodeResponse;
 import com.yplugins.minecraftrpc.proto.player.PlayerSetHealthRequest;
