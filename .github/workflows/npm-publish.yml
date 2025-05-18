@@ -17,7 +17,7 @@ jobs:
       packages: write
     defaults:
       run:
-        working-directory: "minecraftrpc.js"
+        working-directory: minecraftrpc.js
 
     steps:
     - uses: actions/checkout@v4
