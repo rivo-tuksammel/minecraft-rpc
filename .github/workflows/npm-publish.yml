@@ -25,10 +25,12 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
     - name: List folders in root
       run: ls -la
-    - run: npm ci
-      working-directory:  ${{ github.workspace }}/minecraftrpc_js
-    - run: npm publish --provenance --access public
-      working-directory: ./minecraftrpc_js
+    - run: |
+        cd minecraftrpc_js
+        npm ci
+    - run: |
+        cd minecraftrpc_js
+        npm publish --provenance --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     
